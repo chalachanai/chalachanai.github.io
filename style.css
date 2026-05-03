@@ -634,6 +634,42 @@ img { display: block; width: 100%; }
 }
 .btn-qv-messenger:hover { background: #0757e0; }
 
+.contact-modal {
+  width: 420px;
+}
+.contact-modal p {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+  line-height: 1.65;
+  margin-bottom: 1rem;
+}
+.contact-actions {
+  display: grid;
+  gap: 0.7rem;
+}
+.contact-open,
+.contact-copy {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+.contact-open {
+  background: var(--fb-blue);
+  color: #fff;
+}
+.contact-copy {
+  border: 1px solid var(--border);
+  color: var(--text);
+  background: rgba(255,255,255,0.04);
+}
+.contact-open:hover { background: #0757e0; }
+.contact-copy:hover { border-color: var(--gold); color: var(--gold); }
+
 .services-section {
   padding: 3rem 4%;
   border-top: 1px solid var(--border);

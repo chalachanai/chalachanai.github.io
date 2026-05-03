@@ -84,6 +84,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   setupFilters();
   setupMagnifier();
   setupScrollFab();
+  setupContactPopup();
   applyGlobalSettings();
   updateAdminLinkVisibility();
 });
@@ -179,6 +180,44 @@ function updateAdminLinkVisibility() {
   const isPublicGithub = window.location.hostname.endsWith('github.io');
   link.style.display = isPublicGithub ? 'none' : '';
 }
+
+let CONTACT_LINK = 'https://www.facebook.com/chalachanai/';
+
+function setupContactPopup() {
+  document.addEventListener('click', e => {
+    const link = e.target.closest('a');
+    if (!link || !isContactTrigger(link)) return;
+    if (link.classList.contains('disabled')) return;
+    e.preventDefault();
+    e.stopPropagation();
+    openContactPopup(link.href || CONTACT_LINK);
+  });
+}
+
+function isContactTrigger(link) {
+  return link.id === 'fabMsg'
+    || link.id === 'footerMessenger'
+    || link.id === 'serviceMessenger'
+    || link.id === 'qvMsg'
+    || link.classList.contains('side-btn-msg')
+    || link.classList.contains('btn-card-msg');
+}
+
+function openContactPopup(link) {
+  CONTACT_LINK = normalizeContactLink(link);
+  const btn = document.getElementById('contactOpenBtn');
+  if (btn) btn.href = CONTACT_LINK;
+  openOverlay('contactOverlay');
+}
+
+window.copyContactLink = async function() {
+  try {
+    await navigator.clipboard.writeText(CONTACT_LINK);
+    alert('Đã copy link Chà Là.');
+  } catch (_err) {
+    prompt('Copy link này:', CONTACT_LINK);
+  }
+};
 
 const SEGMENTS = {
   gaming: { label: 'Gaming', icon: 'fa-gamepad' },

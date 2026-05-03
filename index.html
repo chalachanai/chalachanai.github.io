@@ -380,6 +380,23 @@
   </div>
 </div>
 
+<!-- Contact Popup -->
+<div class="overlay contact-overlay" id="contactOverlay" onclick="closeOverlay('contactOverlay')">
+  <div class="modal contact-modal" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeOverlay('contactOverlay')">×</button>
+    <h2 class="modal-title">Nhắn Chà Là</h2>
+    <p>Web sẽ không tự mở Facebook. Bạn chọn mở trang Chà Là hoặc sao chép link để nhắn sau.</p>
+    <div class="contact-actions">
+      <a class="contact-open" id="contactOpenBtn" href="https://www.facebook.com/chalachanai/" target="_blank" rel="noopener">
+        <i class="fab fa-facebook-messenger"></i> Mở trang Chà Là
+      </a>
+      <button class="contact-copy" type="button" onclick="copyContactLink()">
+        <i class="fas fa-link"></i> Copy link
+      </button>
+    </div>
+  </div>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 <script src="backend-config.js"></script>
 <script src="cloud.js"></script>
