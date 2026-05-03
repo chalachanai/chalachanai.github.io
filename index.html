@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chà Là | Tai nghe cũ, sửa tai nghe, bọc nhung, thay pin</title>
+  <meta name="description" content="Chà Là bán tai nghe cũ tuyển chọn và nhận sửa tai nghe, bọc nhung, thay đệm, thay pin tai nghe Bluetooth, vệ sinh UV, kiểm định âm thanh. Nghe thật - Giá thật.">
+  <meta name="keywords" content="tai nghe cũ, sửa tai nghe, bọc nhung tai nghe, thay pin tai nghe bluetooth, thay đệm tai nghe, vệ sinh tai nghe, tai nghe gaming cũ, tai nghe nghe nhạc cũ">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://chalachanai.com/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:site_name" content="Chà Là">
+  <meta property="og:title" content="Chà Là | Tai nghe cũ, sửa tai nghe, bọc nhung, thay pin">
+  <meta property="og:description" content="Tai nghe cũ tuyển chọn, sửa tai nghe, bọc nhung, thay đệm, thay pin Bluetooth, vệ sinh UV và kiểm định âm thanh.">
+  <meta property="og:url" content="https://chalachanai.com/">
+  <meta property="og:image" content="https://chalachanai.com/assets/hero-main.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Chà Là | Tai nghe cũ, sửa tai nghe, bọc nhung, thay pin">
+  <meta name="twitter:description" content="Shop tai nghe cũ và dịch vụ sửa, bọc nhung, thay pin, vệ sinh, kiểm định tai nghe.">
+  <meta name="twitter:image" content="https://chalachanai.com/assets/hero-main.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Chà Là",
+    "url": "https://chalachanai.com/",
+    "image": "https://chalachanai.com/assets/hero-main.png",
+    "description": "Shop tai nghe cũ tuyển chọn và dịch vụ sửa tai nghe, bọc nhung, thay đệm, thay pin, vệ sinh UV, kiểm định âm thanh.",
+    "areaServed": "Việt Nam",
+    "makesOffer": [
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Tai nghe cũ tuyển chọn" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sửa tai nghe" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bọc nhung và thay đệm tai nghe" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Thay pin tai nghe Bluetooth" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Vệ sinh UV và kiểm định tai nghe" } }
+    ]
+  }
+  </script>
+  <link rel="stylesheet" href="style.css?v=20260503-facebook">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!-- ══ HEADER ══ -->
+<header class="header">
+  <div class="logo">Chà<em>•</em>Là</div>
+  <div class="search-wrap">
+    <i class="fas fa-search si"></i>
+    <input type="text" id="searchInput" placeholder="Tìm gaming, nghe nhạc, học bài, tên...">
+  </div>
+  <nav class="nav">
+    <a href="#products">Sản phẩm</a>
+    <a href="#services">Dịch vụ</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+</header>
+
+<!-- ══ FILTER BAR ══ -->
+<div class="filter-bar" id="filterBar">
+  <button class="chip active" data-reset-filter="all">Tất cả</button>
+  <button class="chip" data-segment="gaming">Gaming</button>
+  <button class="chip" data-segment="music">Nghe nhạc</button>
+  <button class="chip" data-segment="study">Học bài</button>
+  <div class="filter-sep"></div>
+  <button class="chip" data-filter="cond:Like New(S)">Like New(S)</button>
+  <button class="chip" data-filter="cond:Mới">Mới</button>
+  <button class="chip" data-filter="cond:Trầy nhẹ">Trầy nhẹ</button>
+  <button class="chip" data-filter="cond:Trầy nhiều">Trầy nhiều</button>
+  <button class="chip" data-filter="instock">Còn hàng</button>
+  <div class="filter-sep"></div>
+  <select class="filter-select" id="soundFilter">
+    <option value="">Chất âm</option>
+    <option>V-Shape</option>
+    <option>Warm</option>
+    <option>Bright</option>
+    <option>Neutral</option>
+    <option>Bass-Heavy</option>
+    <option>Mid-Forward</option>
+  </select>
+  <select class="filter-select" id="latencyFilter">
+    <option value="">Kết nối</option>
+    <option value="wired">Có dây</option>
+    <option value="wireless-fast">Wireless &lt;20ms</option>
+    <option value="wireless-slow">Wireless &gt;20ms</option>
+  </select>
+  <select class="filter-select" id="sortFilter">
+    <option value="">Sắp xếp</option>
+    <option value="newest">Mới nhất</option>
+    <option value="price-asc">Giá thấp → cao</option>
+    <option value="price-desc">Giá cao → thấp</option>
+  </select>
+</div>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-tag">✦ Vệ sinh UV · Kiểm định 24 bước</div>
+    <h1>nơi mang lại <span>sự sống mới</span><br>cho mấy bé đồ bị <span>bỏ rơi</span></h1>
+    <p>Mỗi chiếc đều qua tay Chà Là — chà sạch, kiểm kỹ, giá thật. Từ gaming tới nghe nhạc, học bài: chọn đúng gu, dùng lại đồ tốt.</p>
+    <a href="#products" class="hero-cta"><i class="fas fa-headphones"></i> Xem sản phẩm</a>
+    <div class="policy-tabs">
+      <button class="policy-tab" onclick="openPolicy('wash')">
+        <span class="pt-icon">🧹</span>
+        <span class="pt-text"><strong>Vệ sinh UV</strong><span>Tiệt trùng sâu</span></span>
+      </button>
+      <button class="policy-tab" onclick="openPolicy('warranty')">
+        <span class="pt-icon">🛡️</span>
+        <span class="pt-text"><strong>Bảo hành 30 ngày</strong><span>Đổi trả dễ</span></span>
+      </button>
+      <button class="policy-tab" onclick="openPolicy('check')">
+        <span class="pt-icon">✅</span>
+        <span class="pt-text"><strong>24 bước kiểm định</strong><span>Chuẩn từng chi tiết</span></span>
+      </button>
+    </div>
+  </div>
+  <div class="hero-img">
+    <img src="assets/hero-main.png" alt="Chà Là - tai nghe cũ được làm mới" onerror="this.closest('.hero-img').classList.add('hero-img-missing')">
+  </div>
+</section>
+
+<!-- ══ WIZARD ══ -->
+<div class="wizard-section">
+  <button class="wizard-toggle" onclick="toggleWizard()">
+    <i class="fas fa-magic"></i>
+    <span>🎯 Chưa biết chọn loại nào? Để Chà Là gợi ý cho bạn</span>
+    <i class="fas fa-chevron-down" id="wizardArrow"></i>
+  </button>
+  <div class="wizard-body" id="wizardBody">
+    <div class="wizard-step active" id="ws-0">
+      <p class="wizard-q">Bạn cần tai nghe chủ yếu để làm gì?</p>
+      <div class="wizard-opts">
+        <button class="wizard-opt" onclick="wizardNext('game')">🎮 Chơi game</button>
+        <button class="wizard-opt" onclick="wizardNext('music')">🎵 Nghe nhạc</button>
+        <button class="wizard-opt" onclick="wizardNext('film')">🎬 Xem phim</button>
+        <button class="wizard-opt" onclick="wizardNext('work')">🎙️ Làm việc / Podcast</button>
+      </div>
+    </div>
+    <div class="wizard-step" id="ws-game">
+      <p class="wizard-q">Bạn thường chơi thể loại game nào?</p>
+      <div class="wizard-opts">
+        <button class="wizard-opt" onclick="wizardResult(['Neutral','Bright'], true)">🔫 FPS (Valorant, CS2)</button>
+        <button class="wizard-opt" onclick="wizardResult(['V-Shape','Bass-Heavy'], false)">⚔️ MOBA (Liên Minh)</button>
+        <button class="wizard-opt" onclick="wizardResult(['Warm','Mid-Forward'], false)">🗡️ RPG / Nhập vai</button>
+        <button class="wizard-opt" onclick="wizardResult(['V-Shape','Bass-Heavy'], false)">🏎️ Game đua xe</button>
+        <button class="wizard-opt" onclick="wizardResult(['V-Shape','Warm'], false)">🎲 Game thông thường</button>
+      </div>
+    </div>
+    <div class="wizard-step" id="ws-music">
+      <p class="wizard-q">Bạn hay nghe thể loại nhạc nào?</p>
+      <div class="wizard-opts">
+        <button class="wizard-opt" onclick="wizardResult(['Warm'], false)">☁️ Lofi / Chillhop</button>
+        <button class="wizard-opt" onclick="wizardResult(['V-Shape','Bass-Heavy'], false)">⚡ EDM / Electronic</button>
+        <button class="wizard-opt" onclick="wizardResult(['Bass-Heavy','V-Shape'], false)">🎤 Hip-hop / Rap</button>
+        <button class="wizard-opt" onclick="wizardResult(['Neutral','Warm'], false)">🎸 Acoustic / Indie</button>
+        <button class="wizard-opt" onclick="wizardResult(['V-Shape','Mid-Forward'], false)">🌸 K-pop / J-pop</button>
+        <button class="wizard-opt" onclick="wizardResult(['Bright','Mid-Forward'], false)">🎻 Classical / Jazz</button>
+        <button class="wizard-opt" onclick="wizardResult(['V-Shape','Bright'], false)">🎮 Game OST</button>
+      </div>
+    </div>
+    <div class="wizard-step" id="ws-film">
+      <p class="wizard-q">Bạn xem loại phim gì chủ yếu?</p>
+      <div class="wizard-opts">
+        <button class="wizard-opt" onclick="wizardResult(['V-Shape','Bass-Heavy'], false)">🎬 Phim hành động</button>
+        <button class="wizard-opt" onclick="wizardResult(['Mid-Forward','Warm'], false)">🎭 Phim tâm lý / Drama</button>
+        <button class="wizard-opt" onclick="wizardResult(['Neutral','Bright'], false)">📺 Xem tổng hợp</button>
+      </div>
+    </div>
+    <div class="wizard-step" id="ws-work">
+      <p class="wizard-q">Bạn ưu tiên điều gì khi làm việc?</p>
+      <div class="wizard-opts">
+        <button class="wizard-opt" onclick="wizardResult(['Neutral','Mid-Forward'], false)">🎙️ Giọng nói rõ (Call, Podcast)</button>
+        <button class="wizard-opt" onclick="wizardResult(['Neutral','Warm'], false)">🧠 Tập trung, không mỏi tai</button>
+        <button class="wizard-opt" onclick="wizardResult(['Bright','Neutral'], false)">🎧 Nghe nhạc khi làm việc</button>
+      </div>
+    </div>
+    <div class="wizard-step" id="ws-latency" style="display:none">
+      <p class="wizard-q">Bạn có cần độ trễ thấp &lt;20ms cho gaming không?</p>
+      <div class="wizard-opts">
+        <button class="wizard-opt" onclick="wizardFinish(true)">⚡ Có, tôi cần (wireless nhanh hoặc có dây)</button>
+        <button class="wizard-opt" onclick="wizardFinish(false)">😊 Không quan trọng lắm</button>
+      </div>
+    </div>
+    <div class="wizard-step" id="ws-result">
+      <p class="wizard-q">✨ Top 5 gợi ý phù hợp với bạn:</p>
+      <div class="wizard-result-grid" id="wizardResultGrid"></div>
+      <button style="margin-top:1rem; color:var(--text-dim); font-size:0.82rem;" onclick="resetWizard()">← Chọn lại</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ PRODUCTS ══ -->
+<div class="section-hd" id="products">
+  <h2 id="gridTitle">Tất cả sản phẩm</h2>
+  <span id="gridCount"></span>
+</div>
+<section class="product-grid" id="productGrid">
+  <div class="no-products"><i class="fas fa-box-open" style="font-size:2rem;margin-bottom:1rem;opacity:0.4"></i><br>Chưa có sản phẩm nào.<br>Thêm từ trang Admin!</div>
+</section>
+
+<!-- ══ TRUST ══ -->
+<section class="trust-section">
+  <h2>Tại sao khách hàng tin Chà Là?</h2>
+  <div class="trust-grid">
+    <div class="trust-box"><div class="tb-icon">🔬</div><h4>Kiểm định 24 bước</h4><p>Từng mạch điện, từng driver đều được test.</p></div>
+    <div class="trust-box"><div class="tb-icon">☀️</div><h4>Vệ sinh UV-C</h4><p>Tiệt trùng sạch bệnh, an toàn tuyệt đối.</p></div>
+    <div class="trust-box"><div class="tb-icon">🛡️</div><h4>Bảo hành 30 ngày</h4><p>Có vấn đề? Đổi trả không cần giải thích.</p></div>
+    <div class="trust-box"><div class="tb-icon">📦</div><h4>Giao hàng toàn quốc</h4><p>Đóng gói kỹ, ship tận nhà qua GHN/GHTK.</p></div>
+    <div class="trust-box"><div class="tb-icon">💬</div><h4>Tư vấn 24/7</h4><p>Nhắn Messenger bất kỳ lúc nào, rep nhanh.</p></div>
+    <div class="trust-box"><div class="tb-icon">💰</div><h4>Giá trị thật</h4><p>Tiết kiệm 50-80% so với mua mới chính hãng.</p></div>
+  </div>
+</section>
+
+<!-- ══ SERVICES ══ -->
+<section class="services-section" id="services">
+  <div class="services-head">
+    <span>Dịch vụ chăm tai nghe</span>
+    <h2>Sửa, bọc nhung, thay pin và làm mới tai nghe</h2>
+    <p>Ngoài bán tai nghe cũ tuyển chọn, Chà Là nhận kiểm tra và xử lý các lỗi thường gặp để tai nghe dùng lại ổn, sạch và đáng tiền hơn.</p>
+  </div>
+  <div class="services-grid">
+    <article class="service-card">
+      <i class="fas fa-screwdriver-wrench"></i>
+      <h3>Sửa tai nghe</h3>
+      <p>Xử lý lỗi mất tiếng một bên, rè, lỏng jack, chập chờn dây, mic yếu hoặc không nhận.</p>
+    </article>
+    <article class="service-card">
+      <i class="fas fa-couch"></i>
+      <h3>Bọc nhung, thay đệm</h3>
+      <p>Bọc nhung headband, thay earpad, xử lý phần da bong tróc để đeo êm và nhìn gọn hơn.</p>
+    </article>
+    <article class="service-card">
+      <i class="fas fa-battery-three-quarters"></i>
+      <h3>Thay pin Bluetooth</h3>
+      <p>Kiểm tra pin tai nghe không dây, thay pin phù hợp và test lại thời lượng sau khi thay.</p>
+    </article>
+    <article class="service-card">
+      <i class="fas fa-sun"></i>
+      <h3>Vệ sinh UV, khử mùi</h3>
+      <p>Vệ sinh cồn y tế, khử mùi, chiếu UV-C và sấy khô trước khi bàn giao.</p>
+    </article>
+    <article class="service-card">
+      <i class="fas fa-microphone-lines"></i>
+      <h3>Thay mic, dây, jack</h3>
+      <p>Kiểm tra micro, cổng kết nối, dây tín hiệu và đề xuất cách sửa vừa túi tiền.</p>
+    </article>
+    <article class="service-card">
+      <i class="fas fa-wave-square"></i>
+      <h3>Test driver, cân âm</h3>
+      <p>Nghe thử nhiều dải âm, kiểm tra lệch trái phải, driver rè và tình trạng tổng thể.</p>
+    </article>
+  </div>
+  <a class="services-cta" id="serviceMessenger" href="#" target="_blank">
+    <i class="fab fa-facebook-messenger"></i> Nhắn Chà Là để kiểm tra tai nghe
+  </a>
+</section>
+
+<!-- ══ FAQ ══ -->
+<section class="faq-section" id="faq">
+  <h2>Câu hỏi thường gặp</h2>
+  <div class="faq-grid" id="faqGrid">
+    <!-- Rendered by JS -->
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-brand">
+    <div class="logo">Chà<em>•</em>Là</div>
+    <p>Chà sạch tận tâm — nghe sướng trọn vẹn.<br>Mỗi chiếc tai nghe đều được Chà Là xử lý kỹ lưỡng trước khi đến tay bạn.</p>
+  </div>
+  <div class="footer-col">
+    <h5>Shop</h5>
+    <a href="#products">Sản phẩm</a>
+    <a href="#services">Dịch vụ sửa tai nghe</a>
+    <a href="#faq">FAQ</a>
+    <a href="#" onclick="openPolicy('warranty')">Chính sách bảo hành</a>
+    <a href="#" onclick="openPolicy('wash')">Quy trình vệ sinh</a>
+  </div>
+  <div class="footer-col">
+    <h5>Liên hệ</h5>
+    <a href="#" id="footerMessenger"><i class="fab fa-facebook-messenger"></i> Messenger</a>
+      <a href="https://www.facebook.com/chalachanai/" id="footerFacebook" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+    <a href="https://shopee.vn" target="_blank"><i class="fas fa-store"></i> Shopee</a>
+  </div>
+</footer>
+<div class="footer-bottom">© 2024 Chà Là. Được làm bằng ❤️ và nhiều giờ chà rửa.</div>
+
+<!-- ══ FLOATING BUTTONS ══ -->
+<div class="fab-wrap">
+  <button class="fab fab-top" id="fabTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  <a class="fab fab-msg" id="fabMsg" href="#" target="_blank" title="Nhắn Messenger">
+    <i class="fab fa-facebook-messenger"></i>
+  </a>
+</div>
+
+<!-- ══ MODALS ══ -->
+
+<!-- Policy Modal -->
+<div class="overlay" id="policyOverlay" onclick="closeOverlay('policyOverlay')">
+  <div class="modal policy-popup" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeOverlay('policyOverlay')">✕</button>
+    <h2 class="modal-title" id="policyTitle"></h2>
+    <div id="policyBody"></div>
+  </div>
+</div>
+
+<!-- Info Modal (Checklist) -->
+<div class="overlay" id="infoOverlay" onclick="closeOverlay('infoOverlay')">
+  <div class="modal" style="width:460px" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeOverlay('infoOverlay')">✕</button>
+    <h2 class="modal-title" id="infoTitle"></h2>
+    <div id="infoBody"></div>
+  </div>
+</div>
+
+<!-- Music Popup -->
+<div class="overlay" id="musicOverlay" onclick="closeOverlay('musicOverlay')">
+  <div class="modal music-popup" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeOverlay('musicOverlay')">✕</button>
+    <h2 class="modal-title" id="musicTitle"></h2>
+    <iframe class="yt-frame" id="musicIframe" allow="autoplay" allowfullscreen></iframe>
+    <img class="fr-img" id="frImg" src="" alt="Frequency Response">
+    <p class="sound-desc" id="soundDesc"></p>
+  </div>
+</div>
+
+<!-- Zoom Modal -->
+<div class="overlay" id="zoomOverlay" onclick="closeOverlay('zoomOverlay')">
+  <div class="modal zoom-popup" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeOverlay('zoomOverlay')">✕</button>
+    <div class="zoom-container" id="zoomContainer">
+      <img src="" id="zoomImg" alt="Soi chi tiết">
+      <div class="magnifier-lens" id="magnifierLens"></div>
+    </div>
+    <p class="zoom-hint">Di chuột vào ảnh để soi chi tiết x2</p>
+  </div>
+</div>
+
+<!-- Quick View -->
+<div class="overlay quick-overlay" id="quickOverlay" onclick="closeOverlay('quickOverlay')">
+  <div class="modal quick-modal" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeOverlay('quickOverlay')">✕</button>
+    <div class="qv-grid">
+      <div class="qv-media">
+        <img src="" class="qv-main-img" id="qvMainImg" onclick="openQuickZoom()" title="Bấm để soi ảnh x2">
+        <video class="qv-main-video" id="qvMainVideo" controls playsinline></video>
+        <button class="qv-nav qv-prev" type="button" onclick="quickStep(-1)" aria-label="Ảnh trước"><i class="fas fa-chevron-left"></i></button>
+        <button class="qv-nav qv-next" type="button" onclick="quickStep(1)" aria-label="Ảnh sau"><i class="fas fa-chevron-right"></i></button>
+        <div class="qv-media-tools">
+          <button type="button" id="qvZoomBtn" onclick="openQuickZoom()"><i class="fas fa-search-plus"></i> Soi ảnh x2</button>
+          <button type="button" id="qvVideoBtn" onclick="openQuickVideo()"><i class="fas fa-play"></i> Xem video</button>
+        </div>
+        <div class="qv-thumbs" id="qvThumbs"></div>
+      </div>
+      <div class="qv-info">
+        <div class="qv-badges" id="qvBadges"></div>
+        <h3 class="qv-name" id="qvName"></h3>
+        <div class="qv-price-row">
+          <div class="qv-price-new" id="qvPriceNew"></div>
+          <div><span class="qv-price-old" id="qvPriceOld"></span> <span class="qv-save" id="qvSave"></span></div>
+        </div>
+        <p class="qv-desc" id="qvDesc"></p>
+        <div class="qv-reviews" id="qvReviews"></div>
+        <div class="qv-btns">
+          <div class="qv-tool-row">
+            <button type="button" class="btn-qv-secondary" onclick="openQuickInfo()"><i class="fas fa-clipboard-check"></i> Hồ sơ</button>
+            <button type="button" class="btn-qv-secondary" onclick="openQuickMusic()"><i class="fas fa-music"></i> Nghe thử</button>
+          </div>
+          <a class="btn-qv-messenger" id="qvMsg" href="#" target="_blank">
+            <i class="fab fa-facebook-messenger"></i> Nhắn Messenger để đặt mua
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<script src="backend-config.js"></script>
+<script src="cloud.js"></script>
+<script src="script.js?v=20260503-facebook"></script>
+</body>
+</html>
