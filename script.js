@@ -85,6 +85,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   setupMagnifier();
   setupScrollFab();
   applyGlobalSettings();
+  updateAdminLinkVisibility();
 });
 
 function initData() {
@@ -154,7 +155,7 @@ function getFaqs()     { return PUBLIC_DATA?.faqs || JSON.parse(localStorage.get
 
 function applyGlobalSettings() {
   const s = getSettings();
-  const link = s.messengerLink || '#';
+  const link = normalizeContactLink(s.messengerLink || s.facebook || 'https://www.facebook.com/chalachanai/');
   document.getElementById('fabMsg').href = link;
   const fm = document.getElementById('footerMessenger');
   if (fm) fm.href = link;
@@ -162,6 +163,21 @@ function applyGlobalSettings() {
   if (ff) ff.href = s.facebook || 'https://www.facebook.com/chalachanai/';
   const serviceMessenger = document.getElementById('serviceMessenger');
   if (serviceMessenger) serviceMessenger.href = link;
+}
+
+function normalizeContactLink(link) {
+  const value = String(link || '').trim();
+  if (!value || value === 'https://m.me/' || value === 'http://m.me/' || value === 'm.me/') {
+    return 'https://www.facebook.com/chalachanai/';
+  }
+  return value;
+}
+
+function updateAdminLinkVisibility() {
+  const link = document.getElementById('adminNavLink');
+  if (!link) return;
+  const isPublicGithub = window.location.hostname.endsWith('github.io');
+  link.style.display = isPublicGithub ? 'none' : '';
 }
 
 const SEGMENTS = {

@@ -1,651 +1,686 @@
-{
-  "schemaVersion": 2,
-  "exportedAt": "2026-05-03T10:58:38.213Z",
-  "products": [
-    {
-      "id": 1000001,
-      "name": "HyperX Cloud Stinger Core",
-      "brand": "HyperX",
-      "segment": "gaming",
-      "condition": "Like New",
-      "price": 650000,
-      "originalPrice": 1290000,
-      "stock": 1,
-      "soundTag": "V-Shape",
-      "latency": "wired",
-      "isWireless": false,
-      "batteryHealth": null,
-      "images": [
-        "https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=600&q=80",
-        "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=300&q=80",
-        "https://images.unsplash.com/photo-1524678606370-a37ad95c7631?w=300&q=80"
-      ],
-      "video": "",
-      "youtubePlaylist": "",
-      "frGraph": "",
-      "shopeeLink": "#",
-      "description": "Driver 40mm, mic có thể gập, đệm da mềm. Test âm thanh OK, dây zin. Phù hợp FPS và game bắn súng.",
-      "reviews": [
-        {
-          "name": "Minh Khoa",
-          "stars": 5,
-          "date": "2024-11-10",
-          "text": "Nghe rõ tiếng chân cực, chiến Valorant sướng lắm!"
-        }
-      ],
-      "views": 47,
-      "createdAt": 1777369606835,
-      "isSold": false
-    },
-    {
-      "id": 1000002,
-      "name": "Razer Kraken X Lite",
-      "brand": "Razer",
-      "segment": "gaming",
-      "condition": "Hơi xước",
-      "price": 420000,
-      "originalPrice": 990000,
-      "stock": 1,
-      "soundTag": "Bass-Heavy",
-      "latency": "wired",
-      "isWireless": false,
-      "batteryHealth": null,
-      "images": [
-        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-        "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=300&q=80"
-      ],
-      "video": "",
-      "youtubePlaylist": "",
-      "frGraph": "",
-      "shopeeLink": "#",
-      "description": "Nhẹ 250g, surround 7.1 ảo. Có vài vết xước nhỏ headband, không ảnh hưởng chức năng. Driver OK.",
-      "reviews": [
-        {
-          "name": "Tuấn Anh",
-          "stars": 4,
-          "date": "2024-10-28",
-          "text": "Bass rất đã, chơi game hành động cực hợp."
-        }
-      ],
-      "views": 31,
-      "createdAt": 1777283206835,
-      "isSold": false
-    },
-    {
-      "id": 1777456709089,
-      "name": "Logitech usb H390 ",
-      "segment": "study",
-      "brand": "Logitech",
-      "condition": "Mới",
-      "price": 300000,
-      "originalPrice": 730000,
-      "stock": 1,
-      "soundTag": "",
-      "latency": "wired",
-      "isWireless": false,
-      "batteryHealth": null,
-      "images": [
-        "/uploads/1777457530826-fb94caa0-product-1777456661063.jpg",
-        "/uploads/1777457540624-fa647041-product-1777456670858.jpg",
-        "/uploads/1777457555683-202c64be-product-1777456685409.jpg",
-        "/uploads/1777457566636-4fdc7517-product-1777456696890.jpg"
-      ],
-      "video": "",
-      "youtubePlaylist": "",
-      "shopeeLink": "",
-      "messengerLink": "",
-      "description": "",
-      "reviews": [],
-      "views": 0,
-      "createdAt": 1777456709089,
-      "isSold": false
-    },
-    {
-      "id": 1777457046429,
-      "name": "HyperX Cloud II ",
-      "segment": "gaming",
-      "brand": "HyperX",
-      "condition": "Like New",
-      "price": 1000000,
-      "originalPrice": 3100000,
-      "stock": 3,
-      "soundTag": "",
-      "latency": "wired",
-      "isWireless": false,
-      "batteryHealth": null,
-      "images": [
-        "/uploads/1777457720145-bd68acb2-product-1777456849855.jpg",
-        "/uploads/1777457733631-f418fc98-product-1777456863864.jpg",
-        "/uploads/1777457746374-cd5be770-product-1777456876612.jpg",
-        "/uploads/1777457776495-9bcae3c5-product-1777456906694.jpg"
-      ],
-      "video": "",
-      "youtubePlaylist": "",
-      "shopeeLink": "",
-      "messengerLink": "",
-      "description": "‼️ Vì sao nhiều bạn trẻ chọn NIỀNG RĂNG tại TẤM DENTIST?\n➖ Chi phí niềng trọn gói chỉ từ 22Tr/2 hàm – dễ tiếp cận, phù hợp sinh viên & người đi làm\n➖ Hỗ trợ trả góp 0% – Áp dụng nhiều ưu đãi, giảm áp lực tài chính khi bắt đầu chỉnh nha\n➖ Bác sĩ chỉnh nha chuyên môn cao, theo sát 1:1 suốt quá trình\n➖ Phác đồ cá nhân hóa, theo dõi tiến trình rõ ràng từng giai đoạn\n➖ Trang thiết bị hiện đại, quy trình an toàn – hiệu quả – minh bạch\n💌 Nhắn tin để Nhận tư vấn MIỄN PHÍ & phác đồ dành riêng cho bạn!",
-      "reviews": [],
-      "views": 0,
-      "createdAt": 1777457046429,
-      "isSold": false,
-      "inspection": "thật nó màu hồng",
-      "inspectionDetails": {
-        "shell": "like new",
-        "pads": "mới",
-        "driver": "con mèo",
-        "mic": "xám",
-        "connect": "kem",
-        "battery": "đen",
-        "clean": "hihi"
-      }
-    },
-    {
-      "id": 1777457495099,
-      "name": "DIY SoundMax AH-318 ",
-      "segment": "gaming",
-      "brand": "SoundMax",
-      "condition": "Mới",
-      "price": 500000,
-      "originalPrice": 480000,
-      "stock": 1,
-      "soundTag": "",
-      "latency": "wired",
-      "isWireless": false,
-      "batteryHealth": null,
-      "images": [
-        "/uploads/1777458179285-5b83a357-product-1777457308840.jpg",
-        "/uploads/1777458201468-4b96d30e-product-1777457331696.jpg",
-        "/uploads/1777458215794-8676c74a-product-1777457346025.jpg",
-        "/uploads/1777458478760-4f36b06d-product-1777457609001.jpg"
-      ],
-      "video": "/uploads/1777458404897-13dce880-7775564158085.mp4",
-      "youtubePlaylist": "",
-      "shopeeLink": "",
-      "messengerLink": "",
-      "description": "DIY",
-      "reviews": [],
-      "views": 0,
-      "createdAt": 1777457495099,
-      "isSold": false
-    },
-    {
-      "id": 1777458161974,
-      "name": "DIY ONKUKA K9 ",
-      "segment": "gaming",
-      "brand": "",
-      "condition": "Mới",
-      "price": 400000,
-      "originalPrice": 490000,
-      "stock": 1,
-      "soundTag": "",
-      "latency": "wired",
-      "isWireless": false,
-      "batteryHealth": null,
-      "images": [
-        "/uploads/1777458742531-71a9408c-product-1777457872191.jpg",
-        "/uploads/1777458761271-1d588d26-product-1777457891509.jpg",
-        "/uploads/1777458776996-cf1bffd7-product-1777457907236.jpg",
-        "/uploads/1777458819729-b116db69-product-1777457949392.jpg"
-      ],
-      "video": "/uploads/1777458747618-f650f681-7775596900331.mp4",
-      "youtubePlaylist": "",
-      "shopeeLink": "",
-      "messengerLink": "",
-      "description": "DIY",
-      "reviews": [],
-      "views": 0,
-      "createdAt": 1777458161974,
-      "isSold": false
-    },
-    {
-      "id": 1777458521430,
-      "name": "Miniso ",
-      "segment": "study",
-      "brand": "",
-      "condition": "Mới",
-      "price": 200000,
-      "originalPrice": 400000,
-      "stock": 1,
-      "soundTag": "",
-      "latency": "wired",
-      "isWireless": false,
-      "batteryHealth": null,
-      "images": [
-        "/uploads/1777459254166-e4e0f21d-product-1777458383834.jpg",
-        "/uploads/1777459264359-9c95f588-product-1777458394602.jpg",
-        "/uploads/1777459275227-5b68c53d-product-1777458405461.jpg"
-      ],
-      "video": "/uploads/1777459282196-0b07aa07-7775623123233.mp4",
-      "youtubePlaylist": "",
-      "shopeeLink": "",
-      "messengerLink": "",
-      "description": "",
-      "reviews": [],
-      "views": 0,
-      "createdAt": 1777458521430,
-      "isSold": false
-    },
-    {
-      "id": 1777458720732,
-      "name": "Dareu EH925 ",
-      "segment": "gaming",
-      "brand": "Dareu",
-      "condition": "Mới",
-      "price": 350000,
-      "originalPrice": 800000,
-      "stock": 1,
-      "soundTag": "",
-      "latency": "wired",
-      "isWireless": false,
-      "batteryHealth": null,
-      "images": [
-        "/uploads/1777459466792-1417730e-product-1777458596460.jpg",
-        "/uploads/1777459479071-7e495b61-product-1777458609312.jpg",
-        "/uploads/1777459492256-e1dcea7b-product-1777458622497.jpg"
-      ],
-      "video": "/uploads/1777459497345-c5c47965-7775623700824.mp4",
-      "youtubePlaylist": "",
-      "shopeeLink": "",
-      "messengerLink": "",
-      "description": "",
-      "reviews": [],
-      "views": 0,
-      "createdAt": 1777458720732,
-      "isSold": false
-    },
-    {
-      "id": 1777459033839,
-      "name": "Tai nghe bluetooth Poermax DR58",
-      "segment": "music",
-      "brand": "",
-      "condition": "Mới",
-      "price": 150000,
-      "originalPrice": 290000,
-      "stock": 1,
-      "soundTag": "",
-      "latency": "wireless-fast",
-      "isWireless": true,
-      "batteryHealth": null,
-      "images": [
-        "/uploads/1777459741731-540afedf-product-1777458871204.jpg",
-        "/uploads/1777459753209-031b27d4-product-1777458883413.jpg",
-        "/uploads/1777459769380-31afde02-product-1777458899589.jpg"
-      ],
-      "video": "/uploads/1777459773901-783b7605-7775624149848.mp4",
-      "youtubePlaylist": "",
-      "shopeeLink": "",
-      "messengerLink": "",
-      "description": "",
-      "reviews": [],
-      "views": 0,
-      "createdAt": 1777459033839,
-      "isSold": false
-    },
-    {
-      "id": 1777459300633,
-      "name": "Sony MDR-XP450",
-      "segment": "music",
-      "brand": "Sony",
-      "condition": "Trầy nhẹ",
-      "price": 350000,
-      "originalPrice": 1000000,
-      "stock": 1,
-      "soundTag": "",
-      "latency": "wired",
-      "isWireless": false,
-      "batteryHealth": null,
-      "images": [
-        "/uploads/1777460060750-35efa9a4-product-1777459190190.jpg",
-        "/uploads/1777460076633-afc163cb-product-1777459206832.jpg",
-        "/uploads/1777460089506-201553ca-product-1777459219691.jpg"
-      ],
-      "video": "/uploads/1777460065066-d3cbaecb-7775654823859.mp4",
-      "youtubePlaylist": "",
-      "shopeeLink": "",
-      "messengerLink": "",
-      "description": "",
-      "reviews": [],
-      "views": 0,
-      "createdAt": 1777459300633,
-      "isSold": false
-    },
-    {
-      "id": 1777459561137,
-      "name": "Havit HV-H2232D ",
-      "segment": "gaming",
-      "brand": "",
-      "condition": "Trầy nhẹ",
-      "price": 140000,
-      "originalPrice": 340000,
-      "stock": 1,
-      "soundTag": "",
-      "latency": "wired",
-      "isWireless": false,
-      "batteryHealth": null,
-      "images": [
-        "/uploads/1777460274067-438dbb06-product-1777459404262.jpg",
-        "/uploads/1777460284478-b667d839-product-1777459414689.jpg",
-        "/uploads/1777460298239-9f311df0-product-1777459428124.jpg"
-      ],
-      "video": "/uploads/1777460260948-34dd48e1-7775655246171.mp4",
-      "youtubePlaylist": "",
-      "shopeeLink": "",
-      "messengerLink": "",
-      "description": "",
-      "reviews": [],
-      "views": 0,
-      "createdAt": 1777459561137,
-      "isSold": false
-    },
-    {
-      "id": 1777459840805,
-      "name": "E-DRA EH410 PRO",
-      "segment": "gaming",
-      "brand": "E-dra",
-      "condition": "Trầy nhẹ",
-      "price": 99000,
-      "originalPrice": 330000,
-      "stock": 1,
-      "soundTag": "",
-      "latency": "wired",
-      "isWireless": false,
-      "batteryHealth": null,
-      "images": [
-        "/uploads/1777460588229-dfd5d63a-product-1777459718202.jpg",
-        "/uploads/1777460600356-351dcdf9-product-1777459730550.jpg",
-        "/uploads/1777460615443-8f44c1ac-product-1777459745648.jpg"
-      ],
-      "video": "/uploads/1777460567383-cd7ea49b-7775656206641.mp4",
-      "youtubePlaylist": "",
-      "shopeeLink": "",
-      "messengerLink": "",
-      "description": "",
-      "reviews": [],
-      "views": 0,
-      "createdAt": 1777459840805,
-      "isSold": false
-    },
-    {
-      "id": 1777460257762,
-      "name": "Panasonic rp-hbf100 ",
-      "segment": "music",
-      "brand": "",
-      "condition": "Mới",
-      "price": 888888,
-      "originalPrice": 999999,
-      "stock": 1,
-      "soundTag": "",
-      "latency": "wired",
-      "isWireless": false,
-      "batteryHealth": null,
-      "images": [
-        "/uploads/1777461113962-30560569-product-1777460244155.jpg",
-        "/uploads/1777461124635-6645979f-product-1777460254828.jpg"
-      ],
-      "video": "/uploads/1777461101150-9397b4ff-7775718626021.mp4",
-      "youtubePlaylist": "",
-      "shopeeLink": "",
-      "messengerLink": "",
-      "description": "",
-      "reviews": [],
-      "views": 0,
-      "createdAt": 1777460257762,
-      "isSold": false
-    },
-    {
-      "id": 1777460460296,
-      "name": "Tai nghe màu đen mờ hiệu",
-      "segment": "study",
-      "brand": "",
-      "condition": "Trầy nhẹ",
-      "price": 88888,
-      "originalPrice": 999999,
-      "stock": 1,
-      "soundTag": "",
-      "latency": "wired",
-      "isWireless": false,
-      "batteryHealth": null,
-      "images": [
-        "/uploads/1777461191405-d294a5f4-product-1777460321588.jpg",
-        "/uploads/1777461200209-df6a9de0-product-1777460330422.jpg",
-        "/uploads/1777461211971-afeb51ca-product-1777460342161.jpg"
-      ],
-      "video": "/uploads/1777461182096-3894dad8-7775719013706.mp4",
-      "youtubePlaylist": "",
-      "shopeeLink": "",
-      "messengerLink": "",
-      "description": "",
-      "reviews": [],
-      "views": 0,
-      "createdAt": 1777460460296,
-      "isSold": false
-    },
-    {
-      "id": 1777460661861,
-      "name": "Wangming 9600 7.1 ",
-      "segment": "gaming",
-      "brand": "",
-      "condition": "Trầy nhẹ",
-      "price": 140000,
-      "originalPrice": 350000,
-      "stock": 1,
-      "soundTag": "",
-      "latency": "wired",
-      "isWireless": false,
-      "batteryHealth": null,
-      "images": [
-        "/uploads/1777461420211-d15dded0-product-1777460550404.jpg",
-        "/uploads/1777461436389-0f4d22c7-product-1777460566408.jpg",
-        "/uploads/1777461449113-6e66fdcb-product-1777460579302.jpg"
-      ],
-      "video": "/uploads/1777461585543-57ee4dde-7775718199417.mp4",
-      "youtubePlaylist": "",
-      "shopeeLink": "",
-      "messengerLink": "",
-      "description": "",
-      "reviews": [],
-      "views": 0,
-      "createdAt": 1777460661861,
-      "isSold": false
-    },
-    {
-      "id": 1777803554613,
-      "name": "HAVIT H2012D Đèn RGB 36 chế độ",
-      "segment": "gaming",
-      "brand": "Havit",
-      "condition": "Mới",
-      "price": 200000,
-      "originalPrice": 520000,
-      "stock": 1,
-      "soundTag": "",
-      "latency": "wired",
-      "isWireless": false,
-      "batteryHealth": null,
-      "images": [
-        "/uploads/1777804386807-b4361c6f-product-1777803505034.jpg",
-        "/uploads/1777804403643-604c0b37-product-1777803522507.jpg",
-        "/uploads/1777804422624-d603b5fc-product-1777803541475.jpg"
-      ],
-      "video": "",
-      "youtubePlaylist": "",
-      "shopeeLink": "",
-      "messengerLink": "",
-      "description": "",
-      "inspection": "",
-      "inspectionDetails": {
-        "shell": "",
-        "pads": "",
-        "driver": "",
-        "mic": "",
-        "connect": "",
-        "battery": "",
-        "clean": ""
-      },
-      "reviews": [],
-      "views": 0,
-      "createdAt": 1777803554613,
-      "isSold": false
-    },
-    {
-      "id": 1777804177760,
-      "name": "Attack Shark L80 Pro Âm thanh bass 3D",
-      "segment": "gaming",
-      "brand": "",
-      "condition": "Like New",
-      "price": 199000,
-      "originalPrice": 700000,
-      "stock": 1,
-      "soundTag": "",
-      "latency": "wired",
-      "isWireless": false,
-      "batteryHealth": null,
-      "images": [
-        "/uploads/1777804563902-f9ebdfed-product-1777803682193.jpg",
-        "/uploads/1777804585567-f271b4cb-product-1777803704430.jpg",
-        "/uploads/1777804598170-a1e837b7-product-1777803717047.jpg",
-        "/uploads/1777804690364-ade76efa-product-1777803808565.jpg"
-      ],
-      "video": "",
-      "youtubePlaylist": "",
-      "shopeeLink": "",
-      "messengerLink": "",
-      "description": "",
-      "inspection": "",
-      "inspectionDetails": {
-        "shell": "",
-        "pads": "",
-        "driver": "",
-        "mic": "",
-        "connect": "",
-        "battery": "",
-        "clean": ""
-      },
-      "reviews": [],
-      "views": 0,
-      "createdAt": 1777804177760,
-      "isSold": false
-    },
-    {
-      "id": 1777804484256,
-      "name": "Tai nghe chụp tai Gaming MozardX DS902 7.1 ",
-      "segment": "gaming",
-      "brand": "",
-      "condition": "Mới",
-      "price": 175000,
-      "originalPrice": 630000,
-      "stock": 1,
-      "soundTag": "",
-      "latency": "wired",
-      "isWireless": false,
-      "batteryHealth": null,
-      "images": [
-        "/uploads/1777805097256-bc8a4684-product-1777804216134.jpg",
-        "/uploads/1777805125568-7e968632-product-1777804243801.jpg",
-        "/uploads/1777805144151-2479cfa3-product-1777804263031.jpg"
-      ],
-      "video": "",
-      "youtubePlaylist": "",
-      "shopeeLink": "",
-      "messengerLink": "",
-      "description": "",
-      "inspection": "",
-      "inspectionDetails": {
-        "shell": "",
-        "pads": "",
-        "driver": "",
-        "mic": "",
-        "connect": "",
-        "battery": "",
-        "clean": ""
-      },
-      "reviews": [],
-      "views": 0,
-      "createdAt": 1777804484256,
-      "isSold": false
-    },
-    {
-      "id": 1777805032922,
-      "name": "DIY WangMing WMb 9800l có đèn led",
-      "segment": "gaming",
-      "brand": "",
-      "condition": "Mới",
-      "price": 350000,
-      "originalPrice": 290000,
-      "stock": 1,
-      "soundTag": "",
-      "latency": "wired",
-      "isWireless": false,
-      "batteryHealth": null,
-      "images": [
-        "/uploads/1777805685387-ed74643c-product-1777804803567.jpg",
-        "/uploads/1777805702373-dde81849-product-1777804821228.jpg",
-        "/uploads/1777805715487-ff231e39-product-1777804834338.jpg"
-      ],
-      "video": "",
-      "youtubePlaylist": "",
-      "shopeeLink": "",
-      "messengerLink": "",
-      "description": "",
-      "inspection": "",
-      "inspectionDetails": {
-        "shell": "",
-        "pads": "",
-        "driver": "",
-        "mic": "",
-        "connect": "",
-        "battery": "",
-        "clean": ""
-      },
-      "reviews": [],
-      "views": 0,
-      "createdAt": 1777805032922,
-      "isSold": false
-    }
-  ],
-  "faqs": [
-    {
-      "q": "Headphone vs IEM — cái nào phù hợp cho tôi?",
-      "a": "Headphone (chụp tai) cho âm thanh rộng hơn, cảm giác \"soundstage\" tốt cho game và phim. IEM (nhét tai) nhỏ gọn hơn, cô lập âm thanh tốt hơn, phù hợp di chuyển. Với gaming, headphone thường được ưu tiên vì định vị âm thanh tốt hơn."
-    },
-    {
-      "q": "Có dây hay Wireless — gaming nên chọn gì?",
-      "a": "Có dây: Độ trễ 0ms, không lo pin, giá rẻ hơn. Wireless hiện đại (<20ms): Thoải mái, không vương dây. Với FPS competitive, có dây vẫn là lựa chọn an toàn nhất. Casual gaming thì wireless ổn hoàn toàn."
-    },
-    {
-      "q": "Nên chọn chất âm V-Shape hay Neutral?",
-      "a": "V-Shape: Nghe \"wow\" ngay lập tức, game hành động cực đã, nhưng không trung thực. Neutral: Nghe quen mới sướng, phù hợp cho người muốn nghe nhạc đúng với ý định của nhạc sĩ. Đa số game thủ thích V-Shape hơn."
-    },
-    {
-      "q": "Hàng cũ có an toàn, hợp vệ sinh không?",
-      "a": "Tất cả sản phẩm tại Chà Là đều qua 3 bước: Vệ sinh bằng cồn y tế, chiếu đèn UV-C diệt khuẩn, và sấy khô kỹ. Đệm tai mòn sẽ được thay mới trước khi bán. Yên tâm hoàn toàn."
-    },
-    {
-      "q": "Nếu tai nghe bị lỗi sau khi mua, xử lý thế nào?",
-      "a": "Chà Là bảo hành 30 ngày lỗi kỹ thuật. Trong thời gian này, nếu sản phẩm có bất kỳ vấn đề nào về âm thanh hay kết nối, bạn được đổi sản phẩm tương đương hoặc hoàn tiền. Chỉ cần nhắn Messenger."
-    },
-    {
-      "q": "Có ship COD không? Đổi trả thế nào?",
-      "a": "Có hỗ trợ COD toàn quốc. Đổi trả trong 7 ngày nếu sản phẩm không đúng mô tả. Phí ship đổi trả Chà Là chịu nếu lỗi từ shop. Thanh toán: COD, chuyển khoản, ví điện tử."
-    },
-    {
-      "q": "Pin tai nghe không dây còn được bao lâu?",
-      "a": "Mỗi sản phẩm có thông số pin được đo thực tế và hiển thị rõ ràng trên trang. Chà Là không bán tai nghe có pin dưới 70%. Tham khảo card sản phẩm để biết % pin cụ thể."
-    },
-    {
-      "q": "Tại sao giá rẻ hơn mua mới rất nhiều?",
-      "a": "Đơn giản vì đây là hàng đã qua sử dụng. Chất lượng âm thanh và chức năng hoàn toàn bình thường, nhưng giá chỉ bằng 20-50% hàng mới. Lý tưởng cho ai muốn trải nghiệm tai nghe cao cấp mà không bỏ nhiều tiền."
-    }
-  ],
-  "settings": {
-    "messengerLink": "https://m.me/",
-    "shopName": "Chà Là",
-    "soundTagPlaylists": {
-      "V-Shape": "https://www.youtube.com/embed/5qap5aO4i9A",
-      "Warm": "https://www.youtube.com/embed/jfKfPfyJRdk",
-      "Bright": "https://www.youtube.com/embed/4To8_MfFSug",
-      "Neutral": "https://www.youtube.com/embed/aMyFd6EaLFw",
-      "Bass-Heavy": "https://www.youtube.com/embed/tNv7aUDAcQk",
-      "Mid-Forward": "https://www.youtube.com/embed/Dx5qFachd3A"
-    }
-  }
+﻿{
+    "schemaVersion":  2,
+    "exportedAt":  "2026-05-03T10:58:38.213Z",
+    "products":  [
+                     {
+                         "id":  1000001,
+                         "name":  "HyperX Cloud Stinger Core",
+                         "brand":  "HyperX",
+                         "segment":  "gaming",
+                         "condition":  "Like New",
+                         "price":  650000,
+                         "originalPrice":  1290000,
+                         "stock":  1,
+                         "soundTag":  "V-Shape",
+                         "latency":  "wired",
+                         "isWireless":  false,
+                         "batteryHealth":  null,
+                         "images":  [
+                                        "https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=600\u0026q=80",
+                                        "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=300\u0026q=80",
+                                        "https://images.unsplash.com/photo-1524678606370-a37ad95c7631?w=300\u0026q=80"
+                                    ],
+                         "video":  "",
+                         "youtubePlaylist":  "",
+                         "frGraph":  "",
+                         "shopeeLink":  "#",
+                         "description":  "Driver 40mm, mic cÃ³ thá»ƒ gáº­p, Ä‘á»‡m da má»m. Test Ã¢m thanh OK, dÃ¢y zin. PhÃ¹ há»£p FPS vÃ  game báº¯n sÃºng.",
+                         "reviews":  [
+                                         {
+                                             "name":  "Minh Khoa",
+                                             "stars":  5,
+                                             "date":  "2024-11-10",
+                                             "text":  "Nghe rÃµ tiáº¿ng chÃ¢n cá»±c, chiáº¿n Valorant sÆ°á»›ng láº¯m!"
+                                         }
+                                     ],
+                         "views":  47,
+                         "createdAt":  1777369606835,
+                         "isSold":  false
+                     },
+                     {
+                         "id":  1000002,
+                         "name":  "Razer Kraken X Lite",
+                         "brand":  "Razer",
+                         "segment":  "gaming",
+                         "condition":  "HÆ¡i xÆ°á»›c",
+                         "price":  420000,
+                         "originalPrice":  990000,
+                         "stock":  1,
+                         "soundTag":  "Bass-Heavy",
+                         "latency":  "wired",
+                         "isWireless":  false,
+                         "batteryHealth":  null,
+                         "images":  [
+                                        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600\u0026q=80",
+                                        "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=300\u0026q=80"
+                                    ],
+                         "video":  "",
+                         "youtubePlaylist":  "",
+                         "frGraph":  "",
+                         "shopeeLink":  "#",
+                         "description":  "Nháº¹ 250g, surround 7.1 áº£o. CÃ³ vÃ i váº¿t xÆ°á»›c nhá» headband, khÃ´ng áº£nh hÆ°á»Ÿng chá»©c nÄƒng. Driver OK.",
+                         "reviews":  [
+                                         {
+                                             "name":  "Tuáº¥n Anh",
+                                             "stars":  4,
+                                             "date":  "2024-10-28",
+                                             "text":  "Bass ráº¥t Ä‘Ã£, chÆ¡i game hÃ nh Ä‘á»™ng cá»±c há»£p."
+                                         }
+                                     ],
+                         "views":  31,
+                         "createdAt":  1777283206835,
+                         "isSold":  false
+                     },
+                     {
+                         "id":  1777456709089,
+                         "name":  "Logitech usb H390 ",
+                         "segment":  "study",
+                         "brand":  "Logitech",
+                         "condition":  "Má»›i",
+                         "price":  300000,
+                         "originalPrice":  730000,
+                         "stock":  1,
+                         "soundTag":  "",
+                         "latency":  "wired",
+                         "isWireless":  false,
+                         "batteryHealth":  null,
+                         "images":  [
+                                        "/uploads/1777457530826-fb94caa0-product-1777456661063.jpg",
+                                        "/uploads/1777457540624-fa647041-product-1777456670858.jpg",
+                                        "/uploads/1777457555683-202c64be-product-1777456685409.jpg",
+                                        "/uploads/1777457566636-4fdc7517-product-1777456696890.jpg"
+                                    ],
+                         "video":  "",
+                         "youtubePlaylist":  "",
+                         "shopeeLink":  "",
+                         "messengerLink":  "",
+                         "description":  "",
+                         "reviews":  [
+
+                                     ],
+                         "views":  0,
+                         "createdAt":  1777456709089,
+                         "isSold":  false
+                     },
+                     {
+                         "id":  1777457046429,
+                         "name":  "HyperX Cloud II ",
+                         "segment":  "gaming",
+                         "brand":  "HyperX",
+                         "condition":  "Like New",
+                         "price":  1000000,
+                         "originalPrice":  3100000,
+                         "stock":  3,
+                         "soundTag":  "",
+                         "latency":  "wired",
+                         "isWireless":  false,
+                         "batteryHealth":  null,
+                         "images":  [
+                                        "/uploads/1777457720145-bd68acb2-product-1777456849855.jpg",
+                                        "/uploads/1777457733631-f418fc98-product-1777456863864.jpg",
+                                        "/uploads/1777457746374-cd5be770-product-1777456876612.jpg",
+                                        "/uploads/1777457776495-9bcae3c5-product-1777456906694.jpg"
+                                    ],
+                         "video":  "",
+                         "youtubePlaylist":  "",
+                         "shopeeLink":  "",
+                         "messengerLink":  "",
+                         "description":  "â€¼ï¸ VÃ¬ sao nhiá»u báº¡n tráº» chá»n NIá»€NG RÄ‚NG táº¡i Táº¤M DENTIST?\nâž– Chi phÃ­ niá»ng trá»n gÃ³i chá»‰ tá»« 22Tr/2 hÃ m â€“ dá»… tiáº¿p cáº­n, phÃ¹ há»£p sinh viÃªn \u0026 ngÆ°á»i Ä‘i lÃ m\nâž– Há»— trá»£ tráº£ gÃ³p 0% â€“ Ãp dá»¥ng nhiá»u Æ°u Ä‘Ã£i, giáº£m Ã¡p lá»±c tÃ i chÃ­nh khi báº¯t Ä‘áº§u chá»‰nh nha\nâž– BÃ¡c sÄ© chá»‰nh nha chuyÃªn mÃ´n cao, theo sÃ¡t 1:1 suá»‘t quÃ¡ trÃ¬nh\nâž– PhÃ¡c Ä‘á»“ cÃ¡ nhÃ¢n hÃ³a, theo dÃµi tiáº¿n trÃ¬nh rÃµ rÃ ng tá»«ng giai Ä‘oáº¡n\nâž– Trang thiáº¿t bá»‹ hiá»‡n Ä‘áº¡i, quy trÃ¬nh an toÃ n â€“ hiá»‡u quáº£ â€“ minh báº¡ch\nðŸ’Œ Nháº¯n tin Ä‘á»ƒ Nháº­n tÆ° váº¥n MIá»„N PHÃ \u0026 phÃ¡c Ä‘á»“ dÃ nh riÃªng cho báº¡n!",
+                         "reviews":  [
+
+                                     ],
+                         "views":  0,
+                         "createdAt":  1777457046429,
+                         "isSold":  false,
+                         "inspection":  "tháº­t nÃ³ mÃ u há»“ng",
+                         "inspectionDetails":  {
+                                                   "shell":  "like new",
+                                                   "pads":  "má»›i",
+                                                   "driver":  "con mÃ¨o",
+                                                   "mic":  "xÃ¡m",
+                                                   "connect":  "kem",
+                                                   "battery":  "Ä‘en",
+                                                   "clean":  "hihi"
+                                               }
+                     },
+                     {
+                         "id":  1777457495099,
+                         "name":  "DIY SoundMax AH-318 ",
+                         "segment":  "gaming",
+                         "brand":  "SoundMax",
+                         "condition":  "Má»›i",
+                         "price":  500000,
+                         "originalPrice":  480000,
+                         "stock":  1,
+                         "soundTag":  "",
+                         "latency":  "wired",
+                         "isWireless":  false,
+                         "batteryHealth":  null,
+                         "images":  [
+                                        "/uploads/1777458179285-5b83a357-product-1777457308840.jpg",
+                                        "/uploads/1777458201468-4b96d30e-product-1777457331696.jpg",
+                                        "/uploads/1777458215794-8676c74a-product-1777457346025.jpg",
+                                        "/uploads/1777458478760-4f36b06d-product-1777457609001.jpg"
+                                    ],
+                         "video":  "/uploads/1777458404897-13dce880-7775564158085.mp4",
+                         "youtubePlaylist":  "",
+                         "shopeeLink":  "",
+                         "messengerLink":  "",
+                         "description":  "DIY",
+                         "reviews":  [
+
+                                     ],
+                         "views":  0,
+                         "createdAt":  1777457495099,
+                         "isSold":  false
+                     },
+                     {
+                         "id":  1777458161974,
+                         "name":  "DIY ONKUKA K9 ",
+                         "segment":  "gaming",
+                         "brand":  "",
+                         "condition":  "Má»›i",
+                         "price":  400000,
+                         "originalPrice":  490000,
+                         "stock":  1,
+                         "soundTag":  "",
+                         "latency":  "wired",
+                         "isWireless":  false,
+                         "batteryHealth":  null,
+                         "images":  [
+                                        "/uploads/1777458742531-71a9408c-product-1777457872191.jpg",
+                                        "/uploads/1777458761271-1d588d26-product-1777457891509.jpg",
+                                        "/uploads/1777458776996-cf1bffd7-product-1777457907236.jpg",
+                                        "/uploads/1777458819729-b116db69-product-1777457949392.jpg"
+                                    ],
+                         "video":  "/uploads/1777458747618-f650f681-7775596900331.mp4",
+                         "youtubePlaylist":  "",
+                         "shopeeLink":  "",
+                         "messengerLink":  "",
+                         "description":  "DIY",
+                         "reviews":  [
+
+                                     ],
+                         "views":  0,
+                         "createdAt":  1777458161974,
+                         "isSold":  false
+                     },
+                     {
+                         "id":  1777458521430,
+                         "name":  "Miniso ",
+                         "segment":  "study",
+                         "brand":  "",
+                         "condition":  "Má»›i",
+                         "price":  200000,
+                         "originalPrice":  400000,
+                         "stock":  1,
+                         "soundTag":  "",
+                         "latency":  "wired",
+                         "isWireless":  false,
+                         "batteryHealth":  null,
+                         "images":  [
+                                        "/uploads/1777459254166-e4e0f21d-product-1777458383834.jpg",
+                                        "/uploads/1777459264359-9c95f588-product-1777458394602.jpg",
+                                        "/uploads/1777459275227-5b68c53d-product-1777458405461.jpg"
+                                    ],
+                         "video":  "/uploads/1777459282196-0b07aa07-7775623123233.mp4",
+                         "youtubePlaylist":  "",
+                         "shopeeLink":  "",
+                         "messengerLink":  "",
+                         "description":  "",
+                         "reviews":  [
+
+                                     ],
+                         "views":  0,
+                         "createdAt":  1777458521430,
+                         "isSold":  false
+                     },
+                     {
+                         "id":  1777458720732,
+                         "name":  "Dareu EH925 ",
+                         "segment":  "gaming",
+                         "brand":  "Dareu",
+                         "condition":  "Má»›i",
+                         "price":  350000,
+                         "originalPrice":  800000,
+                         "stock":  1,
+                         "soundTag":  "",
+                         "latency":  "wired",
+                         "isWireless":  false,
+                         "batteryHealth":  null,
+                         "images":  [
+                                        "/uploads/1777459466792-1417730e-product-1777458596460.jpg",
+                                        "/uploads/1777459479071-7e495b61-product-1777458609312.jpg",
+                                        "/uploads/1777459492256-e1dcea7b-product-1777458622497.jpg"
+                                    ],
+                         "video":  "/uploads/1777459497345-c5c47965-7775623700824.mp4",
+                         "youtubePlaylist":  "",
+                         "shopeeLink":  "",
+                         "messengerLink":  "",
+                         "description":  "",
+                         "reviews":  [
+
+                                     ],
+                         "views":  0,
+                         "createdAt":  1777458720732,
+                         "isSold":  false
+                     },
+                     {
+                         "id":  1777459033839,
+                         "name":  "Tai nghe bluetooth Poermax DR58",
+                         "segment":  "music",
+                         "brand":  "",
+                         "condition":  "Má»›i",
+                         "price":  150000,
+                         "originalPrice":  290000,
+                         "stock":  1,
+                         "soundTag":  "",
+                         "latency":  "wireless-fast",
+                         "isWireless":  true,
+                         "batteryHealth":  null,
+                         "images":  [
+                                        "/uploads/1777459741731-540afedf-product-1777458871204.jpg",
+                                        "/uploads/1777459753209-031b27d4-product-1777458883413.jpg",
+                                        "/uploads/1777459769380-31afde02-product-1777458899589.jpg"
+                                    ],
+                         "video":  "/uploads/1777459773901-783b7605-7775624149848.mp4",
+                         "youtubePlaylist":  "",
+                         "shopeeLink":  "",
+                         "messengerLink":  "",
+                         "description":  "",
+                         "reviews":  [
+
+                                     ],
+                         "views":  0,
+                         "createdAt":  1777459033839,
+                         "isSold":  false
+                     },
+                     {
+                         "id":  1777459300633,
+                         "name":  "Sony MDR-XP450",
+                         "segment":  "music",
+                         "brand":  "Sony",
+                         "condition":  "Tráº§y nháº¹",
+                         "price":  350000,
+                         "originalPrice":  1000000,
+                         "stock":  1,
+                         "soundTag":  "",
+                         "latency":  "wired",
+                         "isWireless":  false,
+                         "batteryHealth":  null,
+                         "images":  [
+                                        "/uploads/1777460060750-35efa9a4-product-1777459190190.jpg",
+                                        "/uploads/1777460076633-afc163cb-product-1777459206832.jpg",
+                                        "/uploads/1777460089506-201553ca-product-1777459219691.jpg"
+                                    ],
+                         "video":  "/uploads/1777460065066-d3cbaecb-7775654823859.mp4",
+                         "youtubePlaylist":  "",
+                         "shopeeLink":  "",
+                         "messengerLink":  "",
+                         "description":  "",
+                         "reviews":  [
+
+                                     ],
+                         "views":  0,
+                         "createdAt":  1777459300633,
+                         "isSold":  false
+                     },
+                     {
+                         "id":  1777459561137,
+                         "name":  "Havit HV-H2232D ",
+                         "segment":  "gaming",
+                         "brand":  "",
+                         "condition":  "Tráº§y nháº¹",
+                         "price":  140000,
+                         "originalPrice":  340000,
+                         "stock":  1,
+                         "soundTag":  "",
+                         "latency":  "wired",
+                         "isWireless":  false,
+                         "batteryHealth":  null,
+                         "images":  [
+                                        "/uploads/1777460274067-438dbb06-product-1777459404262.jpg",
+                                        "/uploads/1777460284478-b667d839-product-1777459414689.jpg",
+                                        "/uploads/1777460298239-9f311df0-product-1777459428124.jpg"
+                                    ],
+                         "video":  "/uploads/1777460260948-34dd48e1-7775655246171.mp4",
+                         "youtubePlaylist":  "",
+                         "shopeeLink":  "",
+                         "messengerLink":  "",
+                         "description":  "",
+                         "reviews":  [
+
+                                     ],
+                         "views":  0,
+                         "createdAt":  1777459561137,
+                         "isSold":  false
+                     },
+                     {
+                         "id":  1777459840805,
+                         "name":  "E-DRA EH410 PRO",
+                         "segment":  "gaming",
+                         "brand":  "E-dra",
+                         "condition":  "Tráº§y nháº¹",
+                         "price":  99000,
+                         "originalPrice":  330000,
+                         "stock":  1,
+                         "soundTag":  "",
+                         "latency":  "wired",
+                         "isWireless":  false,
+                         "batteryHealth":  null,
+                         "images":  [
+                                        "/uploads/1777460588229-dfd5d63a-product-1777459718202.jpg",
+                                        "/uploads/1777460600356-351dcdf9-product-1777459730550.jpg",
+                                        "/uploads/1777460615443-8f44c1ac-product-1777459745648.jpg"
+                                    ],
+                         "video":  "/uploads/1777460567383-cd7ea49b-7775656206641.mp4",
+                         "youtubePlaylist":  "",
+                         "shopeeLink":  "",
+                         "messengerLink":  "",
+                         "description":  "",
+                         "reviews":  [
+
+                                     ],
+                         "views":  0,
+                         "createdAt":  1777459840805,
+                         "isSold":  false
+                     },
+                     {
+                         "id":  1777460257762,
+                         "name":  "Panasonic rp-hbf100 ",
+                         "segment":  "music",
+                         "brand":  "",
+                         "condition":  "Má»›i",
+                         "price":  888888,
+                         "originalPrice":  999999,
+                         "stock":  1,
+                         "soundTag":  "",
+                         "latency":  "wired",
+                         "isWireless":  false,
+                         "batteryHealth":  null,
+                         "images":  [
+                                        "/uploads/1777461113962-30560569-product-1777460244155.jpg",
+                                        "/uploads/1777461124635-6645979f-product-1777460254828.jpg"
+                                    ],
+                         "video":  "/uploads/1777461101150-9397b4ff-7775718626021.mp4",
+                         "youtubePlaylist":  "",
+                         "shopeeLink":  "",
+                         "messengerLink":  "",
+                         "description":  "",
+                         "reviews":  [
+
+                                     ],
+                         "views":  0,
+                         "createdAt":  1777460257762,
+                         "isSold":  false
+                     },
+                     {
+                         "id":  1777460460296,
+                         "name":  "Tai nghe mÃ u Ä‘en má» hiá»‡u",
+                         "segment":  "study",
+                         "brand":  "",
+                         "condition":  "Tráº§y nháº¹",
+                         "price":  88888,
+                         "originalPrice":  999999,
+                         "stock":  1,
+                         "soundTag":  "",
+                         "latency":  "wired",
+                         "isWireless":  false,
+                         "batteryHealth":  null,
+                         "images":  [
+                                        "/uploads/1777461191405-d294a5f4-product-1777460321588.jpg",
+                                        "/uploads/1777461200209-df6a9de0-product-1777460330422.jpg",
+                                        "/uploads/1777461211971-afeb51ca-product-1777460342161.jpg"
+                                    ],
+                         "video":  "/uploads/1777461182096-3894dad8-7775719013706.mp4",
+                         "youtubePlaylist":  "",
+                         "shopeeLink":  "",
+                         "messengerLink":  "",
+                         "description":  "",
+                         "reviews":  [
+
+                                     ],
+                         "views":  0,
+                         "createdAt":  1777460460296,
+                         "isSold":  false
+                     },
+                     {
+                         "id":  1777460661861,
+                         "name":  "Wangming 9600 7.1 ",
+                         "segment":  "gaming",
+                         "brand":  "",
+                         "condition":  "Tráº§y nháº¹",
+                         "price":  140000,
+                         "originalPrice":  350000,
+                         "stock":  1,
+                         "soundTag":  "",
+                         "latency":  "wired",
+                         "isWireless":  false,
+                         "batteryHealth":  null,
+                         "images":  [
+                                        "/uploads/1777461420211-d15dded0-product-1777460550404.jpg",
+                                        "/uploads/1777461436389-0f4d22c7-product-1777460566408.jpg",
+                                        "/uploads/1777461449113-6e66fdcb-product-1777460579302.jpg"
+                                    ],
+                         "video":  "/uploads/1777461585543-57ee4dde-7775718199417.mp4",
+                         "youtubePlaylist":  "",
+                         "shopeeLink":  "",
+                         "messengerLink":  "",
+                         "description":  "",
+                         "reviews":  [
+
+                                     ],
+                         "views":  0,
+                         "createdAt":  1777460661861,
+                         "isSold":  false
+                     },
+                     {
+                         "id":  1777803554613,
+                         "name":  "HAVIT H2012D ÄÃ¨n RGB 36 cháº¿ Ä‘á»™",
+                         "segment":  "gaming",
+                         "brand":  "Havit",
+                         "condition":  "Má»›i",
+                         "price":  200000,
+                         "originalPrice":  520000,
+                         "stock":  1,
+                         "soundTag":  "",
+                         "latency":  "wired",
+                         "isWireless":  false,
+                         "batteryHealth":  null,
+                         "images":  [
+                                        "/uploads/1777804386807-b4361c6f-product-1777803505034.jpg",
+                                        "/uploads/1777804403643-604c0b37-product-1777803522507.jpg",
+                                        "/uploads/1777804422624-d603b5fc-product-1777803541475.jpg"
+                                    ],
+                         "video":  "",
+                         "youtubePlaylist":  "",
+                         "shopeeLink":  "",
+                         "messengerLink":  "",
+                         "description":  "",
+                         "inspection":  "",
+                         "inspectionDetails":  {
+                                                   "shell":  "",
+                                                   "pads":  "",
+                                                   "driver":  "",
+                                                   "mic":  "",
+                                                   "connect":  "",
+                                                   "battery":  "",
+                                                   "clean":  ""
+                                               },
+                         "reviews":  [
+
+                                     ],
+                         "views":  0,
+                         "createdAt":  1777803554613,
+                         "isSold":  false
+                     },
+                     {
+                         "id":  1777804177760,
+                         "name":  "Attack Shark L80 Pro Ã‚m thanh bass 3D",
+                         "segment":  "gaming",
+                         "brand":  "",
+                         "condition":  "Like New",
+                         "price":  199000,
+                         "originalPrice":  700000,
+                         "stock":  1,
+                         "soundTag":  "",
+                         "latency":  "wired",
+                         "isWireless":  false,
+                         "batteryHealth":  null,
+                         "images":  [
+                                        "/uploads/1777804563902-f9ebdfed-product-1777803682193.jpg",
+                                        "/uploads/1777804585567-f271b4cb-product-1777803704430.jpg",
+                                        "/uploads/1777804598170-a1e837b7-product-1777803717047.jpg",
+                                        "/uploads/1777804690364-ade76efa-product-1777803808565.jpg"
+                                    ],
+                         "video":  "",
+                         "youtubePlaylist":  "",
+                         "shopeeLink":  "",
+                         "messengerLink":  "",
+                         "description":  "",
+                         "inspection":  "",
+                         "inspectionDetails":  {
+                                                   "shell":  "",
+                                                   "pads":  "",
+                                                   "driver":  "",
+                                                   "mic":  "",
+                                                   "connect":  "",
+                                                   "battery":  "",
+                                                   "clean":  ""
+                                               },
+                         "reviews":  [
+
+                                     ],
+                         "views":  0,
+                         "createdAt":  1777804177760,
+                         "isSold":  false
+                     },
+                     {
+                         "id":  1777804484256,
+                         "name":  "Tai nghe chá»¥p tai Gaming MozardX DS902 7.1 ",
+                         "segment":  "gaming",
+                         "brand":  "",
+                         "condition":  "Má»›i",
+                         "price":  175000,
+                         "originalPrice":  630000,
+                         "stock":  1,
+                         "soundTag":  "",
+                         "latency":  "wired",
+                         "isWireless":  false,
+                         "batteryHealth":  null,
+                         "images":  [
+                                        "/uploads/1777805097256-bc8a4684-product-1777804216134.jpg",
+                                        "/uploads/1777805125568-7e968632-product-1777804243801.jpg",
+                                        "/uploads/1777805144151-2479cfa3-product-1777804263031.jpg"
+                                    ],
+                         "video":  "",
+                         "youtubePlaylist":  "",
+                         "shopeeLink":  "",
+                         "messengerLink":  "",
+                         "description":  "",
+                         "inspection":  "",
+                         "inspectionDetails":  {
+                                                   "shell":  "",
+                                                   "pads":  "",
+                                                   "driver":  "",
+                                                   "mic":  "",
+                                                   "connect":  "",
+                                                   "battery":  "",
+                                                   "clean":  ""
+                                               },
+                         "reviews":  [
+
+                                     ],
+                         "views":  0,
+                         "createdAt":  1777804484256,
+                         "isSold":  false
+                     },
+                     {
+                         "id":  1777805032922,
+                         "name":  "DIY WangMing WMb 9800l cÃ³ Ä‘Ã¨n led",
+                         "segment":  "gaming",
+                         "brand":  "",
+                         "condition":  "Má»›i",
+                         "price":  350000,
+                         "originalPrice":  290000,
+                         "stock":  1,
+                         "soundTag":  "",
+                         "latency":  "wired",
+                         "isWireless":  false,
+                         "batteryHealth":  null,
+                         "images":  [
+                                        "/uploads/1777805685387-ed74643c-product-1777804803567.jpg",
+                                        "/uploads/1777805702373-dde81849-product-1777804821228.jpg",
+                                        "/uploads/1777805715487-ff231e39-product-1777804834338.jpg"
+                                    ],
+                         "video":  "",
+                         "youtubePlaylist":  "",
+                         "shopeeLink":  "",
+                         "messengerLink":  "",
+                         "description":  "",
+                         "inspection":  "",
+                         "inspectionDetails":  {
+                                                   "shell":  "",
+                                                   "pads":  "",
+                                                   "driver":  "",
+                                                   "mic":  "",
+                                                   "connect":  "",
+                                                   "battery":  "",
+                                                   "clean":  ""
+                                               },
+                         "reviews":  [
+
+                                     ],
+                         "views":  0,
+                         "createdAt":  1777805032922,
+                         "isSold":  false
+                     }
+                 ],
+    "faqs":  [
+                 {
+                     "q":  "Headphone vs IEM â€” cÃ¡i nÃ o phÃ¹ há»£p cho tÃ´i?",
+                     "a":  "Headphone (chá»¥p tai) cho Ã¢m thanh rá»™ng hÆ¡n, cáº£m giÃ¡c \"soundstage\" tá»‘t cho game vÃ  phim. IEM (nhÃ©t tai) nhá» gá»n hÆ¡n, cÃ´ láº­p Ã¢m thanh tá»‘t hÆ¡n, phÃ¹ há»£p di chuyá»ƒn. Vá»›i gaming, headphone thÆ°á»ng Ä‘Æ°á»£c Æ°u tiÃªn vÃ¬ Ä‘á»‹nh vá»‹ Ã¢m thanh tá»‘t hÆ¡n."
+                 },
+                 {
+                     "q":  "CÃ³ dÃ¢y hay Wireless â€” gaming nÃªn chá»n gÃ¬?",
+                     "a":  "CÃ³ dÃ¢y: Äá»™ trá»… 0ms, khÃ´ng lo pin, giÃ¡ ráº» hÆ¡n. Wireless hiá»‡n Ä‘áº¡i (\u003c20ms): Thoáº£i mÃ¡i, khÃ´ng vÆ°Æ¡ng dÃ¢y. Vá»›i FPS competitive, cÃ³ dÃ¢y váº«n lÃ  lá»±a chá»n an toÃ n nháº¥t. Casual gaming thÃ¬ wireless á»•n hoÃ n toÃ n."
+                 },
+                 {
+                     "q":  "NÃªn chá»n cháº¥t Ã¢m V-Shape hay Neutral?",
+                     "a":  "V-Shape: Nghe \"wow\" ngay láº­p tá»©c, game hÃ nh Ä‘á»™ng cá»±c Ä‘Ã£, nhÆ°ng khÃ´ng trung thá»±c. Neutral: Nghe quen má»›i sÆ°á»›ng, phÃ¹ há»£p cho ngÆ°á»i muá»‘n nghe nháº¡c Ä‘Ãºng vá»›i Ã½ Ä‘á»‹nh cá»§a nháº¡c sÄ©. Äa sá»‘ game thá»§ thÃ­ch V-Shape hÆ¡n."
+                 },
+                 {
+                     "q":  "HÃ ng cÅ© cÃ³ an toÃ n, há»£p vá»‡ sinh khÃ´ng?",
+                     "a":  "Táº¥t cáº£ sáº£n pháº©m táº¡i ChÃ  LÃ  Ä‘á»u qua 3 bÆ°á»›c: Vá»‡ sinh báº±ng cá»“n y táº¿, chiáº¿u Ä‘Ã¨n UV-C diá»‡t khuáº©n, vÃ  sáº¥y khÃ´ ká»¹. Äá»‡m tai mÃ²n sáº½ Ä‘Æ°á»£c thay má»›i trÆ°á»›c khi bÃ¡n. YÃªn tÃ¢m hoÃ n toÃ n."
+                 },
+                 {
+                     "q":  "Náº¿u tai nghe bá»‹ lá»—i sau khi mua, xá»­ lÃ½ tháº¿ nÃ o?",
+                     "a":  "ChÃ  LÃ  báº£o hÃ nh 30 ngÃ y lá»—i ká»¹ thuáº­t. Trong thá»i gian nÃ y, náº¿u sáº£n pháº©m cÃ³ báº¥t ká»³ váº¥n Ä‘á» nÃ o vá» Ã¢m thanh hay káº¿t ná»‘i, báº¡n Ä‘Æ°á»£c Ä‘á»•i sáº£n pháº©m tÆ°Æ¡ng Ä‘Æ°Æ¡ng hoáº·c hoÃ n tiá»n. Chá»‰ cáº§n nháº¯n Messenger."
+                 },
+                 {
+                     "q":  "CÃ³ ship COD khÃ´ng? Äá»•i tráº£ tháº¿ nÃ o?",
+                     "a":  "CÃ³ há»— trá»£ COD toÃ n quá»‘c. Äá»•i tráº£ trong 7 ngÃ y náº¿u sáº£n pháº©m khÃ´ng Ä‘Ãºng mÃ´ táº£. PhÃ­ ship Ä‘á»•i tráº£ ChÃ  LÃ  chá»‹u náº¿u lá»—i tá»« shop. Thanh toÃ¡n: COD, chuyá»ƒn khoáº£n, vÃ­ Ä‘iá»‡n tá»­."
+                 },
+                 {
+                     "q":  "Pin tai nghe khÃ´ng dÃ¢y cÃ²n Ä‘Æ°á»£c bao lÃ¢u?",
+                     "a":  "Má»—i sáº£n pháº©m cÃ³ thÃ´ng sá»‘ pin Ä‘Æ°á»£c Ä‘o thá»±c táº¿ vÃ  hiá»ƒn thá»‹ rÃµ rÃ ng trÃªn trang. ChÃ  LÃ  khÃ´ng bÃ¡n tai nghe cÃ³ pin dÆ°á»›i 70%. Tham kháº£o card sáº£n pháº©m Ä‘á»ƒ biáº¿t % pin cá»¥ thá»ƒ."
+                 },
+                 {
+                     "q":  "Táº¡i sao giÃ¡ ráº» hÆ¡n mua má»›i ráº¥t nhiá»u?",
+                     "a":  "ÄÆ¡n giáº£n vÃ¬ Ä‘Ã¢y lÃ  hÃ ng Ä‘Ã£ qua sá»­ dá»¥ng. Cháº¥t lÆ°á»£ng Ã¢m thanh vÃ  chá»©c nÄƒng hoÃ n toÃ n bÃ¬nh thÆ°á»ng, nhÆ°ng giÃ¡ chá»‰ báº±ng 20-50% hÃ ng má»›i. LÃ½ tÆ°á»Ÿng cho ai muá»‘n tráº£i nghiá»‡m tai nghe cao cáº¥p mÃ  khÃ´ng bá» nhiá»u tiá»n."
+                 }
+             ],
+    "settings":  {
+                     "messengerLink":  "https://www.facebook.com/chalachanai/",
+                     "shopName":  "ChÃ  LÃ ",
+                     "soundTagPlaylists":  {
+                                               "V-Shape":  "https://www.youtube.com/embed/5qap5aO4i9A",
+                                               "Warm":  "https://www.youtube.com/embed/jfKfPfyJRdk",
+                                               "Bright":  "https://www.youtube.com/embed/4To8_MfFSug",
+                                               "Neutral":  "https://www.youtube.com/embed/aMyFd6EaLFw",
+                                               "Bass-Heavy":  "https://www.youtube.com/embed/tNv7aUDAcQk",
+                                               "Mid-Forward":  "https://www.youtube.com/embed/Dx5qFachd3A"
+                                           },
+                     "facebook":  "https://www.facebook.com/chalachanai/"
+                 }
 }
