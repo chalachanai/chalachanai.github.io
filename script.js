@@ -284,7 +284,7 @@ function buildCard(p) {
   const timeAgo = getTimeAgo(p.createdAt);
   const grade = getConditionGrade(p.condition, p.isSold);
   const segment = getProductSegment(p);
-  const soldHTML = p.isSold ? `<div class="sold-overlay"><span>ĐÃ BÁN</span><small>Sản phẩm không còn</small></div>` : '';
+  const soldHTML = p.isSold ? `<div class="sold-overlay"><span>Đ� BÁN</span><small>Sản phẩm không còn</small></div>` : '';
   const videoHTML = p.video ? `<video class="card-video" src="${p.video}" loop muted playsinline></video>` : '';
   const videoChip = p.video ? `<button class="media-video-chip" type="button" onclick="event.stopPropagation(); openQuickView(${p.id}, 'video')"><i class="fas fa-play"></i><span>Video</span></button>` : '';
   const descHTML = `<p class="card-desc">${getProductDescription(p)}</p>`;
@@ -384,7 +384,7 @@ function getConditionGrade(condition = '', isSold = false) {
     return {
       code: 'SOLD',
       label: 'Đã bán',
-      short: 'ĐÃ BÁN',
+      short: 'Đ� BÁN',
       note: 'Sản phẩm không còn',
       className: 'sold'
     };
