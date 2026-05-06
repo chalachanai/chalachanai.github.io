@@ -94,8 +94,25 @@ img { display: block; width: 100%; }
   background: rgba(12,12,12,0.95);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
-  padding: 0.6rem 4%;
-  display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;
+  padding: 0.55rem 4%;
+  display: grid;
+  gap: 0.45rem;
+}
+.filter-row {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+}
+.filter-row-main { padding-bottom: 0.05rem; }
+.filter-label {
+  min-width: 72px;
+  color: var(--gold);
+  font-size: 0.66rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1;
 }
 .chip {
   padding: 0.3rem 0.85rem; border-radius: 50px; font-size: 0.78rem;
@@ -356,6 +373,26 @@ img { display: block; width: 100%; }
   line-height: 1.35;
   margin-bottom: 0.45rem;
 }
+.card-smart-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.28rem;
+  margin: 0 0 0.5rem;
+}
+.card-smart-tag {
+  max-width: 100%;
+  padding: 0.18rem 0.45rem;
+  border-radius: 999px;
+  border: 1px solid rgba(212,175,55,0.18);
+  background: rgba(212,175,55,0.075);
+  color: var(--gold-light);
+  font-size: 0.6rem;
+  font-weight: 800;
+  line-height: 1.25;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .price-row { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.2rem; }
 .price-new { font-size: 1.15rem; font-weight: 800; color: var(--gold); }
 .price-old { font-size: 0.78rem; color: var(--text-muted); text-decoration: line-through; }
@@ -414,6 +451,7 @@ img { display: block; width: 100%; }
 .grade-new { color: #8ee6a8; border-color: rgba(142,230,168,0.38); }
 .grade-light { color: #75b7ff; border-color: rgba(117,183,255,0.35); }
 .grade-heavy { color: #ffb36b; border-color: rgba(255,179,107,0.4); }
+.grade-revived { color: #8ee6a8; border-color: rgba(142,230,168,0.38); }
 .grade-sold { color: var(--red); border-color: rgba(231,76,60,0.45); }
 
 .card-action-row {
@@ -520,6 +558,12 @@ img { display: block; width: 100%; }
   color: var(--text);
   font-size: 0.88rem;
   line-height: 1.65;
+}
+.smart-profile {
+  padding: 0.2rem 0.7rem;
+  border: 1px solid rgba(212,175,55,0.18);
+  border-radius: var(--radius-sm);
+  background: rgba(212,175,55,0.055);
 }
 
 /* ── Policy Modal ── */
@@ -1068,9 +1112,15 @@ td img { width: 48px; height: 48px; object-fit: cover; border-radius: 6px; }
   .header { padding: 0.75rem 4%; }
   .logo { font-size: 1.2rem; }
   .nav a:not(.btn-admin) { display: none; }
+  .filter-bar { top: 54px; padding: 0.5rem 2.5%; gap: 0.38rem; }
+  .filter-row { gap: 0.35rem; }
+  .filter-label { width: 100%; min-width: 0; font-size: 0.6rem; }
+  .chip { padding: 0.26rem 0.58rem; font-size: 0.68rem; }
+  .filter-select { padding: 0.26rem 0.58rem; font-size: 0.68rem; }
   .product-grid { grid-template-columns: 1fr 1fr; gap: 0.75rem; padding: 0.5rem 2.5% 4rem; }
   .card-segment { font-size: 0.56rem; padding: 0.14rem 0.4rem; margin-bottom: 0.35rem; }
   .card-name { font-size: 0.82rem; }
+  .card-smart-tag { font-size: 0.54rem; padding: 0.16rem 0.36rem; }
   .price-new { font-size: 1rem; }
   .card-info { padding: 0.58rem; }
   .card-trust-row { gap: 0.25rem; margin-top: 0.5rem; }
@@ -1265,6 +1315,62 @@ td img { width: 48px; height: 48px; object-fit: cover; border-radius: 6px; }
 .inspection-editor summary::-webkit-details-marker { display: none; }
 .inspection-editor:not([open]) summary { margin-bottom: 0; }
 .inspection-input { font-size: 0.86rem; }
+
+.tag-editor {
+  margin: 0.8rem 0 1.25rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: rgba(255,255,255,0.025);
+}
+.tag-editor summary {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0.9rem;
+  color: var(--gold);
+  font-weight: 800;
+  cursor: pointer;
+  list-style: none;
+}
+.tag-editor summary::-webkit-details-marker { display: none; }
+.tag-editor:not([open]) summary { margin-bottom: 0; }
+.tag-editor-group { margin-bottom: 1rem; }
+.tag-editor-group > label {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: var(--text-dim);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.tag-check-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+.tag-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.32rem;
+  padding: 0.32rem 0.55rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text-dim);
+  background: rgba(255,255,255,0.025);
+  font-size: 0.72rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--trans);
+}
+.tag-check:hover,
+.tag-check:has(input:checked) {
+  border-color: var(--gold);
+  color: var(--gold);
+  background: var(--gold-dim);
+}
+.tag-check input { accent-color: var(--gold); }
 
 /* ═══════════════════════════════════════════════
    PREVIEW SEPARATOR

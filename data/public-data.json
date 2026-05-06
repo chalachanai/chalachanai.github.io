@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "exportedAt": "2026-05-06T12:11:04.984Z",
+  "exportedAt": "2026-05-06T12:38:54.138Z",
   "products": [
     {
       "id": 1000001,
@@ -405,21 +405,22 @@
     },
     {
       "id": 1777460460296,
-      "name": "Tai nghe màu đen mờ hiệu",
+      "name": "Tai nghe Cliptec BMH508 ",
       "segment": "study",
       "brand": "",
       "condition": "Trầy nhẹ",
-      "price": 88888,
-      "originalPrice": 999999,
+      "price": 79000,
+      "originalPrice": 250000,
       "stock": 1,
       "soundTag": "",
       "latency": "wired",
       "isWireless": false,
       "batteryHealth": null,
       "images": [
-        "/uploads/1777461191405-d294a5f4-product-1777460321588.jpg",
-        "/uploads/1777461200209-df6a9de0-product-1777460330422.jpg",
-        "/uploads/1777461211971-afeb51ca-product-1777460342161.jpg"
+        "/uploads/1778070152766-48400287-product-1778069266612.jpg",
+        "/uploads/1778070223365-fc920dc8-product-1778069337212.jpg",
+        "/uploads/1778070238198-02fb5a2f-product-1778069352687.jpg",
+        "/uploads/1778070250736-8d126f58-product-1778069365293.jpg"
       ],
       "video": "/uploads/1777461182096-3894dad8-7775719013706.mp4",
       "youtubePlaylist": "",
@@ -429,7 +430,17 @@
       "reviews": [],
       "views": 0,
       "createdAt": 1777460460296,
-      "isSold": false
+      "isSold": false,
+      "inspection": "",
+      "inspectionDetails": {
+        "shell": "",
+        "pads": "",
+        "driver": "",
+        "mic": "",
+        "connect": "",
+        "battery": "",
+        "clean": ""
+      }
     },
     {
       "id": 1777460661861,
@@ -610,6 +621,45 @@
       "reviews": [],
       "views": 0,
       "createdAt": 1777805032922,
+      "isSold": false
+    },
+    {
+      "id": 1778070244695,
+      "name": "TAI NGHE DAREU EH722X GIẢ LẬP 7.1 ( MULTI LED )",
+      "segment": "gaming",
+      "brand": "Dareu",
+      "condition": "Trầy nhẹ",
+      "price": 179000,
+      "originalPrice": 600000,
+      "stock": 1,
+      "soundTag": "",
+      "latency": "wired",
+      "isWireless": false,
+      "batteryHealth": null,
+      "images": [
+        "/uploads/1778071039901-99c413fd-product-1778070153714.jpg",
+        "/uploads/1778071055245-987287ec-product-1778070169825.jpg",
+        "/uploads/1778071071162-2ca5a020-product-1778070185707.jpg",
+        "/uploads/1778071081501-112d2725-product-1778070196073.jpg"
+      ],
+      "video": "",
+      "youtubePlaylist": "",
+      "shopeeLink": "",
+      "messengerLink": "",
+      "description": "",
+      "inspection": "",
+      "inspectionDetails": {
+        "shell": "",
+        "pads": "",
+        "driver": "",
+        "mic": "",
+        "connect": "",
+        "battery": "",
+        "clean": ""
+      },
+      "reviews": [],
+      "views": 0,
+      "createdAt": 1778070244695,
       "isSold": false
     }
   ],

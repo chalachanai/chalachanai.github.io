@@ -38,7 +38,7 @@
     ]
   }
   </script>
-  <link rel="stylesheet" href="style.css?v=20260503-facebook">
+  <link rel="stylesheet" href="style.css?v=20260506-tags">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -60,38 +60,56 @@
 
 <!-- ══ FILTER BAR ══ -->
 <div class="filter-bar" id="filterBar">
-  <button class="chip active" data-reset-filter="all">Tất cả</button>
-  <button class="chip" data-segment="gaming">Gaming</button>
-  <button class="chip" data-segment="music">Nghe nhạc</button>
-  <button class="chip" data-segment="study">Học bài</button>
-  <div class="filter-sep"></div>
-  <button class="chip" data-filter="cond:Like New(S)">Like New(S)</button>
-  <button class="chip" data-filter="cond:Mới">Mới</button>
-  <button class="chip" data-filter="cond:Trầy nhẹ">Trầy nhẹ</button>
-  <button class="chip" data-filter="cond:Trầy nhiều">Trầy nhiều</button>
-  <button class="chip" data-filter="instock">Còn hàng</button>
-  <div class="filter-sep"></div>
-  <select class="filter-select" id="soundFilter">
-    <option value="">Chất âm</option>
-    <option>V-Shape</option>
-    <option>Warm</option>
-    <option>Bright</option>
-    <option>Neutral</option>
-    <option>Bass-Heavy</option>
-    <option>Mid-Forward</option>
-  </select>
-  <select class="filter-select" id="latencyFilter">
-    <option value="">Kết nối</option>
-    <option value="wired">Có dây</option>
-    <option value="wireless-fast">Wireless &lt;20ms</option>
-    <option value="wireless-slow">Wireless &gt;20ms</option>
-  </select>
-  <select class="filter-select" id="sortFilter">
-    <option value="">Sắp xếp</option>
-    <option value="newest">Mới nhất</option>
-    <option value="price-asc">Giá thấp → cao</option>
-    <option value="price-desc">Giá cao → thấp</option>
-  </select>
+  <div class="filter-row filter-row-main">
+    <span class="filter-label">Nhu cầu</span>
+    <button class="chip active" data-reset-filter="all">Tất cả</button>
+    <button class="chip" data-tag-filter="fps">FPS</button>
+    <button class="chip" data-tag-filter="study-online">Học online</button>
+    <button class="chip" data-tag-filter="call-zoom">Call/Zoom</button>
+    <button class="chip" data-tag-filter="bass-music">Nghe nhạc bass</button>
+    <button class="chip" data-tag-filter="casual-gaming">Game casual</button>
+    <button class="chip" data-tag-filter="bluetooth">Bluetooth</button>
+    <button class="chip" data-tag-filter="diy">DIY</button>
+  </div>
+  <div class="filter-row filter-row-highlights">
+    <span class="filter-label">Tính năng</span>
+    <select class="filter-select" data-feature-filter="gaming">
+      <option value="">Gaming</option>
+      <option value="virtual-71">7.1 giả lập</option>
+      <option value="bass-3d">Bass 3D</option>
+      <option value="rgb">RGB/LED</option>
+      <option value="mic-clear">Mic rõ</option>
+    </select>
+    <select class="filter-select" data-feature-filter="diy">
+      <option value="">DIY / dịch vụ</option>
+      <option value="pad-service">Bọc đệm / bọc nhung</option>
+      <option value="bluetooth-mod">Làm Bluetooth</option>
+      <option value="battery-service">Thay pin</option>
+      <option value="wire-repair">Sửa dây / jack</option>
+    </select>
+    <select class="filter-select" data-feature-filter="sound">
+      <option value="">Chất âm</option>
+      <option value="bass-strong">Bass mạnh</option>
+      <option value="vocal-clear">Vocal rõ</option>
+      <option value="bright-sound">Âm sáng</option>
+      <option value="wide-stage">Âm rộng</option>
+      <option value="easy-listen">Dễ nghe lâu</option>
+    </select>
+    <select class="filter-select" data-feature-filter="condition">
+      <option value="">Tình trạng</option>
+      <option value="like-new">Like New</option>
+      <option value="revived">Hồi sinh</option>
+    </select>
+    <select class="filter-select" data-feature-filter="proof">
+      <option value="">Media</option>
+      <option value="has-video">Có video test</option>
+    </select>
+    <select class="filter-select" id="sortFilter">
+      <option value="newest">Mới nhất</option>
+      <option value="price-asc">Giá thấp → cao</option>
+      <option value="price-desc">Giá cao → thấp</option>
+    </select>
+  </div>
 </div>
 
 <!-- ══ HERO ══ -->
@@ -132,55 +150,33 @@
     <div class="wizard-step active" id="ws-0">
       <p class="wizard-q">Bạn cần tai nghe chủ yếu để làm gì?</p>
       <div class="wizard-opts">
-        <button class="wizard-opt" onclick="wizardNext('game')">🎮 Chơi game</button>
-        <button class="wizard-opt" onclick="wizardNext('music')">🎵 Nghe nhạc</button>
-        <button class="wizard-opt" onclick="wizardNext('film')">🎬 Xem phim</button>
-        <button class="wizard-opt" onclick="wizardNext('work')">🎙️ Làm việc / Podcast</button>
+        <button class="wizard-opt" onclick="wizardStart(['fps','virtual-71'])">🎮 FPS / tiếng chân</button>
+        <button class="wizard-opt" onclick="wizardStart(['study-online','call-zoom','mic-clear'])">🎙️ Học online / Zoom</button>
+        <button class="wizard-opt" onclick="wizardStart(['bass-music','bass-strong'])">🎵 Nghe nhạc bass</button>
+        <button class="wizard-opt" onclick="wizardStart(['bluetooth'])">📱 Bluetooth / điện thoại</button>
+        <button class="wizard-opt" onclick="wizardStart(['diy'])">🛠️ DIY / hồi sinh tai nghe</button>
       </div>
     </div>
-    <div class="wizard-step" id="ws-game">
-      <p class="wizard-q">Bạn thường chơi thể loại game nào?</p>
+    <div class="wizard-step" id="ws-sound">
+      <p class="wizard-q">Gu âm bạn thích nghiêng về đâu?</p>
       <div class="wizard-opts">
-        <button class="wizard-opt" onclick="wizardResult(['Neutral','Bright'], true)">🔫 FPS (Valorant, CS2)</button>
-        <button class="wizard-opt" onclick="wizardResult(['V-Shape','Bass-Heavy'], false)">⚔️ MOBA (Liên Minh)</button>
-        <button class="wizard-opt" onclick="wizardResult(['Warm','Mid-Forward'], false)">🗡️ RPG / Nhập vai</button>
-        <button class="wizard-opt" onclick="wizardResult(['V-Shape','Bass-Heavy'], false)">🏎️ Game đua xe</button>
-        <button class="wizard-opt" onclick="wizardResult(['V-Shape','Warm'], false)">🎲 Game thông thường</button>
+        <button class="wizard-opt" onclick="wizardAdd(['bass-strong'], 'ws-feature')">🔥 Bass mạnh</button>
+        <button class="wizard-opt" onclick="wizardAdd(['vocal-clear'], 'ws-feature')">🎤 Giọng ca sĩ rõ</button>
+        <button class="wizard-opt" onclick="wizardAdd(['bright-sound'], 'ws-feature')">✨ Âm sáng, chi tiết</button>
+        <button class="wizard-opt" onclick="wizardAdd(['wide-stage'], 'ws-feature')">🌌 Âm rộng</button>
+        <button class="wizard-opt" onclick="wizardAdd(['easy-listen'], 'ws-feature')">☁️ Dễ nghe lâu</button>
+        <button class="wizard-opt" onclick="wizardAdd([], 'ws-feature')">Không quá quan trọng</button>
       </div>
     </div>
-    <div class="wizard-step" id="ws-music">
-      <p class="wizard-q">Bạn hay nghe thể loại nhạc nào?</p>
+    <div class="wizard-step" id="ws-feature">
+      <p class="wizard-q">Cần thêm tính năng hoặc dịch vụ nào?</p>
       <div class="wizard-opts">
-        <button class="wizard-opt" onclick="wizardResult(['Warm'], false)">☁️ Lofi / Chillhop</button>
-        <button class="wizard-opt" onclick="wizardResult(['V-Shape','Bass-Heavy'], false)">⚡ EDM / Electronic</button>
-        <button class="wizard-opt" onclick="wizardResult(['Bass-Heavy','V-Shape'], false)">🎤 Hip-hop / Rap</button>
-        <button class="wizard-opt" onclick="wizardResult(['Neutral','Warm'], false)">🎸 Acoustic / Indie</button>
-        <button class="wizard-opt" onclick="wizardResult(['V-Shape','Mid-Forward'], false)">🌸 K-pop / J-pop</button>
-        <button class="wizard-opt" onclick="wizardResult(['Bright','Mid-Forward'], false)">🎻 Classical / Jazz</button>
-        <button class="wizard-opt" onclick="wizardResult(['V-Shape','Bright'], false)">🎮 Game OST</button>
-      </div>
-    </div>
-    <div class="wizard-step" id="ws-film">
-      <p class="wizard-q">Bạn xem loại phim gì chủ yếu?</p>
-      <div class="wizard-opts">
-        <button class="wizard-opt" onclick="wizardResult(['V-Shape','Bass-Heavy'], false)">🎬 Phim hành động</button>
-        <button class="wizard-opt" onclick="wizardResult(['Mid-Forward','Warm'], false)">🎭 Phim tâm lý / Drama</button>
-        <button class="wizard-opt" onclick="wizardResult(['Neutral','Bright'], false)">📺 Xem tổng hợp</button>
-      </div>
-    </div>
-    <div class="wizard-step" id="ws-work">
-      <p class="wizard-q">Bạn ưu tiên điều gì khi làm việc?</p>
-      <div class="wizard-opts">
-        <button class="wizard-opt" onclick="wizardResult(['Neutral','Mid-Forward'], false)">🎙️ Giọng nói rõ (Call, Podcast)</button>
-        <button class="wizard-opt" onclick="wizardResult(['Neutral','Warm'], false)">🧠 Tập trung, không mỏi tai</button>
-        <button class="wizard-opt" onclick="wizardResult(['Bright','Neutral'], false)">🎧 Nghe nhạc khi làm việc</button>
-      </div>
-    </div>
-    <div class="wizard-step" id="ws-latency" style="display:none">
-      <p class="wizard-q">Bạn có cần độ trễ thấp &lt;20ms cho gaming không?</p>
-      <div class="wizard-opts">
-        <button class="wizard-opt" onclick="wizardFinish(true)">⚡ Có, tôi cần (wireless nhanh hoặc có dây)</button>
-        <button class="wizard-opt" onclick="wizardFinish(false)">😊 Không quan trọng lắm</button>
+        <button class="wizard-opt" onclick="wizardFinishTags(['virtual-71'])">7.1 giả lập</button>
+        <button class="wizard-opt" onclick="wizardFinishTags(['mic-clear'])">Mic rõ</button>
+        <button class="wizard-opt" onclick="wizardFinishTags(['pad-service'])">Bọc đệm / bọc nhung</button>
+        <button class="wizard-opt" onclick="wizardFinishTags(['bluetooth-mod'])">Làm Bluetooth</button>
+        <button class="wizard-opt" onclick="wizardFinishTags(['has-video'])">Có video test</button>
+        <button class="wizard-opt" onclick="wizardFinishTags([])">Bỏ qua</button>
       </div>
     </div>
     <div class="wizard-step" id="ws-result">
@@ -400,6 +396,6 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 <script src="backend-config.js"></script>
 <script src="cloud.js"></script>
-<script src="script.js?v=20260503-facebook"></script>
+<script src="script.js?v=20260506-tags"></script>
 </body>
 </html>

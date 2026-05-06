@@ -230,21 +230,213 @@ function getProductSegment(p = {}) {
   return SEGMENTS[key] ? { key, ...SEGMENTS[key] } : { key: 'gaming', ...SEGMENTS.gaming };
 }
 
+const TAG_LABELS = {
+  'fps': 'FPS',
+  'study-online': 'Học online',
+  'call-zoom': 'Call/Zoom',
+  'bass-music': 'Nghe bass',
+  'casual-gaming': 'Game casual',
+  'bluetooth': 'Bluetooth',
+  'diy': 'DIY',
+  'virtual-71': '7.1 giả lập',
+  'bass-3d': 'Bass 3D',
+  'bass-strong': 'Bass mạnh',
+  'vocal-clear': 'Vocal rõ',
+  'bright-sound': 'Âm sáng',
+  'wide-stage': 'Âm rộng',
+  'easy-listen': 'Dễ nghe lâu',
+  'mic-clear': 'Mic rõ',
+  'pad-service': 'Bọc đệm',
+  'velvet-pad': 'Bọc nhung',
+  'pad-comfort': 'Đệm êm',
+  'bluetooth-mod': 'Làm Bluetooth',
+  'battery-service': 'Thay pin',
+  'wire-repair': 'Sửa dây/jack',
+  'rgb': 'RGB/LED',
+  'like-new': 'Like New',
+  'revived': 'Hồi sinh',
+  'has-video': 'Có video test'
+};
+
+const DISPLAY_TAG_PRIORITY = [
+  'virtual-71',
+  'fps',
+  'mic-clear',
+  'bass-3d',
+  'bass-strong',
+  'vocal-clear',
+  'bass-music',
+  'bluetooth',
+  'study-online',
+  'call-zoom',
+  'pad-service',
+  'bluetooth-mod',
+  'velvet-pad',
+  'pad-comfort',
+  'rgb',
+  'like-new',
+  'revived',
+  'has-video',
+  'diy',
+  'casual-gaming'
+];
+
+function normalizeText(value = '') {
+  return String(value)
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/đ/g, 'd')
+    .replace(/Đ/g, 'd')
+    .toLowerCase();
+}
+
+function flattenProductValue(value) {
+  if (value === null || value === undefined) return '';
+  if (Array.isArray(value)) return value.map(flattenProductValue).join(' ');
+  if (typeof value === 'object') return Object.values(value).map(flattenProductValue).join(' ');
+  return String(value);
+}
+
+function getProductText(p = {}) {
+  return [
+    p.name,
+    p.brand,
+    getProductSegment(p).label,
+    p.condition,
+    p.soundTag,
+    p.latency,
+    p.description,
+    p.bestFor,
+    p.topHighlights,
+    p.smartTags,
+    p.soundProfile,
+    p.gamingNote,
+    p.micStatus,
+    p.comfortNote,
+    p.padStatus,
+    p.conditionTruth,
+    p.serviceDone,
+    p.compatibility,
+    p.caveat,
+    p.batteryNote,
+    p.inspection,
+    p.inspectionDetails,
+    p.reviews
+  ].map(flattenProductValue).join(' ');
+}
+
+function hasAny(text, needles) {
+  return needles.some(needle => text.includes(normalizeText(needle)));
+}
+
+function getProductTags(p = {}) {
+  const tags = new Set();
+  [p.bestFor, p.topHighlights, p.serviceDone, p.smartTags].forEach(value => {
+    flattenProductValue(value).split(/\s+/).forEach(token => {
+      const clean = token.trim();
+      if (TAG_LABELS[clean]) tags.add(clean);
+    });
+  });
+  const text = normalizeText(getProductText(p));
+  const segmentKey = getProductSegment(p).key;
+  const sound = normalizeText(p.soundTag || '');
+  const grade = getConditionGrade(p.condition, p.isSold);
+  const hasBass = sound.includes('bass') || sound.includes('v-shape') || hasAny(text, ['bass', 'edm', 'hip-hop', 'hiphop', 'rap']);
+  const hasMicNegative = hasAny(text, ['khong mic', 'khong co mic', 'chua test mic', 'mic re']);
+  const hasDiy = hasAny(text, ['diy', 'boc dem', 'boc nhung', 'thay dem', 'lam bluetooth', 'do bluetooth', 'thay pin', 'sua day', 'sua jack', 'hoi sinh']);
+
+  if (segmentKey === 'gaming') tags.add('casual-gaming');
+  if (segmentKey === 'study') tags.add('study-online');
+  if (p.isWireless || ['wireless-fast', 'wireless-slow'].includes(p.latency) || hasAny(text, ['bluetooth', 'wireless', 'khong day'])) tags.add('bluetooth');
+  if (p.video) tags.add('has-video');
+  if (grade.code === 'Like New(S)' || hasAny(text, ['like new', 'nhu moi', 'gan nhu moi'])) tags.add('like-new');
+  else tags.add('revived');
+  if (hasDiy) tags.add('diy');
+
+  if (hasAny(text, ['fps', 'valorant', 'cs2', 'csgo', 'tieng chan', 'dinh vi', 'ban sung']) || (segmentKey === 'gaming' && ['bright', 'neutral'].includes(sound))) {
+    tags.add('fps');
+  }
+  if (hasAny(text, ['hoc online', 'hoc bai', 'zoom', 'google meet', 'meet', 'discord', 'podcast', 'lam viec'])) {
+    tags.add('study-online');
+  }
+  if (hasAny(text, ['call', 'zoom', 'discord', 'meet', 'podcast', 'thu am', 'microphone']) || (text.includes('mic') && !hasMicNegative)) {
+    tags.add('call-zoom');
+  }
+  if (!hasMicNegative && hasAny(text, ['mic ro', 'mic on', 'mic dung hoc online', 'thu am ro', 'test mic'])) {
+    tags.add('mic-clear');
+  }
+  if (hasBass) {
+    tags.add('bass-music');
+  }
+  if (hasBass || hasAny(text, ['v-shape', 'vshape', 'bass manh', 'bass-heavy', 'bass heavy'])) {
+    tags.add('bass-strong');
+  }
+  if (sound.includes('mid-forward') || hasAny(text, ['vocal ro', 'giong ca si ro', 'mid ro', 'mid-forward', 'podcast ro'])) {
+    tags.add('vocal-clear');
+  }
+  if (sound.includes('bright') || hasAny(text, ['am sang', 'treble sang', 'chi tiet'])) {
+    tags.add('bright-sound');
+  }
+  if (sound.includes('warm') || hasAny(text, ['de nghe lau', 'nghe lau khong moi', 'am am', 'lofi', 'chill'])) {
+    tags.add('easy-listen');
+  }
+  if (hasAny(text, ['am truong', 'am rong', 'soundstage', 'wide stage'])) {
+    tags.add('wide-stage');
+  }
+  if (hasAny(text, ['bass 3d', '3d bass']) || (hasBass && hasAny(text, ['3d', 'surround', 'am truong', 'am rong', 'soundstage']))) {
+    tags.add('bass-3d');
+  }
+  if (hasAny(text, ['7.1', 'surround', 'gia lap', 'am thanh vom'])) {
+    tags.add('virtual-71');
+    tags.add('casual-gaming');
+  }
+  if (hasAny(text, ['boc nhung', 'nhung headband'])) {
+    tags.add('velvet-pad');
+    tags.add('pad-comfort');
+    tags.add('pad-service');
+  }
+  if (hasAny(text, ['dem em', 'dem mem', 'dem dep', 'dem moi', 'da thay dem', 'thay dem', 'boc dem', 'earpad mem', 'earpad dep'])) {
+    tags.add('pad-comfort');
+    tags.add('pad-service');
+  }
+  if (hasAny(text, ['lam bluetooth', 'do bluetooth', 'mod bluetooth', 'bluetooth mod'])) {
+    tags.add('bluetooth-mod');
+    tags.add('diy');
+  }
+  if (hasAny(text, ['thay pin', 'pin moi', 'pin da thay'])) {
+    tags.add('battery-service');
+    tags.add('diy');
+  }
+  if (hasAny(text, ['sua day', 'sua jack', 'thay jack', 'test day/jack', 'test jack'])) {
+    tags.add('wire-repair');
+    tags.add('diy');
+  }
+  if (hasAny(text, ['rgb', 'led'])) {
+    tags.add('rgb');
+  }
+
+  return tags;
+}
+
+function getProductDisplayTags(p = {}, limit = 3) {
+  const tags = getProductTags(p);
+  return DISPLAY_TAG_PRIORITY
+    .filter(tag => tags.has(tag))
+    .slice(0, limit)
+    .map(tag => TAG_LABELS[tag]);
+}
+
 // ── RENDER PRODUCTS ──
 let activeSegment = 'all', activeFilter = 'all', activeSoundFilter = '', activeLatency = '', activeSort = 'newest';
+const activeTagFilters = new Set();
+const activeFeatureFilters = new Map();
 let searchQuery = '';
 
 function getFilteredProducts() {
   let products = getProducts();
   if (searchQuery) {
-    const q = searchQuery.toLowerCase();
-    products = products.filter(p =>
-      p.name.toLowerCase().includes(q) ||
-      (p.soundTag||'').toLowerCase().includes(q) ||
-      (p.brand||'').toLowerCase().includes(q) ||
-      getProductSegment(p).label.toLowerCase().includes(q) ||
-      SOUND_DESCS[p.soundTag]?.toLowerCase().includes(q)
-    );
+    const q = normalizeText(searchQuery);
+    products = products.filter(p => normalizeText(`${getProductText(p)} ${SOUND_DESCS[p.soundTag] || ''}`).includes(q));
   }
   if (activeSegment !== 'all') {
     products = products.filter(p => getProductSegment(p).key === activeSegment);
@@ -258,6 +450,20 @@ function getFilteredProducts() {
         return p.condition === cond || grade.code === cond || grade.label === cond;
       });
     }
+  }
+  if (activeTagFilters.size) {
+    const selectedTags = Array.from(activeTagFilters);
+    products = products.filter(p => {
+      const productTags = getProductTags(p);
+      return selectedTags.every(tag => productTags.has(tag));
+    });
+  }
+  if (activeFeatureFilters.size) {
+    const selectedTags = Array.from(activeFeatureFilters.values()).filter(Boolean);
+    products = products.filter(p => {
+      const productTags = getProductTags(p);
+      return selectedTags.every(tag => productTags.has(tag));
+    });
   }
   if (activeSoundFilter) products = products.filter(p => p.soundTag === activeSoundFilter);
   if (activeLatency) products = products.filter(p => p.latency === activeLatency);
@@ -284,10 +490,14 @@ function buildCard(p) {
   const timeAgo = getTimeAgo(p.createdAt);
   const grade = getConditionGrade(p.condition, p.isSold);
   const segment = getProductSegment(p);
-  const soldHTML = p.isSold ? `<div class="sold-overlay"><span>Đ� BÁN</span><small>Sản phẩm không còn</small></div>` : '';
+  const soldHTML = p.isSold ? `<div class="sold-overlay"><span>ĐÃ BÁN</span><small>Sản phẩm không còn</small></div>` : '';
   const videoHTML = p.video ? `<video class="card-video" src="${p.video}" loop muted playsinline></video>` : '';
   const videoChip = p.video ? `<button class="media-video-chip" type="button" onclick="event.stopPropagation(); openQuickView(${p.id}, 'video')"><i class="fas fa-play"></i><span>Video</span></button>` : '';
   const descHTML = `<p class="card-desc">${getProductDescription(p)}</p>`;
+  const smartTags = getProductDisplayTags(p);
+  const smartTagsHTML = smartTags.length
+    ? `<div class="card-smart-tags">${smartTags.map(tag => `<span class="card-smart-tag">${tag}</span>`).join('')}</div>`
+    : '';
 
   const batteryHTML = p.isWireless && p.batteryHealth ? `
     <div class="battery-bar">
@@ -319,6 +529,7 @@ function buildCard(p) {
       <div class="card-segment"><i class="fas ${segment.icon}"></i>${segment.label}</div>
       <div class="card-name" style="cursor:pointer" onclick="openQuickView(${p.id})">${p.name}</div>
       ${descHTML}
+      ${smartTagsHTML}
       <div class="price-row">
         <span class="price-new">${fmt(p.price)}đ</span>
         ${priceOld}
@@ -327,8 +538,8 @@ function buildCard(p) {
       ${batteryHTML}
       <div class="card-trust-row" title="${grade.note}">
         <span class="trust-pill trust-grade grade-${grade.className}">${grade.code}</span>
-        <span class="trust-pill"><i class="fas fa-check"></i> Test OK</span>
-        <span class="trust-pill"><i class="fas fa-shield-alt"></i> BH 30 ngày</span>
+        <span class="trust-pill"><i class="fas fa-check"></i> Bọc đệm</span>
+        <span class="trust-pill"><i class="fas fa-check"></i> Làm BT</span>
       </div>
       <div class="card-action-row">
         <button class="btn-card-check" onclick="openInfo(${p.id})"><i class="fas fa-clipboard-check"></i><span>Hồ sơ</span></button>
@@ -384,7 +595,7 @@ function getConditionGrade(condition = '', isSold = false) {
     return {
       code: 'SOLD',
       label: 'Đã bán',
-      short: 'Đ� BÁN',
+      short: 'ĐÃ BÁN',
       note: 'Sản phẩm không còn',
       className: 'sold'
     };
@@ -402,38 +613,38 @@ function getConditionGrade(condition = '', isSold = false) {
   }
   if (text === 'mới' || text.includes('đã thay đệm')) {
     return {
-      code: 'Mới',
-      label: 'Mới',
-      short: 'Mới',
-      note: 'Ngoại hình đẹp, dùng tốt, đã kiểm tra đầy đủ',
-      className: 'new'
+      code: 'Hồi sinh',
+      label: 'Hồi sinh',
+      short: 'Hồi sinh',
+      note: 'Đã được Chà Là xử lý lại, vệ sinh và kiểm tra trước khi bán',
+      className: 'revived'
     };
   }
   if (text.includes('hơi xước') || text.includes('trầy nhẹ') || text.includes('đệm cũ')) {
     return {
-      code: 'Trầy nhẹ',
-      label: 'Trầy nhẹ',
-      short: 'Trầy nhẹ',
-      note: 'Có vết trầy nhẹ hoặc dấu dùng, chức năng đã test ổn',
-      className: 'light'
+      code: 'Hồi sinh',
+      label: 'Hồi sinh',
+      short: 'Hồi sinh',
+      note: 'Có dấu dùng thật, đã vệ sinh và kiểm tra chức năng',
+      className: 'revived'
     };
   }
   if (text.includes('xước nhiều') || text.includes('trầy nhiều')) {
     return {
-      code: 'Trầy nhiều',
-      label: 'Trầy nhiều',
-      short: 'Trầy nhiều',
+      code: 'Hồi sinh',
+      label: 'Hồi sinh',
+      short: 'Hồi sinh',
       note: 'Ngoại hình có nhiều dấu dùng, chức năng đã kiểm tra kỹ',
-      className: 'heavy'
+      className: 'revived'
     };
   }
 
   return {
-    code: condition || 'Mới',
-    label: condition || 'Mới',
-    short: condition || 'Mới',
+    code: 'Hồi sinh',
+    label: 'Hồi sinh',
+    short: 'Hồi sinh',
     note: 'Đã kiểm tra chức năng cơ bản',
-    className: 'new'
+    className: 'revived'
   };
 }
 
@@ -444,12 +655,38 @@ function setupSearch() {
 }
 
 function setupFilters() {
+  const resetChip = document.querySelector('.chip[data-reset-filter]');
+  const syncResetChip = () => {
+    if (!resetChip) return;
+    const hasAnyFilter = activeSegment !== 'all'
+      || activeFilter !== 'all'
+      || activeSoundFilter
+      || activeLatency
+      || activeTagFilters.size > 0
+      || activeFeatureFilters.size > 0;
+    resetChip.classList.toggle('active', !hasAnyFilter);
+  };
+
   document.querySelectorAll('.chip[data-reset-filter]').forEach(c => {
     c.addEventListener('click', () => {
       document.querySelectorAll('.chip').forEach(x => x.classList.remove('active'));
       c.classList.add('active');
       activeSegment = 'all';
       activeFilter = 'all';
+      activeSoundFilter = '';
+      activeLatency = '';
+      activeTagFilters.clear();
+      activeFeatureFilters.clear();
+      const soundFilter = document.getElementById('soundFilter');
+      const latencyFilter = document.getElementById('latencyFilter');
+      const sortFilter = document.getElementById('sortFilter');
+      document.querySelectorAll('select[data-feature-filter]').forEach(select => { select.value = ''; });
+      if (soundFilter) soundFilter.value = '';
+      if (latencyFilter) latencyFilter.value = '';
+      if (sortFilter) {
+        activeSort = 'newest';
+        sortFilter.value = 'newest';
+      }
       renderProducts();
     });
   });
@@ -458,20 +695,50 @@ function setupFilters() {
       document.querySelectorAll('.chip[data-reset-filter], .chip[data-segment]').forEach(x => x.classList.remove('active'));
       c.classList.add('active');
       activeSegment = c.dataset.segment;
+      syncResetChip();
       renderProducts();
     });
   });
   document.querySelectorAll('.chip[data-filter]').forEach(c => {
     c.addEventListener('click', () => {
-      document.querySelectorAll('.chip[data-reset-filter], .chip[data-filter]').forEach(x => x.classList.remove('active'));
-      c.classList.add('active');
-      activeFilter = c.dataset.filter;
+      const isSelected = activeFilter === c.dataset.filter;
+      document.querySelectorAll('.chip[data-filter]').forEach(x => x.classList.remove('active'));
+      activeFilter = isSelected ? 'all' : c.dataset.filter;
+      if (!isSelected) c.classList.add('active');
+      syncResetChip();
       renderProducts();
     });
   });
-  document.getElementById('soundFilter').addEventListener('change', e => { activeSoundFilter = e.target.value; renderProducts(); });
-  document.getElementById('latencyFilter').addEventListener('change', e => { activeLatency = e.target.value; renderProducts(); });
-  document.getElementById('sortFilter').addEventListener('change', e => { activeSort = e.target.value; renderProducts(); });
+  document.querySelectorAll('.chip[data-tag-filter]').forEach(c => {
+    c.addEventListener('click', () => {
+      const tag = c.dataset.tagFilter;
+      if (activeTagFilters.has(tag)) {
+        activeTagFilters.delete(tag);
+        c.classList.remove('active');
+      } else {
+        activeTagFilters.add(tag);
+        c.classList.add('active');
+      }
+      syncResetChip();
+      renderProducts();
+    });
+  });
+
+  const soundFilter = document.getElementById('soundFilter');
+  const latencyFilter = document.getElementById('latencyFilter');
+  const sortFilter = document.getElementById('sortFilter');
+  document.querySelectorAll('select[data-feature-filter]').forEach(select => {
+    select.addEventListener('change', e => {
+      const group = e.target.dataset.featureFilter;
+      if (e.target.value) activeFeatureFilters.set(group, e.target.value);
+      else activeFeatureFilters.delete(group);
+      syncResetChip();
+      renderProducts();
+    });
+  });
+  if (soundFilter) soundFilter.addEventListener('change', e => { activeSoundFilter = e.target.value; syncResetChip(); renderProducts(); });
+  if (latencyFilter) latencyFilter.addEventListener('change', e => { activeLatency = e.target.value; syncResetChip(); renderProducts(); });
+  if (sortFilter) sortFilter.addEventListener('change', e => { activeSort = e.target.value || 'newest'; renderProducts(); });
 }
 
 // ── OVERLAYS ──
@@ -519,6 +786,7 @@ window.openInfo = function(id) {
   document.getElementById('infoBody').innerHTML = `
     <div style="display:flex;flex-direction:column;gap:0.75rem;">
       ${customInspectionHTML}
+      ${buildSmartProfileHTML(p)}
       ${checkItem('Vỏ máy / Headband', shell)}
       ${checkItem('Đệm tai (Earpads)', pads)}
       ${checkItem('Driver âm thanh', driver)}
@@ -529,6 +797,36 @@ window.openInfo = function(id) {
     </div>`;
   openOverlay('infoOverlay');
 };
+
+function buildSmartProfileHTML(p = {}) {
+  const tags = getProductTags(p);
+  const pick = tagList => tagList.filter(tag => tags.has(tag)).map(tag => TAG_LABELS[tag]).join(', ');
+  const needTags = pick(['fps', 'study-online', 'call-zoom', 'bass-music', 'casual-gaming', 'bluetooth', 'diy']);
+  const featureTags = pick(['virtual-71', 'bass-3d', 'bass-strong', 'vocal-clear', 'bright-sound', 'wide-stage', 'easy-listen', 'mic-clear', 'rgb', 'like-new', 'revived', 'has-video']);
+  const diyTags = pick(['pad-service', 'velvet-pad', 'pad-comfort', 'bluetooth-mod', 'battery-service', 'wire-repair']);
+  const serviceDone = flattenProductValue(p.serviceDone);
+  const compatibility = flattenProductValue(p.compatibility);
+  const comfort = flattenProductValue(p.comfortNote || p.padStatus);
+  const caveat = flattenProductValue(p.caveat || p.conditionTruth);
+  const gaming = flattenProductValue(p.gamingNote) || (tags.has('fps') ? 'Có thông tin phù hợp FPS/định vị tiếng chân.' : tags.has('casual-gaming') ? 'Hợp chơi game casual, giải trí hằng ngày.' : '');
+  const mic = flattenProductValue(p.micStatus) || (tags.has('mic-clear') ? 'Mic rõ hoặc đã có thông tin test mic.' : tags.has('call-zoom') ? 'Có thông tin phù hợp call/Zoom.' : '');
+
+  const rows = [
+    ['Hợp nhu cầu', needTags],
+    ['Tính năng', featureTags],
+    ['DIY / dịch vụ', diyTags],
+    ['Chất âm', flattenProductValue(p.soundProfile || p.soundTag)],
+    ['Gaming', gaming],
+    ['Mic', mic],
+    ['Comfort / đệm', comfort || (tags.has('velvet-pad') ? 'Có bọc nhung hoặc xử lý đệm.' : tags.has('pad-comfort') ? 'Đệm êm hoặc đã xử lý.' : '')],
+    ['Tương thích', compatibility],
+    ['Đã xử lý', serviceDone],
+    ['Lưu ý thật', caveat]
+  ].filter(([, value]) => String(value || '').trim());
+
+  if (!rows.length) return '';
+  return `<div class="smart-profile">${rows.map(([label, value]) => checkItem(label, value)).join('')}</div>`;
+}
 
 function checkItem(label, value) {
   return `<div style="display:flex;justify-content:space-between;align-items:center;padding:0.6rem 0;border-bottom:1px solid rgba(255,255,255,0.05);">
@@ -670,6 +968,7 @@ window.openQuickView = function(id, initialMedia = 'image', initialSrc = '') {
   const saved = p.originalPrice ? Math.round((1-p.price/p.originalPrice)*100) : 0;
   const grade = getConditionGrade(p.condition, p.isSold);
   const segment = getProductSegment(p);
+  const smartQuickTags = getProductDisplayTags(p, 5).map(tag => `<span class="qv-badge">${tag}</span>`).join('');
   const startImage = initialSrc || currentQuickImages[0] || '';
   const startIndex = Math.max(0, currentQuickImages.indexOf(startImage));
   setQuickMedia(initialMedia === 'video' && p.video ? 'video' : 'image', initialMedia === 'video' && p.video ? p.video : startImage, startIndex);
@@ -682,8 +981,10 @@ window.openQuickView = function(id, initialMedia = 'image', initialSrc = '') {
     <span class="qv-badge"><i class="fas ${segment.icon}"></i> ${segment.label}</span>
     <span class="qv-badge qv-grade grade-${grade.className}" title="${grade.note}">${grade.code}</span>
     <span class="qv-badge">${p.condition || grade.label}</span>
-    <span class="qv-badge">Test OK</span>
     <span class="qv-badge">BH 30 ngày</span>
+    <span class="qv-badge">Bọc đệm</span>
+    <span class="qv-badge">Làm Bluetooth</span>
+    ${smartQuickTags}
     ${p.soundTag ? `<span class="qv-badge">${p.soundTag}</span>` : ''}
     ${p.latency ? `<span class="qv-badge">${p.latency === 'wired' ? 'Có dây' : 'Wireless'}</span>` : ''}
     ${p.brand ? `<span class="qv-badge">${p.brand}</span>` : ''}`;
@@ -766,7 +1067,7 @@ window.openPolicy = function(type) {
 };
 
 // ── WIZARD ──
-let wizardTags = [], wizardLatencyNeeded = false;
+let wizardSelectedTags = new Set();
 
 window.toggleWizard = function() {
   const body = document.getElementById('wizardBody');
@@ -775,47 +1076,50 @@ window.toggleWizard = function() {
   arrow.style.transform = body.classList.contains('open') ? 'rotate(180deg)' : '';
 };
 
-window.wizardNext = function(type) {
-  showWizardStep('ws-' + type);
+window.wizardStart = function(tags = []) {
+  wizardSelectedTags = new Set(tags);
+  showWizardStep('ws-sound');
 };
 
-window.wizardResult = function(tags, askLatency) {
-  wizardTags = tags;
-  if (askLatency) showWizardStep('ws-latency');
-  else wizardFinish(false);
+window.wizardAdd = function(tags = [], nextStep = 'ws-feature') {
+  tags.forEach(tag => wizardSelectedTags.add(tag));
+  showWizardStep(nextStep);
 };
 
-window.wizardFinish = function(needLow) {
-  wizardLatencyNeeded = needLow;
+window.wizardFinishTags = function(tags = []) {
+  tags.forEach(tag => wizardSelectedTags.add(tag));
+  const selected = Array.from(wizardSelectedTags);
   let products = getProducts().filter(p => !p.isSold && p.stock > 0);
-  // Score
   products = products.map(p => {
-    let score = wizardTags.includes(p.soundTag) ? 2 : 0;
-    if (needLow && p.latency === 'wired') score += 1;
-    if (needLow && p.latency === 'wireless-fast') score += 0.5;
-    return { ...p, _score: score };
-  }).sort((a,b) => b._score - a._score).slice(0,5);
+    const productTags = getProductTags(p);
+    const matched = selected.filter(tag => productTags.has(tag));
+    const score = matched.length * 2 + (p.video ? 0.25 : 0);
+    return { ...p, _score: score, _matchedTags: matched };
+  }).filter(p => !selected.length || p._score > 0)
+    .sort((a,b) => b._score - a._score || (b.createdAt||0) - (a.createdAt||0))
+    .slice(0,5);
 
   showWizardStep('ws-result');
   const grid = document.getElementById('wizardResultGrid');
   if (!products.length) {
-    grid.innerHTML = `<p style="color:var(--text-dim);font-size:0.88rem;">Chưa có sản phẩm phù hợp. Vui lòng quay lại sau!</p>`;
+    grid.innerHTML = `<p style="color:var(--text-dim);font-size:0.88rem;">Chưa có sản phẩm khớp đủ tag. Thử chọn rộng hơn hoặc nhắn Chà Là để tư vấn.</p>`;
     return;
   }
   grid.innerHTML = products.map(p => {
     const grade = getConditionGrade(p.condition, p.isSold);
+    const matchedTags = (p._matchedTags || []).map(tag => TAG_LABELS[tag]).filter(Boolean).slice(0,3).join(' · ');
     return `
     <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:10px;padding:1rem;cursor:pointer" onclick="openQuickView(${p.id})">
       <img src="${p.images?.[0]||''}" style="width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:6px;margin-bottom:0.6rem;" alt="${p.name}">
       <div style="font-size:0.85rem;font-weight:600;margin-bottom:0.3rem;">${p.name}</div>
       <div style="color:var(--gold);font-size:0.88rem;font-weight:700;">${fmt(p.price)}đ</div>
-      <div style="font-size:0.72rem;color:var(--text-dim);margin-top:0.2rem;">${p.soundTag || 'Đã test'} • ${grade.code}</div>
+      <div style="font-size:0.72rem;color:var(--text-dim);margin-top:0.2rem;">${matchedTags || p.soundTag || 'Hợp nhu cầu'} • ${grade.code}</div>
     </div>`;
   }).join('');
 };
 
 function showWizardStep(id) {
-  document.querySelectorAll('.wizard-step').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.wizard-step').forEach(s => { s.classList.remove('active'); s.style.display = 'none'; });
   const el = document.getElementById(id);
   if (el) { el.style.display = 'block'; el.classList.add('active'); }
 }
@@ -823,7 +1127,7 @@ function showWizardStep(id) {
 window.resetWizard = function() {
   document.querySelectorAll('.wizard-step').forEach(s => { s.classList.remove('active'); s.style.display = ''; });
   showWizardStep('ws-0');
-  wizardTags = []; wizardLatencyNeeded = false;
+  wizardSelectedTags.clear();
 };
 
 // ── FAQ ──
