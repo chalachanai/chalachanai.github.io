@@ -74,6 +74,7 @@ const SEED_PRODUCTS = [
 // ── INIT ──
 const PUBLIC_DATA_URL = 'data/public-data.json';
 let PUBLIC_DATA = null;
+const selectedAddonsByProduct = new Map();
 
 document.addEventListener('DOMContentLoaded', async () => {
   initData();
@@ -246,7 +247,7 @@ const TAG_LABELS = {
   'wide-stage': 'Âm rộng',
   'easy-listen': 'Dễ nghe lâu',
   'mic-clear': 'Mic rõ',
-  'pad-service': 'Bọc đệm',
+  'pad-service': 'Bọc nhung',
   'velvet-pad': 'Bọc nhung',
   'pad-comfort': 'Đệm êm',
   'bluetooth-mod': 'Làm Bluetooth',
@@ -269,9 +270,10 @@ const DISPLAY_TAG_PRIORITY = [
   'bluetooth',
   'study-online',
   'call-zoom',
+  'velvet-pad',
   'pad-service',
   'bluetooth-mod',
-  'velvet-pad',
+  'battery-service',
   'pad-comfort',
   'rgb',
   'like-new',
@@ -337,20 +339,113 @@ function getExplicitProductTags(p = {}) {
       if (TAG_LABELS[clean]) tags.add(clean);
     });
   });
+  if (tags.has('pad-service') || tags.has('velvet-pad')) {
+    tags.add('pad-service');
+    tags.add('velvet-pad');
+  }
   return tags;
 }
+
+const ADDON_SERVICE_INFO = {
+  'bluetooth-mod': {
+    label: 'Làm Bluetooth',
+    shortLabel: 'Bluetooth',
+    lines: [
+      'Bluetooth 5.2, kết nối ổn định.',
+      'Âm thanh stereo 2 kênh trái/phải.',
+      '6 EQ Music Modes: Pop / Rock / Vocal / Jazz / Bass / Classic.',
+      'Pin lớn nhất có thể, nghe nhạc nhiều ngày, sạc Type-C.',
+      'Kết hợp với driver 40-50mm lớn hơn nhiều tai nghe Bluetooth phổ thông, cho trải nghiệm âm thanh sống động hơn.'
+    ]
+  },
+  'velvet-pad': {
+    label: 'Bọc nhung',
+    shortLabel: 'Bọc nhung',
+    lines: [
+      'Chất liệu nhung mềm, thoáng tai, giúp giảm bí tai và mồ hôi.',
+      'Lớp bọc dày dặn, dễ vệ sinh.',
+      'Ngoại hình đẹp hơn cũng là một điểm cộng lớn.',
+      'Khách chọn màu tùy thích.'
+    ]
+  },
+  'battery-service': {
+    label: 'Thay pin',
+    shortLabel: 'Thay pin',
+    lines: [
+      'Làm pin lớn nhất tai có thể gắn được.',
+      'Thường nâng dung lượng lên khoảng 2-3 lần tùy mẫu tai.',
+      'Mục tiêu là trải nghiệm pin chơi vài tuần không cạn với nhu cầu dùng bình thường.'
+    ]
+  }
+};
 
 function getProductAddOns(p = {}) {
   const tags = getExplicitProductTags(p);
   const addOns = [];
   if (tags.has('pad-service') || tags.has('velvet-pad')) {
-    addOns.push({ tag: 'pad-service', label: 'Bọc đệm' });
+    addOns.push({ tag: 'velvet-pad', ...ADDON_SERVICE_INFO['velvet-pad'] });
   }
   if (tags.has('bluetooth-mod')) {
-    addOns.push({ tag: 'bluetooth-mod', label: 'Làm BT' });
+    addOns.push({ tag: 'bluetooth-mod', ...ADDON_SERVICE_INFO['bluetooth-mod'] });
+  }
+  if (tags.has('battery-service')) {
+    addOns.push({ tag: 'battery-service', ...ADDON_SERVICE_INFO['battery-service'] });
   }
   return addOns;
 }
+
+function isAddonSelected(productId, tag) {
+  return selectedAddonsByProduct.get(String(productId))?.has(tag) || false;
+}
+
+function buildAddonOptionButton(productId, addOn, className = '') {
+  const selected = isAddonSelected(productId, addOn.tag);
+  return `<button class="addon-option ${className} ${selected ? 'selected' : ''}" type="button"
+    data-addon-product="${productId}" data-addon="${addOn.tag}" aria-pressed="${selected ? 'true' : 'false'}"
+    onclick="toggleAddonOption(event, ${productId}, '${addOn.tag}')"
+    title="Tick nếu muốn thêm dịch vụ ${addOn.label}">
+    <i class="${selected ? 'fas fa-check-square' : 'far fa-square'}"></i><span>${addOn.shortLabel || addOn.label}</span>
+  </button>`;
+}
+
+function syncAddonButtons(productId, tag, selected) {
+  document.querySelectorAll(`[data-addon-product="${productId}"][data-addon="${tag}"]`).forEach(btn => {
+    btn.classList.toggle('selected', selected);
+    btn.setAttribute('aria-pressed', selected ? 'true' : 'false');
+    const icon = btn.querySelector('i');
+    if (icon) icon.className = selected ? 'fas fa-check-square' : 'far fa-square';
+  });
+}
+
+window.toggleAddonOption = function(event, productId, tag) {
+  event?.preventDefault();
+  event?.stopPropagation();
+  const key = String(productId);
+  const selected = selectedAddonsByProduct.get(key) || new Set();
+  if (selected.has(tag)) selected.delete(tag);
+  else selected.add(tag);
+  if (selected.size) selectedAddonsByProduct.set(key, selected);
+  else selectedAddonsByProduct.delete(key);
+  syncAddonButtons(productId, tag, selected.has(tag));
+};
+
+window.openAddonInfo = function(event, productId) {
+  event?.preventDefault();
+  event?.stopPropagation();
+  const p = getProducts().find(x => x.id == productId);
+  const addOns = getProductAddOns(p || {});
+  if (!addOns.length) return;
+  document.getElementById('infoTitle').textContent = 'Tùy chọn dịch vụ thêm';
+  document.getElementById('infoBody').innerHTML = `
+    <div class="addon-info-list">
+      ${addOns.map(addOn => `
+        <div class="addon-info-item">
+          <h3>${addOn.label}</h3>
+          ${addOn.lines.map(line => `<p>${line}</p>`).join('')}
+        </div>`).join('')}
+    </div>`;
+  openOverlay('infoOverlay');
+};
 
 function getProductTags(p = {}) {
   const tags = getExplicitProductTags(p);
@@ -516,10 +611,16 @@ function buildCard(p) {
     ? `<div class="card-smart-tags">${smartTags.map(tag => `<span class="card-smart-tag">${tag}</span>`).join('')}</div>`
     : '';
   const addOns = getProductAddOns(p);
-  const trustCols = Math.max(1, Math.min(3, addOns.length + 1));
-  const addOnHTML = addOns.map(addOn =>
-    `<span class="trust-pill trust-addon"><i class="fas fa-check"></i> ${addOn.label}</span>`
-  ).join('');
+  const addOnHTML = addOns.length ? `
+    <div class="card-addon-zone">
+      <div class="card-addon-label">Tùy chọn thêm</div>
+      <div class="card-addon-row">
+        ${addOns.map(addOn => buildAddonOptionButton(p.id, addOn, 'trust-pill trust-addon')).join('')}
+      </div>
+      <button class="addon-detail-link" type="button" onclick="openAddonInfo(event, ${p.id})">
+        <i class="fas fa-circle-info"></i> Xem mô tả dịch vụ
+      </button>
+    </div>` : '';
 
   const batteryHTML = p.isWireless && p.batteryHealth ? `
     <div class="battery-bar">
@@ -558,10 +659,10 @@ function buildCard(p) {
       </div>
       ${priceSave}
       ${batteryHTML}
-      <div class="card-trust-row trust-cols-${trustCols}" title="${grade.note}">
+      <div class="card-trust-row trust-cols-1" title="${grade.note}">
         <span class="trust-pill trust-grade grade-${grade.className}">${grade.code}</span>
-        ${addOnHTML}
       </div>
+      ${addOnHTML}
       <div class="card-action-row">
         <button class="btn-card-check" onclick="openInfo(${p.id})"><i class="fas fa-clipboard-check"></i><span>Hồ sơ</span></button>
         <button class="btn-card-check btn-card-music-action" onclick="openMusic('${p.soundTag||''}', '${p.youtubePlaylist||''}', '${p.frGraph||''}', '${p.name}')"><i class="fas fa-music"></i><span>Nghe thử</span></button>
@@ -821,11 +922,11 @@ window.openInfo = function(id) {
 
 function buildSmartProfileHTML(p = {}) {
   const tags = getProductTags(p);
-  const pick = tagList => tagList.filter(tag => tags.has(tag)).map(tag => TAG_LABELS[tag]).join(', ');
+  const pick = tagList => Array.from(new Set(tagList.filter(tag => tags.has(tag)).map(tag => TAG_LABELS[tag]))).join(', ');
   const needTags = pick(['fps', 'study-online', 'call-zoom', 'bass-music', 'casual-gaming', 'bluetooth', 'diy']);
   const featureTags = pick(['virtual-71', 'bass-3d', 'bass-strong', 'vocal-clear', 'bright-sound', 'wide-stage', 'easy-listen', 'mic-clear', 'rgb', 'like-new', 'revived', 'has-video']);
-  const diyTags = pick(['pad-service', 'velvet-pad', 'pad-comfort', 'bluetooth-mod', 'battery-service', 'wire-repair']);
-  const serviceDone = flattenProductValue(p.serviceDone);
+  const diyTags = pick(['velvet-pad', 'bluetooth-mod', 'battery-service', 'wire-repair']);
+  const optionalServices = getProductAddOns(p).map(addOn => addOn.label).join(', ');
   const compatibility = flattenProductValue(p.compatibility);
   const comfort = flattenProductValue(p.comfortNote || p.padStatus);
   const caveat = flattenProductValue(p.caveat || p.conditionTruth);
@@ -841,7 +942,7 @@ function buildSmartProfileHTML(p = {}) {
     ['Mic', mic],
     ['Comfort / đệm', comfort || (tags.has('velvet-pad') ? 'Có bọc nhung hoặc xử lý đệm.' : tags.has('pad-comfort') ? 'Đệm êm hoặc đã xử lý.' : '')],
     ['Tương thích', compatibility],
-    ['Đã xử lý', serviceDone],
+    ['Dịch vụ có thể thêm', optionalServices],
     ['Lưu ý thật', caveat]
   ].filter(([, value]) => String(value || '').trim());
 
@@ -990,7 +1091,17 @@ window.openQuickView = function(id, initialMedia = 'image', initialSrc = '') {
   const grade = getConditionGrade(p.condition, p.isSold);
   const segment = getProductSegment(p);
   const smartQuickTags = getProductDisplayTags(p, 5).map(tag => `<span class="qv-badge">${tag}</span>`).join('');
-  const addOnQuickBadges = getProductAddOns(p).map(addOn => `<span class="qv-badge">${addOn.label}</span>`).join('');
+  const quickAddOns = getProductAddOns(p);
+  const addOnQuickHTML = quickAddOns.length ? `
+    <div class="qv-addon-box">
+      <div class="card-addon-label">Tùy chọn thêm</div>
+      <div class="card-addon-row">
+        ${quickAddOns.map(addOn => buildAddonOptionButton(p.id, addOn, 'trust-pill trust-addon')).join('')}
+      </div>
+      <button class="addon-detail-link" type="button" onclick="openAddonInfo(event, ${p.id})">
+        <i class="fas fa-circle-info"></i> Xem mô tả dịch vụ
+      </button>
+    </div>` : '';
   const startImage = initialSrc || currentQuickImages[0] || '';
   const startIndex = Math.max(0, currentQuickImages.indexOf(startImage));
   setQuickMedia(initialMedia === 'video' && p.video ? 'video' : 'image', initialMedia === 'video' && p.video ? p.video : startImage, startIndex);
@@ -1004,11 +1115,15 @@ window.openQuickView = function(id, initialMedia = 'image', initialSrc = '') {
     <span class="qv-badge qv-grade grade-${grade.className}" title="${grade.note}">${grade.code}</span>
     <span class="qv-badge">${p.condition || grade.label}</span>
     <span class="qv-badge">BH 30 ngày</span>
-    ${addOnQuickBadges}
     ${smartQuickTags}
     ${p.soundTag ? `<span class="qv-badge">${p.soundTag}</span>` : ''}
     ${p.latency ? `<span class="qv-badge">${p.latency === 'wired' ? 'Có dây' : 'Wireless'}</span>` : ''}
     ${p.brand ? `<span class="qv-badge">${p.brand}</span>` : ''}`;
+  const oldAddonBox = document.getElementById('qvAddonBox');
+  if (oldAddonBox) oldAddonBox.remove();
+  if (addOnQuickHTML) {
+    document.getElementById('qvDesc').insertAdjacentHTML('afterend', `<div id="qvAddonBox">${addOnQuickHTML}</div>`);
+  }
   // Thumbs
   const imageThumbs = currentQuickImages.map((img,i) =>
     `<button class="qv-thumb" type="button" data-index="${i}" onclick="setQuickMedia('image','${img}',${i})"><img src="${img}" alt="${i}"></button>`
