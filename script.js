@@ -13,12 +13,12 @@ const DEFAULT_PLAYLISTS = {
 };
 
 const SOUND_DESCS = {
-  'V-Shape':    'V-Shape: Bass mạnh + Treble sáng, Mid hơi lùi. Phù hợp game hành động, EDM, Hip-hop. Nghe rất "oomph".',
-  'Warm':       'Warm: Âm thanh ấm áp, trung tần mượt mà. Nghe lâu không mỏi tai. Phù hợp Lofi, Acoustic, xem phim dài.',
-  'Bright':     'Bright: Treble chi tiết, sắc nét. Phù hợp Classical, Jazz, nhạc cụ tự nhiên. Nghe lâu dễ mỏi.',
-  'Neutral':    'Neutral/Flat: Trung thực, không tô màu. Phù hợp Podcast, Mixing, monitor. Tiêu chuẩn chuyên nghiệp.',
-  'Bass-Heavy': 'Bass-Heavy: Sub bass dồn dập, uy lực. Phù hợp Hip-hop, Electronic, Game FPS cần hiệu ứng boom.',
-  'Mid-Forward':'Mid-Forward: Vocal cực rõ, nhạc cụ nổi. Phù hợp K-pop, Jazz, Classical. Nghe nhạc acoustic rất sướng.'
+  'V-Shape':    'V-Shape: bass lực, hiệu ứng nổi, hợp gaming/FPS casual, EDM và phim hành động.',
+  'Warm':       'Warm: âm ấm, mềm, dễ nghe lâu; hợp lofi, podcast, phim dài và người sợ treble gắt.',
+  'Bright':     'Bright: âm sáng, chi tiết, giọng nữ và tiếng nhạc cụ nổi hơn; hợp người thích rõ nét.',
+  'Neutral':    'Neutral/Flat: cân bằng, ít màu mè; hợp học/call, nghe tạp và người muốn âm thật hơn.',
+  'Bass-Heavy': 'Bass-Heavy: bass mạnh và dày; hợp EDM, hip-hop, phim và game cần cảm giác lực.',
+  'Mid-Forward':'Mid-Forward: vocal tiến gần, giọng ca sĩ rõ; hợp ballad, acoustic, K-pop và nhạc có lời.'
 };
 
 const FR_PRESETS = {
@@ -329,7 +329,7 @@ function hasAny(text, needles) {
   return needles.some(needle => text.includes(normalizeText(needle)));
 }
 
-function getProductTags(p = {}) {
+function getExplicitProductTags(p = {}) {
   const tags = new Set();
   [p.bestFor, p.topHighlights, p.serviceDone, p.smartTags].forEach(value => {
     flattenProductValue(value).split(/\s+/).forEach(token => {
@@ -337,6 +337,23 @@ function getProductTags(p = {}) {
       if (TAG_LABELS[clean]) tags.add(clean);
     });
   });
+  return tags;
+}
+
+function getProductAddOns(p = {}) {
+  const tags = getExplicitProductTags(p);
+  const addOns = [];
+  if (tags.has('pad-service') || tags.has('velvet-pad')) {
+    addOns.push({ tag: 'pad-service', label: 'Bọc đệm' });
+  }
+  if (tags.has('bluetooth-mod')) {
+    addOns.push({ tag: 'bluetooth-mod', label: 'Làm BT' });
+  }
+  return addOns;
+}
+
+function getProductTags(p = {}) {
+  const tags = getExplicitProductTags(p);
   const text = normalizeText(getProductText(p));
   const segmentKey = getProductSegment(p).key;
   const sound = normalizeText(p.soundTag || '');
@@ -498,6 +515,11 @@ function buildCard(p) {
   const smartTagsHTML = smartTags.length
     ? `<div class="card-smart-tags">${smartTags.map(tag => `<span class="card-smart-tag">${tag}</span>`).join('')}</div>`
     : '';
+  const addOns = getProductAddOns(p);
+  const trustCols = Math.max(1, Math.min(3, addOns.length + 1));
+  const addOnHTML = addOns.map(addOn =>
+    `<span class="trust-pill trust-addon"><i class="fas fa-check"></i> ${addOn.label}</span>`
+  ).join('');
 
   const batteryHTML = p.isWireless && p.batteryHealth ? `
     <div class="battery-bar">
@@ -519,7 +541,7 @@ function buildCard(p) {
       <div class="card-side-actions">
         <span class="side-badge side-badge-time">${timeAgo}</span>
         <span class="side-badge side-badge-cond ${condClass}" title="${grade.note}">${grade.short}</span>
-          <button class="side-btn side-item btn-zoom" title="Soi chi tiết x2" data-img="${p.images?.[0]||''}"><i class="fas fa-search-plus"></i></button>
+          <button class="side-btn side-item btn-zoom" title="Soi chi tiết x3" data-img="${p.images?.[0]||''}"><i class="fas fa-search-plus"></i></button>
         ${p.video ? `<button class="side-btn side-item" title="Xem video" onclick="event.stopPropagation(); openQuickView(${p.id}, 'video')"><i class="fas fa-play"></i></button>` : ''}
         <button class="side-btn side-item btn-music" data-tag="${p.soundTag}" data-playlist="${p.youtubePlaylist||''}" data-fr="${p.frGraph||''}" data-name="${p.name}" title="Nghe thử gu âm nhạc"><i class="fas fa-music"></i></button>
         <a class="side-btn side-item side-btn-msg" href="${messengerLink}" target="_blank" onclick="event.stopPropagation()" title="Nhắn Messenger mua hàng"><i class="fab fa-facebook-messenger"></i></a>
@@ -536,10 +558,9 @@ function buildCard(p) {
       </div>
       ${priceSave}
       ${batteryHTML}
-      <div class="card-trust-row" title="${grade.note}">
+      <div class="card-trust-row trust-cols-${trustCols}" title="${grade.note}">
         <span class="trust-pill trust-grade grade-${grade.className}">${grade.code}</span>
-        <span class="trust-pill"><i class="fas fa-check"></i> Bọc đệm</span>
-        <span class="trust-pill"><i class="fas fa-check"></i> Làm BT</span>
+        ${addOnHTML}
       </div>
       <div class="card-action-row">
         <button class="btn-card-check" onclick="openInfo(${p.id})"><i class="fas fa-clipboard-check"></i><span>Hồ sơ</span></button>
@@ -859,7 +880,7 @@ window.openZoom = function(src) {
 function setupMagnifier() {
   const container = document.getElementById('zoomContainer');
   const lens = document.getElementById('magnifierLens');
-  const ZOOM = 2;
+  const ZOOM = 3;
   container.addEventListener('mouseenter', () => lens.style.display = 'block');
   container.addEventListener('mouseleave', () => lens.style.display = 'none');
   container.addEventListener('mousemove', e => {
@@ -969,6 +990,7 @@ window.openQuickView = function(id, initialMedia = 'image', initialSrc = '') {
   const grade = getConditionGrade(p.condition, p.isSold);
   const segment = getProductSegment(p);
   const smartQuickTags = getProductDisplayTags(p, 5).map(tag => `<span class="qv-badge">${tag}</span>`).join('');
+  const addOnQuickBadges = getProductAddOns(p).map(addOn => `<span class="qv-badge">${addOn.label}</span>`).join('');
   const startImage = initialSrc || currentQuickImages[0] || '';
   const startIndex = Math.max(0, currentQuickImages.indexOf(startImage));
   setQuickMedia(initialMedia === 'video' && p.video ? 'video' : 'image', initialMedia === 'video' && p.video ? p.video : startImage, startIndex);
@@ -982,8 +1004,7 @@ window.openQuickView = function(id, initialMedia = 'image', initialSrc = '') {
     <span class="qv-badge qv-grade grade-${grade.className}" title="${grade.note}">${grade.code}</span>
     <span class="qv-badge">${p.condition || grade.label}</span>
     <span class="qv-badge">BH 30 ngày</span>
-    <span class="qv-badge">Bọc đệm</span>
-    <span class="qv-badge">Làm Bluetooth</span>
+    ${addOnQuickBadges}
     ${smartQuickTags}
     ${p.soundTag ? `<span class="qv-badge">${p.soundTag}</span>` : ''}
     ${p.latency ? `<span class="qv-badge">${p.latency === 'wired' ? 'Có dây' : 'Wireless'}</span>` : ''}

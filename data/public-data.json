@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "exportedAt": "2026-05-06T12:38:54.138Z",
+  "exportedAt": "2026-05-06T14:39:52.504Z",
   "products": [
     {
       "id": 1000001,
@@ -660,6 +660,92 @@
       "reviews": [],
       "views": 0,
       "createdAt": 1778070244695,
+      "isSold": false
+    },
+    {
+      "id": 1778077045229,
+      "name": "DIY Tai Nghe Turtle Beach Earforce M5Ti",
+      "segment": "music",
+      "brand": "",
+      "condition": "Mới",
+      "price": 350000,
+      "originalPrice": 500000,
+      "stock": 1,
+      "soundTag": "",
+      "latency": "wireless-fast",
+      "isWireless": true,
+      "batteryHealth": null,
+      "images": [
+        "/uploads/1778077829861-35fd06ec-product-1778076943570.jpg",
+        "/uploads/1778077844775-7f276b85-product-1778076959169.jpg",
+        "/uploads/1778077861267-4f2f9f54-product-1778076975514.jpg",
+        "/uploads/1778077871163-0709a496-product-1778076985556.jpg"
+      ],
+      "video": "",
+      "youtubePlaylist": "",
+      "shopeeLink": "",
+      "messengerLink": "",
+      "description": "",
+      "bestFor": [],
+      "topHighlights": [],
+      "serviceDone": [],
+      "inspection": "",
+      "inspectionDetails": {
+        "shell": "",
+        "pads": "",
+        "driver": "",
+        "mic": "",
+        "connect": "",
+        "battery": "",
+        "clean": ""
+      },
+      "reviews": [],
+      "views": 0,
+      "createdAt": 1778077045229,
+      "isSold": false
+    },
+    {
+      "id": 1778077364483,
+      "name": "DIY Tai nghe Over-ear SoundMAX AH 327",
+      "segment": "gaming",
+      "brand": "",
+      "condition": "Mới",
+      "price": 400000,
+      "originalPrice": 560000,
+      "stock": 1,
+      "soundTag": "",
+      "latency": "wireless-fast",
+      "isWireless": true,
+      "batteryHealth": 100,
+      "images": [
+        "/uploads/1778078214153-4a423265-product-1778077327918.jpg",
+        "/uploads/1778078225458-3eea505f-product-1778077339762.jpg",
+        "/uploads/1778078243214-77e78550-product-1778077357607.jpg"
+      ],
+      "video": "",
+      "youtubePlaylist": "",
+      "shopeeLink": "",
+      "messengerLink": "",
+      "description": "",
+      "bestFor": [
+        "bluetooth",
+        "diy"
+      ],
+      "topHighlights": [],
+      "serviceDone": [],
+      "inspection": "",
+      "inspectionDetails": {
+        "shell": "",
+        "pads": "",
+        "driver": "",
+        "mic": "",
+        "connect": "",
+        "battery": "",
+        "clean": ""
+      },
+      "reviews": [],
+      "views": 0,
+      "createdAt": 1778077364483,
       "isSold": false
     }
   ],

@@ -424,6 +424,9 @@ img { display: block; width: 100%; }
   gap: 0.35rem;
   margin-top: 0.65rem;
 }
+.card-trust-row.trust-cols-1 { grid-template-columns: 1fr; }
+.card-trust-row.trust-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.card-trust-row.trust-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 .trust-pill {
   min-width: 0;
   display: inline-flex;
@@ -446,6 +449,11 @@ img { display: block; width: 100%; }
   color: var(--gold);
   border-color: rgba(212,175,55,0.34);
   background: rgba(212,175,55,0.12);
+}
+.trust-addon {
+  color: var(--text-dim);
+  border-color: rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.03);
 }
 .grade-s { color: #f0cd5e; border-color: rgba(240,205,94,0.45); }
 .grade-new { color: #8ee6a8; border-color: rgba(142,230,168,0.38); }
@@ -901,6 +909,25 @@ footer {
 .admin-tab.active, .admin-tab:hover { background: var(--gold-dim); color: var(--gold); }
 .admin-tab-panel { display: none; padding: 2rem; }
 .admin-tab-panel.active { display: block; }
+.btn-quick-cloud {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid rgba(39,174,96,0.38);
+  color: #9be7b4;
+  background: rgba(39,174,96,0.09);
+  font-size: 0.78rem;
+  font-weight: 800;
+  white-space: nowrap;
+  transition: var(--trans);
+}
+.btn-quick-cloud:hover {
+  color: #c7ffd8;
+  border-color: rgba(39,174,96,0.7);
+  background: rgba(39,174,96,0.16);
+}
 .btn-logout { font-size: 0.8rem; color: var(--text-dim); padding: 0.4rem 0.8rem; border: 1px solid var(--border); border-radius: 50px; transition: var(--trans); }
 .btn-logout:hover { color: var(--red); border-color: var(--red); }
 .cloud-panel {
@@ -1371,6 +1398,138 @@ td img { width: 48px; height: 48px; object-fit: cover; border-radius: 6px; }
   background: var(--gold-dim);
 }
 .tag-check input { accent-color: var(--gold); }
+
+.admin-preview-media-drop {
+  cursor: copy;
+  outline: 1px solid transparent;
+  outline-offset: -1px;
+}
+.admin-preview-media-drop:hover,
+.admin-preview-media-drop.admin-preview-drag {
+  outline-color: rgba(212,175,55,0.55);
+}
+.admin-preview-media-empty {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--border);
+  background: rgba(212,175,55,0.035);
+}
+.admin-preview-drop-hint {
+  position: absolute;
+  left: 50%;
+  bottom: 1rem;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  max-width: calc(100% - 2rem);
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+  border: 1px dashed rgba(212,175,55,0.55);
+  color: var(--gold);
+  background: rgba(0,0,0,0.72);
+  font-size: 0.72rem;
+  font-weight: 800;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--trans);
+  z-index: 7;
+}
+.admin-preview-media-drop.no-media .admin-preview-drop-hint,
+.admin-preview-media-drop:hover .admin-preview-drop-hint,
+.admin-preview-media-drop.admin-preview-drag .admin-preview-drop-hint {
+  opacity: 1;
+}
+.preview-tag-picker {
+  margin: 0.65rem 0 0.35rem;
+  padding: 0.55rem;
+  border: 1px dashed rgba(212,175,55,0.28);
+  border-radius: var(--radius-sm);
+  background: rgba(212,175,55,0.045);
+}
+.preview-tag-picker-title {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.45rem;
+  color: var(--gold);
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.preview-tag-picker-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  max-height: 106px;
+  overflow: auto;
+  padding-right: 0.15rem;
+}
+.preview-tag-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  min-height: 24px;
+  padding: 0.22rem 0.45rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  background: rgba(255,255,255,0.035);
+  font-size: 0.68rem;
+  font-weight: 800;
+  transition: var(--trans);
+}
+.preview-tag-chip:hover,
+.preview-tag-chip.active {
+  border-color: var(--gold);
+  color: var(--gold);
+  background: var(--gold-dim);
+}
+.preview-tag-chip i { font-size: 0.62rem; }
+.admin-preview-modal { width: min(620px, 94vw); }
+.admin-preview-video {
+  width: 100%;
+  max-height: 70vh;
+  border-radius: var(--radius-sm);
+  background: #000;
+}
+.admin-preview-zoom img {
+  width: 100%;
+  max-height: 76vh;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+  background: #050505;
+}
+.admin-preview-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.admin-preview-profile-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.admin-preview-profile-row span {
+  color: var(--text-dim);
+  font-size: 0.82rem;
+}
+.admin-preview-profile-row strong {
+  max-width: 58%;
+  color: var(--text);
+  font-size: 0.84rem;
+  line-height: 1.5;
+  text-align: right;
+}
 
 /* ═══════════════════════════════════════════════
    PREVIEW SEPARATOR

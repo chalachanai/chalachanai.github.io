@@ -89,11 +89,11 @@
     </select>
     <select class="filter-select" data-feature-filter="sound">
       <option value="">Chất âm</option>
-      <option value="bass-strong">Bass mạnh</option>
-      <option value="vocal-clear">Vocal rõ</option>
-      <option value="bright-sound">Âm sáng</option>
-      <option value="wide-stage">Âm rộng</option>
-      <option value="easy-listen">Dễ nghe lâu</option>
+      <option value="bass-strong">Bass mạnh - gaming/EDM</option>
+      <option value="vocal-clear">Vocal rõ - giọng ca sĩ</option>
+      <option value="bright-sound">Âm sáng - nữ/chi tiết</option>
+      <option value="wide-stage">Âm rộng - game/phim</option>
+      <option value="easy-listen">Dễ nghe lâu - nhẹ nhàng</option>
     </select>
     <select class="filter-select" data-feature-filter="condition">
       <option value="">Tình trạng</option>
@@ -333,7 +333,7 @@
       <img src="" id="zoomImg" alt="Soi chi tiết">
       <div class="magnifier-lens" id="magnifierLens"></div>
     </div>
-    <p class="zoom-hint">Di chuột vào ảnh để soi chi tiết x2</p>
+    <p class="zoom-hint">Di chuột vào ảnh để soi chi tiết x3</p>
   </div>
 </div>
 
@@ -343,12 +343,12 @@
     <button class="modal-close" onclick="closeOverlay('quickOverlay')">✕</button>
     <div class="qv-grid">
       <div class="qv-media">
-        <img src="" class="qv-main-img" id="qvMainImg" onclick="openQuickZoom()" title="Bấm để soi ảnh x2">
+        <img src="" class="qv-main-img" id="qvMainImg" onclick="openQuickZoom()" title="Bấm để soi ảnh x3">
         <video class="qv-main-video" id="qvMainVideo" controls playsinline></video>
         <button class="qv-nav qv-prev" type="button" onclick="quickStep(-1)" aria-label="Ảnh trước"><i class="fas fa-chevron-left"></i></button>
         <button class="qv-nav qv-next" type="button" onclick="quickStep(1)" aria-label="Ảnh sau"><i class="fas fa-chevron-right"></i></button>
         <div class="qv-media-tools">
-          <button type="button" id="qvZoomBtn" onclick="openQuickZoom()"><i class="fas fa-search-plus"></i> Soi ảnh x2</button>
+          <button type="button" id="qvZoomBtn" onclick="openQuickZoom()"><i class="fas fa-search-plus"></i> Soi ảnh x3</button>
           <button type="button" id="qvVideoBtn" onclick="openQuickVideo()"><i class="fas fa-play"></i> Xem video</button>
         </div>
         <div class="qv-thumbs" id="qvThumbs"></div>
