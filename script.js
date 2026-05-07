@@ -400,8 +400,8 @@ const ADDON_SERVICE_INFO = {
       'Bluetooth 5.2, kết nối ổn định.',
       'Âm thanh stereo 2 kênh trái/phải.',
       '6 EQ Music Modes: Pop / Rock / Vocal / Jazz / Bass / Classic.',
-      'Pin lớn nhất có thể, nghe nhạc nhiều ngày, sạc Type-C.',
-      'Kết hợp với driver 40-50mm lớn hơn nhiều tai nghe Bluetooth phổ thông, cho trải nghiệm âm thanh sống động hơn.'
+      'Pin 1500 nghe nhạc nhiều ngày, sạc Type-C.',
+      'Kết hợp với driver 40mm lớn hơn nhiều tai nghe Bluetooth phổ thông, cho trải nghiệm âm thanh sống động hơn.'
     ]
   },
   'velvet-pad': {
@@ -409,9 +409,8 @@ const ADDON_SERVICE_INFO = {
     shortLabel: 'Bọc nhung',
     price: 120000,
     lines: [
-      'Chất liệu nhung mềm, thoáng tai, giúp giảm bí tai và mồ hôi.',
-      'Lớp bọc dày dặn, dễ vệ sinh.',
-      'Ngoại hình đẹp hơn cũng là một điểm cộng lớn.',
+      'Đệm bọc nhung xám thoáng mát, êm ái, dày dặn và dễ vệ sinh.',
+      'Chất liệu nhung giúp giảm bí tai và mồ hôi khi đeo lâu.',
       'Khách chọn màu tùy thích.'
     ]
   },
@@ -555,9 +554,15 @@ window.openAddonInfo = function(event, productId) {
   const p = getProducts().find(x => x.id == productId);
   const addOns = getProductAddOns(p || {});
   if (!addOns.length) return;
+  const diyNote = Array.isArray(p?.diyServiceNote) ? p.diyServiceNote.filter(Boolean) : [];
   document.getElementById('infoTitle').textContent = 'Tùy chọn dịch vụ thêm';
   document.getElementById('infoBody').innerHTML = `
     <div class="addon-info-list">
+      ${diyNote.length ? `
+        <div class="addon-info-item addon-info-note">
+          <h3>Ghi chú DIY</h3>
+          ${diyNote.map(line => `<p>${escapeHTML(line)}</p>`).join('')}
+        </div>` : ''}
       ${addOns.map(addOn => `
         <div class="addon-info-item">
           <h3>${addOn.label} <span>+${fmt(addOn.price)}đ</span></h3>
