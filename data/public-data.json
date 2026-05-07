@@ -1,7 +1,285 @@
 {
   "schemaVersion": 2,
-  "exportedAt": "2026-05-07T07:07:27.418Z",
+  "exportedAt": "2026-05-07T07:07:27.416Z",
   "products": [
+    {
+      "id": 1777458161974,
+      "name": "DIY ONKUKA K9",
+      "segment": "gaming",
+      "brand": "ONKUKA",
+      "condition": "Mới",
+      "price": 400000,
+      "originalPrice": 490000,
+      "stock": 1,
+      "soundTag": "Bass-Heavy",
+      "latency": "wired",
+      "isWireless": false,
+      "batteryHealth": null,
+      "images": [
+        "/uploads/1777458742531-71a9408c-product-1777457872191.jpg",
+        "/uploads/1777458761271-1d588d26-product-1777457891509.jpg",
+        "/uploads/1777458776996-cf1bffd7-product-1777457907236.jpg",
+        "/uploads/1777458819729-b116db69-product-1777457949392.jpg"
+      ],
+      "video": "/uploads/1777458747618-f650f681-7775596900331.mp4",
+      "youtubePlaylist": "",
+      "shopeeLink": "",
+      "messengerLink": "",
+      "description": "ONKUKA K9 bản DIY thiên âm lực và cảm giác giải trí. Hợp game casual, phim hành động và khách thích tai gaming nhìn khác lạ hơn mẫu phổ thông.\nBluetooth 5.2, kết nối ổn định. Âm thanh stereo 2 kênh trái/phải. 6 EQ Music Modes: Pop / Rock / Vocal / Jazz / Bass / Classic. Pin 1500 nghe nhạc nhiều ngày, sạc Type-C. Kết hợp với driver 40mm lớn hơn nhiều tai nghe Bluetooth phổ thông, cho trải nghiệm âm thanh sống động hơn. Đệm bọc nhung xám thoáng mát, êm ái, dày dặn và dễ vệ sinh.",
+      "reviews": [],
+      "views": 0,
+      "createdAt": 1777458161974,
+      "isSold": false,
+      "bestFor": [
+        "bass-music",
+        "casual-gaming",
+        "diy"
+      ],
+      "topHighlights": [
+        "bass-strong"
+      ],
+      "compatibility": [
+        "3.5mm",
+        "PC",
+        "Laptop"
+      ],
+      "micStatus": "Xem video test để kiểm giọng/mic nếu cần học online.",
+      "comfortNote": "Form gaming ôm tai, nên cân nhắc nếu bạn thích tai thật nhẹ.",
+      "caveat": "Thông số hãng ít phổ biến; ưu tiên ảnh/video thực tế của shop.",
+      "researchNotes": "Không có nguồn chính thống rõ ràng; mô tả theo phân khúc tai gaming DIY và media thực tế.",
+      "sourceLinks": [],
+      "serviceDone": [
+        "velvet-pad",
+        "bluetooth-mod"
+      ],
+      "inspection": "",
+      "inspectionDetails": {
+        "shell": "",
+        "pads": "",
+        "driver": "",
+        "mic": "",
+        "connect": "",
+        "battery": "",
+        "clean": ""
+      },
+      "diyServiceNote": [
+        "Bluetooth 5.2, kết nối ổn định.",
+        "Âm thanh stereo 2 kênh trái/phải.",
+        "6 EQ Music Modes: Pop / Rock / Vocal / Jazz / Bass / Classic.",
+        "Pin 1500 nghe nhạc nhiều ngày, sạc Type-C.",
+        "Kết hợp với driver 40mm lớn hơn nhiều tai nghe Bluetooth phổ thông, cho trải nghiệm âm thanh sống động hơn.",
+        "Đệm bọc nhung xám thoáng mát, êm ái, dày dặn và dễ vệ sinh."
+      ]
+    },
+    {
+      "id": 1778077364483,
+      "name": "DIY Tai nghe Over-ear SoundMAX AH 327",
+      "segment": "music",
+      "brand": "SoundMAX",
+      "condition": "Mới",
+      "price": 400000,
+      "originalPrice": 560000,
+      "stock": 1,
+      "soundTag": "Warm",
+      "latency": "wireless-fast",
+      "isWireless": true,
+      "batteryHealth": 100,
+      "images": [
+        "/uploads/1778078214153-4a423265-product-1778077327918.jpg",
+        "/uploads/1778078225458-3eea505f-product-1778077339762.jpg",
+        "/uploads/1778078243214-77e78550-product-1778077357607.jpg"
+      ],
+      "video": "",
+      "youtubePlaylist": "",
+      "shopeeLink": "",
+      "messengerLink": "",
+      "description": "SoundMAX AH-327 bản DIY Bluetooth, form over-ear dễ nghe lâu và âm dày. Hợp phim, game casual nhẹ, nghe nhạc và khách muốn tai không dây độc lạ.\nBluetooth 5.2, kết nối ổn định.\n\nÂm thanh stereo 2 kênh trái/phải.\n\n6 EQ Music Modes: Pop / Rock / Vocal / Jazz / Bass / Classic.\n\nPin 1500 nghe nhạc nhiều ngày , sạc Type-C.\n\nKết hợp với driver 40 lớn hơn nhiều tai nghe Bluetooth phổ thông, cho trải nghiệm âm thanh sống động hơn.\nBluetooth 5.2, kết nối ổn định. Âm thanh stereo 2 kênh trái/phải. 6 EQ Music Modes: Pop / Rock / Vocal / Jazz / Bass / Classic. Pin 1500 nghe nhạc nhiều ngày, sạc Type-C. Kết hợp với driver 40mm lớn hơn nhiều tai nghe Bluetooth phổ thông, cho trải nghiệm âm thanh sống động hơn. Đệm bọc nhung xám thoáng mát, êm ái, dày dặn và dễ vệ sinh.",
+      "bestFor": [
+        "bass-music",
+        "casual-gaming",
+        "bluetooth",
+        "diy"
+      ],
+      "topHighlights": [
+        "bass-strong",
+        "easy-listen"
+      ],
+      "serviceDone": [
+        "velvet-pad",
+        "bluetooth-mod"
+      ],
+      "inspection": "",
+      "inspectionDetails": {
+        "shell": "",
+        "pads": "",
+        "driver": "",
+        "mic": "",
+        "connect": "",
+        "battery": "",
+        "clean": ""
+      },
+      "reviews": [],
+      "views": 0,
+      "createdAt": 1778077364483,
+      "isSold": false,
+      "compatibility": [
+        "Bluetooth",
+        "Điện thoại",
+        "Laptop"
+      ],
+      "micStatus": "Mic tùy module DIY, nên test nếu cần học online/call.",
+      "comfortNote": "Over-ear rộng, dễ nâng cấp đệm/bọc nhung nếu tai hỗ trợ.",
+      "caveat": "Bluetooth DIY không ưu tiên FPS cạnh tranh.",
+      "researchNotes": "Thông tin AH-327 ít; mô tả theo dạng SoundMAX over-ear và bản Bluetooth DIY tại shop.",
+      "sourceLinks": [],
+      "diyServiceNote": [
+        "Bluetooth 5.2, kết nối ổn định.",
+        "Âm thanh stereo 2 kênh trái/phải.",
+        "6 EQ Music Modes: Pop / Rock / Vocal / Jazz / Bass / Classic.",
+        "Pin 1500 nghe nhạc nhiều ngày, sạc Type-C.",
+        "Kết hợp với driver 40mm lớn hơn nhiều tai nghe Bluetooth phổ thông, cho trải nghiệm âm thanh sống động hơn.",
+        "Đệm bọc nhung xám thoáng mát, êm ái, dày dặn và dễ vệ sinh."
+      ]
+    },
+    {
+      "id": 1778077045229,
+      "name": "DIY Tai Nghe Turtle Beach Earforce M5Ti",
+      "segment": "music",
+      "brand": "Turtle Beach",
+      "condition": "Mới",
+      "price": 350000,
+      "originalPrice": 500000,
+      "stock": 1,
+      "soundTag": "Warm",
+      "latency": "wireless-fast",
+      "isWireless": true,
+      "batteryHealth": null,
+      "images": [
+        "/uploads/1778078938996-647d76b1-product-1778078053115.jpg",
+        "/uploads/1778078958705-32f57180-product-1778078073106.jpg",
+        "/uploads/1778077861267-4f2f9f54-product-1778076975514.jpg",
+        "/uploads/1778077871163-0709a496-product-1778076985556.jpg"
+      ],
+      "video": "",
+      "youtubePlaylist": "",
+      "shopeeLink": "",
+      "messengerLink": "",
+      "description": "Bản DIY từ Turtle Beach Earforce M5Ti, hướng tới nghe nhạc/giải trí không dây gọn gàng. Hợp khách thích đồ lạ, âm ấm và tiện dùng điện thoại.\nBluetooth 5.2, kết nối ổn định. Âm thanh stereo 2 kênh trái/phải. 6 EQ Music Modes: Pop / Rock / Vocal / Jazz / Bass / Classic. Pin 1500 nghe nhạc nhiều ngày, sạc Type-C. Kết hợp với driver 40mm lớn hơn nhiều tai nghe Bluetooth phổ thông, cho trải nghiệm âm thanh sống động hơn. Đệm bọc nhung xám thoáng mát, êm ái, dày dặn và dễ vệ sinh.",
+      "bestFor": [
+        "bass-music",
+        "bluetooth",
+        "diy"
+      ],
+      "topHighlights": [
+        "bass-strong",
+        "easy-listen"
+      ],
+      "serviceDone": [
+        "velvet-pad",
+        "bluetooth-mod"
+      ],
+      "inspection": "",
+      "inspectionDetails": {
+        "shell": "",
+        "pads": "",
+        "driver": "",
+        "mic": "",
+        "connect": "",
+        "battery": "",
+        "clean": ""
+      },
+      "reviews": [],
+      "views": 0,
+      "createdAt": 1778077045229,
+      "isSold": false,
+      "compatibility": [
+        "Bluetooth",
+        "Điện thoại",
+        "Laptop"
+      ],
+      "micStatus": "Nếu cần gọi nhiều, nên kiểm hồ sơ mic thực tế.",
+      "comfortNote": "Dáng gọn hơn tai gaming lớn, hợp nghe nhạc và di chuyển nhẹ.",
+      "caveat": "Bản DIY nên ưu tiên xem ảnh thật, pin thật và cách kết nối thực tế.",
+      "researchNotes": "Turtle Beach M-series thường gắn với game/mobile; bản shop là DIY nên mô tả theo công năng thực tế.",
+      "sourceLinks": [],
+      "diyServiceNote": [
+        "Bluetooth 5.2, kết nối ổn định.",
+        "Âm thanh stereo 2 kênh trái/phải.",
+        "6 EQ Music Modes: Pop / Rock / Vocal / Jazz / Bass / Classic.",
+        "Pin 1500 nghe nhạc nhiều ngày, sạc Type-C.",
+        "Kết hợp với driver 40mm lớn hơn nhiều tai nghe Bluetooth phổ thông, cho trải nghiệm âm thanh sống động hơn.",
+        "Đệm bọc nhung xám thoáng mát, êm ái, dày dặn và dễ vệ sinh."
+      ]
+    },
+    {
+      "id": 1777805032922,
+      "name": "DIY WangMing WMb 9800L có đèn LED",
+      "segment": "gaming",
+      "brand": "WangMing",
+      "condition": "Mới",
+      "price": 350000,
+      "originalPrice": 290000,
+      "stock": 1,
+      "soundTag": "V-Shape",
+      "latency": "wired",
+      "isWireless": false,
+      "batteryHealth": null,
+      "images": [
+        "/uploads/1777805685387-ed74643c-product-1777804803567.jpg",
+        "/uploads/1777805702373-dde81849-product-1777804821228.jpg",
+        "/uploads/1777805715487-ff231e39-product-1777804834338.jpg"
+      ],
+      "video": "",
+      "youtubePlaylist": "",
+      "shopeeLink": "",
+      "messengerLink": "",
+      "description": "Bản DIY WangMing WMb 9800L có LED, form gamingbò sữa và âm thiên giải trí. Hợp khách thích đồ mod, game casual và xem phim có hiệu ứng.\nBluetooth 5.2, kết nối ổn định. Âm thanh stereo 2 kênh trái/phải. 6 EQ Music Modes: Pop / Rock / Vocal / Jazz / Bass / Classic. Pin 1500 nghe nhạc nhiều ngày, sạc Type-C. Kết hợp với driver 40mm lớn hơn nhiều tai nghe Bluetooth phổ thông, cho trải nghiệm âm thanh sống động hơn. Đệm bọc nhung xám thoáng mát, êm ái, dày dặn và dễ vệ sinh.",
+      "inspection": "",
+      "inspectionDetails": {
+        "shell": "",
+        "pads": "",
+        "driver": "",
+        "mic": "",
+        "connect": "",
+        "battery": "",
+        "clean": ""
+      },
+      "reviews": [],
+      "views": 0,
+      "createdAt": 1777805032922,
+      "isSold": false,
+      "bestFor": [
+        "casual-gaming",
+        "diy"
+      ],
+      "topHighlights": [
+        "bass-strong",
+        "easy-listen",
+        "rgb"
+      ],
+      "compatibility": [
+        "PC",
+        "Laptop",
+        "3.5mm hoặc USB tùy dây"
+      ],
+      "micStatus": "Mic cần, nên kiểm hồ sơ/video nếu cần dùng nhiều cho học online.",
+      "comfortNote": "Form gaming lớn, nhìn nổi nhưng có thể không hợp người thích tai nhẹ.",
+      "caveat": "Đây là bản DIY, nên xem kỹ ảnh thật và hồ sơ trước khi chốt.",
+      "researchNotes": "Thông tin web chính thống ít; mô tả theo tên model, ảnh thực tế và phân khúc DIY.",
+      "sourceLinks": [],
+      "serviceDone": [
+        "velvet-pad",
+        "bluetooth-mod"
+      ],
+      "diyServiceNote": [
+        "Bluetooth 5.2, kết nối ổn định.",
+        "Âm thanh stereo 2 kênh trái/phải.",
+        "6 EQ Music Modes: Pop / Rock / Vocal / Jazz / Bass / Classic.",
+        "Pin 1500 nghe nhạc nhiều ngày, sạc Type-C.",
+        "Kết hợp với driver 40mm lớn hơn nhiều tai nghe Bluetooth phổ thông, cho trải nghiệm âm thanh sống động hơn.",
+        "Đệm bọc nhung xám thoáng mát, êm ái, dày dặn và dễ vệ sinh."
+      ]
+    },
     {
       "id": 1000001,
       "name": "Tai nghe Gaming Attack Shark L80 Pro 3 mode kết nối",
@@ -149,61 +427,6 @@
       "sourceLinks": []
     },
     {
-      "id": 1777456709089,
-      "name": "Logitech USB H390",
-      "segment": "study",
-      "brand": "Logitech",
-      "condition": "Mới",
-      "price": 300000,
-      "originalPrice": 730000,
-      "stock": 1,
-      "soundTag": "Neutral",
-      "latency": "wired",
-      "isWireless": false,
-      "batteryHealth": null,
-      "images": [
-        "/uploads/1777457530826-fb94caa0-product-1777456661063.jpg",
-        "/uploads/1777457540624-fa647041-product-1777456670858.jpg",
-        "/uploads/1777457555683-202c64be-product-1777456685409.jpg",
-        "/uploads/1777457566636-4fdc7517-product-1777456696890.jpg"
-      ],
-      "video": "",
-      "youtubePlaylist": "",
-      "shopeeLink": "",
-      "messengerLink": "",
-      "description": "Headset USB cắm là chạy, chuyên học online, họp Zoom và call công việc. Mic giảm ồn, nút chỉnh âm trên dây và giọng nói rõ hơn tai nghe nhạc thường.",
-      "reviews": [],
-      "views": 0,
-      "createdAt": 1777456709089,
-      "isSold": false,
-      "bestFor": [
-        "study-online",
-        "call-zoom"
-      ],
-      "topHighlights": [
-        "mic-clear",
-        "vocal-clear",
-        "easy-listen"
-      ],
-      "compatibility": [
-        "USB",
-        "PC",
-        "Laptop"
-      ],
-      "micStatus": "Mic cần dài, giảm ồn nền ở mức văn phòng/học online.",
-      "comfortNote": "Đệm giả da và headband chỉnh được, hợp ca học/call dài vừa phải.",
-      "caveat": "Không dành cho người cần bass mạnh hoặc gaming hiệu ứng lớn.",
-      "researchNotes": "Logitech mô tả H390 là USB plug-and-play, mic noise-canceling và có inline controls.",
-      "sourceLinks": [
-        "https://www.logitech.com/en-us/product/stereo-headset-h390"
-      ],
-      "serviceDone": [
-        "velvet-pad",
-        "bluetooth-mod",
-        "pad-replace"
-      ]
-    },
-    {
       "id": 1777457046429,
       "name": "Tai Nghe Gaming HyperX Cloud II",
       "segment": "gaming",
@@ -344,66 +567,6 @@
       ]
     },
     {
-      "id": 1777458161974,
-      "name": "DIY ONKUKA K9",
-      "segment": "gaming",
-      "brand": "ONKUKA",
-      "condition": "Mới",
-      "price": 400000,
-      "originalPrice": 490000,
-      "stock": 1,
-      "soundTag": "Bass-Heavy",
-      "latency": "wired",
-      "isWireless": false,
-      "batteryHealth": null,
-      "images": [
-        "/uploads/1777458742531-71a9408c-product-1777457872191.jpg",
-        "/uploads/1777458761271-1d588d26-product-1777457891509.jpg",
-        "/uploads/1777458776996-cf1bffd7-product-1777457907236.jpg",
-        "/uploads/1777458819729-b116db69-product-1777457949392.jpg"
-      ],
-      "video": "/uploads/1777458747618-f650f681-7775596900331.mp4",
-      "youtubePlaylist": "",
-      "shopeeLink": "",
-      "messengerLink": "",
-      "description": "ONKUKA K9 bản DIY thiên âm lực và cảm giác giải trí. Hợp game casual, phim hành động và khách thích tai gaming nhìn khác lạ hơn mẫu phổ thông.\nBluetooth 5.2, kết nối ổn định. Âm thanh stereo 2 kênh trái/phải. 6 EQ Music Modes: Pop / Rock / Vocal / Jazz / Bass / Classic. Pin 1500 nghe nhạc nhiều ngày, sạc Type-C. Kết hợp với driver 40mm lớn hơn nhiều tai nghe Bluetooth phổ thông, cho trải nghiệm âm thanh sống động hơn. Đệm bọc nhung xám thoáng mát, êm ái, dày dặn và dễ vệ sinh.",
-      "reviews": [],
-      "views": 0,
-      "createdAt": 1777458161974,
-      "isSold": false,
-      "bestFor": [
-        "casual-gaming",
-        "bass-music",
-        "diy"
-      ],
-      "topHighlights": [
-        "bass-strong",
-        "has-video"
-      ],
-      "compatibility": [
-        "3.5mm",
-        "PC",
-        "Laptop"
-      ],
-      "micStatus": "Xem video test để kiểm giọng/mic nếu cần học online.",
-      "comfortNote": "Form gaming ôm tai, nên cân nhắc nếu bạn thích tai thật nhẹ.",
-      "caveat": "Thông số hãng ít phổ biến; ưu tiên ảnh/video thực tế của shop.",
-      "researchNotes": "Không có nguồn chính thống rõ ràng; mô tả theo phân khúc tai gaming DIY và media thực tế.",
-      "sourceLinks": [],
-      "serviceDone": [
-        "velvet-pad",
-        "bluetooth-mod"
-      ],
-      "diyServiceNote": [
-        "Bluetooth 5.2, kết nối ổn định.",
-        "Âm thanh stereo 2 kênh trái/phải.",
-        "6 EQ Music Modes: Pop / Rock / Vocal / Jazz / Bass / Classic.",
-        "Pin 1500 nghe nhạc nhiều ngày, sạc Type-C.",
-        "Kết hợp với driver 40mm lớn hơn nhiều tai nghe Bluetooth phổ thông, cho trải nghiệm âm thanh sống động hơn.",
-        "Đệm bọc nhung xám thoáng mát, êm ái, dày dặn và dễ vệ sinh."
-      ]
-    },
-    {
       "id": 1777458521430,
       "name": "Miniso",
       "segment": "study",
@@ -465,6 +628,61 @@
       "caveat": "Không dành cho bass mạnh hoặc định vị FPS.",
       "researchNotes": "Thông tin model cụ thể không rõ; mô tả theo nhóm tai Miniso phổ thông.",
       "sourceLinks": []
+    },
+    {
+      "id": 1777456709089,
+      "name": "Logitech USB H390",
+      "segment": "study",
+      "brand": "Logitech",
+      "condition": "Mới",
+      "price": 300000,
+      "originalPrice": 730000,
+      "stock": 1,
+      "soundTag": "Neutral",
+      "latency": "wired",
+      "isWireless": false,
+      "batteryHealth": null,
+      "images": [
+        "/uploads/1777457530826-fb94caa0-product-1777456661063.jpg",
+        "/uploads/1777457540624-fa647041-product-1777456670858.jpg",
+        "/uploads/1777457555683-202c64be-product-1777456685409.jpg",
+        "/uploads/1777457566636-4fdc7517-product-1777456696890.jpg"
+      ],
+      "video": "",
+      "youtubePlaylist": "",
+      "shopeeLink": "",
+      "messengerLink": "",
+      "description": "Headset USB cắm là chạy, chuyên học online, họp Zoom và call công việc. Mic giảm ồn, nút chỉnh âm trên dây và giọng nói rõ hơn tai nghe nhạc thường.",
+      "reviews": [],
+      "views": 0,
+      "createdAt": 1777456709089,
+      "isSold": false,
+      "bestFor": [
+        "study-online",
+        "call-zoom"
+      ],
+      "topHighlights": [
+        "mic-clear",
+        "vocal-clear",
+        "easy-listen"
+      ],
+      "compatibility": [
+        "USB",
+        "PC",
+        "Laptop"
+      ],
+      "micStatus": "Mic cần dài, giảm ồn nền ở mức văn phòng/học online.",
+      "comfortNote": "Đệm giả da và headband chỉnh được, hợp ca học/call dài vừa phải.",
+      "caveat": "Không dành cho người cần bass mạnh hoặc gaming hiệu ứng lớn.",
+      "researchNotes": "Logitech mô tả H390 là USB plug-and-play, mic noise-canceling và có inline controls.",
+      "sourceLinks": [
+        "https://www.logitech.com/en-us/product/stereo-headset-h390"
+      ],
+      "serviceDone": [
+        "velvet-pad",
+        "bluetooth-mod",
+        "pad-replace"
+      ]
     },
     {
       "id": 1777458720732,
@@ -845,6 +1063,80 @@
       "sourceLinks": []
     },
     {
+      "id": 1778134119720,
+      "name": "DIY Tai nghe game Dareu EH469 Pink RGB 7.1",
+      "segment": "gaming",
+      "brand": "Dareu",
+      "condition": "Mới",
+      "price": 350000,
+      "originalPrice": 550000,
+      "stock": 1,
+      "soundTag": "V-Shape",
+      "latency": "wireless-fast",
+      "isWireless": true,
+      "batteryHealth": null,
+      "images": [
+        "/uploads/1778134983976-f6cd6a3c-product-1778134095898.jpg",
+        "/uploads/1778134992317-ff1a84b7-product-1778134104835.jpg",
+        "/uploads/1778135004560-88bbb5cc-product-1778134117093.jpg"
+      ],
+      "video": "",
+      "youtubePlaylist": "",
+      "shopeeLink": "",
+      "messengerLink": "",
+      "description": "Dareu EH469 Pink RGB 7.1 bản DIY, ngoại hình nổi và chất gaming nhiều hiệu ứng. Hợp game casual, học online và khách thích màu hồng cá tính.\nBluetooth 5.2, kết nối ổn định. Âm thanh stereo 2 kênh trái/phải. 6 EQ Music Modes: Pop / Rock / Vocal / Jazz / Bass / Classic. Pin 1500 nghe nhạc nhiều ngày, sạc Type-C. Kết hợp với driver 40mm lớn hơn nhiều tai nghe Bluetooth phổ thông, cho trải nghiệm âm thanh sống động hơn. Đệm bọc nhung xám thoáng mát, êm ái, dày dặn và dễ vệ sinh.",
+      "bestFor": [
+        "fps",
+        "casual-gaming",
+        "call-zoom",
+        "diy",
+        "bluetooth"
+      ],
+      "topHighlights": [
+        "virtual-71",
+        "rgb",
+        "mic-clear",
+        "bass-strong"
+      ],
+      "serviceDone": [
+        "bluetooth-mod",
+        "velvet-pad"
+      ],
+      "inspection": "",
+      "inspectionDetails": {
+        "shell": "",
+        "pads": "",
+        "driver": "",
+        "mic": "",
+        "connect": "",
+        "battery": "",
+        "clean": ""
+      },
+      "reviews": [],
+      "views": 0,
+      "createdAt": 1778134119720,
+      "isSold": false,
+      "compatibility": [
+        "Bluetooth",
+        "PC",
+        "Laptop",
+        "Điện thoại"
+      ],
+      "micStatus": "Mic tùy bản DIY, nên kiểm video/hồ sơ nếu dùng nhiều cho học online.",
+      "comfortNote": "Form gaming chụp tai, màu hồng nổi bật.",
+      "caveat": "DIY Bluetooth không thay thế tai gaming wireless chuyên dụng cho FPS cạnh tranh.",
+      "researchNotes": "Mô tả theo dòng Dareu EH469 RGB/7.1 và bản DIY Bluetooth của shop.",
+      "sourceLinks": [],
+      "diyServiceNote": [
+        "Bluetooth 5.2, kết nối ổn định.",
+        "Âm thanh stereo 2 kênh trái/phải.",
+        "6 EQ Music Modes: Pop / Rock / Vocal / Jazz / Bass / Classic.",
+        "Pin 1500 nghe nhạc nhiều ngày, sạc Type-C.",
+        "Kết hợp với driver 40mm lớn hơn nhiều tai nghe Bluetooth phổ thông, cho trải nghiệm âm thanh sống động hơn.",
+        "Đệm bọc nhung xám thoáng mát, êm ái, dày dặn và dễ vệ sinh."
+      ]
+    },
+    {
       "id": 1777803554613,
       "name": "HAVIT H2012D Đèn RGB 36 chế độ",
       "segment": "gaming",
@@ -1034,75 +1326,6 @@
       ]
     },
     {
-      "id": 1777805032922,
-      "name": "DIY WangMing WMb 9800L có đèn LED",
-      "segment": "gaming",
-      "brand": "WangMing",
-      "condition": "Mới",
-      "price": 350000,
-      "originalPrice": 290000,
-      "stock": 1,
-      "soundTag": "V-Shape",
-      "latency": "wired",
-      "isWireless": false,
-      "batteryHealth": null,
-      "images": [
-        "/uploads/1777805685387-ed74643c-product-1777804803567.jpg",
-        "/uploads/1777805702373-dde81849-product-1777804821228.jpg",
-        "/uploads/1777805715487-ff231e39-product-1777804834338.jpg"
-      ],
-      "video": "",
-      "youtubePlaylist": "",
-      "shopeeLink": "",
-      "messengerLink": "",
-      "description": "Bản DIY WangMing WMb 9800L có LED, form gaming hầm hố và âm thiên giải trí. Hợp khách thích đồ mod, game casual và xem phim có hiệu ứng.\nBluetooth 5.2, kết nối ổn định. Âm thanh stereo 2 kênh trái/phải. 6 EQ Music Modes: Pop / Rock / Vocal / Jazz / Bass / Classic. Pin 1500 nghe nhạc nhiều ngày, sạc Type-C. Kết hợp với driver 40mm lớn hơn nhiều tai nghe Bluetooth phổ thông, cho trải nghiệm âm thanh sống động hơn. Đệm bọc nhung xám thoáng mát, êm ái, dày dặn và dễ vệ sinh.",
-      "inspection": "",
-      "inspectionDetails": {
-        "shell": "",
-        "pads": "",
-        "driver": "",
-        "mic": "",
-        "connect": "",
-        "battery": "",
-        "clean": ""
-      },
-      "reviews": [],
-      "views": 0,
-      "createdAt": 1777805032922,
-      "isSold": false,
-      "bestFor": [
-        "casual-gaming",
-        "diy"
-      ],
-      "topHighlights": [
-        "rgb",
-        "bass-strong",
-        "easy-listen"
-      ],
-      "compatibility": [
-        "PC",
-        "Laptop",
-        "3.5mm hoặc USB tùy dây"
-      ],
-      "micStatus": "Mic cần, nên kiểm hồ sơ/video nếu cần dùng nhiều cho học online.",
-      "comfortNote": "Form gaming lớn, nhìn nổi nhưng có thể không hợp người thích tai nhẹ.",
-      "caveat": "Đây là bản DIY, nên xem kỹ ảnh thật và hồ sơ trước khi chốt.",
-      "researchNotes": "Thông tin web chính thống ít; mô tả theo tên model, ảnh thực tế và phân khúc DIY.",
-      "sourceLinks": [],
-      "serviceDone": [
-        "velvet-pad",
-        "bluetooth-mod"
-      ],
-      "diyServiceNote": [
-        "Bluetooth 5.2, kết nối ổn định.",
-        "Âm thanh stereo 2 kênh trái/phải.",
-        "6 EQ Music Modes: Pop / Rock / Vocal / Jazz / Bass / Classic.",
-        "Pin 1500 nghe nhạc nhiều ngày, sạc Type-C.",
-        "Kết hợp với driver 40mm lớn hơn nhiều tai nghe Bluetooth phổ thông, cho trải nghiệm âm thanh sống động hơn.",
-        "Đệm bọc nhung xám thoáng mát, êm ái, dày dặn và dễ vệ sinh."
-      ]
-    },
-    {
       "id": 1778070244695,
       "name": "Tai nghe Dareu EH722X giả lập 7.1 Multi LED",
       "segment": "gaming",
@@ -1165,146 +1388,6 @@
         "velvet-pad",
         "bluetooth-mod",
         "pad-replace"
-      ]
-    },
-    {
-      "id": 1778077045229,
-      "name": "DIY Tai Nghe Turtle Beach Earforce M5Ti",
-      "segment": "music",
-      "brand": "Turtle Beach",
-      "condition": "Mới",
-      "price": 350000,
-      "originalPrice": 500000,
-      "stock": 1,
-      "soundTag": "Warm",
-      "latency": "wireless-fast",
-      "isWireless": true,
-      "batteryHealth": null,
-      "images": [
-        "/uploads/1778078938996-647d76b1-product-1778078053115.jpg",
-        "/uploads/1778078958705-32f57180-product-1778078073106.jpg",
-        "/uploads/1778077861267-4f2f9f54-product-1778076975514.jpg",
-        "/uploads/1778077871163-0709a496-product-1778076985556.jpg"
-      ],
-      "video": "",
-      "youtubePlaylist": "",
-      "shopeeLink": "",
-      "messengerLink": "",
-      "description": "Bản DIY từ Turtle Beach Earforce M5Ti, hướng tới nghe nhạc/giải trí không dây gọn gàng. Hợp khách thích đồ lạ, âm ấm và tiện dùng điện thoại.\nBluetooth 5.2, kết nối ổn định. Âm thanh stereo 2 kênh trái/phải. 6 EQ Music Modes: Pop / Rock / Vocal / Jazz / Bass / Classic. Pin 1500 nghe nhạc nhiều ngày, sạc Type-C. Kết hợp với driver 40mm lớn hơn nhiều tai nghe Bluetooth phổ thông, cho trải nghiệm âm thanh sống động hơn. Đệm bọc nhung xám thoáng mát, êm ái, dày dặn và dễ vệ sinh.",
-      "bestFor": [
-        "bluetooth",
-        "diy",
-        "bass-music"
-      ],
-      "topHighlights": [
-        "easy-listen",
-        "bass-strong"
-      ],
-      "serviceDone": [
-        "velvet-pad",
-        "bluetooth-mod"
-      ],
-      "inspection": "",
-      "inspectionDetails": {
-        "shell": "",
-        "pads": "",
-        "driver": "",
-        "mic": "",
-        "connect": "",
-        "battery": "",
-        "clean": ""
-      },
-      "reviews": [],
-      "views": 0,
-      "createdAt": 1778077045229,
-      "isSold": false,
-      "compatibility": [
-        "Bluetooth",
-        "Điện thoại",
-        "Laptop"
-      ],
-      "micStatus": "Nếu cần gọi nhiều, nên kiểm hồ sơ mic thực tế.",
-      "comfortNote": "Dáng gọn hơn tai gaming lớn, hợp nghe nhạc và di chuyển nhẹ.",
-      "caveat": "Bản DIY nên ưu tiên xem ảnh thật, pin thật và cách kết nối thực tế.",
-      "researchNotes": "Turtle Beach M-series thường gắn với game/mobile; bản shop là DIY nên mô tả theo công năng thực tế.",
-      "sourceLinks": [],
-      "diyServiceNote": [
-        "Bluetooth 5.2, kết nối ổn định.",
-        "Âm thanh stereo 2 kênh trái/phải.",
-        "6 EQ Music Modes: Pop / Rock / Vocal / Jazz / Bass / Classic.",
-        "Pin 1500 nghe nhạc nhiều ngày, sạc Type-C.",
-        "Kết hợp với driver 40mm lớn hơn nhiều tai nghe Bluetooth phổ thông, cho trải nghiệm âm thanh sống động hơn.",
-        "Đệm bọc nhung xám thoáng mát, êm ái, dày dặn và dễ vệ sinh."
-      ]
-    },
-    {
-      "id": 1778077364483,
-      "name": "DIY Tai nghe Over-ear SoundMAX AH 327",
-      "segment": "music",
-      "brand": "SoundMAX",
-      "condition": "Mới",
-      "price": 400000,
-      "originalPrice": 560000,
-      "stock": 1,
-      "soundTag": "Warm",
-      "latency": "wireless-fast",
-      "isWireless": true,
-      "batteryHealth": 100,
-      "images": [
-        "/uploads/1778078214153-4a423265-product-1778077327918.jpg",
-        "/uploads/1778078225458-3eea505f-product-1778077339762.jpg",
-        "/uploads/1778078243214-77e78550-product-1778077357607.jpg"
-      ],
-      "video": "",
-      "youtubePlaylist": "",
-      "shopeeLink": "",
-      "messengerLink": "",
-      "description": "SoundMAX AH-327 bản DIY Bluetooth, form over-ear dễ nghe lâu và âm dày. Hợp phim, game casual nhẹ, nghe nhạc và khách muốn tai không dây độc lạ.\nBluetooth 5.2, kết nối ổn định. Âm thanh stereo 2 kênh trái/phải. 6 EQ Music Modes: Pop / Rock / Vocal / Jazz / Bass / Classic. Pin 1500 nghe nhạc nhiều ngày, sạc Type-C. Kết hợp với driver 40mm lớn hơn nhiều tai nghe Bluetooth phổ thông, cho trải nghiệm âm thanh sống động hơn. Đệm bọc nhung xám thoáng mát, êm ái, dày dặn và dễ vệ sinh.",
-      "bestFor": [
-        "bluetooth",
-        "diy",
-        "bass-music",
-        "casual-gaming"
-      ],
-      "topHighlights": [
-        "bass-strong",
-        "easy-listen"
-      ],
-      "serviceDone": [
-        "bluetooth-mod",
-        "velvet-pad"
-      ],
-      "inspection": "",
-      "inspectionDetails": {
-        "shell": "",
-        "pads": "",
-        "driver": "",
-        "mic": "",
-        "connect": "",
-        "battery": "",
-        "clean": ""
-      },
-      "reviews": [],
-      "views": 0,
-      "createdAt": 1778077364483,
-      "isSold": false,
-      "compatibility": [
-        "Bluetooth",
-        "Điện thoại",
-        "Laptop"
-      ],
-      "micStatus": "Mic tùy module DIY, nên test nếu cần học online/call.",
-      "comfortNote": "Over-ear rộng, dễ nâng cấp đệm/bọc nhung nếu tai hỗ trợ.",
-      "caveat": "Bluetooth DIY không ưu tiên FPS cạnh tranh.",
-      "researchNotes": "Thông tin AH-327 ít; mô tả theo dạng SoundMAX over-ear và bản Bluetooth DIY tại shop.",
-      "sourceLinks": [],
-      "diyServiceNote": [
-        "Bluetooth 5.2, kết nối ổn định.",
-        "Âm thanh stereo 2 kênh trái/phải.",
-        "6 EQ Music Modes: Pop / Rock / Vocal / Jazz / Bass / Classic.",
-        "Pin 1500 nghe nhạc nhiều ngày, sạc Type-C.",
-        "Kết hợp với driver 40mm lớn hơn nhiều tai nghe Bluetooth phổ thông, cho trải nghiệm âm thanh sống động hơn.",
-        "Đệm bọc nhung xám thoáng mát, êm ái, dày dặn và dễ vệ sinh."
       ]
     },
     {
@@ -1757,7 +1840,7 @@
       "soundTag": "Warm",
       "latency": "wireless-slow",
       "isWireless": true,
-      "batteryHealth": null,
+      "batteryHealth": 99,
       "images": [
         "/uploads/1778081803471-56a43068-product-1778080917193.jpg",
         "/uploads/1778081840332-53fa1201-product-1778080954506.jpg",
@@ -1768,12 +1851,12 @@
       "youtubePlaylist": "",
       "shopeeLink": "",
       "messengerLink": "",
-      "description": "Sony WH-CH400 là tai Bluetooth on-ear nhẹ, driver 30mm, hỗ trợ SBC/AAC và thời lượng công bố tới 20 giờ. Hợp nghe nhạc, học online và điện thoại hằng ngày.",
+      "description": "Sony WH-CH400 là tai Bluetooth on-ear nhẹ, driver 30mm, hỗ trợ SBC/AAC và thời lượng công bố tới 20 giờ. Hợp nghe nhạc, học online và điện thoại hằng ngày.\nChưa có đệm tai.",
       "bestFor": [
-        "bluetooth",
         "study-online",
         "call-zoom",
-        "bass-music"
+        "bass-music",
+        "bluetooth"
       ],
       "topHighlights": [
         "easy-listen",
@@ -1784,11 +1867,11 @@
       ],
       "inspection": "",
       "inspectionDetails": {
-        "shell": "",
+        "shell": "like new",
         "pads": "",
-        "driver": "",
-        "mic": "",
-        "connect": "",
+        "driver": "53mm gần như lớn nhất dòng gaming",
+        "mic": "xám",
+        "connect": "có dây 3.5 hoặc soul card",
         "battery": "",
         "clean": ""
       },
@@ -1868,80 +1951,6 @@
       "caveat": "Không ưu tiên gaming vì độ trễ Bluetooth phổ thông.",
       "researchNotes": "Thông tin model BT-233 hạn chế; mô tả theo nhóm tai Bluetooth chụp phổ thông.",
       "sourceLinks": []
-    },
-    {
-      "id": 1778134119720,
-      "name": "DIY Tai nghe game Dareu EH469 Pink RGB 7.1",
-      "segment": "gaming",
-      "brand": "Dareu",
-      "condition": "Mới",
-      "price": 350000,
-      "originalPrice": 550000,
-      "stock": 1,
-      "soundTag": "V-Shape",
-      "latency": "wireless-fast",
-      "isWireless": true,
-      "batteryHealth": null,
-      "images": [
-        "/uploads/1778134983976-f6cd6a3c-product-1778134095898.jpg",
-        "/uploads/1778134992317-ff1a84b7-product-1778134104835.jpg",
-        "/uploads/1778135004560-88bbb5cc-product-1778134117093.jpg"
-      ],
-      "video": "",
-      "youtubePlaylist": "",
-      "shopeeLink": "",
-      "messengerLink": "",
-      "description": "Dareu EH469 Pink RGB 7.1 bản DIY, ngoại hình nổi và chất gaming nhiều hiệu ứng. Hợp game casual, học online và khách thích màu hồng cá tính.\nBluetooth 5.2, kết nối ổn định. Âm thanh stereo 2 kênh trái/phải. 6 EQ Music Modes: Pop / Rock / Vocal / Jazz / Bass / Classic. Pin 1500 nghe nhạc nhiều ngày, sạc Type-C. Kết hợp với driver 40mm lớn hơn nhiều tai nghe Bluetooth phổ thông, cho trải nghiệm âm thanh sống động hơn. Đệm bọc nhung xám thoáng mát, êm ái, dày dặn và dễ vệ sinh.",
-      "bestFor": [
-        "fps",
-        "casual-gaming",
-        "call-zoom",
-        "diy",
-        "bluetooth"
-      ],
-      "topHighlights": [
-        "virtual-71",
-        "rgb",
-        "mic-clear",
-        "bass-strong"
-      ],
-      "serviceDone": [
-        "bluetooth-mod",
-        "velvet-pad"
-      ],
-      "inspection": "",
-      "inspectionDetails": {
-        "shell": "",
-        "pads": "",
-        "driver": "",
-        "mic": "",
-        "connect": "",
-        "battery": "",
-        "clean": ""
-      },
-      "reviews": [],
-      "views": 0,
-      "createdAt": 1778134119720,
-      "isSold": false,
-      "compatibility": [
-        "Bluetooth",
-        "PC",
-        "Laptop",
-        "Điện thoại"
-      ],
-      "micStatus": "Mic tùy bản DIY, nên kiểm video/hồ sơ nếu dùng nhiều cho học online.",
-      "comfortNote": "Form gaming chụp tai, màu hồng nổi bật.",
-      "caveat": "DIY Bluetooth không thay thế tai gaming wireless chuyên dụng cho FPS cạnh tranh.",
-      "researchNotes": "Mô tả theo dòng Dareu EH469 RGB/7.1 và bản DIY Bluetooth của shop.",
-      "sourceLinks": [],
-      "diyServiceNote": [
-        "Bluetooth 5.2, kết nối ổn định.",
-        "Âm thanh stereo 2 kênh trái/phải.",
-        "6 EQ Music Modes: Pop / Rock / Vocal / Jazz / Bass / Classic.",
-        "Pin 1500 nghe nhạc nhiều ngày, sạc Type-C.",
-        "Kết hợp với driver 40mm lớn hơn nhiều tai nghe Bluetooth phổ thông, cho trải nghiệm âm thanh sống động hơn.",
-        "Đệm bọc nhung xám thoáng mát, êm ái, dày dặn và dễ vệ sinh."
-      ]
     },
     {
       "id": 1778134666140,
