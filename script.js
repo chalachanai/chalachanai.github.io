@@ -208,10 +208,8 @@ function setupContactPopup() {
   document.addEventListener('click', e => {
     const link = e.target.closest('a');
     if (!link || !isContactTrigger(link)) return;
-    if (link.classList.contains('disabled')) return;
+    if (!link.classList.contains('disabled')) return;
     e.preventDefault();
-    e.stopPropagation();
-    openContactPopup(link.href || CONTACT_LINK);
   });
 }
 
@@ -237,6 +235,35 @@ window.copyContactLink = async function() {
     prompt('Copy link này:', CONTACT_LINK);
   }
 };
+
+function getMessengerBaseLink() {
+  const s = getSettings();
+  const raw = s.messengerLink || s.facebook || 'https://m.me/chalachanai';
+  const link = normalizeContactLink(raw);
+  if (link.includes('facebook.com/chalachanai')) return 'https://m.me/chalachanai';
+  return link;
+}
+
+function buildMessengerChatUrl(message = '') {
+  const base = getMessengerBaseLink();
+  if (!message) return base;
+  try {
+    const url = new URL(base, window.location.href);
+    const host = url.hostname.replace(/^www\./, '');
+    if (host === 'm.me' || host.endsWith('facebook.com') || host.endsWith('messenger.com')) {
+      url.searchParams.set('text', message);
+    }
+    return url.toString();
+  } catch (_err) {
+    return base;
+  }
+}
+
+function openMessengerWindow(message = '') {
+  const opened = window.open(buildMessengerChatUrl(message), '_blank', 'noopener');
+  if (!opened) openContactPopup(getMessengerBaseLink());
+  return opened;
+}
 
 const SEGMENTS = {
   gaming: { label: 'Gaming', icon: 'fa-gamepad' },
@@ -918,10 +945,9 @@ window.copyCartOrder = async function() {
 window.checkoutCart = async function() {
   const text = buildCartOrderText();
   if (!text) return;
+  openMessengerWindow(text);
   await copyTextToClipboard(text);
-  setCartFeedback('Đã copy đơn hàng. Bấm mở Messenger rồi dán nội dung vào ô chat.');
-  const s = getSettings();
-  openContactPopup(s.messengerLink || s.facebook || 'https://www.facebook.com/chalachanai/');
+  setCartFeedback('Đã mở Messenger và copy đơn. Nếu Facebook không tự điền nội dung, bạn chỉ cần dán vào ô chat.');
 };
 
 window.openCart = function() {
@@ -970,11 +996,11 @@ function renderCart() {
       <span>Tổng tạm tính</span>
       <strong>${fmt(total)}đ</strong>
     </div>
-    <p class="cart-note">Bấm Copy đơn hoặc Gửi Messenger. Nội dung đơn sẽ được copy sẵn để bạn dán vào chat, shop xác nhận còn hàng và phí dịch vụ.</p>
+    <p class="cart-note">Bấm gửi là web tự mở Messenger và copy sẵn đơn. Nếu Facebook không tự điền nội dung, khách chỉ cần dán vào ô chat.</p>
     <div class="cart-feedback" id="cartFeedback"></div>
     <div class="cart-actions">
       <button class="cart-secondary" type="button" onclick="copyCartOrder()"><i class="fas fa-copy"></i> Copy đơn</button>
-      <button class="cart-primary" type="button" onclick="checkoutCart()"><i class="fab fa-facebook-messenger"></i> Gửi Messenger</button>
+      <button class="cart-primary" type="button" onclick="checkoutCart()"><i class="fab fa-facebook-messenger"></i> Copy & mở Messenger</button>
     </div>`;
   updateCartCount();
 }
@@ -1516,35 +1542,41 @@ function hashCode(str) { let h=0; for(let c of str) h=Math.imul(31,h)+c.charCode
 
 // ── POLICY MODALS ──
 const POLICIES = {
-  wash: {
-    title: '🧹 Quy trình Vệ sinh UV',
+  repair: {
+    title: '🔧 Dịch vụ sửa chữa tai nghe',
     steps: [
-      ['Tháo rời đệm tai', 'Tháo đệm tai và headband nếu có thể, vệ sinh riêng từng phần.'],
-      ['Cồn y tế 70°', 'Lau sạch toàn bộ vỏ máy, jack cắm và dây bằng cồn y tế.'],
-      ['Chiếu đèn UV-C', 'Chiếu UV-C 15 phút mỗi mặt — tiêu diệt 99.9% vi khuẩn, nấm mốc.'],
-      ['Sấy khô tự nhiên', 'Để khô hoàn toàn 30 phút trước khi lắp lại và test.'],
-      ['Test âm thanh', 'Test toàn dải tần 20Hz-20kHz, kiểm tra cân bằng trái-phải.']
-    ]
+      ['Tai nghe có dây', 'Sửa dây, jack 3.5mm/USB, mất tiếng một bên, rè, chập chờn, mic yếu hoặc không nhận.'],
+      ['Tai nghe Bluetooth', 'Kiểm pin, cổng sạc, lỗi không lên nguồn, kết nối chập chờn, âm lệch trái/phải.'],
+      ['Vệ sinh & khử mùi', 'Vệ sinh cồn y tế, xử lý đệm/headband bẩn, khử mùi và làm sạch trước khi bàn giao.'],
+      ['Báo giá trước', 'Shop kiểm tra tình trạng rồi báo cách sửa và chi phí trước, không tự làm khi khách chưa đồng ý.'],
+      ['Test sau sửa', 'Test driver, mic, kết nối và ngoại hình để khách biết tai đã ổn ở điểm nào.']
+    ],
+    cta: 'Nhắn shop sửa tai nghe',
+    message: 'Mình muốn hỏi sửa tai nghe. Mẫu tai: ... Lỗi đang gặp: ... Tai có dây/Bluetooth: ...'
   },
-  warranty: {
-    title: '🛡️ Chính sách Bảo hành',
+  diy: {
+    title: '✨ Dịch vụ DIY nâng cấp',
     steps: [
-      ['Bảo hành 30 ngày', 'Lỗi kỹ thuật trong 30 ngày — đổi sản phẩm tương đương hoặc hoàn tiền.'],
-      ['Đổi trả 7 ngày', 'Sản phẩm không đúng mô tả — hoàn trả không cần giải thích.'],
-      ['Phí ship', 'Nếu lỗi từ phía shop, Chà Là chịu toàn bộ phí ship đổi trả.'],
-      ['Liên hệ', 'Nhắn Messenger để được hỗ trợ trong vòng 30 phút.']
-    ]
+      ['Bọc nhung / bọc đệm', 'Lớp nhung mềm, thoáng tai, giảm bí và mồ hôi. Khách có thể chọn màu tùy gu.'],
+      ['Làm Bluetooth', 'Nâng cấp một số mẫu tai phù hợp thành Bluetooth 5.2, stereo 2 kênh, sạc Type-C và nhiều EQ nghe nhạc.'],
+      ['Thay pin lớn hơn', 'Gắn pin lớn nhất mà form tai cho phép, thường tăng thời lượng lên khoảng 2-3 lần tùy mẫu.'],
+      ['Tư vấn mẫu làm được', 'Không phải tai nào cũng độ được. Shop chỉ nhận khi không làm hỏng form, âm và độ bền của tai.'],
+      ['Giá rõ ràng', 'Bọc nhung +120k, làm Bluetooth +150k, thay pin +70k. Nếu ca khó sẽ báo riêng trước.']
+    ],
+    cta: 'Nhắn shop làm DIY',
+    message: 'Mình muốn hỏi dịch vụ DIY. Mẫu tai: ... Muốn làm: bọc nhung / Bluetooth / thay pin. Màu bọc nhung muốn chọn: ...'
   },
-  check: {
-    title: '✅ 24 Bước Kiểm định',
+  trust: {
+    title: '🛡️ Vệ sinh UV & bảo hành',
     steps: [
-      ['Ngoại quan', 'Kiểm tra vỏ, headband, hinge, logo — ghi nhận từng vết xước.'],
-      ['Đệm tai', 'Kiểm tra độ đàn hồi, mùi, vệ sinh. Thay mới nếu cần.'],
-      ['Driver L/R', 'Test bass, mid, treble riêng từng bên. Không chấp nhận lệch pha.'],
-      ['Microphone', 'Test thu âm, khử noise. Ghi âm thực tế rồi nghe lại.'],
-      ['Kết nối', 'Test jack 3.5mm, USB, Bluetooth (nếu có). Không chấp nhận tiếp xúc kém.'],
-      ['Pin (Wireless)', 'Đo pin thực tế bằng phần mềm. Không nhận máy dưới 70%.']
-    ]
+      ['Vệ sinh UV', 'Lau cồn y tế, vệ sinh đệm/headband, chiếu UV-C và sấy khô trước khi giao.'],
+      ['Kiểm định 24 bước', 'Kiểm ngoại hình, driver L/R, mic, dây/jack/USB/Bluetooth, độ ổn định và tình trạng thật.'],
+      ['Bảo hành 30 ngày', 'Lỗi kỹ thuật trong 30 ngày sẽ được hỗ trợ đổi sản phẩm tương đương, sửa hoặc hoàn tiền tùy ca.'],
+      ['Đổi trả 7 ngày', 'Nếu sản phẩm không đúng mô tả, shop hỗ trợ đổi trả rõ ràng, không vòng vo.'],
+      ['Minh bạch hàng cũ', 'Trầy ở đâu, đệm còn ra sao, đã sửa/thay gì sẽ thể hiện trong hồ sơ sản phẩm.']
+    ],
+    cta: 'Nhắn shop hỏi bảo hành',
+    message: 'Mình muốn hỏi về vệ sinh, kiểm định hoặc bảo hành tai nghe ở Chà Là.'
   }
 };
 
@@ -1557,7 +1589,27 @@ window.openPolicy = function(type) {
       <div class="ps-num">${i+1}</div>
       <p><strong>${s[0]}</strong><br>${s[1]}</p>
     </div>`).join('');
+  const actions = document.getElementById('policyActions');
+  if (actions) {
+    actions.innerHTML = `
+      <button class="policy-msg-btn" type="button" onclick="messageShopFromPolicy('${type}')">
+        <i class="fab fa-facebook-messenger"></i> ${data.cta || 'Nhắn shop'}
+      </button>
+      <div class="policy-feedback" id="policyFeedback"></div>`;
+  }
   openOverlay('policyOverlay');
+};
+
+window.messageShopFromPolicy = async function(type) {
+  const data = POLICIES[type];
+  const message = data?.message || 'Mình muốn hỏi Chà Là về dịch vụ tai nghe.';
+  openMessengerWindow(message);
+  await copyTextToClipboard(message);
+  const feedback = document.getElementById('policyFeedback');
+  if (feedback) {
+    feedback.textContent = 'Đã mở Messenger và copy sẵn nội dung hỏi shop.';
+    feedback.style.display = 'block';
+  }
 };
 
 // ── WIZARD ──

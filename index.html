@@ -38,7 +38,7 @@
     ]
   }
   </script>
-  <link rel="stylesheet" href="style.css?v=20260507-cart">
+  <link rel="stylesheet" href="style.css?v=20260507-service-cart">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -115,22 +115,22 @@
 <!-- ══ HERO ══ -->
 <section class="hero">
   <div class="hero-content">
-    <div class="hero-tag">✦ Vệ sinh UV · Kiểm định 24 bước</div>
+    <div class="hero-tag">✦ Sửa chữa · DIY nâng cấp · Vệ sinh bảo hành</div>
     <h1>nơi mang lại <span>sự sống mới</span><br>cho mấy bé đồ bị <span>bỏ rơi</span></h1>
     <p>Mỗi chiếc đều qua tay Chà Là — chà sạch, kiểm kỹ, giá thật. Từ gaming tới nghe nhạc, học bài: chọn đúng gu, dùng lại đồ tốt.</p>
     <a href="#products" class="hero-cta"><i class="fas fa-headphones"></i> Xem sản phẩm</a>
     <div class="policy-tabs">
-      <button class="policy-tab" onclick="openPolicy('wash')">
-        <span class="pt-icon">🧹</span>
-        <span class="pt-text"><strong>Vệ sinh UV</strong><span>Tiệt trùng sâu</span></span>
+      <button class="policy-tab" onclick="openPolicy('repair')">
+        <span class="pt-icon"><i class="fas fa-screwdriver-wrench"></i></span>
+        <span class="pt-text"><strong>Sửa chữa</strong><span>Có dây & Bluetooth</span></span>
       </button>
-      <button class="policy-tab" onclick="openPolicy('warranty')">
-        <span class="pt-icon">🛡️</span>
-        <span class="pt-text"><strong>Bảo hành 30 ngày</strong><span>Đổi trả dễ</span></span>
+      <button class="policy-tab" onclick="openPolicy('diy')">
+        <span class="pt-icon"><i class="fas fa-wand-magic-sparkles"></i></span>
+        <span class="pt-text"><strong>Dịch vụ DIY</strong><span>Bọc nhung · BT · pin</span></span>
       </button>
-      <button class="policy-tab" onclick="openPolicy('check')">
-        <span class="pt-icon">✅</span>
-        <span class="pt-text"><strong>24 bước kiểm định</strong><span>Chuẩn từng chi tiết</span></span>
+      <button class="policy-tab" onclick="openPolicy('trust')">
+        <span class="pt-icon"><i class="fas fa-shield-heart"></i></span>
+        <span class="pt-text"><strong>Vệ sinh & BH</strong><span>UV + 30 ngày</span></span>
       </button>
     </div>
   </div>
@@ -272,8 +272,8 @@
     <a href="#products">Sản phẩm</a>
     <a href="#services">Dịch vụ sửa tai nghe</a>
     <a href="#faq">FAQ</a>
-    <a href="#" onclick="openPolicy('warranty')">Chính sách bảo hành</a>
-    <a href="#" onclick="openPolicy('wash')">Quy trình vệ sinh</a>
+    <a href="#" onclick="openPolicy('trust')">Bảo hành & vệ sinh</a>
+    <a href="#" onclick="openPolicy('repair')">Dịch vụ sửa chữa</a>
   </div>
   <div class="footer-col">
     <h5>Liên hệ</h5>
@@ -289,13 +289,15 @@
   <button class="fab fab-top" id="fabTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
     <i class="fas fa-arrow-up"></i>
   </button>
-  <button class="fab fab-cart" id="fabCart" onclick="openCart()" title="Giỏ hàng">
-    <i class="fas fa-shopping-bag"></i>
-    <span class="cart-count" id="cartCount">0</span>
-  </button>
-  <a class="fab fab-msg" id="fabMsg" href="#" target="_blank" title="Nhắn Messenger">
-    <i class="fab fa-facebook-messenger"></i>
-  </a>
+  <div class="fab-main-row">
+    <button class="fab fab-cart" id="fabCart" onclick="openCart()" title="Giỏ hàng">
+      <i class="fas fa-shopping-bag"></i>
+      <span class="cart-count" id="cartCount">0</span>
+    </button>
+    <a class="fab fab-msg" id="fabMsg" href="#" target="_blank" title="Nhắn Messenger">
+      <i class="fab fa-facebook-messenger"></i>
+    </a>
+  </div>
 </div>
 
 <!-- ══ MODALS ══ -->
@@ -306,6 +308,7 @@
     <button class="modal-close" onclick="closeOverlay('policyOverlay')">✕</button>
     <h2 class="modal-title" id="policyTitle"></h2>
     <div id="policyBody"></div>
+    <div class="policy-actions" id="policyActions"></div>
   </div>
 </div>
 
@@ -401,7 +404,7 @@
   <div class="modal contact-modal" onclick="event.stopPropagation()">
     <button class="modal-close" onclick="closeOverlay('contactOverlay')">×</button>
     <h2 class="modal-title">Nhắn Chà Là</h2>
-    <p>Web sẽ không tự mở Facebook. Bạn chọn mở trang Chà Là hoặc sao chép link để nhắn sau.</p>
+    <p>Trình duyệt chưa mở được Messenger tự động. Bấm mở trang Chà Là hoặc copy link để nhắn sau.</p>
     <div class="contact-actions">
       <a class="contact-open" id="contactOpenBtn" href="https://www.facebook.com/chalachanai/" target="_blank" rel="noopener">
         <i class="fab fa-facebook-messenger"></i> Mở trang Chà Là
@@ -416,6 +419,6 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 <script src="backend-config.js"></script>
 <script src="cloud.js"></script>
-<script src="script.js?v=20260507-cart"></script>
+<script src="script.js?v=20260507-service-cart"></script>
 </body>
 </html>

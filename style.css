@@ -178,7 +178,18 @@ img { display: block; width: 100%; }
   border-radius: var(--radius-sm); transition: var(--trans); cursor: pointer;
 }
 .policy-tab:hover { border-color: var(--gold); background: var(--gold-dim); }
-.policy-tab .pt-icon { font-size: 1.2rem; }
+.policy-tab .pt-icon {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(212,175,55,0.11);
+  color: var(--gold);
+  font-size: 0.95rem;
+}
 .policy-tab .pt-text { font-size: 0.82rem; }
 .policy-tab .pt-text strong { display: block; color: var(--text); }
 .policy-tab .pt-text span { color: var(--text-dim); }
@@ -732,7 +743,7 @@ img { display: block; width: 100%; }
 }
 
 /* ── Policy Modal ── */
-.policy-popup { width: 500px; }
+.policy-popup { width: min(560px, 94vw); }
 .policy-step { display: flex; gap: 1rem; margin-bottom: 1rem; align-items: flex-start; }
 .policy-step .ps-num {
   width: 28px; height: 28px; border-radius: 50%;
@@ -742,6 +753,35 @@ img { display: block; width: 100%; }
 }
 .policy-step p { font-size: 0.88rem; color: var(--text-dim); line-height: 1.6; }
 .policy-step p strong { color: var(--text); }
+.policy-actions {
+  margin-top: 1.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+.policy-msg-btn {
+  width: 100%;
+  min-height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  border-radius: var(--radius-sm);
+  background: var(--fb-blue);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 850;
+}
+.policy-msg-btn:hover {
+  background: #0757e0;
+}
+.policy-feedback {
+  display: none;
+  margin-top: 0.7rem;
+  color: var(--green);
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-align: center;
+}
 
 /* ── Quick View ── */
 .quick-overlay { z-index: 400; background: rgba(0,0,0,0.92); backdrop-filter: blur(12px); }
@@ -1130,7 +1170,13 @@ footer {
   display: flex; flex-direction: column; align-items: flex-end; gap: 0.6rem;
   z-index: 300;
 }
-.fab-wrap > .fab {
+.fab-main-row {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.fab-wrap > .fab,
+.fab-main-row > .fab {
   width: 48px; height: 48px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
   font-size: 1.1rem; transition: var(--trans);
