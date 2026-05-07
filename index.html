@@ -38,7 +38,7 @@
     ]
   }
   </script>
-  <link rel="stylesheet" href="style.css?v=20260506-tags">
+  <link rel="stylesheet" href="style.css?v=20260507-cart">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -289,6 +289,10 @@
   <button class="fab fab-top" id="fabTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
     <i class="fas fa-arrow-up"></i>
   </button>
+  <button class="fab fab-cart" id="fabCart" onclick="openCart()" title="Giỏ hàng">
+    <i class="fas fa-shopping-bag"></i>
+    <span class="cart-count" id="cartCount">0</span>
+  </button>
   <a class="fab fab-msg" id="fabMsg" href="#" target="_blank" title="Nhắn Messenger">
     <i class="fab fa-facebook-messenger"></i>
   </a>
@@ -320,6 +324,13 @@
     <button class="modal-close" onclick="closeOverlay('musicOverlay')">✕</button>
     <h2 class="modal-title" id="musicTitle"></h2>
     <iframe class="yt-frame" id="musicIframe" allow="autoplay" allowfullscreen></iframe>
+    <div class="music-empty" id="musicEmpty">
+      <i class="fab fa-youtube"></i>
+      <span>YouTube không cho nhúng video này trong web. Bấm mở YouTube để nghe thử.</span>
+    </div>
+    <a class="music-open-link" id="musicOpenLink" href="#" target="_blank" rel="noopener">
+      <i class="fab fa-youtube"></i> Mở nhạc trên YouTube
+    </a>
     <img class="fr-img" id="frImg" src="" alt="Frequency Response">
     <p class="sound-desc" id="soundDesc"></p>
   </div>
@@ -367,12 +378,21 @@
             <button type="button" class="btn-qv-secondary" onclick="openQuickInfo()"><i class="fas fa-clipboard-check"></i> Hồ sơ</button>
             <button type="button" class="btn-qv-secondary" onclick="openQuickMusic()"><i class="fas fa-music"></i> Nghe thử</button>
           </div>
-          <a class="btn-qv-messenger" id="qvMsg" href="#" target="_blank">
-            <i class="fab fa-facebook-messenger"></i> Nhắn Messenger để đặt mua
+          <a class="btn-qv-messenger" id="qvMsg" href="#">
+            <i class="fas fa-cart-plus"></i> Thêm vào giỏ
           </a>
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+<!-- Cart Popup -->
+<div class="overlay" id="cartOverlay" onclick="closeOverlay('cartOverlay')">
+  <div class="modal cart-modal" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeOverlay('cartOverlay')">×</button>
+    <h2 class="modal-title"><i class="fas fa-shopping-bag"></i> Giỏ hàng</h2>
+    <div id="cartBody"></div>
   </div>
 </div>
 
@@ -396,6 +416,6 @@
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
 <script src="backend-config.js"></script>
 <script src="cloud.js"></script>
-<script src="script.js?v=20260506-tags"></script>
+<script src="script.js?v=20260507-cart"></script>
 </body>
 </html>

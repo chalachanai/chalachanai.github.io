@@ -12,6 +12,24 @@ const DEFAULT_PLAYLISTS = {
   'Mid-Forward':'https://www.youtube.com/embed/Dx5qFachd3A'
 };
 
+const DEFAULT_MUSIC_SEARCHES = {
+  'V-Shape': 'https://www.youtube.com/results?search_query=gaming+bass+edm+playlist',
+  'Warm': 'https://www.youtube.com/results?search_query=lofi+chill+warm+playlist',
+  'Bright': 'https://www.youtube.com/results?search_query=female+vocal+acoustic+bright+playlist',
+  'Neutral': 'https://www.youtube.com/results?search_query=study+focus+neutral+music+playlist',
+  'Bass-Heavy': 'https://www.youtube.com/results?search_query=bass+heavy+edm+playlist',
+  'Mid-Forward': 'https://www.youtube.com/results?search_query=vocal+acoustic+playlist'
+};
+
+const LEGACY_UNAVAILABLE_YOUTUBE_IDS = new Set([
+  '5qap5aO4i9A',
+  'jfKfPfyJRdk',
+  '4To8_MfFSug',
+  'aMyFd6EaLFw',
+  'tNv7aUDAcQk',
+  'Dx5qFachd3A'
+]);
+
 const SOUND_DESCS = {
   'V-Shape':    'V-Shape: bass lực, hiệu ứng nổi, hợp gaming/FPS casual, EDM và phim hành động.',
   'Warm':       'Warm: âm ấm, mềm, dễ nghe lâu; hợp lofi, podcast, phim dài và người sợ treble gắt.',
@@ -75,6 +93,7 @@ const SEED_PRODUCTS = [
 const PUBLIC_DATA_URL = 'data/public-data.json';
 let PUBLIC_DATA = null;
 const selectedAddonsByProduct = new Map();
+const CART_KEY = 'chala_cart_v1';
 
 document.addEventListener('DOMContentLoaded', async () => {
   initData();
@@ -87,6 +106,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   setupScrollFab();
   setupContactPopup();
   applyGlobalSettings();
+  updateCartCount();
   updateAdminLinkVisibility();
 });
 
@@ -199,9 +219,7 @@ function isContactTrigger(link) {
   return link.id === 'fabMsg'
     || link.id === 'footerMessenger'
     || link.id === 'serviceMessenger'
-    || link.id === 'qvMsg'
-    || link.classList.contains('side-btn-msg')
-    || link.classList.contains('btn-card-msg');
+    || link.classList.contains('side-btn-msg');
 }
 
 function openContactPopup(link) {
@@ -741,9 +759,9 @@ function buildCard(p) {
       <div class="card-action-row">
         <button class="btn-card-check" onclick="openInfo(${p.id})"><i class="fas fa-clipboard-check"></i><span>Hồ sơ</span></button>
         <button class="btn-card-check btn-card-music-action" onclick="openMusic('${p.soundTag||''}', '${p.youtubePlaylist||''}', '${p.frGraph||''}', '${p.name}')"><i class="fas fa-music"></i><span>Nghe thử</span></button>
-        <a class="btn-card-msg ${p.isSold ? 'disabled' : ''}" href="${p.isSold ? '#' : messengerLink}" target="_blank" onclick="${p.isSold ? 'return false;' : ''}">
-          <i class="fab fa-facebook-messenger"></i><span>${p.isSold ? 'Đã bán' : 'Nhắn mua'}</span>
-        </a>
+        <button class="btn-card-msg ${p.isSold ? 'disabled' : ''}" type="button" onclick="${p.isSold ? 'return false;' : `addToCart(${p.id})`}">
+          <i class="fas fa-cart-plus"></i><span>${p.isSold ? 'Đã bán' : 'Thêm giỏ'}</span>
+        </button>
       </div>
     </div>
   </div>`;
@@ -768,8 +786,211 @@ function attachCardEvents() {
   });
 }
 
+// ── CART ──
+function getCartItems() {
+  try {
+    const items = JSON.parse(localStorage.getItem(CART_KEY) || '[]');
+    return Array.isArray(items) ? items.filter(item => item?.id) : [];
+  } catch (_err) {
+    return [];
+  }
+}
+
+function saveCartItems(items) {
+  localStorage.setItem(CART_KEY, JSON.stringify(Array.isArray(items) ? items : []));
+}
+
+function getCartProduct(productId) {
+  return getProducts().find(p => String(p.id) === String(productId));
+}
+
+function getSelectedAddonTagsForProduct(productId) {
+  const p = getCartProduct(productId);
+  const allowed = new Set(getProductAddOns(p || {}).map(addOn => addOn.tag));
+  const selected = selectedAddonsByProduct.get(String(productId));
+  if (!selected) return [];
+  return Array.from(selected).filter(tag => allowed.has(tag));
+}
+
+function getCartAddonObjects(product, item) {
+  const selected = new Set(item.addons || []);
+  return getProductAddOns(product || {}).filter(addOn => selected.has(addOn.tag));
+}
+
+function getCartLineTotal(product, item) {
+  const addonTotal = getCartAddonObjects(product, item).reduce((sum, addOn) => sum + addOn.price, 0);
+  return Number(product?.price || 0) + addonTotal;
+}
+
+function getCartRows() {
+  const rows = getCartItems()
+    .map(item => ({ item, product: getCartProduct(item.id) }))
+    .filter(row => row.product && !row.product.isSold);
+
+  if (rows.length !== getCartItems().length) {
+    saveCartItems(rows.map(row => row.item));
+  }
+  return rows;
+}
+
+function updateCartCount() {
+  const count = getCartRows().length;
+  const countEl = document.getElementById('cartCount');
+  const btn = document.getElementById('fabCart');
+  if (countEl) countEl.textContent = count;
+  if (btn) btn.classList.toggle('has-items', count > 0);
+}
+
+window.addToCart = function(productId) {
+  const product = getCartProduct(productId);
+  if (!product || product.isSold) return;
+  const item = {
+    id: product.id,
+    addons: getSelectedAddonTagsForProduct(productId),
+    addedAt: Date.now()
+  };
+  const items = getCartItems().filter(existing => String(existing.id) !== String(product.id));
+  items.push(item);
+  saveCartItems(items);
+  updateCartCount();
+  renderCart();
+  openCart();
+};
+
+window.removeCartItem = function(productId) {
+  saveCartItems(getCartItems().filter(item => String(item.id) !== String(productId)));
+  updateCartCount();
+  renderCart();
+};
+
+window.clearCart = function() {
+  saveCartItems([]);
+  updateCartCount();
+  renderCart();
+};
+
+function buildCartOrderText() {
+  const rows = getCartRows();
+  if (!rows.length) return '';
+
+  let total = 0;
+  const lines = ['ĐƠN HÀNG CHÀ LÀ', ''];
+  rows.forEach(({ product, item }, index) => {
+    const addOns = getCartAddonObjects(product, item);
+    const lineTotal = getCartLineTotal(product, item);
+    total += lineTotal;
+    lines.push(`${index + 1}. ${product.name}`);
+    lines.push(`   Giá: ${fmt(product.price)}đ`);
+    if (addOns.length) {
+      lines.push(`   Tùy chọn thêm: ${addOns.map(addOn => `${addOn.label} +${fmt(addOn.price)}đ`).join(', ')}`);
+    }
+    lines.push(`   Thành tiền: ${fmt(lineTotal)}đ`);
+  });
+  lines.push('');
+  lines.push(`Tổng tạm tính: ${fmt(total)}đ`);
+  lines.push('Mình muốn đặt các món này, shop kiểm tra giúp mình còn hàng nhé.');
+  return lines.join('\n');
+}
+
+async function copyTextToClipboard(text) {
+  if (navigator.clipboard?.writeText) {
+    await navigator.clipboard.writeText(text);
+    return true;
+  }
+  prompt('Copy đơn hàng này:', text);
+  return false;
+}
+
+function setCartFeedback(text) {
+  const el = document.getElementById('cartFeedback');
+  if (!el) return;
+  el.textContent = text;
+  el.style.display = text ? 'block' : 'none';
+}
+
+window.copyCartOrder = async function() {
+  const text = buildCartOrderText();
+  if (!text) return;
+  await copyTextToClipboard(text);
+  setCartFeedback('Đã copy đơn hàng. Bạn dán vào Messenger/Zalo là gửi được.');
+};
+
+window.checkoutCart = async function() {
+  const text = buildCartOrderText();
+  if (!text) return;
+  await copyTextToClipboard(text);
+  setCartFeedback('Đã copy đơn hàng. Bấm mở Messenger rồi dán nội dung vào ô chat.');
+  const s = getSettings();
+  openContactPopup(s.messengerLink || s.facebook || 'https://www.facebook.com/chalachanai/');
+};
+
+window.openCart = function() {
+  renderCart();
+  openOverlay('cartOverlay');
+};
+
+function renderCart() {
+  const body = document.getElementById('cartBody');
+  if (!body) return;
+  const rows = getCartRows();
+  if (!rows.length) {
+    body.innerHTML = `
+      <div class="cart-empty">
+        <i class="fas fa-shopping-bag"></i>
+        <p>Giỏ hàng đang trống.</p>
+      </div>`;
+    updateCartCount();
+    return;
+  }
+
+  const total = rows.reduce((sum, row) => sum + getCartLineTotal(row.product, row.item), 0);
+  body.innerHTML = `
+    <div class="cart-list">
+      ${rows.map(({ product, item }) => {
+        const addOns = getCartAddonObjects(product, item);
+        const addOnText = addOns.length
+          ? addOns.map(addOn => `${escapeHTML(addOn.label)} +${fmt(addOn.price)}đ`).join(' · ')
+          : 'Không chọn dịch vụ thêm';
+        return `
+          <div class="cart-item">
+            <img class="cart-thumb" src="${escapeHTML(product.images?.[0] || '')}" alt="${escapeHTML(product.name)}">
+            <div class="cart-item-body">
+              <div class="cart-item-title">${escapeHTML(product.name)}</div>
+              <div class="cart-item-meta">Giá gốc: ${fmt(product.price)}đ</div>
+              <div class="cart-item-meta">${addOnText}</div>
+              <div class="cart-item-total">${fmt(getCartLineTotal(product, item))}đ</div>
+            </div>
+            <button class="cart-remove" type="button" onclick="removeCartItem(${product.id})" title="Bỏ khỏi giỏ">
+              <i class="fas fa-trash"></i>
+            </button>
+          </div>`;
+      }).join('')}
+    </div>
+    <div class="cart-summary">
+      <span>Tổng tạm tính</span>
+      <strong>${fmt(total)}đ</strong>
+    </div>
+    <p class="cart-note">Bấm Copy đơn hoặc Gửi Messenger. Nội dung đơn sẽ được copy sẵn để bạn dán vào chat, shop xác nhận còn hàng và phí dịch vụ.</p>
+    <div class="cart-feedback" id="cartFeedback"></div>
+    <div class="cart-actions">
+      <button class="cart-secondary" type="button" onclick="copyCartOrder()"><i class="fas fa-copy"></i> Copy đơn</button>
+      <button class="cart-primary" type="button" onclick="checkoutCart()"><i class="fab fa-facebook-messenger"></i> Gửi Messenger</button>
+    </div>`;
+  updateCartCount();
+}
+
 // ── UTILS ──
 function fmt(n) { return Number(n).toLocaleString('vi-VN'); }
+
+function escapeHTML(value) {
+  return String(value ?? '').replace(/[&<>"']/g, char => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;'
+  }[char]));
+}
 
 function getProductDescription(p = {}) {
   return String(p.description || '').trim();
@@ -1021,12 +1242,79 @@ function checkItem(label, value) {
 }
 
 // ── MUSIC POPUP ──
+function getDefaultMusicLink(tag) {
+  return DEFAULT_MUSIC_SEARCHES[tag] || 'https://www.youtube.com/results?search_query=headphone+test+playlist';
+}
+
+function withAutoplay(url) {
+  return `${url}${url.includes('?') ? '&' : '?'}autoplay=1`;
+}
+
+function normalizeYoutubeMusicUrl(raw, tag = '') {
+  const fallback = getDefaultMusicLink(tag);
+  let value = String(raw || '').trim();
+  if (!value) return { embedUrl: '', externalUrl: fallback };
+  if (/^(www\.|youtube\.com|youtu\.be|music\.youtube\.com)/i.test(value)) value = `https://${value}`;
+
+  try {
+    const url = new URL(value);
+    const host = url.hostname.replace(/^www\./, '').replace(/^music\./, '');
+    const isYoutube = host === 'youtube.com' || host === 'youtu.be' || host === 'youtube-nocookie.com';
+    if (!isYoutube) return { embedUrl: '', externalUrl: value };
+
+    const list = url.searchParams.get('list');
+    if (list) {
+      return {
+        embedUrl: `https://www.youtube.com/embed/videoseries?list=${encodeURIComponent(list)}`,
+        externalUrl: `https://www.youtube.com/playlist?list=${encodeURIComponent(list)}`
+      };
+    }
+
+    let videoId = '';
+    if (host === 'youtu.be') videoId = url.pathname.split('/').filter(Boolean)[0] || '';
+    else if (url.pathname === '/watch') videoId = url.searchParams.get('v') || '';
+    else {
+      const parts = url.pathname.split('/').filter(Boolean);
+      if (['embed', 'shorts', 'live'].includes(parts[0])) videoId = parts[1] || '';
+    }
+
+    if (!videoId || LEGACY_UNAVAILABLE_YOUTUBE_IDS.has(videoId)) {
+      return { embedUrl: '', externalUrl: fallback };
+    }
+
+    return {
+      embedUrl: '',
+      externalUrl: `https://www.youtube.com/watch?v=${encodeURIComponent(videoId)}`
+    };
+  } catch (_err) {
+    return { embedUrl: '', externalUrl: fallback };
+  }
+}
+
 window.openMusic = function(tag, customPlaylist, customFr, name) {
   const settings = getSettings();
-  const playlist = customPlaylist || (settings.soundTagPlaylists?.[tag]) || DEFAULT_PLAYLISTS[tag] || '';
+  const rawPlaylist = customPlaylist || (settings.soundTagPlaylists?.[tag]) || DEFAULT_PLAYLISTS[tag] || '';
+  const music = normalizeYoutubeMusicUrl(rawPlaylist, tag);
   const fr = customFr || FR_PRESETS[tag] || '';
   document.getElementById('musicTitle').textContent = `🎵 ${tag || 'Gu âm nhạc'} — ${name}`;
-  document.getElementById('musicIframe').src = playlist ? `${playlist}?autoplay=1` : '';
+  const iframe = document.getElementById('musicIframe');
+  const empty = document.getElementById('musicEmpty');
+  const openLink = document.getElementById('musicOpenLink');
+  if (music.embedUrl) {
+    iframe.src = withAutoplay(music.embedUrl);
+    iframe.style.display = 'block';
+    empty.style.display = 'none';
+  } else {
+    iframe.src = '';
+    iframe.style.display = 'none';
+    empty.style.display = 'flex';
+  }
+  if (music.externalUrl) {
+    openLink.href = music.externalUrl;
+    openLink.style.display = 'inline-flex';
+  } else {
+    openLink.style.display = 'none';
+  }
   const frEl = document.getElementById('frImg');
   frEl.src = fr;
   frEl.style.display = fr ? 'block' : 'none';
@@ -1212,8 +1500,14 @@ window.openQuickView = function(id, initialMedia = 'image', initialSrc = '') {
       </div>
       <div class="review-text">${r.text}</div>
     </div>`).join('')}` : '<h4 style="color:var(--text-dim)">Chưa có đánh giá nào.</h4>';
-  // Messenger link
-  document.getElementById('qvMsg').href = p.messengerLink || getSettings().messengerLink || '#';
+  const qvMsg = document.getElementById('qvMsg');
+  qvMsg.classList.toggle('disabled', !!p.isSold);
+  qvMsg.innerHTML = `<i class="fas fa-cart-plus"></i> ${p.isSold ? 'Đã bán' : 'Thêm vào giỏ'}`;
+  qvMsg.onclick = e => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (!p.isSold) addToCart(p.id);
+  };
   openOverlay('quickOverlay');
   bindQuickSwipe();
 };
