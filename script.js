@@ -294,6 +294,7 @@ const TAG_LABELS = {
   'mic-clear': 'Mic rõ',
   'pad-service': 'Bọc nhung',
   'velvet-pad': 'Bọc nhung',
+  'pad-replace': 'Thay đệm mới',
   'pad-comfort': 'Đệm êm',
   'bluetooth-mod': 'Làm Bluetooth',
   'battery-service': 'Thay pin',
@@ -317,6 +318,7 @@ const DISPLAY_TAG_PRIORITY = [
   'call-zoom',
   'velvet-pad',
   'pad-service',
+  'pad-replace',
   'bluetooth-mod',
   'battery-service',
   'pad-comfort',
@@ -414,6 +416,16 @@ const ADDON_SERVICE_INFO = {
       'Khách chọn màu tùy thích.'
     ]
   },
+  'pad-replace': {
+    label: 'Thay đệm mới',
+    shortLabel: 'Thay đệm',
+    price: 100000,
+    lines: [
+      'Thay đệm phủ da mới cho sản phẩm.',
+      'Áp dụng cho nhóm tai có dây và không dây khi form đệm còn thay được.',
+      'Không áp dụng cho nhóm DIY bọc nhung vì bọc nhung đã là một kiểu thay/xử lý đệm.'
+    ]
+  },
   'battery-service': {
     label: 'Thay pin',
     shortLabel: 'Thay pin',
@@ -431,6 +443,9 @@ function getProductAddOns(p = {}) {
   const addOns = [];
   if (tags.has('pad-service') || tags.has('velvet-pad')) {
     addOns.push({ tag: 'velvet-pad', ...ADDON_SERVICE_INFO['velvet-pad'] });
+  }
+  if (tags.has('pad-replace')) {
+    addOns.push({ tag: 'pad-replace', ...ADDON_SERVICE_INFO['pad-replace'] });
   }
   if (tags.has('bluetooth-mod')) {
     addOns.push({ tag: 'bluetooth-mod', ...ADDON_SERVICE_INFO['bluetooth-mod'] });
@@ -1213,7 +1228,6 @@ window.openInfo = function(id) {
     : '';
   const details = p.inspectionDetails || {};
   const shell = details.shell || (p.condition === 'Like New' ? 'Không vết' : p.condition === 'Hơi xước' ? 'Xước li ti, khó thấy' : 'Có vết xước rõ');
-  const pads = details.pads || (p.condition === 'Đã thay đệm' ? 'Đệm mới thay' : p.condition === 'Đệm cũ' ? 'Đệm gốc, hơi mòn' : 'Đệm tốt');
   const driver = details.driver || 'Test OK, không rè, cân bằng hai bên';
   const mic = details.mic || 'Thu âm rõ, không nhiễu nền';
   const connect = details.connect || 'Ổn định, không rớt signal';
@@ -1225,7 +1239,6 @@ window.openInfo = function(id) {
       ${customInspectionHTML}
       ${buildSmartProfileHTML(p)}
       ${checkItem('Vỏ máy / Headband', shell)}
-      ${checkItem('Đệm tai (Earpads)', pads)}
       ${checkItem('Driver âm thanh', driver)}
       ${checkItem('Microphone', mic)}
       ${checkItem('Kết nối (Jack / USB / BT)', connect)}
@@ -1240,10 +1253,10 @@ function buildSmartProfileHTML(p = {}) {
   const pick = tagList => Array.from(new Set(tagList.filter(tag => tags.has(tag)).map(tag => TAG_LABELS[tag]))).join(', ');
   const needTags = pick(['fps', 'study-online', 'call-zoom', 'bass-music', 'casual-gaming', 'bluetooth', 'diy']);
   const featureTags = pick(['virtual-71', 'bass-3d', 'bass-strong', 'vocal-clear', 'bright-sound', 'wide-stage', 'easy-listen', 'mic-clear', 'rgb', 'like-new', 'revived', 'has-video']);
-  const diyTags = pick(['velvet-pad', 'bluetooth-mod', 'battery-service', 'wire-repair']);
+  const diyTags = pick(['velvet-pad', 'pad-replace', 'bluetooth-mod', 'battery-service', 'wire-repair']);
   const optionalServices = getProductAddOns(p).map(addOn => addOn.label).join(', ');
   const compatibility = flattenProductValue(p.compatibility);
-  const comfort = flattenProductValue(p.comfortNote || p.padStatus);
+  const comfort = flattenProductValue(p.comfortNote);
   const caveat = flattenProductValue(p.caveat || p.conditionTruth);
   const gaming = flattenProductValue(p.gamingNote) || (tags.has('fps') ? 'Có thông tin phù hợp FPS/định vị tiếng chân.' : tags.has('casual-gaming') ? 'Hợp chơi game casual, giải trí hằng ngày.' : '');
   const mic = flattenProductValue(p.micStatus) || (tags.has('mic-clear') ? 'Mic rõ hoặc đã có thông tin test mic.' : tags.has('call-zoom') ? 'Có thông tin phù hợp call/Zoom.' : '');
@@ -1255,7 +1268,7 @@ function buildSmartProfileHTML(p = {}) {
     ['Chất âm', flattenProductValue(p.soundProfile || p.soundTag)],
     ['Gaming', gaming],
     ['Mic', mic],
-    ['Comfort / đệm', comfort || (tags.has('velvet-pad') ? 'Có bọc nhung hoặc xử lý đệm.' : tags.has('pad-comfort') ? 'Đệm êm hoặc đã xử lý.' : '')],
+    ['Comfort', comfort],
     ['Tương thích', compatibility],
     ['Dịch vụ có thể thêm', optionalServices],
     ['Lưu ý thật', caveat]
