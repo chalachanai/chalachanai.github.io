@@ -415,6 +415,34 @@ function buildAddonTotalHTML(productId, basePrice) {
   return `<div class="addon-total" data-addon-total="${productId}" data-base-price="${Number(basePrice || 0)}">${text}</div>`;
 }
 
+function buildAddonSummaryText(productId, addOns = []) {
+  const extra = getSelectedAddonTotal(productId);
+  const selectedCount = selectedAddonsByProduct.get(String(productId))?.size || 0;
+  if (selectedCount > 0) return `${selectedCount} dịch vụ đã chọn +${fmt(extra)}đ`;
+  return `${addOns.length} dịch vụ có thể thêm`;
+}
+
+function buildAddonMenuHTML(productId, basePrice, addOns, extraClass = '') {
+  if (!addOns?.length) return '';
+  return `
+    <div class="card-addon-zone ${extraClass}">
+      <button class="card-addon-toggle" type="button" aria-expanded="false" onclick="toggleAddonPanel(event)">
+        <span class="card-addon-toggle-title"><i class="fas fa-plus-circle"></i> Tùy chọn thêm</span>
+        <span class="card-addon-summary" data-addon-summary="${productId}">${buildAddonSummaryText(productId, addOns)}</span>
+        <i class="fas fa-chevron-down card-addon-chevron"></i>
+      </button>
+      <div class="card-addon-panel">
+        <div class="card-addon-row">
+          ${addOns.map(addOn => buildAddonOptionButton(productId, addOn, 'trust-pill trust-addon')).join('')}
+        </div>
+        ${buildAddonTotalHTML(productId, basePrice)}
+        <button class="addon-detail-link" type="button" onclick="openAddonInfo(event, ${productId})">
+          <i class="fas fa-circle-info"></i> Xem mô tả dịch vụ
+        </button>
+      </div>
+    </div>`;
+}
+
 function syncAddonTotals(productId) {
   const extra = getSelectedAddonTotal(productId);
   document.querySelectorAll(`[data-addon-total="${productId}"]`).forEach(el => {
@@ -422,6 +450,14 @@ function syncAddonTotals(productId) {
     el.textContent = extra > 0
       ? `Tổng khi thêm dịch vụ: ${fmt(base + extra)}đ (+${fmt(extra)}đ)`
       : 'Tick tùy chọn để tính thêm phí.';
+  });
+}
+
+function syncAddonSummaries(productId) {
+  const p = getProducts().find(x => x.id == productId);
+  const addOns = getProductAddOns(p || {});
+  document.querySelectorAll(`[data-addon-summary="${productId}"]`).forEach(el => {
+    el.textContent = buildAddonSummaryText(productId, addOns);
   });
 }
 
@@ -455,6 +491,17 @@ window.toggleAddonOption = function(event, productId, tag) {
   else selectedAddonsByProduct.delete(key);
   syncAddonButtons(productId, tag, selected.has(tag));
   syncAddonTotals(productId);
+  syncAddonSummaries(productId);
+};
+
+window.toggleAddonPanel = function(event) {
+  event?.preventDefault();
+  event?.stopPropagation();
+  const zone = event.currentTarget?.closest('.card-addon-zone');
+  if (!zone) return;
+  const willOpen = !zone.classList.contains('open');
+  zone.classList.toggle('open', willOpen);
+  event.currentTarget.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
 };
 
 window.openAddonInfo = function(event, productId) {
@@ -627,13 +674,13 @@ function renderProducts() {
 
 function buildCard(p) {
   const saved = p.originalPrice ? Math.round((1 - p.price / p.originalPrice) * 100) : 0;
-  const timeAgo = getTimeAgo(p.createdAt);
   const grade = getConditionGrade(p.condition, p.isSold);
   const segment = getProductSegment(p);
   const soldHTML = p.isSold ? `<div class="sold-overlay"><span>ĐÃ BÁN</span><small>Sản phẩm không còn</small></div>` : '';
   const videoHTML = p.video ? `<video class="card-video" src="${p.video}" loop muted playsinline></video>` : '';
   const videoChip = p.video ? `<button class="media-video-chip" type="button" onclick="event.stopPropagation(); openQuickView(${p.id}, 'video')"><i class="fas fa-play"></i><span>Video</span></button>` : '';
-  const descHTML = `<p class="card-desc">${getProductDescription(p)}</p>`;
+  const description = getProductDescription(p);
+  const descHTML = description ? `<p class="card-desc">${description}</p>` : '';
   const smartTags = getProductDisplayTags(p);
   const smartTagsHTML = smartTags.length
     ? `<div class="card-smart-tags">${smartTags.map(tag => `<span class="card-smart-tag">${tag}</span>`).join('')}</div>`
@@ -669,7 +716,6 @@ function buildCard(p) {
       ${videoChip}
       ${soldHTML}
       <div class="card-side-actions">
-        <span class="side-badge side-badge-time">${timeAgo}</span>
         <span class="side-badge side-badge-cond ${condClass}" title="${grade.note}">${grade.short}</span>
           <button class="side-btn side-item btn-zoom" title="Soi chi tiết x3" data-img="${p.images?.[0]||''}"><i class="fas fa-search-plus"></i></button>
         ${p.video ? `<button class="side-btn side-item" title="Xem video" onclick="event.stopPropagation(); openQuickView(${p.id}, 'video')"><i class="fas fa-play"></i></button>` : ''}
@@ -691,7 +737,7 @@ function buildCard(p) {
       <div class="card-trust-row trust-cols-1" title="${grade.note}">
         <span class="trust-pill trust-grade grade-${grade.className}">${grade.code}</span>
       </div>
-      ${addOnHTML}
+      ${buildAddonMenuHTML(p.id, p.price, addOns)}
       <div class="card-action-row">
         <button class="btn-card-check" onclick="openInfo(${p.id})"><i class="fas fa-clipboard-check"></i><span>Hồ sơ</span></button>
         <button class="btn-card-check btn-card-music-action" onclick="openMusic('${p.soundTag||''}', '${p.youtubePlaylist||''}', '${p.frGraph||''}', '${p.name}')"><i class="fas fa-music"></i><span>Nghe thử</span></button>
@@ -726,19 +772,7 @@ function attachCardEvents() {
 function fmt(n) { return Number(n).toLocaleString('vi-VN'); }
 
 function getProductDescription(p = {}) {
-  return String(p.description || '').trim() || 'Đã vệ sinh, test âm và kiểm tra ngoại hình trước khi bán.';
-}
-
-function getTimeAgo(ts) {
-  if (!ts) return 'Mới về';
-  const diff = Date.now() - ts;
-  const h = Math.floor(diff/3600000);
-  const d = Math.floor(h/24);
-  if (h < 1) return 'Vừa về';
-  if (h < 24) return `${h}h trước`;
-  if (d < 2) return 'Hôm qua';
-  if (d < 7) return `${d} ngày trước`;
-  return `${Math.floor(d/7)} tuần trước`;
+  return String(p.description || '').trim();
 }
 
 function getConditionGrade(condition = '', isSold = false) {
@@ -1151,8 +1185,8 @@ window.openQuickView = function(id, initialMedia = 'image', initialSrc = '') {
     ${p.brand ? `<span class="qv-badge">${p.brand}</span>` : ''}`;
   const oldAddonBox = document.getElementById('qvAddonBox');
   if (oldAddonBox) oldAddonBox.remove();
-  if (addOnQuickHTML) {
-    document.getElementById('qvDesc').insertAdjacentHTML('afterend', `<div id="qvAddonBox">${addOnQuickHTML}</div>`);
+  if (quickAddOns.length) {
+    document.getElementById('qvDesc').insertAdjacentHTML('afterend', `<div id="qvAddonBox">${buildAddonMenuHTML(p.id, p.price, quickAddOns, 'qv-addon-box')}</div>`);
   }
   // Thumbs
   const imageThumbs = currentQuickImages.map((img,i) =>

@@ -299,7 +299,6 @@ img { display: block; width: 100%; }
   background: rgba(0,0,0,0.55); border: 1px solid rgba(255,255,255,0.1);
   white-space: nowrap; margin-bottom: 0.15rem;
 }
-.side-badge-time { color: #aaa; }
 .side-badge-cond { color: var(--gold); border-color: rgba(212,175,55,0.3); }
 .side-badge-cond.sold { color: var(--red); border-color: rgba(231,76,60,0.4); }
 
@@ -457,10 +456,54 @@ img { display: block; width: 100%; }
 }
 .card-addon-zone {
   margin-top: 0.55rem;
-  padding: 0.55rem;
-  border: 1px dashed rgba(212,175,55,0.22);
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid rgba(212,175,55,0.24);
   border-radius: var(--radius-sm);
-  background: rgba(212,175,55,0.045);
+  background: rgba(212,175,55,0.035);
+}
+.card-addon-toggle {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 0.45rem;
+  width: 100%;
+  min-height: 2.2rem;
+  padding: 0.5rem 0.55rem;
+  color: var(--gold);
+  text-align: left;
+  cursor: pointer;
+}
+.card-addon-toggle-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.34rem;
+  min-width: 0;
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.card-addon-summary {
+  color: var(--text-dim);
+  font-size: 0.62rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+.card-addon-chevron {
+  color: var(--text-muted);
+  font-size: 0.68rem;
+  transition: transform 0.18s ease;
+}
+.card-addon-zone.open .card-addon-chevron {
+  transform: rotate(180deg);
+}
+.card-addon-panel {
+  display: none;
+  padding: 0 0.55rem 0.55rem;
+}
+.card-addon-zone.open .card-addon-panel {
+  display: block;
 }
 .card-addon-label {
   margin-bottom: 0.4rem;
@@ -1071,6 +1114,71 @@ footer {
 .form-textarea { resize: vertical; min-height: 80px; }
 .img-inputs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
 .form-hint { font-size: 0.72rem; color: var(--text-muted); margin-top: 0.3rem; }
+
+.claude-import-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.9rem;
+  margin-bottom: 1rem;
+  padding: 0.85rem;
+  border: 1px dashed rgba(212,175,55,0.36);
+  border-radius: var(--radius-sm);
+  background: rgba(212,175,55,0.05);
+  transition: border-color 0.18s ease, background 0.18s ease;
+}
+.claude-import-box.drag-over {
+  border-color: var(--gold);
+  background: rgba(212,175,55,0.12);
+}
+.claude-import-main {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.claude-import-box strong {
+  display: block;
+  color: var(--gold);
+  font-size: 0.9rem;
+  margin-bottom: 0.22rem;
+}
+.claude-import-box span {
+  display: block;
+  color: var(--text-dim);
+  font-size: 0.76rem;
+  line-height: 1.45;
+}
+.claude-import-text {
+  width: 100%;
+  margin-top: 0.65rem;
+  min-height: 82px;
+  resize: vertical;
+  padding: 0.72rem;
+  border: 1px solid rgba(255,255,255,0.09);
+  border-radius: var(--radius-sm);
+  background: rgba(0,0,0,0.24);
+  color: var(--text);
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.74rem;
+  line-height: 1.45;
+}
+.claude-import-text:focus {
+  border-color: rgba(212,175,55,0.5);
+  outline: none;
+}
+.claude-import-actions {
+  display: grid;
+  gap: 0.5rem;
+  flex: 0 0 auto;
+}
+.claude-import-box .btn-export {
+  white-space: nowrap;
+}
+@media (max-width: 680px) {
+  .claude-import-box {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
 
 .btn-submit {
   width: 100%; padding: 0.85rem;
