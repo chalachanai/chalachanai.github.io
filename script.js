@@ -350,6 +350,7 @@ const ADDON_SERVICE_INFO = {
   'bluetooth-mod': {
     label: 'Làm Bluetooth',
     shortLabel: 'Bluetooth',
+    price: 150000,
     lines: [
       'Bluetooth 5.2, kết nối ổn định.',
       'Âm thanh stereo 2 kênh trái/phải.',
@@ -361,6 +362,7 @@ const ADDON_SERVICE_INFO = {
   'velvet-pad': {
     label: 'Bọc nhung',
     shortLabel: 'Bọc nhung',
+    price: 120000,
     lines: [
       'Chất liệu nhung mềm, thoáng tai, giúp giảm bí tai và mồ hôi.',
       'Lớp bọc dày dặn, dễ vệ sinh.',
@@ -371,6 +373,7 @@ const ADDON_SERVICE_INFO = {
   'battery-service': {
     label: 'Thay pin',
     shortLabel: 'Thay pin',
+    price: 70000,
     lines: [
       'Làm pin lớn nhất tai có thể gắn được.',
       'Thường nâng dung lượng lên khoảng 2-3 lần tùy mẫu tai.',
@@ -398,13 +401,37 @@ function isAddonSelected(productId, tag) {
   return selectedAddonsByProduct.get(String(productId))?.has(tag) || false;
 }
 
+function getSelectedAddonTotal(productId) {
+  const selected = selectedAddonsByProduct.get(String(productId));
+  if (!selected) return 0;
+  return Array.from(selected).reduce((sum, tag) => sum + (ADDON_SERVICE_INFO[tag]?.price || 0), 0);
+}
+
+function buildAddonTotalHTML(productId, basePrice) {
+  const extra = getSelectedAddonTotal(productId);
+  const text = extra > 0
+    ? `Tổng khi thêm dịch vụ: ${fmt(Number(basePrice || 0) + extra)}đ (+${fmt(extra)}đ)`
+    : 'Tick tùy chọn để tính thêm phí.';
+  return `<div class="addon-total" data-addon-total="${productId}" data-base-price="${Number(basePrice || 0)}">${text}</div>`;
+}
+
+function syncAddonTotals(productId) {
+  const extra = getSelectedAddonTotal(productId);
+  document.querySelectorAll(`[data-addon-total="${productId}"]`).forEach(el => {
+    const base = Number(el.dataset.basePrice || 0);
+    el.textContent = extra > 0
+      ? `Tổng khi thêm dịch vụ: ${fmt(base + extra)}đ (+${fmt(extra)}đ)`
+      : 'Tick tùy chọn để tính thêm phí.';
+  });
+}
+
 function buildAddonOptionButton(productId, addOn, className = '') {
   const selected = isAddonSelected(productId, addOn.tag);
   return `<button class="addon-option ${className} ${selected ? 'selected' : ''}" type="button"
     data-addon-product="${productId}" data-addon="${addOn.tag}" aria-pressed="${selected ? 'true' : 'false'}"
     onclick="toggleAddonOption(event, ${productId}, '${addOn.tag}')"
     title="Tick nếu muốn thêm dịch vụ ${addOn.label}">
-    <i class="${selected ? 'fas fa-check-square' : 'far fa-square'}"></i><span>${addOn.shortLabel || addOn.label}</span>
+    <i class="${selected ? 'fas fa-check-square' : 'far fa-square'}"></i><span>${addOn.shortLabel || addOn.label}</span><small>+${fmt(addOn.price)}đ</small>
   </button>`;
 }
 
@@ -427,6 +454,7 @@ window.toggleAddonOption = function(event, productId, tag) {
   if (selected.size) selectedAddonsByProduct.set(key, selected);
   else selectedAddonsByProduct.delete(key);
   syncAddonButtons(productId, tag, selected.has(tag));
+  syncAddonTotals(productId);
 };
 
 window.openAddonInfo = function(event, productId) {
@@ -440,7 +468,7 @@ window.openAddonInfo = function(event, productId) {
     <div class="addon-info-list">
       ${addOns.map(addOn => `
         <div class="addon-info-item">
-          <h3>${addOn.label}</h3>
+          <h3>${addOn.label} <span>+${fmt(addOn.price)}đ</span></h3>
           ${addOn.lines.map(line => `<p>${line}</p>`).join('')}
         </div>`).join('')}
     </div>`;
@@ -617,6 +645,7 @@ function buildCard(p) {
       <div class="card-addon-row">
         ${addOns.map(addOn => buildAddonOptionButton(p.id, addOn, 'trust-pill trust-addon')).join('')}
       </div>
+      ${buildAddonTotalHTML(p.id, p.price)}
       <button class="addon-detail-link" type="button" onclick="openAddonInfo(event, ${p.id})">
         <i class="fas fa-circle-info"></i> Xem mô tả dịch vụ
       </button>
@@ -1098,6 +1127,7 @@ window.openQuickView = function(id, initialMedia = 'image', initialSrc = '') {
       <div class="card-addon-row">
         ${quickAddOns.map(addOn => buildAddonOptionButton(p.id, addOn, 'trust-pill trust-addon')).join('')}
       </div>
+      ${buildAddonTotalHTML(p.id, p.price)}
       <button class="addon-detail-link" type="button" onclick="openAddonInfo(event, ${p.id})">
         <i class="fas fa-circle-info"></i> Xem mô tả dịch vụ
       </button>
