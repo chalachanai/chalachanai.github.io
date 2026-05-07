@@ -1,30 +1,31 @@
 {
   "schemaVersion": 2,
-  "exportedAt": "2026-05-07T01:33:07.135Z",
+  "exportedAt": "2026-05-07T06:44:18.071Z",
   "products": [
     {
       "id": 1000001,
-      "name": "HyperX Cloud Stinger Core",
-      "brand": "HyperX",
+      "name": "Tai nghe Gaming Attack Shark L80 Pro 3 mode kết nối",
+      "brand": "Attack Shark",
       "segment": "gaming",
       "condition": "Like New",
-      "price": 650000,
-      "originalPrice": 1290000,
+      "price": 220000,
+      "originalPrice": 580000,
       "stock": 1,
-      "soundTag": "V-Shape",
-      "latency": "wired",
-      "isWireless": false,
+      "soundTag": "Bass-Heavy",
+      "latency": "wireless-fast",
+      "isWireless": true,
       "batteryHealth": null,
       "images": [
-        "https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=600&q=80",
-        "https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=300&q=80",
-        "https://images.unsplash.com/photo-1524678606370-a37ad95c7631?w=300&q=80"
+        "/uploads/1778135888867-384ad746-product-1778135000670.jpg",
+        "/uploads/1778135897107-ec9fcf08-product-1778135009628.jpg",
+        "/uploads/1778135904952-6bc99b37-product-1778135017451.jpg",
+        "/uploads/1778135913936-b5085b9c-product-1778135026429.jpg"
       ],
       "video": "",
       "youtubePlaylist": "",
       "frGraph": "",
       "shopeeLink": "#",
-      "description": "Driver 40mm, mic có thể gập, đệm da mềm. Test âm thanh OK, dây zin. Phù hợp FPS và game bắn súng.",
+      "description": "Attack Shark L80 Pro bản 3 mode kết nối, âm thanh 360 độ và bass có lực. Hợp PC/laptop/điện thoại, game casual, phim và nghe nhạc sôi động.",
       "reviews": [
         {
           "name": "Minh Khoa",
@@ -35,30 +36,70 @@
       ],
       "views": 47,
       "createdAt": 1777369606835,
-      "isSold": false
+      "isSold": false,
+      "messengerLink": "",
+      "bestFor": [
+        "fps",
+        "casual-gaming",
+        "bluetooth",
+        "bass-music"
+      ],
+      "topHighlights": [
+        "bass-3d",
+        "bass-strong",
+        "wide-stage",
+        "easy-listen"
+      ],
+      "serviceDone": [],
+      "inspection": "",
+      "inspectionDetails": {
+        "shell": "",
+        "pads": "",
+        "driver": "",
+        "mic": "",
+        "connect": "",
+        "battery": "",
+        "clean": ""
+      },
+      "compatibility": [
+        "Bluetooth",
+        "2.4G dongle nếu còn phụ kiện",
+        "USB/dây tùy bộ",
+        "PC",
+        "Laptop",
+        "Điện thoại"
+      ],
+      "micStatus": "Có thể dùng voice chat cơ bản; nên test video/mic nếu dùng học online nhiều.",
+      "comfortNote": "Form gaming chụp tai, hợp khách thích âm lực và ít vướng dây.",
+      "batteryNote": "Pin thực tế của hàng cũ cần shop test riêng trước khi chốt.",
+      "caveat": "Nếu cần chơi FPS cạnh tranh, ưu tiên kiểm đúng chế độ 2.4G/dây thay vì Bluetooth.",
+      "researchNotes": "Tên sản phẩm nêu 3 mode kết nối và âm thanh 360 độ; mô tả giữ ở mức gaming/casual để tránh phóng đại.",
+      "sourceLinks": []
     },
     {
       "id": 1000002,
-      "name": "Razer Kraken X Lite",
-      "brand": "Razer",
-      "segment": "gaming",
-      "condition": "Hơi xước",
-      "price": 420000,
-      "originalPrice": 990000,
+      "name": "Tai Nghe Chụp Tai Headphone MS-B2 Bluetooth 5.1",
+      "brand": "",
+      "segment": "music",
+      "condition": "Mới",
+      "price": 160000,
+      "originalPrice": 360000,
       "stock": 1,
-      "soundTag": "Bass-Heavy",
-      "latency": "wired",
-      "isWireless": false,
+      "soundTag": "Warm",
+      "latency": "wireless-slow",
+      "isWireless": true,
       "batteryHealth": null,
       "images": [
-        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80",
-        "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=300&q=80"
+        "/uploads/1778135247215-60192771-product-1778134358880.jpg",
+        "/uploads/1778135253187-ecd3d8ce-product-1778134365713.jpg",
+        "/uploads/1778135260293-347d53d9-product-1778134372824.jpg",
+        "/uploads/1778135270527-dba563f8-product-1778134383037.jpg"
       ],
       "video": "",
       "youtubePlaylist": "",
       "frGraph": "",
       "shopeeLink": "#",
-      "description": "Nhẹ 250g, surround 7.1 ảo. Có vài vết xước nhỏ headband, không ảnh hưởng chức năng. Driver OK.",
+      "description": "Tai chụp Bluetooth 5.1 form gọn, hợp nghe nhạc, xem phim và dùng điện thoại hằng ngày. Ưu tiên sự tiện lợi không dây hơn là gaming độ trễ thấp.",
       "reviews": [
         {
           "name": "Tuấn Anh",
@@ -69,18 +110,50 @@
       ],
       "views": 31,
       "createdAt": 1777283206835,
-      "isSold": false
+      "isSold": false,
+      "messengerLink": "",
+      "bestFor": [
+        "bluetooth",
+        "study-online",
+        "call-zoom",
+        "bass-music"
+      ],
+      "topHighlights": [
+        "easy-listen",
+        "mic-clear"
+      ],
+      "serviceDone": [],
+      "inspection": "",
+      "inspectionDetails": {
+        "shell": "",
+        "pads": "",
+        "driver": "",
+        "mic": "",
+        "connect": "",
+        "battery": "",
+        "clean": ""
+      },
+      "compatibility": [
+        "Bluetooth",
+        "Điện thoại",
+        "Laptop"
+      ],
+      "micStatus": "Có mic gọi cơ bản nếu máy nhận đúng chế độ Bluetooth.",
+      "comfortNote": "Form chụp tai đơn giản, hợp nghe nhanh và di chuyển nhẹ.",
+      "caveat": "Không ưu tiên FPS vì Bluetooth phổ thông vẫn có độ trễ.",
+      "researchNotes": "Thông tin online của model MS-B2 không đồng nhất; chỉ dùng mô tả theo nhóm tai Bluetooth 5.1 phổ thông.",
+      "sourceLinks": []
     },
     {
       "id": 1777456709089,
-      "name": "Logitech usb H390 ",
+      "name": "Logitech USB H390",
       "segment": "study",
       "brand": "Logitech",
       "condition": "Mới",
       "price": 300000,
       "originalPrice": 730000,
       "stock": 1,
-      "soundTag": "",
+      "soundTag": "Neutral",
       "latency": "wired",
       "isWireless": false,
       "batteryHealth": null,
@@ -94,22 +167,44 @@
       "youtubePlaylist": "",
       "shopeeLink": "",
       "messengerLink": "",
-      "description": "",
+      "description": "Headset USB cắm là chạy, chuyên học online, họp Zoom và call công việc. Mic giảm ồn, nút chỉnh âm trên dây và giọng nói rõ hơn tai nghe nhạc thường.",
       "reviews": [],
       "views": 0,
       "createdAt": 1777456709089,
-      "isSold": false
+      "isSold": false,
+      "bestFor": [
+        "study-online",
+        "call-zoom"
+      ],
+      "topHighlights": [
+        "mic-clear",
+        "vocal-clear",
+        "easy-listen"
+      ],
+      "compatibility": [
+        "USB",
+        "PC",
+        "Laptop"
+      ],
+      "micStatus": "Mic cần dài, giảm ồn nền ở mức văn phòng/học online.",
+      "comfortNote": "Đệm giả da và headband chỉnh được, hợp ca học/call dài vừa phải.",
+      "caveat": "Không dành cho người cần bass mạnh hoặc gaming hiệu ứng lớn.",
+      "researchNotes": "Logitech mô tả H390 là USB plug-and-play, mic noise-canceling và có inline controls.",
+      "sourceLinks": [
+        "https://www.logitech.com/en-us/product/stereo-headset-h390"
+      ],
+      "serviceDone": []
     },
     {
       "id": 1777457046429,
-      "name": "HyperX Cloud II ",
+      "name": "Tai Nghe Gaming HyperX Cloud II",
       "segment": "gaming",
       "brand": "HyperX",
       "condition": "Like New",
       "price": 1000000,
-      "originalPrice": 3100000,
+      "originalPrice": 1890000,
       "stock": 3,
-      "soundTag": "",
+      "soundTag": "V-Shape",
       "latency": "wired",
       "isWireless": false,
       "batteryHealth": null,
@@ -120,35 +215,62 @@
         "/uploads/1777457776495-9bcae3c5-product-1777456906694.jpg"
       ],
       "video": "",
-      "youtubePlaylist": "",
-      "shopeeLink": "",
+      "youtubePlaylist": "https://www.youtube.com/embed/videoseries?list=PLm59_S9_WByS87eH1vF5_KbeVdG3p-P2a",
+      "shopeeLink": "https://shopee.vn/search?keyword=hyperx%20cloud%20ii",
       "messengerLink": "",
-      "description": "‼️ Vì sao nhiều bạn trẻ chọn NIỀNG RĂNG tại TẤM DENTIST?\n➖ Chi phí niềng trọn gói chỉ từ 22Tr/2 hàm – dễ tiếp cận, phù hợp sinh viên & người đi làm\n➖ Hỗ trợ trả góp 0% – Áp dụng nhiều ưu đãi, giảm áp lực tài chính khi bắt đầu chỉnh nha\n➖ Bác sĩ chỉnh nha chuyên môn cao, theo sát 1:1 suốt quá trình\n➖ Phác đồ cá nhân hóa, theo dõi tiến trình rõ ràng từng giai đoạn\n➖ Trang thiết bị hiện đại, quy trình an toàn – hiệu quả – minh bạch\n💌 Nhắn tin để Nhận tư vấn MIỄN PHÍ & phác đồ dành riêng cho bạn!",
+      "description": "Tai gaming huyền thoại với driver 53mm, USB sound card giả lập 7.1 và mic tháo rời. Đeo êm, âm dày, hợp FPS casual, Discord và học online cần giọng rõ.",
       "reviews": [],
       "views": 0,
       "createdAt": 1777457046429,
       "isSold": false,
-      "inspection": "thật nó màu hồng",
+      "inspection": "",
       "inspectionDetails": {
         "shell": "like new",
         "pads": "mới",
-        "driver": "con mèo",
+        "driver": "53mm gần như lớn nhất dòng gaming",
         "mic": "xám",
-        "connect": "kem",
-        "battery": "đen",
-        "clean": "hihi"
-      }
+        "connect": "có dây 3.5 hoặc soul card",
+        "battery": "",
+        "clean": ""
+      },
+      "bestFor": [
+        "fps",
+        "call-zoom",
+        "casual-gaming"
+      ],
+      "topHighlights": [
+        "virtual-71",
+        "mic-clear",
+        "bass-strong",
+        "easy-listen"
+      ],
+      "serviceDone": [],
+      "compatibility": [
+        "USB",
+        "3.5mm",
+        "PC",
+        "Laptop",
+        "PlayStation",
+        "Điện thoại có jack"
+      ],
+      "micStatus": "Mic tháo rời, hợp voice chat; chất lượng thực tế vẫn nên nghe video test.",
+      "comfortNote": "Đệm dày, lực kẹp dễ chịu, hợp đeo lâu.",
+      "caveat": "7.1 là giả lập qua USB sound card, không phải nhiều driver thật.",
+      "researchNotes": "Nguồn HyperX nêu Cloud II có 53mm driver và virtual 7.1; cộng đồng thường nhắc nên xem 7.1 là hiệu ứng giả lập.",
+      "sourceLinks": [
+        "https://hyperx.com/products/hyperx-cloud-ii?loc=US"
+      ]
     },
     {
       "id": 1777457495099,
-      "name": "DIY SoundMax AH-318 ",
-      "segment": "gaming",
-      "brand": "SoundMax",
+      "name": "DIY Tai nghe Over-ear SoundMAX AH-318 (Nâu)",
+      "segment": "music",
+      "brand": "SoundMAX",
       "condition": "Mới",
       "price": 500000,
       "originalPrice": 480000,
       "stock": 1,
-      "soundTag": "",
+      "soundTag": "Warm",
       "latency": "wired",
       "isWireless": false,
       "batteryHealth": null,
@@ -162,13 +284,19 @@
       "youtubePlaylist": "",
       "shopeeLink": "",
       "messengerLink": "",
-      "description": "DIY",
+      "description": "SoundMAX AH-318 form over-ear lớn, chất âm ấm và bass khỏe, hợp phim, nghe nhạc phổ thông và khách thích một chiếc tai DIY dáng cổ điển.",
       "reviews": [],
       "views": 0,
       "createdAt": 1777457495099,
       "isSold": false,
-      "bestFor": [],
-      "topHighlights": [],
+      "bestFor": [
+        "bass-music",
+        "diy"
+      ],
+      "topHighlights": [
+        "bass-strong",
+        "easy-listen"
+      ],
       "serviceDone": [],
       "inspection": "",
       "inspectionDetails": {
@@ -179,18 +307,29 @@
         "connect": "",
         "battery": "",
         "clean": ""
-      }
+      },
+      "compatibility": [
+        "3.5mm",
+        "PC",
+        "Laptop",
+        "Điện thoại có jack"
+      ],
+      "micStatus": "",
+      "comfortNote": "Form chụp tai rộng, hợp nghe lâu nếu đệm còn tốt hoặc đã bọc lại.",
+      "caveat": "Model cũ, nên xem kỹ ảnh và hồ sơ tình trạng trước khi chốt.",
+      "researchNotes": "Thông tin web về AH-318 không nhiều; mô tả dựa trên kiểu tai SoundMAX over-ear phổ thông và tên model.",
+      "sourceLinks": []
     },
     {
       "id": 1777458161974,
-      "name": "DIY ONKUKA K9 ",
+      "name": "DIY ONKUKA K9",
       "segment": "gaming",
-      "brand": "",
+      "brand": "ONKUKA",
       "condition": "Mới",
       "price": 400000,
       "originalPrice": 490000,
       "stock": 1,
-      "soundTag": "",
+      "soundTag": "Bass-Heavy",
       "latency": "wired",
       "isWireless": false,
       "batteryHealth": null,
@@ -204,22 +343,42 @@
       "youtubePlaylist": "",
       "shopeeLink": "",
       "messengerLink": "",
-      "description": "DIY",
+      "description": "ONKUKA K9 bản DIY thiên âm lực và cảm giác giải trí. Hợp game casual, phim hành động và khách thích tai gaming nhìn khác lạ hơn mẫu phổ thông.",
       "reviews": [],
       "views": 0,
       "createdAt": 1777458161974,
-      "isSold": false
+      "isSold": false,
+      "bestFor": [
+        "casual-gaming",
+        "bass-music",
+        "diy"
+      ],
+      "topHighlights": [
+        "bass-strong",
+        "has-video"
+      ],
+      "compatibility": [
+        "3.5mm",
+        "PC",
+        "Laptop"
+      ],
+      "micStatus": "Xem video test để kiểm giọng/mic nếu cần học online.",
+      "comfortNote": "Form gaming ôm tai, nên cân nhắc nếu bạn thích tai thật nhẹ.",
+      "caveat": "Thông số hãng ít phổ biến; ưu tiên ảnh/video thực tế của shop.",
+      "researchNotes": "Không có nguồn chính thống rõ ràng; mô tả theo phân khúc tai gaming DIY và media thực tế.",
+      "sourceLinks": [],
+      "serviceDone": []
     },
     {
       "id": 1777458521430,
-      "name": "Miniso ",
+      "name": "Miniso",
       "segment": "study",
-      "brand": "",
+      "brand": "Miniso",
       "condition": "Mới",
-      "price": 200000,
+      "price": 149999,
       "originalPrice": 400000,
       "stock": 1,
-      "soundTag": "",
+      "soundTag": "Neutral",
       "latency": "wired",
       "isWireless": false,
       "batteryHealth": null,
@@ -233,7 +392,7 @@
       "youtubePlaylist": "",
       "shopeeLink": "",
       "messengerLink": "",
-      "description": "",
+      "description": "Tai nghe Miniso gọn nhẹ, hợp học online, nghe podcast và dùng điện thoại/laptop hằng ngày. Chất âm dễ nghe, không màu mè, phù hợp nhu cầu cơ bản.",
       "reviews": [],
       "views": 0,
       "createdAt": 1777458521430,
@@ -247,18 +406,38 @@
         "connect": "",
         "battery": "",
         "clean": ""
-      }
+      },
+      "bestFor": [
+        "study-online",
+        "call-zoom"
+      ],
+      "topHighlights": [
+        "easy-listen",
+        "vocal-clear",
+        "has-video"
+      ],
+      "serviceDone": [],
+      "compatibility": [
+        "3.5mm",
+        "Điện thoại",
+        "Laptop"
+      ],
+      "micStatus": "Phù hợp cuộc gọi cơ bản nếu jack/thiết bị hỗ trợ mic.",
+      "comfortNote": "Gọn, dễ mang theo, hợp người không thích tai gaming quá to.",
+      "caveat": "Không dành cho bass mạnh hoặc định vị FPS.",
+      "researchNotes": "Thông tin model cụ thể không rõ; mô tả theo nhóm tai Miniso phổ thông.",
+      "sourceLinks": []
     },
     {
       "id": 1777458720732,
-      "name": "Dareu EH925 ",
+      "name": "Tai nghe Dareu EH925 RGB Red",
       "segment": "gaming",
       "brand": "Dareu",
       "condition": "Mới",
-      "price": 280000,
-      "originalPrice": 800000,
+      "price": 290000,
+      "originalPrice": 950000,
       "stock": 1,
-      "soundTag": "",
+      "soundTag": "V-Shape",
       "latency": "wired",
       "isWireless": false,
       "batteryHealth": null,
@@ -268,16 +447,26 @@
         "/uploads/1778082087153-49b00185-product-1778081201447.jpg"
       ],
       "video": "/uploads/1778082126115-b2f78711-7794440033071.mp4",
-      "youtubePlaylist": "",
+      "youtubePlaylist": "https://www.youtube.com/embed/videoseries?list=PLw-VjHDlEOgs65uU_zEZm7f4N-R8y9T6d",
       "shopeeLink": "",
       "messengerLink": "",
-      "description": "",
+      "description": "Dareu EH925 có giả lập 7.1, LED RGB và mic chống ồn, hợp game FPS/casual cần hiệu ứng nổi. Ngoại hình gaming rõ, đeo chắc và âm có lực.",
       "reviews": [],
       "views": 0,
       "createdAt": 1777458720732,
       "isSold": false,
-      "bestFor": [],
-      "topHighlights": [],
+      "bestFor": [
+        "fps",
+        "casual-gaming",
+        "call-zoom"
+      ],
+      "topHighlights": [
+        "virtual-71",
+        "rgb",
+        "mic-clear",
+        "bass-strong",
+        "has-video"
+      ],
       "serviceDone": [],
       "inspection": "",
       "inspectionDetails": {
@@ -288,18 +477,28 @@
         "connect": "",
         "battery": "",
         "clean": ""
-      }
+      },
+      "compatibility": [
+        "USB",
+        "PC",
+        "Laptop"
+      ],
+      "micStatus": "Mic cần, hợp Discord và học online.",
+      "comfortNote": "Form over-ear, đệm dày, hợp người thích tai gaming ôm tai.",
+      "caveat": "7.1 là hiệu ứng giả lập; cần PC/USB để đủ tính năng.",
+      "researchNotes": "Các listing bán lẻ thường nhắc EH925 ở 7.1, RGB và mic chống ồn.",
+      "sourceLinks": []
     },
     {
       "id": 1777459300633,
-      "name": "Sony MDR-XP450",
+      "name": "Sony MDR-XB450",
       "segment": "music",
       "brand": "Sony",
       "condition": "Trầy nhẹ",
       "price": 350000,
       "originalPrice": 1000000,
       "stock": 1,
-      "soundTag": "",
+      "soundTag": "Bass-Heavy",
       "latency": "wired",
       "isWireless": false,
       "batteryHealth": null,
@@ -312,22 +511,41 @@
       "youtubePlaylist": "",
       "shopeeLink": "",
       "messengerLink": "",
-      "description": "",
+      "description": "Sony MDR-XB450 thuộc dòng Extra Bass, form on-ear gọn và dây 3.5mm. Hợp EDM, Pop, Hip-hop và khách thích bass nổi, nghe vui tai hơn trung tính.",
       "reviews": [],
       "views": 0,
       "createdAt": 1777459300633,
-      "isSold": false
+      "isSold": false,
+      "bestFor": [
+        "bass-music"
+      ],
+      "topHighlights": [
+        "bass-strong",
+        "easy-listen",
+        "has-video"
+      ],
+      "compatibility": [
+        "3.5mm",
+        "Điện thoại",
+        "Laptop"
+      ],
+      "micStatus": "Không ưu tiên gọi/học online nếu bản không có mic.",
+      "comfortNote": "On-ear gọn, dễ mang theo nhưng có thể không thoáng bằng over-ear lớn.",
+      "caveat": "Bass nhiều nên không hợp người thích vocal thật mỏng, sáng.",
+      "researchNotes": "Tên XB/Extra Bass thường gắn với chất âm bass lực của Sony; nên kiểm ảnh để xác nhận đúng biến thể.",
+      "sourceLinks": [],
+      "serviceDone": []
     },
     {
       "id": 1777459561137,
-      "name": "Havit HV-H2232D ",
+      "name": "Havit HV-H2232D",
       "segment": "gaming",
-      "brand": "",
+      "brand": "Havit",
       "condition": "Trầy nhẹ",
       "price": 140000,
       "originalPrice": 340000,
       "stock": 1,
-      "soundTag": "",
+      "soundTag": "V-Shape",
       "latency": "wired",
       "isWireless": false,
       "batteryHealth": null,
@@ -340,13 +558,22 @@
       "youtubePlaylist": "",
       "shopeeLink": "",
       "messengerLink": "",
-      "description": "",
+      "description": "Havit HV-H2232D form gaming có mic cần, âm thiên giải trí và bass dễ nghe. Mẫu này có thể gắn thêm dịch vụ bọc nhung, làm Bluetooth hoặc thay pin nếu khách chọn.",
       "reviews": [],
       "views": 0,
       "createdAt": 1777459561137,
       "isSold": false,
-      "bestFor": [],
-      "topHighlights": [],
+      "bestFor": [
+        "casual-gaming",
+        "study-online",
+        "call-zoom",
+        "diy"
+      ],
+      "topHighlights": [
+        "bass-strong",
+        "mic-clear",
+        "has-video"
+      ],
       "serviceDone": [
         "velvet-pad",
         "bluetooth-mod",
@@ -361,36 +588,56 @@
         "connect": "",
         "battery": "",
         "clean": ""
-      }
+      },
+      "compatibility": [
+        "3.5mm",
+        "PC",
+        "Laptop"
+      ],
+      "micStatus": "Mic cần, hợp học online/call nếu test thực tế ổn.",
+      "comfortNote": "Có thể bọc nhung để mềm và thoáng hơn đệm da cũ.",
+      "caveat": "Nếu làm Bluetooth thì vẫn không phải tai gaming không dây độ trễ thấp.",
+      "researchNotes": "Thông tin online của HV-H2232D ít đồng nhất; mô tả theo form tai gaming Havit và tùy chọn DIY của shop.",
+      "sourceLinks": []
     },
     {
       "id": 1777459840805,
-      "name": "E-DRA EH410 PRO",
+      "name": "Tai nghe E-Dra EH410 Pro USB Led RGB",
       "segment": "gaming",
-      "brand": "E-dra",
+      "brand": "E-Dra",
       "condition": "Trầy nhẹ",
       "price": 99000,
       "originalPrice": 330000,
       "stock": 1,
-      "soundTag": "",
+      "soundTag": "V-Shape",
       "latency": "wired",
       "isWireless": false,
       "batteryHealth": null,
       "images": [
-        "/uploads/1778082314026-b29c3b6e-product-1778081428388.jpg",
-        "/uploads/1778082329084-c164fd1e-product-1778081442833.jpg"
+        "/uploads/1778133446386-1ff414ee-product-1778132558757.jpg",
+        "/uploads/1778133456410-4e61b11b-product-1778132568984.jpg",
+        "/uploads/1778133465328-0729b7da-product-1778132577785.jpg",
+        "/uploads/1778133473836-c1c1d0e3-product-1778132586226.jpg"
       ],
       "video": "",
       "youtubePlaylist": "",
       "shopeeLink": "",
       "messengerLink": "",
-      "description": "",
+      "description": "E-Dra EH410 Pro dùng cổng USB, driver lớn, LED RGB và mic đa hướng. Hợp PC/laptop, game casual, học online và khách cần cắm vào là dùng.",
       "reviews": [],
       "views": 0,
       "createdAt": 1777459840805,
       "isSold": false,
-      "bestFor": [],
-      "topHighlights": [],
+      "bestFor": [
+        "casual-gaming",
+        "study-online",
+        "call-zoom"
+      ],
+      "topHighlights": [
+        "rgb",
+        "mic-clear",
+        "bass-strong"
+      ],
       "serviceDone": [],
       "inspection": "",
       "inspectionDetails": {
@@ -401,18 +648,28 @@
         "connect": "",
         "battery": "",
         "clean": ""
-      }
+      },
+      "compatibility": [
+        "USB",
+        "PC",
+        "Laptop"
+      ],
+      "micStatus": "Mic cần, đủ dùng cho Discord/học online.",
+      "comfortNote": "Form gaming over-ear, hợp đeo trong ca học/chơi vừa phải.",
+      "caveat": "Cần cổng USB; không tiện cho điện thoại không có chuyển đổi.",
+      "researchNotes": "Các listing EH410 Pro thường nhấn USB, LED RGB và driver lớn.",
+      "sourceLinks": []
     },
     {
       "id": 1777460460296,
-      "name": "Tai nghe Cliptec BMH508 ",
+      "name": "Tai nghe Cliptec BMH508",
       "segment": "study",
-      "brand": "",
+      "brand": "Cliptec",
       "condition": "Trầy nhẹ",
       "price": 79000,
       "originalPrice": 250000,
       "stock": 1,
-      "soundTag": "",
+      "soundTag": "Neutral",
       "latency": "wired",
       "isWireless": false,
       "batteryHealth": null,
@@ -426,7 +683,7 @@
       "youtubePlaylist": "",
       "shopeeLink": "",
       "messengerLink": "",
-      "description": "",
+      "description": "Cliptec BMH508 hợp học online, họp lớp và call hằng ngày. Form đơn giản, ưu tiên giọng nói rõ, dễ dùng với laptop/PC hơn là bass hay hiệu ứng game.",
       "reviews": [],
       "views": 0,
       "createdAt": 1777460460296,
@@ -440,35 +697,86 @@
         "connect": "",
         "battery": "",
         "clean": ""
-      }
+      },
+      "bestFor": [
+        "study-online",
+        "call-zoom"
+      ],
+      "topHighlights": [
+        "vocal-clear",
+        "easy-listen",
+        "mic-clear",
+        "has-video"
+      ],
+      "compatibility": [
+        "3.5mm",
+        "PC",
+        "Laptop"
+      ],
+      "micStatus": "Hợp nhu cầu nói chuyện cơ bản; nên xem video test nếu cần mic rõ.",
+      "comfortNote": "Nhẹ và đơn giản, ít gây mệt hơn tai gaming nặng.",
+      "caveat": "Không phải tai nghe nhạc/bass chuyên sâu.",
+      "researchNotes": "Thông tin model BMH508 hạn chế; mô tả theo nhóm tai học online/call của Cliptec.",
+      "sourceLinks": [],
+      "serviceDone": []
     },
     {
       "id": 1777460661861,
-      "name": "Wangming 9600 7.1 ",
+      "name": "Wangming 9600 7.1",
       "segment": "gaming",
-      "brand": "",
+      "brand": "Wangming",
       "condition": "Trầy nhẹ",
       "price": 140000,
-      "originalPrice": 350000,
+      "originalPrice": 320000,
       "stock": 1,
-      "soundTag": "",
+      "soundTag": "V-Shape",
       "latency": "wired",
       "isWireless": false,
       "batteryHealth": null,
       "images": [
-        "/uploads/1777461420211-d15dded0-product-1777460550404.jpg",
-        "/uploads/1777461436389-0f4d22c7-product-1777460566408.jpg",
-        "/uploads/1777461449113-6e66fdcb-product-1777460579302.jpg"
+        "/uploads/1778131978780-4750d439-product-1778131090977.jpg",
+        "/uploads/1778131986683-70f2f80a-product-1778131099046.jpg"
       ],
-      "video": "/uploads/1777461585543-57ee4dde-7775718199417.mp4",
-      "youtubePlaylist": "",
+      "video": "/uploads/1778131993504-07adef0e-7799914695332.mp4",
+      "youtubePlaylist": "https://www.youtube.com/embed/videoseries?list=PL3-sRm86Snb69pX_m_oZ5O_6R2yR-S8-O",
       "shopeeLink": "",
       "messengerLink": "",
-      "description": "",
+      "description": "Wangming 9600 7.1 có giả lập âm vòm, LED và chất âm nhiều lực. Hợp game casual/FPS nhẹ, xem phim và khách thích tai gaming to, nổi bật.",
       "reviews": [],
       "views": 0,
       "createdAt": 1777460661861,
-      "isSold": false
+      "isSold": false,
+      "bestFor": [
+        "fps",
+        "casual-gaming"
+      ],
+      "topHighlights": [
+        "virtual-71",
+        "bass-strong",
+        "rgb",
+        "has-video"
+      ],
+      "serviceDone": [],
+      "inspection": "",
+      "inspectionDetails": {
+        "shell": "",
+        "pads": "",
+        "driver": "",
+        "mic": "",
+        "connect": "",
+        "battery": "",
+        "clean": ""
+      },
+      "compatibility": [
+        "USB",
+        "PC",
+        "Laptop"
+      ],
+      "micStatus": "Mic cần, hợp chat game cơ bản.",
+      "comfortNote": "Form lớn, đeo đã tai nhưng không hợp người thích tai siêu nhẹ.",
+      "caveat": "7.1 là giả lập qua xử lý âm thanh, không phải surround thật nhiều loa.",
+      "researchNotes": "Tên model thường được bán như tai gaming 7.1 LED; mô tả giữ ở mức giả lập để tránh phóng đại.",
+      "sourceLinks": []
     },
     {
       "id": 1777803554613,
@@ -479,7 +787,7 @@
       "price": 200000,
       "originalPrice": 520000,
       "stock": 1,
-      "soundTag": "",
+      "soundTag": "V-Shape",
       "latency": "wired",
       "isWireless": false,
       "batteryHealth": null,
@@ -492,7 +800,7 @@
       "youtubePlaylist": "",
       "shopeeLink": "",
       "messengerLink": "",
-      "description": "",
+      "description": "HAVIT H2012D nổi bật với đèn RGB nhiều chế độ, form gaming và âm thanh thiên giải trí. Hợp game casual, học online và góc setup thích ánh sáng.",
       "inspection": "",
       "inspectionDetails": {
         "shell": "",
@@ -506,18 +814,39 @@
       "reviews": [],
       "views": 0,
       "createdAt": 1777803554613,
-      "isSold": false
+      "isSold": false,
+      "bestFor": [
+        "casual-gaming",
+        "study-online",
+        "call-zoom"
+      ],
+      "topHighlights": [
+        "rgb",
+        "mic-clear",
+        "easy-listen"
+      ],
+      "compatibility": [
+        "3.5mm",
+        "PC",
+        "Laptop"
+      ],
+      "micStatus": "Mic cần, hợp chat game và học online.",
+      "comfortNote": "Form over-ear ôm tai, hợp dùng trong phòng hơn là mang đi.",
+      "caveat": "RGB là điểm nhìn chính; chất âm nên xem như gaming/casual.",
+      "researchNotes": "Từ tên sản phẩm và listing thị trường: điểm khác biệt chính là RGB nhiều chế độ và form gaming.",
+      "sourceLinks": [],
+      "serviceDone": []
     },
     {
       "id": 1777804177760,
       "name": "Attack Shark L80 Pro Âm thanh bass 3D",
       "segment": "gaming",
-      "brand": "",
+      "brand": "Attack Shark",
       "condition": "Like New",
       "price": 199000,
       "originalPrice": 700000,
       "stock": 1,
-      "soundTag": "",
+      "soundTag": "Bass-Heavy",
       "latency": "wired",
       "isWireless": false,
       "batteryHealth": null,
@@ -531,7 +860,7 @@
       "youtubePlaylist": "",
       "shopeeLink": "",
       "messengerLink": "",
-      "description": "",
+      "description": "Attack Shark L80 Pro thiên bass 3D, hợp nghe nhạc sôi động, phim và game casual cần cảm giác lực. Chất âm vui tai, không quá khô như tai học online.",
       "inspection": "",
       "inspectionDetails": {
         "shell": "",
@@ -545,18 +874,38 @@
       "reviews": [],
       "views": 0,
       "createdAt": 1777804177760,
-      "isSold": false
+      "isSold": false,
+      "bestFor": [
+        "bass-music",
+        "casual-gaming"
+      ],
+      "topHighlights": [
+        "bass-3d",
+        "bass-strong",
+        "easy-listen"
+      ],
+      "compatibility": [
+        "3.5mm",
+        "PC",
+        "Laptop"
+      ],
+      "micStatus": "Nếu cần học online, nên kiểm video hoặc hồ sơ mic trước khi chốt.",
+      "comfortNote": "Form gaming, hợp người thích âm dày và cảm giác bao tai.",
+      "caveat": "Bass nổi nên không hợp người thích vocal mỏng, sáng, thật sạch.",
+      "researchNotes": "Mô tả theo chính tên sản phẩm bass 3D và nhóm tai gaming phổ thông.",
+      "sourceLinks": [],
+      "serviceDone": []
     },
     {
       "id": 1777804484256,
-      "name": "Tai nghe chụp tai Gaming MozardX DS902 7.1 ",
+      "name": "Tai nghe chụp tai Gaming MozardX DS902 7.1",
       "segment": "gaming",
-      "brand": "",
+      "brand": "MozardX",
       "condition": "Mới",
       "price": 175000,
       "originalPrice": 630000,
       "stock": 1,
-      "soundTag": "",
+      "soundTag": "V-Shape",
       "latency": "wired",
       "isWireless": false,
       "batteryHealth": null,
@@ -569,7 +918,7 @@
       "youtubePlaylist": "",
       "shopeeLink": "",
       "messengerLink": "",
-      "description": "",
+      "description": "MozardX DS902 7.1 là tai gaming giả lập âm vòm, hợp game casual, FPS nhẹ và xem phim. Mic cần tiện chat, âm thiên hiệu ứng hơn nghe nhạc trung tính.",
       "inspection": "",
       "inspectionDetails": {
         "shell": "",
@@ -583,18 +932,39 @@
       "reviews": [],
       "views": 0,
       "createdAt": 1777804484256,
-      "isSold": false
+      "isSold": false,
+      "bestFor": [
+        "fps",
+        "casual-gaming",
+        "call-zoom"
+      ],
+      "topHighlights": [
+        "virtual-71",
+        "mic-clear",
+        "bass-strong"
+      ],
+      "compatibility": [
+        "PC",
+        "Laptop",
+        "USB hoặc 3.5mm tùy phiên bản"
+      ],
+      "micStatus": "Mic cần, hợp chat game/học online cơ bản.",
+      "comfortNote": "Chụp tai kín, hợp chơi trong phòng.",
+      "caveat": "7.1 là giả lập, không phải tai nhiều driver thật.",
+      "researchNotes": "Các dòng DS902 thường được bán theo điểm 7.1/gaming; mô tả giữ đúng mức casual.",
+      "sourceLinks": [],
+      "serviceDone": []
     },
     {
       "id": 1777805032922,
-      "name": "DIY WangMing WMb 9800l có đèn led",
+      "name": "DIY WangMing WMb 9800L có đèn LED",
       "segment": "gaming",
-      "brand": "",
+      "brand": "WangMing",
       "condition": "Mới",
       "price": 350000,
       "originalPrice": 290000,
       "stock": 1,
-      "soundTag": "",
+      "soundTag": "V-Shape",
       "latency": "wired",
       "isWireless": false,
       "batteryHealth": null,
@@ -607,7 +977,7 @@
       "youtubePlaylist": "",
       "shopeeLink": "",
       "messengerLink": "",
-      "description": "",
+      "description": "Bản DIY WangMing WMb 9800L có LED, form gaming hầm hố và âm thiên giải trí. Hợp khách thích đồ mod, game casual và xem phim có hiệu ứng.",
       "inspection": "",
       "inspectionDetails": {
         "shell": "",
@@ -621,18 +991,38 @@
       "reviews": [],
       "views": 0,
       "createdAt": 1777805032922,
-      "isSold": false
+      "isSold": false,
+      "bestFor": [
+        "casual-gaming",
+        "diy"
+      ],
+      "topHighlights": [
+        "rgb",
+        "bass-strong",
+        "easy-listen"
+      ],
+      "compatibility": [
+        "PC",
+        "Laptop",
+        "3.5mm hoặc USB tùy dây"
+      ],
+      "micStatus": "Mic cần, nên kiểm hồ sơ/video nếu cần dùng nhiều cho học online.",
+      "comfortNote": "Form gaming lớn, nhìn nổi nhưng có thể không hợp người thích tai nhẹ.",
+      "caveat": "Đây là bản DIY, nên xem kỹ ảnh thật và hồ sơ trước khi chốt.",
+      "researchNotes": "Thông tin web chính thống ít; mô tả theo tên model, ảnh thực tế và phân khúc DIY.",
+      "sourceLinks": [],
+      "serviceDone": []
     },
     {
       "id": 1778070244695,
-      "name": "TAI NGHE DAREU EH722X GIẢ LẬP 7.1 ( MULTI LED )",
+      "name": "Tai nghe Dareu EH722X giả lập 7.1 Multi LED",
       "segment": "gaming",
       "brand": "Dareu",
       "condition": "Trầy nhẹ",
       "price": 179000,
       "originalPrice": 600000,
       "stock": 1,
-      "soundTag": "",
+      "soundTag": "V-Shape",
       "latency": "wired",
       "isWireless": false,
       "batteryHealth": null,
@@ -646,7 +1036,7 @@
       "youtubePlaylist": "",
       "shopeeLink": "",
       "messengerLink": "",
-      "description": "",
+      "description": "DareU EH722X có thiết kế kim cương, giả lập 7.1 và Multi LED. Hợp game FPS/casual, Discord và khách muốn tai gaming nhìn nổi mà giá mềm.",
       "inspection": "",
       "inspectionDetails": {
         "shell": "",
@@ -660,18 +1050,40 @@
       "reviews": [],
       "views": 0,
       "createdAt": 1778070244695,
-      "isSold": false
+      "isSold": false,
+      "bestFor": [
+        "fps",
+        "casual-gaming",
+        "call-zoom"
+      ],
+      "topHighlights": [
+        "virtual-71",
+        "rgb",
+        "mic-clear",
+        "bass-strong"
+      ],
+      "compatibility": [
+        "USB",
+        "PC",
+        "Laptop"
+      ],
+      "micStatus": "Mic cần, hợp voice chat cơ bản.",
+      "comfortNote": "Form chụp tai lớn, đệm dày, hợp chơi trong phòng.",
+      "caveat": "7.1/Multi LED cần đúng cổng và driver hỗ trợ tùy máy.",
+      "researchNotes": "Listing bán lẻ thường nhấn EH722X ở 7.1, Multi LED và thiết kế diamond.",
+      "sourceLinks": [],
+      "serviceDone": []
     },
     {
       "id": 1778077045229,
       "name": "DIY Tai Nghe Turtle Beach Earforce M5Ti",
       "segment": "music",
-      "brand": "",
+      "brand": "Turtle Beach",
       "condition": "Mới",
       "price": 350000,
       "originalPrice": 500000,
       "stock": 1,
-      "soundTag": "",
+      "soundTag": "Warm",
       "latency": "wireless-fast",
       "isWireless": true,
       "batteryHealth": null,
@@ -685,9 +1097,16 @@
       "youtubePlaylist": "",
       "shopeeLink": "",
       "messengerLink": "",
-      "description": "",
-      "bestFor": [],
-      "topHighlights": [],
+      "description": "Bản DIY từ Turtle Beach Earforce M5Ti, hướng tới nghe nhạc/giải trí không dây gọn gàng. Hợp khách thích đồ lạ, âm ấm và tiện dùng điện thoại.",
+      "bestFor": [
+        "bluetooth",
+        "diy",
+        "bass-music"
+      ],
+      "topHighlights": [
+        "easy-listen",
+        "bass-strong"
+      ],
       "serviceDone": [],
       "inspection": "",
       "inspectionDetails": {
@@ -702,18 +1121,28 @@
       "reviews": [],
       "views": 0,
       "createdAt": 1778077045229,
-      "isSold": false
+      "isSold": false,
+      "compatibility": [
+        "Bluetooth",
+        "Điện thoại",
+        "Laptop"
+      ],
+      "micStatus": "Nếu cần gọi nhiều, nên kiểm hồ sơ mic thực tế.",
+      "comfortNote": "Dáng gọn hơn tai gaming lớn, hợp nghe nhạc và di chuyển nhẹ.",
+      "caveat": "Bản DIY nên ưu tiên xem ảnh thật, pin thật và cách kết nối thực tế.",
+      "researchNotes": "Turtle Beach M-series thường gắn với game/mobile; bản shop là DIY nên mô tả theo công năng thực tế.",
+      "sourceLinks": []
     },
     {
       "id": 1778077364483,
       "name": "DIY Tai nghe Over-ear SoundMAX AH 327",
-      "segment": "gaming",
-      "brand": "",
+      "segment": "music",
+      "brand": "SoundMAX",
       "condition": "Mới",
       "price": 400000,
       "originalPrice": 560000,
       "stock": 1,
-      "soundTag": "",
+      "soundTag": "Warm",
       "latency": "wireless-fast",
       "isWireless": true,
       "batteryHealth": 100,
@@ -726,13 +1155,20 @@
       "youtubePlaylist": "",
       "shopeeLink": "",
       "messengerLink": "",
-      "description": "",
+      "description": "SoundMAX AH-327 bản DIY Bluetooth, form over-ear dễ nghe lâu và âm dày. Hợp phim, game casual nhẹ, nghe nhạc và khách muốn tai không dây độc lạ.",
       "bestFor": [
         "bluetooth",
-        "diy"
+        "diy",
+        "bass-music",
+        "casual-gaming"
       ],
-      "topHighlights": [],
-      "serviceDone": [],
+      "topHighlights": [
+        "bass-strong",
+        "easy-listen"
+      ],
+      "serviceDone": [
+        "bluetooth-mod"
+      ],
       "inspection": "",
       "inspectionDetails": {
         "shell": "",
@@ -746,18 +1182,28 @@
       "reviews": [],
       "views": 0,
       "createdAt": 1778077364483,
-      "isSold": false
+      "isSold": false,
+      "compatibility": [
+        "Bluetooth",
+        "Điện thoại",
+        "Laptop"
+      ],
+      "micStatus": "Mic tùy module DIY, nên test nếu cần học online/call.",
+      "comfortNote": "Over-ear rộng, dễ nâng cấp đệm/bọc nhung nếu tai hỗ trợ.",
+      "caveat": "Bluetooth DIY không ưu tiên FPS cạnh tranh.",
+      "researchNotes": "Thông tin AH-327 ít; mô tả theo dạng SoundMAX over-ear và bản Bluetooth DIY tại shop.",
+      "sourceLinks": []
     },
     {
       "id": 1778077955303,
       "name": "Tai nghe Typo Mic Drop LED màu xanh",
       "segment": "gaming",
-      "brand": "",
+      "brand": "Typo",
       "condition": "Mới",
       "price": 195000,
       "originalPrice": 650000,
       "stock": 1,
-      "soundTag": "",
+      "soundTag": "V-Shape",
       "latency": "wired",
       "isWireless": false,
       "batteryHealth": null,
@@ -770,9 +1216,17 @@
       "youtubePlaylist": "",
       "shopeeLink": "",
       "messengerLink": "",
-      "description": "",
-      "bestFor": [],
-      "topHighlights": [],
+      "description": "Typo Mic Drop LED xanh có ngoại hình nổi, mic cần và chất gaming cơ bản. Hợp học online, voice chat, game casual và khách thích màu sắc trẻ.",
+      "bestFor": [
+        "study-online",
+        "call-zoom",
+        "casual-gaming"
+      ],
+      "topHighlights": [
+        "rgb",
+        "mic-clear",
+        "easy-listen"
+      ],
       "serviceDone": [],
       "inspection": "",
       "inspectionDetails": {
@@ -787,18 +1241,28 @@
       "reviews": [],
       "views": 0,
       "createdAt": 1778077955303,
-      "isSold": false
+      "isSold": false,
+      "compatibility": [
+        "PC",
+        "Laptop",
+        "3.5mm hoặc USB tùy dây"
+      ],
+      "micStatus": "Mic cần, hợp cuộc gọi/học online cơ bản.",
+      "comfortNote": "Form chụp tai, hợp dùng trong phòng.",
+      "caveat": "Không phải dòng âm thanh cao cấp; điểm mạnh là mic, LED và giá mềm.",
+      "researchNotes": "Thông tin model online hạn chế; mô tả theo tên sản phẩm và nhóm tai LED phổ thông.",
+      "sourceLinks": []
     },
     {
       "id": 1778079228631,
       "name": "Tai nghe ANA PANASONIC",
-      "segment": "gaming",
-      "brand": "",
+      "segment": "music",
+      "brand": "Panasonic",
       "condition": "Mới",
       "price": 140000,
       "originalPrice": 450000,
       "stock": 1,
-      "soundTag": "",
+      "soundTag": "Warm",
       "latency": "wired",
       "isWireless": false,
       "batteryHealth": null,
@@ -812,9 +1276,15 @@
       "youtubePlaylist": "",
       "shopeeLink": "",
       "messengerLink": "",
-      "description": "TAI NGHE PANASONIC\nModel đặc biệt của Panasonic sản xuất riêng cho hãng hàng không ANA của Nhật. Tai nghe này được đặt riêng cho khách bay hạng thương gia.\n\n- Sản xuất bởi Panasonic\n- Jack cắm 3.5mm, tương thích mọi điện thoại, máy tính bảng, máy tính, máy nghe nhạc... có lỗ cắm phone 3.5mm\n- Dây cắm mềm, chống rối, chống gãy\n- Gấp gọn lại được\n- Vòng đeo có thể tùy chỉnh to nhỏ, phù hợp với cả người lớn và trẻ em\n- Đệm tai cực êm, ôm tai\n- Driver loa to, cho âm thanh rõ ràng, chi tiết, treble sắc xảo, bass cực ấm.",
-      "bestFor": [],
-      "topHighlights": [],
+      "description": "Tai Panasonic đặt cho ANA, jack 3.5mm, gấp gọn và đệm êm. Âm rõ, bass ấm, hợp nghe nhạc nhẹ, học bài, podcast và mang theo hằng ngày.",
+      "bestFor": [
+        "study-online",
+        "bass-music"
+      ],
+      "topHighlights": [
+        "easy-listen",
+        "vocal-clear"
+      ],
       "serviceDone": [],
       "inspection": "",
       "inspectionDetails": {
@@ -829,18 +1299,28 @@
       "reviews": [],
       "views": 0,
       "createdAt": 1778079228631,
-      "isSold": false
+      "isSold": false,
+      "compatibility": [
+        "3.5mm",
+        "Điện thoại",
+        "Laptop"
+      ],
+      "micStatus": "Không ưu tiên call nếu phiên bản không có mic.",
+      "comfortNote": "Gập gọn, nhẹ, hợp bỏ balo.",
+      "caveat": "Hàng airline/đặt riêng nên không nên kỳ vọng bass lớn như tai gaming.",
+      "researchNotes": "Thông tin model cụ thể không phổ biến; mô tả theo nhóm tai Panasonic/airline gập gọn.",
+      "sourceLinks": []
     },
     {
       "id": 1778079510569,
-      "name": "Tai nghe Esport gaming VSP VX3 (USB+jack 3.5)",
+      "name": "Tai nghe Esport gaming VSP VX3 (USB + jack 3.5)",
       "segment": "gaming",
-      "brand": "",
+      "brand": "VSP",
       "condition": "Trầy nhẹ",
       "price": 135000,
       "originalPrice": 440000,
       "stock": 1,
-      "soundTag": "",
+      "soundTag": "V-Shape",
       "latency": "wired",
       "isWireless": false,
       "batteryHealth": null,
@@ -853,9 +1333,17 @@
       "youtubePlaylist": "",
       "shopeeLink": "",
       "messengerLink": "",
-      "description": "",
-      "bestFor": [],
-      "topHighlights": [],
+      "description": "VSP VX3 là tai esport gaming có USB + jack 3.5mm, tiện cắm nhiều máy. Hợp game casual, học online, Discord và khách cần kết nối linh hoạt.",
+      "bestFor": [
+        "casual-gaming",
+        "study-online",
+        "call-zoom"
+      ],
+      "topHighlights": [
+        "mic-clear",
+        "rgb",
+        "bass-strong"
+      ],
       "serviceDone": [],
       "inspection": "",
       "inspectionDetails": {
@@ -870,20 +1358,31 @@
       "reviews": [],
       "views": 0,
       "createdAt": 1778079510569,
-      "isSold": false
+      "isSold": false,
+      "compatibility": [
+        "USB",
+        "3.5mm",
+        "PC",
+        "Laptop"
+      ],
+      "micStatus": "Mic cần, hợp chat game/học online.",
+      "comfortNote": "Form gaming kín tai, hợp dùng máy bàn/laptop.",
+      "caveat": "Nếu dùng điện thoại, cần kiểm đúng jack/cáp chuyển.",
+      "researchNotes": "Tên sản phẩm nêu rõ USB + 3.5mm; mô tả theo lợi thế kết nối linh hoạt.",
+      "sourceLinks": []
     },
     {
       "id": 1778079864020,
       "name": "Tai nghe chụp tai Bluetooth không dây Poermax DR58",
       "segment": "music",
-      "brand": "",
+      "brand": "Poermax",
       "condition": "Mới",
       "price": 99000,
       "originalPrice": 300000,
       "stock": 1,
-      "soundTag": "",
-      "latency": "wired",
-      "isWireless": false,
+      "soundTag": "Warm",
+      "latency": "wireless-slow",
+      "isWireless": true,
       "batteryHealth": null,
       "images": [
         "/uploads/1778080689837-72b41dec-product-1778079803626.jpg",
@@ -894,9 +1393,17 @@
       "youtubePlaylist": "",
       "shopeeLink": "",
       "messengerLink": "",
-      "description": "Tai nghe chụp tai Bluetooth không dây Poermax DR58 mang đến trải nghiệm âm thanh vượt trội với công nghệ HiFi tiên tiến, cho âm thanh rõ ràng, chi tiết và sâu lắng. Thiết kế bền bỉ và thẩm mỹ, DR58 là một phụ kiện thời trang đẳng cấp, phù hợp với mọi phong cách. Với công nghệ Bluetooth 5.0, tai nghe đảm bảo kết nối ổn định và mượt mà với các thiết bị di động và máy tính. Tính năng chống ồn thông minh giúp bạn tận hưởng âm nhạc trọn vẹn mà không bị ảnh hưởng bởi tiếng ồn bên ngoài. Micro tích hợp sẵn hỗ trợ các cuộc gọi đàm thoại và video rõ ràng, tiện lợi cho công việc hàng ngày",
-      "bestFor": [],
-      "topHighlights": [],
+      "description": "Poermax DR58 là tai chụp Bluetooth không dây, hợp nghe nhạc, xem phim và call cơ bản. Form gọn, dễ dùng với điện thoại/laptop hằng ngày.",
+      "bestFor": [
+        "bluetooth",
+        "study-online",
+        "call-zoom",
+        "bass-music"
+      ],
+      "topHighlights": [
+        "easy-listen",
+        "mic-clear"
+      ],
       "serviceDone": [],
       "inspection": "",
       "inspectionDetails": {
@@ -911,18 +1418,28 @@
       "reviews": [],
       "views": 0,
       "createdAt": 1778079864020,
-      "isSold": false
+      "isSold": false,
+      "compatibility": [
+        "Bluetooth",
+        "Điện thoại",
+        "Laptop"
+      ],
+      "micStatus": "Có mic Bluetooth cơ bản cho cuộc gọi nhanh.",
+      "comfortNote": "Không dây, gọn và ít vướng hơn tai gaming có dây.",
+      "caveat": "Bluetooth phổ thông không hợp FPS cần độ trễ thấp.",
+      "researchNotes": "Thông tin Poermax DR58 hạn chế; mô tả theo phân khúc tai Bluetooth chụp phổ thông.",
+      "sourceLinks": []
     },
     {
       "id": 1778080112021,
       "name": "Tai Nghe AUKEY VSP Gaming GH-X1 LED",
       "segment": "gaming",
-      "brand": "",
+      "brand": "VSP",
       "condition": "Mới",
       "price": 75000,
       "originalPrice": 200000,
       "stock": 1,
-      "soundTag": "",
+      "soundTag": "V-Shape",
       "latency": "wired",
       "isWireless": false,
       "batteryHealth": null,
@@ -934,9 +1451,17 @@
       "youtubePlaylist": "",
       "shopeeLink": "",
       "messengerLink": "",
-      "description": "Một sản phẩm đến từ thương hiệu Vision – tai nghe VSP GH-X1 LED  thích hợp với dòng game FPS, độ bền cao với hệ thống ánh sáng bên ngoài thiết kế gây ấn tượng và nâng tầm đẳng cấp không chỉ về chất lượng âm thanh mà còn về mặt thẩm mĩ cho gaming gear của bạn",
-      "bestFor": [],
-      "topHighlights": [],
+      "description": "VSP GH-X1 LED là tai gaming giá dễ tiếp cận, ngoại hình LED nổi và âm thanh thiên hiệu ứng. Hợp FPS/casual, Discord và setup gaming giá mềm.",
+      "bestFor": [
+        "fps",
+        "casual-gaming",
+        "call-zoom"
+      ],
+      "topHighlights": [
+        "rgb",
+        "bass-strong",
+        "mic-clear"
+      ],
       "serviceDone": [],
       "inspection": "",
       "inspectionDetails": {
@@ -951,18 +1476,28 @@
       "reviews": [],
       "views": 0,
       "createdAt": 1778080112021,
-      "isSold": false
+      "isSold": false,
+      "compatibility": [
+        "PC",
+        "Laptop",
+        "3.5mm hoặc USB tùy phiên bản"
+      ],
+      "micStatus": "Mic cần, hợp chat game cơ bản.",
+      "comfortNote": "Form gaming over-ear, hợp phòng máy/laptop.",
+      "caveat": "Không phải dòng âm thanh trung tính; ưu tiên hiệu ứng và giá.",
+      "researchNotes": "Mô tả theo nhóm VSP GH-X1 LED gaming headset phổ thông.",
+      "sourceLinks": []
     },
     {
       "id": 1778080436406,
       "name": "Somic G955 Gaming Headset 7.1",
       "segment": "gaming",
-      "brand": "",
+      "brand": "Somic",
       "condition": "Trầy nhẹ",
       "price": 290000,
       "originalPrice": 950000,
       "stock": 1,
-      "soundTag": "",
+      "soundTag": "V-Shape",
       "latency": "wired",
       "isWireless": false,
       "batteryHealth": null,
@@ -974,9 +1509,18 @@
       "youtubePlaylist": "",
       "shopeeLink": "",
       "messengerLink": "",
-      "description": "",
-      "bestFor": [],
-      "topHighlights": [],
+      "description": "Somic G955 là headset gaming 7.1, hợp game FPS/casual cần hiệu ứng rõ và mic chat. Form over-ear, âm thiên lực, hợp phim hành động và game.",
+      "bestFor": [
+        "fps",
+        "casual-gaming",
+        "call-zoom"
+      ],
+      "topHighlights": [
+        "virtual-71",
+        "wide-stage",
+        "bass-strong",
+        "rgb"
+      ],
       "serviceDone": [],
       "inspection": "",
       "inspectionDetails": {
@@ -991,18 +1535,28 @@
       "reviews": [],
       "views": 0,
       "createdAt": 1778080436406,
-      "isSold": false
+      "isSold": false,
+      "compatibility": [
+        "USB",
+        "PC",
+        "Laptop"
+      ],
+      "micStatus": "Mic cần, hợp voice chat game.",
+      "comfortNote": "Form lớn, hợp người thích tai gaming ôm tai.",
+      "caveat": "7.1 là giả lập, nên dùng đúng cổng/driver để có hiệu ứng.",
+      "researchNotes": "Somic G955 thường được bán như tai gaming 7.1; mô tả giữ đúng mức giả lập.",
+      "sourceLinks": []
     },
     {
       "id": 1778080654389,
       "name": "Tai Nghe Over-Ear Có Dây Microlab G7",
       "segment": "gaming",
-      "brand": "",
+      "brand": "Microlab",
       "condition": "Trầy nhẹ",
       "price": 140000,
       "originalPrice": 420000,
       "stock": 1,
-      "soundTag": "",
+      "soundTag": "V-Shape",
       "latency": "wired",
       "isWireless": false,
       "batteryHealth": null,
@@ -1015,9 +1569,17 @@
       "youtubePlaylist": "",
       "shopeeLink": "",
       "messengerLink": "",
-      "description": "",
-      "bestFor": [],
-      "topHighlights": [],
+      "description": "Microlab G7 là tai over-ear gaming có mic, hợp PC/laptop, game casual và voice chat. Âm thiên lực, dễ nghe với phim và game hơn là nghe nhạc studio.",
+      "bestFor": [
+        "casual-gaming",
+        "study-online",
+        "call-zoom"
+      ],
+      "topHighlights": [
+        "bass-strong",
+        "mic-clear",
+        "easy-listen"
+      ],
       "serviceDone": [],
       "inspection": "",
       "inspectionDetails": {
@@ -1032,7 +1594,17 @@
       "reviews": [],
       "views": 0,
       "createdAt": 1778080654389,
-      "isSold": false
+      "isSold": false,
+      "compatibility": [
+        "PC",
+        "Laptop",
+        "3.5mm hoặc USB tùy phiên bản"
+      ],
+      "micStatus": "Mic cần, hợp học online/call nếu test thực tế ổn.",
+      "comfortNote": "Over-ear che tai tốt, hợp chơi trong phòng.",
+      "caveat": "Không ưu tiên khách cần tai thật nhẹ hoặc âm thật trung tính.",
+      "researchNotes": "Mô tả theo nhóm tai gaming Microlab G-series phổ thông.",
+      "sourceLinks": []
     },
     {
       "id": 1778081004248,
@@ -1043,8 +1615,8 @@
       "price": 360000,
       "originalPrice": 1290000,
       "stock": 1,
-      "soundTag": "",
-      "latency": "wireless-fast",
+      "soundTag": "Warm",
+      "latency": "wireless-slow",
       "isWireless": true,
       "batteryHealth": null,
       "images": [
@@ -1057,9 +1629,17 @@
       "youtubePlaylist": "",
       "shopeeLink": "",
       "messengerLink": "",
-      "description": "",
-      "bestFor": [],
-      "topHighlights": [],
+      "description": "Sony WH-CH400 là tai Bluetooth on-ear nhẹ, driver 30mm, hỗ trợ SBC/AAC và thời lượng công bố tới 20 giờ. Hợp nghe nhạc, học online và điện thoại hằng ngày.",
+      "bestFor": [
+        "bluetooth",
+        "study-online",
+        "call-zoom",
+        "bass-music"
+      ],
+      "topHighlights": [
+        "easy-listen",
+        "mic-clear"
+      ],
       "serviceDone": [],
       "inspection": "",
       "inspectionDetails": {
@@ -1074,7 +1654,200 @@
       "reviews": [],
       "views": 0,
       "createdAt": 1778081004249,
-      "isSold": false
+      "isSold": false,
+      "compatibility": [
+        "Bluetooth",
+        "Điện thoại",
+        "Laptop"
+      ],
+      "micStatus": "Có mic gọi thoại qua Bluetooth.",
+      "comfortNote": "On-ear nhẹ khoảng 107g, hợp di chuyển và nghe lâu vừa phải.",
+      "batteryNote": "Hãng công bố tối đa khoảng 20 giờ nghe nhạc, pin thực tế hàng cũ cần shop test riêng.",
+      "caveat": "Không dùng dây thụ động; nếu hết pin cần sạc lại mới dùng tiếp.",
+      "researchNotes": "Sony công bố WH-CH400 dùng Bluetooth 4.2, driver 30mm, SBC/AAC và pin nhạc tối đa 20 giờ.",
+      "sourceLinks": [
+        "https://www.sony.com.vn/electronics/support/wireless-headphones-bluetooth-headphones/wh-ch400/specifications"
+      ]
+    },
+    {
+      "id": 1778133950090,
+      "name": "Tai nghe Bluetooth chụp tai iValue BT-233",
+      "segment": "music",
+      "brand": "iValue",
+      "condition": "Trầy nhẹ",
+      "price": 160000,
+      "originalPrice": 350000,
+      "stock": 1,
+      "soundTag": "Warm",
+      "latency": "wireless-slow",
+      "isWireless": true,
+      "batteryHealth": null,
+      "images": [
+        "/uploads/1778134825297-65a12179-product-1778133937165.jpg",
+        "/uploads/1778134833484-8c11a5b6-product-1778133945990.jpg"
+      ],
+      "video": "",
+      "youtubePlaylist": "",
+      "shopeeLink": "",
+      "messengerLink": "",
+      "description": "iValue BT-233 là tai chụp Bluetooth phổ thông, hợp nghe nhạc, xem video và gọi điện cơ bản. Phù hợp khách cần tai không dây dễ dùng, giá mềm.",
+      "bestFor": [
+        "bluetooth",
+        "study-online",
+        "call-zoom"
+      ],
+      "topHighlights": [
+        "easy-listen",
+        "mic-clear"
+      ],
+      "serviceDone": [],
+      "inspection": "",
+      "inspectionDetails": {
+        "shell": "",
+        "pads": "",
+        "driver": "",
+        "mic": "",
+        "connect": "",
+        "battery": "",
+        "clean": ""
+      },
+      "reviews": [],
+      "views": 0,
+      "createdAt": 1778133950090,
+      "isSold": false,
+      "compatibility": [
+        "Bluetooth",
+        "Điện thoại",
+        "Laptop"
+      ],
+      "micStatus": "Mic Bluetooth cơ bản cho cuộc gọi nhanh.",
+      "comfortNote": "Form chụp tai gọn, hợp nhu cầu đi học/đi làm nhẹ.",
+      "caveat": "Không ưu tiên gaming vì độ trễ Bluetooth phổ thông.",
+      "researchNotes": "Thông tin model BT-233 hạn chế; mô tả theo nhóm tai Bluetooth chụp phổ thông.",
+      "sourceLinks": []
+    },
+    {
+      "id": 1778134119720,
+      "name": "DIY Tai nghe game Dareu EH469 Pink RGB 7.1",
+      "segment": "gaming",
+      "brand": "Dareu",
+      "condition": "Mới",
+      "price": 350000,
+      "originalPrice": 550000,
+      "stock": 1,
+      "soundTag": "V-Shape",
+      "latency": "wireless-fast",
+      "isWireless": true,
+      "batteryHealth": null,
+      "images": [
+        "/uploads/1778134983976-f6cd6a3c-product-1778134095898.jpg",
+        "/uploads/1778134992317-ff1a84b7-product-1778134104835.jpg",
+        "/uploads/1778135004560-88bbb5cc-product-1778134117093.jpg"
+      ],
+      "video": "",
+      "youtubePlaylist": "",
+      "shopeeLink": "",
+      "messengerLink": "",
+      "description": "Dareu EH469 Pink RGB 7.1 bản DIY, ngoại hình nổi và chất gaming nhiều hiệu ứng. Hợp game casual, học online và khách thích màu hồng cá tính.",
+      "bestFor": [
+        "fps",
+        "casual-gaming",
+        "call-zoom",
+        "diy",
+        "bluetooth"
+      ],
+      "topHighlights": [
+        "virtual-71",
+        "rgb",
+        "mic-clear",
+        "bass-strong"
+      ],
+      "serviceDone": [
+        "bluetooth-mod"
+      ],
+      "inspection": "",
+      "inspectionDetails": {
+        "shell": "",
+        "pads": "",
+        "driver": "",
+        "mic": "",
+        "connect": "",
+        "battery": "",
+        "clean": ""
+      },
+      "reviews": [],
+      "views": 0,
+      "createdAt": 1778134119720,
+      "isSold": false,
+      "compatibility": [
+        "Bluetooth",
+        "PC",
+        "Laptop",
+        "Điện thoại"
+      ],
+      "micStatus": "Mic tùy bản DIY, nên kiểm video/hồ sơ nếu dùng nhiều cho học online.",
+      "comfortNote": "Form gaming chụp tai, màu hồng nổi bật.",
+      "caveat": "DIY Bluetooth không thay thế tai gaming wireless chuyên dụng cho FPS cạnh tranh.",
+      "researchNotes": "Mô tả theo dòng Dareu EH469 RGB/7.1 và bản DIY Bluetooth của shop.",
+      "sourceLinks": []
+    },
+    {
+      "id": 1778134666140,
+      "name": "Tai nghe không dây SY-T25 phối màu Bluetooth 5.3",
+      "segment": "music",
+      "brand": "SY",
+      "condition": "Trầy nhiều",
+      "price": 85000,
+      "originalPrice": 350000,
+      "stock": 1,
+      "soundTag": "Warm",
+      "latency": "wireless-slow",
+      "isWireless": true,
+      "batteryHealth": null,
+      "images": [
+        "/uploads/1778135528495-55098691-product-1778134640433.jpg",
+        "/uploads/1778135544208-c950df7d-product-1778134656713.jpg"
+      ],
+      "video": "",
+      "youtubePlaylist": "",
+      "shopeeLink": "",
+      "messengerLink": "",
+      "description": "SY-T25 là tai không dây Bluetooth 5.3 phối màu trẻ, hợp nghe nhạc, xem video, học online và gọi cơ bản. Ưu tiên gọn, rẻ, dễ dùng hằng ngày.",
+      "bestFor": [
+        "bluetooth",
+        "study-online",
+        "call-zoom",
+        "bass-music"
+      ],
+      "topHighlights": [
+        "easy-listen",
+        "mic-clear"
+      ],
+      "serviceDone": [],
+      "inspection": "",
+      "inspectionDetails": {
+        "shell": "",
+        "pads": "",
+        "driver": "",
+        "mic": "",
+        "connect": "",
+        "battery": "",
+        "clean": ""
+      },
+      "reviews": [],
+      "views": 0,
+      "createdAt": 1778134666140,
+      "isSold": false,
+      "compatibility": [
+        "Bluetooth",
+        "Điện thoại",
+        "Laptop"
+      ],
+      "micStatus": "Mic Bluetooth cơ bản, nên test nếu cần học online nhiều.",
+      "comfortNote": "Form chụp tai gọn, hợp mang đi học/đi làm.",
+      "caveat": "Bluetooth phổ thông không hợp FPS cạnh tranh; pin thực tế cần shop test riêng.",
+      "researchNotes": "Thông tin model SY-T25 không có nguồn chính thống rõ; mô tả theo tên sản phẩm Bluetooth 5.3 và ảnh shop.",
+      "sourceLinks": []
     }
   ],
   "faqs": [
