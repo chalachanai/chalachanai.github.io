@@ -55,15 +55,19 @@ echo ========================================
 echo.
 echo   Link ONLINE (dung o bat ky dau):
 echo.
-echo   Trang khach:  %TUNNEL_URL%/index.html
+echo   Trang khach:  %TUNNEL_URL%/
 echo   Trang admin:  %TUNNEL_URL%/admin.html
 echo.
 echo   Link LOCAL (chi tren may nay):
+echo   http://127.0.0.1:8090/
 echo   http://127.0.0.1:8090/admin.html
 echo.
 
-echo [3/3] Dang mo admin tren trinh duyet...
+echo [3/3] Dang mo 2 web online tren trinh duyet...
+start "" "%TUNNEL_URL%/"
 start "" "%TUNNEL_URL%/admin.html"
+
+echo %TUNNEL_URL%/admin.html| clip
 
 echo.
 echo ----------------------------------------
@@ -71,6 +75,7 @@ echo   GIU CUA SO NAY MO de server chay.
 echo   Bam phim bat ky de TAT tat ca.
 echo ----------------------------------------
 echo.
+echo   Da copy link admin online vao clipboard.
 echo   Muon day len web? Mo: 03-DAY-LEN-WEB.cmd
 echo.
 pause

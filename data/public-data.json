@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "exportedAt": "2026-05-06T15:46:06.359Z",
+  "exportedAt": "2026-05-07T01:33:07.135Z",
   "products": [
     {
       "id": 1000001,
@@ -344,7 +344,24 @@
       "reviews": [],
       "views": 0,
       "createdAt": 1777459561137,
-      "isSold": false
+      "isSold": false,
+      "bestFor": [],
+      "topHighlights": [],
+      "serviceDone": [
+        "velvet-pad",
+        "bluetooth-mod",
+        "battery-service"
+      ],
+      "inspection": "",
+      "inspectionDetails": {
+        "shell": "",
+        "pads": "",
+        "driver": "",
+        "mic": "",
+        "connect": "",
+        "battery": "",
+        "clean": ""
+      }
     },
     {
       "id": 1777459840805,
