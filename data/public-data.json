@@ -1,7 +1,63 @@
 {
   "schemaVersion": 2,
-  "exportedAt": "2026-05-07T07:07:27.416Z",
+  "exportedAt": "2026-05-16T07:37:22.102Z",
   "products": [
+    {
+      "id": 1778917012983,
+      "name": "Xiberia S19",
+      "segment": "gaming",
+      "brand": "Xiberia",
+      "condition": "Like New",
+      "price": 800000,
+      "originalPrice": 1500000,
+      "stock": 1,
+      "soundTag": "V-Shape",
+      "latency": "wireless-slow",
+      "isWireless": true,
+      "batteryHealth": null,
+      "images": [
+        "/uploads/1778916739458-7a8a3371-product-1778916739204.jpg",
+        "/uploads/1778916255531-73ccf85c-product-1778916255233.jpg"
+      ],
+      "video": "/uploads/1778916749743-6d1ff856-7831930694594.mp4",
+      "youtubePlaylist": "https://www.youtube.com/embed/tvLriVrGzag",
+      "shopeeLink": "https://shopee.vn/-%C4%90%E1%BA%A1i-l%C3%AD-c%E1%BA%A5p-SLL-Tai-nghe-Xiberia-S19U-Pro-Virtual-7.1-Gaming-B%E1%BA%A3o-h%C3%A0nh-12-th%C3%A1ng-i.1180047064.29644524682",
+      "messengerLink": "",
+      "description": "TỔNG QUAN\n\nThương hiệu: Xeberia\n\nKích thước: 50mm\n\nTrở kháng: 32Ω\n\nĐộ nhạy âm: 106±3dB\n\nDải tần âm: 20-20kHZ\n\nCông suất tối đa: 50mW\n\nĐộ dài cáp: 2.2m\n\nCổng giao tiếp: USB\n\n \n\nĐẶC ĐIỂM NỔI BẬT TAI NGHE XIBERIA S19 \n\nTHIẾT KẾ ĐƠN GIẢN, BẮT MẮT\n\nVẻ ngoài của S19 gây ấn tượng mạnh với màu sắc chủ đạo là đen và đỏ mang đến cảm giác sang trọng, mạnh mẽ và cá tính. Khung tai nghe được làm từ kim loại vô cùng chắc chắn. Đối với một chiếc tai nghe gaming thì cảm giác đeo là cực kỳ quan trọng vì đa phần người dùng sẽ sử dụng trong thời gian dài. Hiểu được điều đó nên Xiberia đã trang bị đệm tai bằng da đi kèm với xốp thoáng khí mềm vừa giảm áp lực lên tai đồng thời không hạn chế việc nóng tai khi đeo lâu, cho bạn cảm giác đeo tốt nhất để chiến các trận game dài.\n\nĐỆM TAI THÁO RỜI\n\nMột điểm vô cùng đặc biệt ở tai nghe gaming Xiberia S19 là khả năng tháo rời các phần đệm tai và đệm đầu, giúp bạn dễ dàng vệ sinh khử khuẩn, việc này sẽ vô cùng hữu ích đối với các phòng net, Icafe, trang bị chiếc tai nghe này.\n\n\nÂM THANH VÒM 7.1\n\nTai nghe gaming Xiberia S19 sử dụng công nghệ âm thanh vòm 7.1 đi cùng với củ loa 50mm chất lượng cao. Chất lượng âm thanh rõ ràng, tinh tế, bạn có thể nghe rõ các âm thanh chi tiết của các tựa game mang đến trải nghiệm chơi game tuyệt vời, những phút giây đắm chìm trong thế giới âm thanh chất lượng.\n\nVỀ MICRO VÀ CÁCH KẾT NỐI\n\nChất lượng thu âm của S19 cũng rất tốt khi sở hữu chiếc có kích thước 4.0*1.5mm, tần số từ 100Hz – 10KHz, khả năng chống ồn tốt giúp tăng chất lượng đàm thoại của bạn và đồng đội khi chơi các tựa game chiến thuật. Tai nghe gaming Xiberia S19 cho phép kết nối với thiết bị bằng cổng 3.5 cắm dây hoặc blutooth\n",
+      "bestFor": [
+        "fps",
+        "bass-music",
+        "casual-gaming",
+        "bluetooth",
+        "diy"
+      ],
+      "topHighlights": [
+        "virtual-71",
+        "bass-3d",
+        "bass-strong",
+        "vocal-clear",
+        "wide-stage",
+        "easy-listen",
+        "mic-clear"
+      ],
+      "serviceDone": [
+        "has-video"
+      ],
+      "inspection": "",
+      "inspectionDetails": {
+        "shell": "như mới",
+        "pads": "tốt",
+        "driver": "tốt",
+        "mic": "tốt",
+        "connect": "không dây",
+        "battery": "",
+        "clean": "UV"
+      },
+      "reviews": [],
+      "views": 0,
+      "createdAt": 1778917012984,
+      "isSold": false
+    },
     {
       "id": 1777458161974,
       "name": "DIY ONKUKA K9",
@@ -656,7 +712,7 @@
       "reviews": [],
       "views": 0,
       "createdAt": 1777456709089,
-      "isSold": false,
+      "isSold": true,
       "bestFor": [
         "study-online",
         "call-zoom"
@@ -710,7 +766,7 @@
       "reviews": [],
       "views": 0,
       "createdAt": 1777458720732,
-      "isSold": false,
+      "isSold": true,
       "bestFor": [
         "fps",
         "casual-gaming",
@@ -1115,7 +1171,7 @@
       "reviews": [],
       "views": 0,
       "createdAt": 1778134119720,
-      "isSold": false,
+      "isSold": true,
       "compatibility": [
         "Bluetooth",
         "PC",
