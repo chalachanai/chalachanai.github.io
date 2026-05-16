@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "exportedAt": "2026-05-16T07:42:59.552Z",
+  "exportedAt": "2026-05-16T07:48:26.622Z",
   "products": [
     {
       "id": 1778917012983,
@@ -17,7 +17,9 @@
       "batteryHealth": null,
       "images": [
         "/uploads/1778916739458-7a8a3371-product-1778916739204.jpg",
-        "/uploads/1778916255531-73ccf85c-product-1778916255233.jpg"
+        "/uploads/1778916255531-73ccf85c-product-1778916255233.jpg",
+        "/uploads/1778917701071-303b0df7-product-1778917700853.jpg",
+        "/uploads/1778917679687-ce5796bf-product-1778917679470.jpg"
       ],
       "video": "/uploads/1778916749743-6d1ff856-7831930694594.mp4",
       "youtubePlaylist": "https://www.youtube.com/embed/tvLriVrGzag",
