@@ -192,7 +192,7 @@ img { display: block; width: 100%; }
 }
 .policy-tab .pt-text { font-size: 0.82rem; }
 .policy-tab .pt-text strong { display: block; color: var(--text); }
-.policy-tab .pt-text span { color: var(--text-dim); }
+.policy-tab .pt-text span { color: var(--text-dim); line-height: 1.35; }
 
 /* ══════════════════════════════════════════
    WIZARD
