@@ -72,8 +72,23 @@
     <span class="filter-label">Tính năng</span>
     <select class="filter-select filter-select-wide" id="extraFilter">
       <option value="">Bộ lọc thêm</option>
+      <optgroup label="Sắp xếp">
+        <option value="sort:price-asc">Giá thấp → cao</option>
+        <option value="sort:price-desc">Giá cao → thấp</option>
+        <option value="sort:newest">Mới nhất</option>
+      </optgroup>
       <optgroup label="Tính năng">
         <option value="tag:bluetooth">Bluetooth</option>
+        <option value="tag:bt-50">Bluetooth 5.0+</option>
+        <option value="tag:bt-52">Bluetooth 5.2+</option>
+        <option value="tag:codec-aac">Codec AAC</option>
+        <option value="tag:codec-aptx">Codec aptX</option>
+        <option value="tag:codec-ldac">Codec LDAC</option>
+        <option value="tag:anc">ANC chống ồn</option>
+        <option value="tag:enc">ENC lọc mic</option>
+        <option value="tag:water-resistant">Chống nước</option>
+        <option value="tag:app-support">Có app hỗ trợ</option>
+        <option value="tag:launch-2023-plus">Đời 2023+</option>
         <option value="tag:virtual-71">7.1 giả lập</option>
         <option value="tag:bass-3d">Bass 3D</option>
         <option value="tag:rgb">RGB/LED</option>
@@ -98,11 +113,6 @@
       </optgroup>
       <optgroup label="Media">
         <option value="tag:has-video">Có video test</option>
-      </optgroup>
-      <optgroup label="Sắp xếp">
-        <option value="sort:newest">Mới nhất</option>
-        <option value="sort:price-asc">Giá thấp → cao</option>
-        <option value="sort:price-desc">Giá cao → thấp</option>
       </optgroup>
     </select>
   </div>

@@ -288,6 +288,16 @@ const TAG_LABELS = {
   'tai-gaming': 'Tai gaming',
   'tai-chup-bluetooth': 'Tai chụp Bluetooth',
   'tai-nghe-nhac': 'Tai nghe nhạc',
+  'bt-50': 'Bluetooth 5.0+',
+  'bt-52': 'Bluetooth 5.2+',
+  'codec-aac': 'AAC',
+  'codec-aptx': 'aptX',
+  'codec-ldac': 'LDAC',
+  'anc': 'ANC',
+  'enc': 'ENC',
+  'water-resistant': 'Chống nước',
+  'app-support': 'Có app',
+  'launch-2023-plus': 'Đời 2023+',
   'virtual-71': '7.1 giả lập',
   'bass-3d': 'Bass 3D',
   'bass-strong': 'Bass mạnh',
@@ -604,6 +614,19 @@ function getProductTags(p = {}) {
   if (segmentKey === 'gaming') tags.add('casual-gaming');
   if (segmentKey === 'study') tags.add('study-online');
   if (p.isWireless || ['wireless-fast', 'wireless-slow'].includes(p.latency) || hasAny(text, ['bluetooth', 'wireless', 'khong day'])) tags.add('bluetooth');
+  if (hasAny(text, ['bluetooth 5', 'bt 5', 'bt5', 'bluetooth v5'])) tags.add('bt-50');
+  if (hasAny(text, ['bluetooth 5.2', 'bluetooth 5.3', 'bluetooth 5.4', 'bt 5.2', 'bt 5.3', 'bt 5.4', 'bt5.2', 'bt5.3', 'bt5.4'])) {
+    tags.add('bt-50');
+    tags.add('bt-52');
+  }
+  if (hasAny(text, ['aac codec', 'codec aac', ' aac ', 'aac/'])) tags.add('codec-aac');
+  if (hasAny(text, ['aptx', 'aptx ll', 'aptx low latency', 'aptx hd'])) tags.add('codec-aptx');
+  if (hasAny(text, ['ldac'])) tags.add('codec-ldac');
+  if (hasAny(text, ['anc', 'active noise cancelling', 'active noise canceling', 'chong on chu dong', 'chong on active'])) tags.add('anc');
+  if (hasAny(text, ['enc', 'environmental noise cancellation', 'loc mic', 'loc on mic', 'chong on mic', 'noise cancelling mic', 'noise canceling mic'])) tags.add('enc');
+  if (hasAny(text, ['ipx', 'ip54', 'ip55', 'ip67', 'ip68', 'chong nuoc', 'khang nuoc', 'chong mo hoi', 'khang mo hoi'])) tags.add('water-resistant');
+  if (hasAny(text, ['co app', 'app ho tro', 'ung dung ho tro', 'companion app', 'razer synapse', 'logitech g hub', 'sony headphones', 'soundcore app', 'jbl app'])) tags.add('app-support');
+  if (hasAny(text, ['2023', '2024', '2025', '2026', 'moi ra mat', 'doi moi'])) tags.add('launch-2023-plus');
   if (p.video) tags.add('has-video');
   if (grade.code === 'Like New(S)' || hasAny(text, ['like new', 'nhu moi', 'gan nhu moi'])) tags.add('like-new');
   else tags.add('revived');
