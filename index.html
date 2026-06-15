@@ -70,41 +70,40 @@
   </div>
   <div class="filter-row filter-row-highlights">
     <span class="filter-label">Tính năng</span>
-    <select class="filter-select" data-feature-filter="gaming">
-      <option value="">Gaming</option>
-      <option value="virtual-71">7.1 giả lập</option>
-      <option value="bass-3d">Bass 3D</option>
-      <option value="rgb">RGB/LED</option>
-      <option value="mic-clear">Mic rõ</option>
-    </select>
-    <select class="filter-select" data-feature-filter="diy">
-      <option value="">DIY / dịch vụ</option>
-      <option value="velvet-pad">Bọc nhung</option>
-      <option value="bluetooth-mod">Làm Bluetooth</option>
-      <option value="battery-service">Thay pin</option>
-      <option value="wire-repair">Sửa dây / jack</option>
-    </select>
-    <select class="filter-select" data-feature-filter="sound">
-      <option value="">Chất âm</option>
-      <option value="bass-strong">Bass mạnh - gaming/EDM</option>
-      <option value="vocal-clear">Vocal rõ - giọng ca sĩ</option>
-      <option value="bright-sound">Âm sáng - nữ/chi tiết</option>
-      <option value="wide-stage">Âm rộng - game/phim</option>
-      <option value="easy-listen">Dễ nghe lâu - nhẹ nhàng</option>
-    </select>
-    <select class="filter-select" data-feature-filter="condition">
-      <option value="">Tình trạng</option>
-      <option value="like-new">Like New</option>
-      <option value="revived">Hồi sinh</option>
-    </select>
-    <select class="filter-select" data-feature-filter="proof">
-      <option value="">Media</option>
-      <option value="has-video">Có video test</option>
-    </select>
-    <select class="filter-select" id="sortFilter">
-      <option value="newest">Mới nhất</option>
-      <option value="price-asc">Giá thấp → cao</option>
-      <option value="price-desc">Giá cao → thấp</option>
+    <select class="filter-select filter-select-wide" id="extraFilter">
+      <option value="">Bộ lọc thêm</option>
+      <optgroup label="Tính năng">
+        <option value="tag:bluetooth">Bluetooth</option>
+        <option value="tag:virtual-71">7.1 giả lập</option>
+        <option value="tag:bass-3d">Bass 3D</option>
+        <option value="tag:rgb">RGB/LED</option>
+        <option value="tag:mic-clear">Mic rõ</option>
+      </optgroup>
+      <optgroup label="Dịch vụ">
+        <option value="tag:velvet-pad">Bọc nhung</option>
+        <option value="tag:bluetooth-mod">Làm Bluetooth</option>
+        <option value="tag:battery-service">Thay pin</option>
+        <option value="tag:wire-repair">Sửa dây / jack</option>
+      </optgroup>
+      <optgroup label="Chất âm">
+        <option value="tag:bass-strong">Bass mạnh</option>
+        <option value="tag:vocal-clear">Vocal rõ</option>
+        <option value="tag:bright-sound">Âm sáng</option>
+        <option value="tag:wide-stage">Âm rộng</option>
+        <option value="tag:easy-listen">Dễ nghe lâu</option>
+      </optgroup>
+      <optgroup label="Tình trạng">
+        <option value="tag:like-new">Like New</option>
+        <option value="tag:revived">Hồi sinh</option>
+      </optgroup>
+      <optgroup label="Media">
+        <option value="tag:has-video">Có video test</option>
+      </optgroup>
+      <optgroup label="Sắp xếp">
+        <option value="sort:newest">Mới nhất</option>
+        <option value="sort:price-asc">Giá thấp → cao</option>
+        <option value="sort:price-desc">Giá cao → thấp</option>
+      </optgroup>
     </select>
   </div>
 </div>

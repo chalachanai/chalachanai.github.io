@@ -1131,6 +1131,7 @@ function setupFilters() {
       || activeFilter !== 'all'
       || activeSoundFilter
       || activeLatency
+      || activeSort !== 'newest'
       || activeTagFilters.size > 0
       || activeFeatureFilters.size > 0;
     resetChip.classList.toggle('active', !hasAnyFilter);
@@ -1144,18 +1145,12 @@ function setupFilters() {
       activeFilter = 'all';
       activeSoundFilter = '';
       activeLatency = '';
+      activeSort = 'newest';
       activeTagFilters.clear();
       activeFeatureFilters.clear();
-      const soundFilter = document.getElementById('soundFilter');
-      const latencyFilter = document.getElementById('latencyFilter');
-      const sortFilter = document.getElementById('sortFilter');
+      const extraFilter = document.getElementById('extraFilter');
       document.querySelectorAll('select[data-feature-filter]').forEach(select => { select.value = ''; });
-      if (soundFilter) soundFilter.value = '';
-      if (latencyFilter) latencyFilter.value = '';
-      if (sortFilter) {
-        activeSort = 'newest';
-        sortFilter.value = 'newest';
-      }
+      if (extraFilter) extraFilter.value = '';
       renderProducts();
     });
   });
@@ -1196,6 +1191,23 @@ function setupFilters() {
   const soundFilter = document.getElementById('soundFilter');
   const latencyFilter = document.getElementById('latencyFilter');
   const sortFilter = document.getElementById('sortFilter');
+  const extraFilter = document.getElementById('extraFilter');
+  if (extraFilter) {
+    extraFilter.addEventListener('change', e => {
+      activeFeatureFilters.delete('extra');
+      if (e.target.value.startsWith('tag:')) {
+        activeFeatureFilters.set('extra', e.target.value.replace('tag:', ''));
+        activeSort = 'newest';
+      } else if (e.target.value.startsWith('sort:')) {
+        activeFeatureFilters.clear();
+        activeSort = e.target.value.replace('sort:', '') || 'newest';
+      } else {
+        activeSort = 'newest';
+      }
+      syncResetChip();
+      renderProducts();
+    });
+  }
   document.querySelectorAll('select[data-feature-filter]').forEach(select => {
     select.addEventListener('change', e => {
       const group = e.target.dataset.featureFilter;

@@ -129,6 +129,7 @@ img { display: block; width: 100%; }
 }
 .filter-select:hover { border-color: var(--gold); color: var(--gold); }
 .filter-select option { background: #1a1a1a; }
+.filter-select-wide { min-width: 220px; }
 
 /* ══════════════════════════════════════════
    HERO
