@@ -284,6 +284,10 @@ const TAG_LABELS = {
   'casual-gaming': 'Game casual',
   'bluetooth': 'Bluetooth',
   'diy': 'DIY',
+  'tai-hop': 'Tai hộp',
+  'tai-gaming': 'Tai gaming',
+  'tai-chup-bluetooth': 'Tai chụp Bluetooth',
+  'tai-nghe-nhac': 'Tai nghe nhạc',
   'virtual-71': '7.1 giả lập',
   'bass-3d': 'Bass 3D',
   'bass-strong': 'Bass mạnh',
@@ -665,6 +669,19 @@ function getProductTags(p = {}) {
   }
   if (hasAny(text, ['rgb', 'led'])) {
     tags.add('rgb');
+  }
+
+  if (segmentKey === 'study' || tags.has('study-online') || tags.has('call-zoom')) {
+    tags.add('tai-hop');
+  }
+  if (segmentKey === 'gaming' || tags.has('fps') || tags.has('casual-gaming') || tags.has('virtual-71')) {
+    tags.add('tai-gaming');
+  }
+  if (tags.has('bluetooth') || tags.has('bluetooth-mod')) {
+    tags.add('tai-chup-bluetooth');
+  }
+  if (segmentKey === 'music' || tags.has('bass-music') || tags.has('vocal-clear') || tags.has('bright-sound') || tags.has('easy-listen') || ['warm', 'bright', 'neutral', 'mid-forward', 'bass-heavy', 'v-shape'].includes(sound)) {
+    tags.add('tai-nghe-nhac');
   }
 
   return tags;
