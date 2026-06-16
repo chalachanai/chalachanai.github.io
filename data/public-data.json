@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "exportedAt": "2026-05-16T07:48:26.622Z",
+  "exportedAt": "2026-06-16T07:35:17.641Z",
   "products": [
     {
       "id": 1778917012983,
@@ -2069,6 +2069,1209 @@
       "caveat": "Bluetooth phổ thông không hợp FPS cạnh tranh; pin thực tế cần shop test riêng.",
       "researchNotes": "Thông tin model SY-T25 không có nguồn chính thống rõ; mô tả theo tên sản phẩm Bluetooth 5.3 và ảnh shop.",
       "sourceLinks": []
+    },
+    {
+      "id": 1780000000000,
+      "name": "HAVIT TWS903 ?en",
+      "segment": "music",
+      "brand": "HAVIT",
+      "condition": "M?i",
+      "price": 130000,
+      "originalPrice": 392000,
+      "stock": 7,
+      "soundTag": "Neutral",
+      "latency": "wireless-slow",
+      "isWireless": true,
+      "batteryHealth": 100,
+      "images": [
+        "/assets/havit-tws-generic.svg"
+      ],
+      "video": "",
+      "youtubePlaylist": "",
+      "shopeeLink": "https://shopee.vn/Tai-Nghe-Kh%C3%B4ng-D%C3%A2y-Havit-TW903-Call-HD-Semi-Inear-Bluetooth-5.3-H%C3%A0ng-Ch%C3%ADnh-H%C3%A3ng-i.808014822.28206043137",
+      "messengerLink": "",
+      "description": "HAVIT TWS903 ?en - Call HD Semi-In-ear Bluetooth 5.3.\n\nTh?ng s? n?i b?t:\n- Bluetooth 5.3\n- ENC/noise reduction theo listing\n- Pin tai 40mAh m?i b?n\n- Nghe kho?ng 5.5 gi?\n- S?c Type-C\n- ?i?u khi?n c?m ?ng\n\nG?i ? d?ng: nghe nh?c, h?c/call, xem video h?ng ng?y. Shop s? test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.\n\n??nh gi?: tham kh?o gi? m?i Shopee/index 392.000?. Gi? b?n Ch? L? ?ang ?? kho?ng 1/3 gi? m?i/gi? giao d?ch th?p nh?t h?p l?.\n\nNote research: Shopee index hi?n th?y gi? 392k; ch?a ?? 5 gi? Shopee s?ch v? API Shopee ch?n truy v?n tr?c ti?p.",
+      "bestFor": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "hoc-online",
+        "call-zoom"
+      ],
+      "topHighlights": [
+        "mic-clear",
+        "easy-listen"
+      ],
+      "serviceDone": [],
+      "smartTags": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "bt-52",
+        "enc",
+        "mic-clear"
+      ],
+      "inspection": "M?u: ?en. T?n kho: 7. Test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.",
+      "inspectionDetails": {
+        "shell": "M?u ?en, ngo?i h?nh ki?m l?i khi ??ng ??n",
+        "pads": "N?t tai/fit ki?m l?i theo h?p",
+        "driver": "Test ?m 2 b?n tr??c khi giao",
+        "mic": "Test ??m tho?i tr??c khi giao",
+        "connect": "Bluetooth 5.3",
+        "battery": "Pin tai 40mAh m?i b?n",
+        "clean": "V? sinh tr??c khi tr? v?"
+      },
+      "reviews": [],
+      "views": 0,
+      "createdAt": 1781595012352,
+      "isSold": false,
+      "color": "?en",
+      "compatibility": [
+        "Bluetooth",
+        "?i?n tho?i",
+        "Laptop",
+        "Tablet"
+      ],
+      "micStatus": "C? mic, shop test call tr??c khi giao.",
+      "comfortNote": "Tai TWS nh? g?n, h?p d?ng h?ng ng?y; kh?ch nh?y tai n?n th? fit/n?t tai tr??c.",
+      "caveat": "Shopee index hi?n th?y gi? 392k; ch?a ?? 5 gi? Shopee s?ch v? API Shopee ch?n truy v?n tr?c ti?p.",
+      "researchNotes": "Shopee index hi?n th?y gi? 392k; ch?a ?? 5 gi? Shopee s?ch v? API Shopee ch?n truy v?n tr?c ti?p.",
+      "sourceLinks": [
+        "https://shopee.vn/Tai-Nghe-Kh%C3%B4ng-D%C3%A2y-Havit-TW903-Call-HD-Semi-Inear-Bluetooth-5.3-H%C3%A0ng-Ch%C3%ADnh-H%C3%A3ng-i.808014822.28206043137",
+        "https://www.alibaba.com/product-detail/HAVIT-TW903-2023-New-Smart-Hot_1600869297262.html"
+      ],
+      "priceResearch": {
+        "strategy": "Gi? b?n ?? xu?t kho?ng 1/3 gi? m?i Shopee/current listing th?p h?p l?; kh?ng d?ng gi? h?ng c?.",
+        "shopeePrices": [
+          392000
+        ],
+        "minShopeePrice": 392000,
+        "maxShopeePrice": 392000,
+        "warning": "",
+        "sourceQuality": "Ch?a ?? 5 m?c gi? Shopee s?ch do Shopee ch?n API tr?c ti?p."
+      }
+    },
+    {
+      "id": 1780000000001,
+      "name": "HAVIT TWS903 Tr?ng",
+      "segment": "music",
+      "brand": "HAVIT",
+      "condition": "M?i",
+      "price": 130000,
+      "originalPrice": 392000,
+      "stock": 3,
+      "soundTag": "Neutral",
+      "latency": "wireless-slow",
+      "isWireless": true,
+      "batteryHealth": 100,
+      "images": [
+        "/assets/havit-tws-generic.svg"
+      ],
+      "video": "",
+      "youtubePlaylist": "",
+      "shopeeLink": "https://shopee.vn/Tai-Nghe-Kh%C3%B4ng-D%C3%A2y-Havit-TW903-Call-HD-Semi-Inear-Bluetooth-5.3-H%C3%A0ng-Ch%C3%ADnh-H%C3%A3ng-i.808014822.28206043137",
+      "messengerLink": "",
+      "description": "HAVIT TWS903 Tr?ng - Call HD Semi-In-ear Bluetooth 5.3.\n\nTh?ng s? n?i b?t:\n- Bluetooth 5.3\n- ENC/noise reduction theo listing\n- Pin tai 40mAh m?i b?n\n- Nghe kho?ng 5.5 gi?\n- S?c Type-C\n- ?i?u khi?n c?m ?ng\n\nG?i ? d?ng: nghe nh?c, h?c/call, xem video h?ng ng?y. Shop s? test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.\n\n??nh gi?: tham kh?o gi? m?i Shopee/index 392.000?. Gi? b?n Ch? L? ?ang ?? kho?ng 1/3 gi? m?i/gi? giao d?ch th?p nh?t h?p l?.\n\nNote research: Shopee index hi?n th?y gi? 392k; ch?a ?? 5 gi? Shopee s?ch v? API Shopee ch?n truy v?n tr?c ti?p.",
+      "bestFor": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "hoc-online",
+        "call-zoom"
+      ],
+      "topHighlights": [
+        "mic-clear",
+        "easy-listen"
+      ],
+      "serviceDone": [],
+      "smartTags": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "bt-52",
+        "enc",
+        "mic-clear"
+      ],
+      "inspection": "M?u: Tr?ng. T?n kho: 3. Test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.",
+      "inspectionDetails": {
+        "shell": "M?u Tr?ng, ngo?i h?nh ki?m l?i khi ??ng ??n",
+        "pads": "N?t tai/fit ki?m l?i theo h?p",
+        "driver": "Test ?m 2 b?n tr??c khi giao",
+        "mic": "Test ??m tho?i tr??c khi giao",
+        "connect": "Bluetooth 5.3",
+        "battery": "Pin tai 40mAh m?i b?n",
+        "clean": "V? sinh tr??c khi tr? v?"
+      },
+      "reviews": [],
+      "views": 0,
+      "createdAt": 1781595012353,
+      "isSold": false,
+      "color": "Tr?ng",
+      "compatibility": [
+        "Bluetooth",
+        "?i?n tho?i",
+        "Laptop",
+        "Tablet"
+      ],
+      "micStatus": "C? mic, shop test call tr??c khi giao.",
+      "comfortNote": "Tai TWS nh? g?n, h?p d?ng h?ng ng?y; kh?ch nh?y tai n?n th? fit/n?t tai tr??c.",
+      "caveat": "Shopee index hi?n th?y gi? 392k; ch?a ?? 5 gi? Shopee s?ch v? API Shopee ch?n truy v?n tr?c ti?p.",
+      "researchNotes": "Shopee index hi?n th?y gi? 392k; ch?a ?? 5 gi? Shopee s?ch v? API Shopee ch?n truy v?n tr?c ti?p.",
+      "sourceLinks": [
+        "https://shopee.vn/Tai-Nghe-Kh%C3%B4ng-D%C3%A2y-Havit-TW903-Call-HD-Semi-Inear-Bluetooth-5.3-H%C3%A0ng-Ch%C3%ADnh-H%C3%A3ng-i.808014822.28206043137",
+        "https://www.alibaba.com/product-detail/HAVIT-TW903-2023-New-Smart-Hot_1600869297262.html"
+      ],
+      "priceResearch": {
+        "strategy": "Gi? b?n ?? xu?t kho?ng 1/3 gi? m?i Shopee/current listing th?p h?p l?; kh?ng d?ng gi? h?ng c?.",
+        "shopeePrices": [
+          392000
+        ],
+        "minShopeePrice": 392000,
+        "maxShopeePrice": 392000,
+        "warning": "",
+        "sourceQuality": "Ch?a ?? 5 m?c gi? Shopee s?ch do Shopee ch?n API tr?c ti?p."
+      }
+    },
+    {
+      "id": 1780000000002,
+      "name": "HAVIT TWS941 Tr?ng",
+      "segment": "music",
+      "brand": "HAVIT",
+      "condition": "M?i",
+      "price": 99000,
+      "originalPrice": 280000,
+      "stock": 3,
+      "soundTag": "Neutral",
+      "latency": "wireless-slow",
+      "isWireless": true,
+      "batteryHealth": 100,
+      "images": [
+        "/assets/havit-tws-generic.svg"
+      ],
+      "video": "",
+      "youtubePlaylist": "",
+      "shopeeLink": "https://shopee.vn/Tai-Nghe-Kh%C3%B4ng-D%C3%A2y-Havit-TW941-Call-HD-Semi-inear-Bluetooth-5.3-i.808014822.29463846541",
+      "messengerLink": "",
+      "description": "HAVIT TWS941 Tr?ng - Call HD Semi-in-ear Bluetooth 5.3.\n\nTh?ng s? n?i b?t:\n- Bluetooth 5.3\n- Call HD\n- Semi-in-ear d? ?eo\n- B?n nhi?u m?u\n- TWS d?ng h?ng ng?y\n\nG?i ? d?ng: nghe nh?c, h?c/call, xem video h?ng ng?y. Shop s? test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.\n\n??nh gi?: tham kh?o gi? m?i Shopee/index 160.000?, 280.000?, 429.000?. Gi? b?n Ch? L? ?ang ?? kho?ng 1/3 gi? m?i/gi? giao d?ch th?p nh?t h?p l?.\n\nNote research: Gi? Shopee th?y t? 160k ??n 429k, ch?nh h?n 200k n?n c?n coi 280k l? m?c ch?nh h?ng h?p l? h?n.",
+      "bestFor": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "hoc-online",
+        "call-zoom"
+      ],
+      "topHighlights": [
+        "mic-clear",
+        "easy-listen"
+      ],
+      "serviceDone": [],
+      "smartTags": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "bt-52",
+        "mic-clear"
+      ],
+      "inspection": "M?u: Tr?ng. T?n kho: 3. Test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.",
+      "inspectionDetails": {
+        "shell": "M?u Tr?ng, ngo?i h?nh ki?m l?i khi ??ng ??n",
+        "pads": "N?t tai/fit ki?m l?i theo h?p",
+        "driver": "Test ?m 2 b?n tr??c khi giao",
+        "mic": "Test ??m tho?i tr??c khi giao",
+        "connect": "Bluetooth 5.3",
+        "battery": "Test pin tr??c khi giao",
+        "clean": "V? sinh tr??c khi tr? v?"
+      },
+      "reviews": [],
+      "views": 0,
+      "createdAt": 1781595012354,
+      "isSold": false,
+      "color": "Tr?ng",
+      "compatibility": [
+        "Bluetooth",
+        "?i?n tho?i",
+        "Laptop",
+        "Tablet"
+      ],
+      "micStatus": "C? mic, shop test call tr??c khi giao.",
+      "comfortNote": "Tai TWS nh? g?n, h?p d?ng h?ng ng?y; kh?ch nh?y tai n?n th? fit/n?t tai tr??c.",
+      "caveat": "Gi? Shopee th?y t? 160k ??n 429k, ch?nh h?n 200k n?n c?n coi 280k l? m?c ch?nh h?ng h?p l? h?n.",
+      "researchNotes": "Gi? Shopee th?y t? 160k ??n 429k, ch?nh h?n 200k n?n c?n coi 280k l? m?c ch?nh h?ng h?p l? h?n.",
+      "sourceLinks": [
+        "https://shopee.vn/Tai-Nghe-Kh%C3%B4ng-D%C3%A2y-Havit-TW941-Call-HD-Semi-inear-Bluetooth-5.3-i.808014822.29463846541",
+        "https://shopee.vn/Tai-nghe-Bluetooth-TWS-Havit-TW941-4-m%C3%A0u-giao-ng%E1%BA%ABu-nhi%C3%AAn-i.144327020.40107615191"
+      ],
+      "priceResearch": {
+        "strategy": "Gi? b?n ?? xu?t kho?ng 1/3 gi? m?i Shopee/current listing th?p h?p l?; kh?ng d?ng gi? h?ng c?.",
+        "shopeePrices": [
+          160000,
+          280000,
+          429000
+        ],
+        "minShopeePrice": 160000,
+        "maxShopeePrice": 429000,
+        "warning": "Gi? ngu?n ch?nh t? 200k tr? l?n, c?n note khi t? v?n.",
+        "sourceQuality": "Ch?a ?? 5 m?c gi? Shopee s?ch do Shopee ch?n API tr?c ti?p."
+      }
+    },
+    {
+      "id": 1780000000003,
+      "name": "HAVIT TWS941 Nude",
+      "segment": "music",
+      "brand": "HAVIT",
+      "condition": "M?i",
+      "price": 99000,
+      "originalPrice": 280000,
+      "stock": 5,
+      "soundTag": "Neutral",
+      "latency": "wireless-slow",
+      "isWireless": true,
+      "batteryHealth": 100,
+      "images": [
+        "/assets/havit-tws-generic.svg"
+      ],
+      "video": "",
+      "youtubePlaylist": "",
+      "shopeeLink": "https://shopee.vn/Tai-Nghe-Kh%C3%B4ng-D%C3%A2y-Havit-TW941-Call-HD-Semi-inear-Bluetooth-5.3-i.808014822.29463846541",
+      "messengerLink": "",
+      "description": "HAVIT TWS941 Nude - Call HD Semi-in-ear Bluetooth 5.3.\n\nTh?ng s? n?i b?t:\n- Bluetooth 5.3\n- Call HD\n- Semi-in-ear d? ?eo\n- B?n nhi?u m?u\n- TWS d?ng h?ng ng?y\n\nG?i ? d?ng: nghe nh?c, h?c/call, xem video h?ng ng?y. Shop s? test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.\n\n??nh gi?: tham kh?o gi? m?i Shopee/index 160.000?, 280.000?, 429.000?. Gi? b?n Ch? L? ?ang ?? kho?ng 1/3 gi? m?i/gi? giao d?ch th?p nh?t h?p l?.\n\nNote research: Gi? Shopee th?y t? 160k ??n 429k, ch?nh h?n 200k n?n c?n coi 280k l? m?c ch?nh h?ng h?p l? h?n.",
+      "bestFor": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "hoc-online",
+        "call-zoom"
+      ],
+      "topHighlights": [
+        "mic-clear",
+        "easy-listen"
+      ],
+      "serviceDone": [],
+      "smartTags": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "bt-52",
+        "mic-clear"
+      ],
+      "inspection": "M?u: Nude. T?n kho: 5. Test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.",
+      "inspectionDetails": {
+        "shell": "M?u Nude, ngo?i h?nh ki?m l?i khi ??ng ??n",
+        "pads": "N?t tai/fit ki?m l?i theo h?p",
+        "driver": "Test ?m 2 b?n tr??c khi giao",
+        "mic": "Test ??m tho?i tr??c khi giao",
+        "connect": "Bluetooth 5.3",
+        "battery": "Test pin tr??c khi giao",
+        "clean": "V? sinh tr??c khi tr? v?"
+      },
+      "reviews": [],
+      "views": 0,
+      "createdAt": 1781595012355,
+      "isSold": false,
+      "color": "Nude",
+      "compatibility": [
+        "Bluetooth",
+        "?i?n tho?i",
+        "Laptop",
+        "Tablet"
+      ],
+      "micStatus": "C? mic, shop test call tr??c khi giao.",
+      "comfortNote": "Tai TWS nh? g?n, h?p d?ng h?ng ng?y; kh?ch nh?y tai n?n th? fit/n?t tai tr??c.",
+      "caveat": "Gi? Shopee th?y t? 160k ??n 429k, ch?nh h?n 200k n?n c?n coi 280k l? m?c ch?nh h?ng h?p l? h?n.",
+      "researchNotes": "Gi? Shopee th?y t? 160k ??n 429k, ch?nh h?n 200k n?n c?n coi 280k l? m?c ch?nh h?ng h?p l? h?n.",
+      "sourceLinks": [
+        "https://shopee.vn/Tai-Nghe-Kh%C3%B4ng-D%C3%A2y-Havit-TW941-Call-HD-Semi-inear-Bluetooth-5.3-i.808014822.29463846541",
+        "https://shopee.vn/Tai-nghe-Bluetooth-TWS-Havit-TW941-4-m%C3%A0u-giao-ng%E1%BA%ABu-nhi%C3%AAn-i.144327020.40107615191"
+      ],
+      "priceResearch": {
+        "strategy": "Gi? b?n ?? xu?t kho?ng 1/3 gi? m?i Shopee/current listing th?p h?p l?; kh?ng d?ng gi? h?ng c?.",
+        "shopeePrices": [
+          160000,
+          280000,
+          429000
+        ],
+        "minShopeePrice": 160000,
+        "maxShopeePrice": 429000,
+        "warning": "Gi? ngu?n ch?nh t? 200k tr? l?n, c?n note khi t? v?n.",
+        "sourceQuality": "Ch?a ?? 5 m?c gi? Shopee s?ch do Shopee ch?n API tr?c ti?p."
+      }
+    },
+    {
+      "id": 1780000000004,
+      "name": "HAVIT TWS941 ?en",
+      "segment": "music",
+      "brand": "HAVIT",
+      "condition": "M?i",
+      "price": 99000,
+      "originalPrice": 280000,
+      "stock": 9,
+      "soundTag": "Neutral",
+      "latency": "wireless-slow",
+      "isWireless": true,
+      "batteryHealth": 100,
+      "images": [
+        "/assets/havit-tws-generic.svg"
+      ],
+      "video": "",
+      "youtubePlaylist": "",
+      "shopeeLink": "https://shopee.vn/Tai-Nghe-Kh%C3%B4ng-D%C3%A2y-Havit-TW941-Call-HD-Semi-inear-Bluetooth-5.3-i.808014822.29463846541",
+      "messengerLink": "",
+      "description": "HAVIT TWS941 ?en - Call HD Semi-in-ear Bluetooth 5.3.\n\nTh?ng s? n?i b?t:\n- Bluetooth 5.3\n- Call HD\n- Semi-in-ear d? ?eo\n- B?n nhi?u m?u\n- TWS d?ng h?ng ng?y\n\nG?i ? d?ng: nghe nh?c, h?c/call, xem video h?ng ng?y. Shop s? test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.\n\n??nh gi?: tham kh?o gi? m?i Shopee/index 160.000?, 280.000?, 429.000?. Gi? b?n Ch? L? ?ang ?? kho?ng 1/3 gi? m?i/gi? giao d?ch th?p nh?t h?p l?.\n\nNote research: Gi? Shopee th?y t? 160k ??n 429k, ch?nh h?n 200k n?n c?n coi 280k l? m?c ch?nh h?ng h?p l? h?n.",
+      "bestFor": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "hoc-online",
+        "call-zoom"
+      ],
+      "topHighlights": [
+        "mic-clear",
+        "easy-listen"
+      ],
+      "serviceDone": [],
+      "smartTags": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "bt-52",
+        "mic-clear"
+      ],
+      "inspection": "M?u: ?en. T?n kho: 9. Test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.",
+      "inspectionDetails": {
+        "shell": "M?u ?en, ngo?i h?nh ki?m l?i khi ??ng ??n",
+        "pads": "N?t tai/fit ki?m l?i theo h?p",
+        "driver": "Test ?m 2 b?n tr??c khi giao",
+        "mic": "Test ??m tho?i tr??c khi giao",
+        "connect": "Bluetooth 5.3",
+        "battery": "Test pin tr??c khi giao",
+        "clean": "V? sinh tr??c khi tr? v?"
+      },
+      "reviews": [],
+      "views": 0,
+      "createdAt": 1781595012356,
+      "isSold": false,
+      "color": "?en",
+      "compatibility": [
+        "Bluetooth",
+        "?i?n tho?i",
+        "Laptop",
+        "Tablet"
+      ],
+      "micStatus": "C? mic, shop test call tr??c khi giao.",
+      "comfortNote": "Tai TWS nh? g?n, h?p d?ng h?ng ng?y; kh?ch nh?y tai n?n th? fit/n?t tai tr??c.",
+      "caveat": "Gi? Shopee th?y t? 160k ??n 429k, ch?nh h?n 200k n?n c?n coi 280k l? m?c ch?nh h?ng h?p l? h?n.",
+      "researchNotes": "Gi? Shopee th?y t? 160k ??n 429k, ch?nh h?n 200k n?n c?n coi 280k l? m?c ch?nh h?ng h?p l? h?n.",
+      "sourceLinks": [
+        "https://shopee.vn/Tai-Nghe-Kh%C3%B4ng-D%C3%A2y-Havit-TW941-Call-HD-Semi-inear-Bluetooth-5.3-i.808014822.29463846541",
+        "https://shopee.vn/Tai-nghe-Bluetooth-TWS-Havit-TW941-4-m%C3%A0u-giao-ng%E1%BA%ABu-nhi%C3%AAn-i.144327020.40107615191"
+      ],
+      "priceResearch": {
+        "strategy": "Gi? b?n ?? xu?t kho?ng 1/3 gi? m?i Shopee/current listing th?p h?p l?; kh?ng d?ng gi? h?ng c?.",
+        "shopeePrices": [
+          160000,
+          280000,
+          429000
+        ],
+        "minShopeePrice": 160000,
+        "maxShopeePrice": 429000,
+        "warning": "Gi? ngu?n ch?nh t? 200k tr? l?n, c?n note khi t? v?n.",
+        "sourceQuality": "Ch?a ?? 5 m?c gi? Shopee s?ch do Shopee ch?n API tr?c ti?p."
+      }
+    },
+    {
+      "id": 1780000000005,
+      "name": "HAVIT TWS947 ?en",
+      "segment": "music",
+      "brand": "HAVIT",
+      "condition": "M?i",
+      "price": 150000,
+      "originalPrice": 402000,
+      "stock": 6,
+      "soundTag": "Bass-Heavy",
+      "latency": "wireless-slow",
+      "isWireless": true,
+      "batteryHealth": 100,
+      "images": [
+        "/assets/havit-tws-generic.svg"
+      ],
+      "video": "",
+      "youtubePlaylist": "",
+      "shopeeLink": "https://shopee.vn/Tai-nghe-kh%C3%B4ng-d%C3%A2y-Havit-TW947-Bluetooth-5.3-H%C3%A0ng-ch%C3%ADnh-h%C3%A3ng-i.808014822.21064345958",
+      "messengerLink": "",
+      "description": "HAVIT TWS947 ?en - Bluetooth 5.3 ENC Driver 13mm.\n\nTh?ng s? n?i b?t:\n- Bluetooth 5.3\n- ENC/noise cancelling\n- Driver 13mm\n- Pin tai 40mAh m?i b?n\n- Case 400mAh\n- Nghe kho?ng 6 gi?, t?ng kho?ng 32 gi? theo listing\n\nG?i ? d?ng: nghe nh?c, h?c/call, xem video h?ng ng?y. Shop s? test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.\n\n??nh gi?: tham kh?o gi? m?i Shopee/index 319.199?, 401.800?, 579.040?, 580.000?, 587.000?, 589.000?. Gi? b?n Ch? L? ?ang ?? kho?ng 1/3 gi? m?i/gi? giao d?ch th?p nh?t h?p l?.\n\nNote research: ?? h?n 5 m?c Shopee/index; gi? ch?nh 319k-589k (>200k), n?n ?? note khi t? v?n kh?ch.",
+      "bestFor": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "hoc-online",
+        "call-zoom"
+      ],
+      "topHighlights": [
+        "mic-clear",
+        "easy-listen"
+      ],
+      "serviceDone": [],
+      "smartTags": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "bt-52",
+        "enc",
+        "mic-clear"
+      ],
+      "inspection": "M?u: ?en. T?n kho: 6. Test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.",
+      "inspectionDetails": {
+        "shell": "M?u ?en, ngo?i h?nh ki?m l?i khi ??ng ??n",
+        "pads": "N?t tai/fit ki?m l?i theo h?p",
+        "driver": "Test ?m 2 b?n tr??c khi giao",
+        "mic": "Test ??m tho?i tr??c khi giao",
+        "connect": "Bluetooth 5.3",
+        "battery": "Pin tai 40mAh m?i b?n",
+        "clean": "V? sinh tr??c khi tr? v?"
+      },
+      "reviews": [],
+      "views": 0,
+      "createdAt": 1781595012357,
+      "isSold": false,
+      "color": "?en",
+      "compatibility": [
+        "Bluetooth",
+        "?i?n tho?i",
+        "Laptop",
+        "Tablet"
+      ],
+      "micStatus": "C? mic, shop test call tr??c khi giao.",
+      "comfortNote": "Tai TWS nh? g?n, h?p d?ng h?ng ng?y; kh?ch nh?y tai n?n th? fit/n?t tai tr??c.",
+      "caveat": "?? h?n 5 m?c Shopee/index; gi? ch?nh 319k-589k (>200k), n?n ?? note khi t? v?n kh?ch.",
+      "researchNotes": "?? h?n 5 m?c Shopee/index; gi? ch?nh 319k-589k (>200k), n?n ?? note khi t? v?n kh?ch.",
+      "sourceLinks": [
+        "https://shopee.vn/Tai-nghe-kh%C3%B4ng-d%C3%A2y-Havit-TW947-Bluetooth-5.3-H%C3%A0ng-ch%C3%ADnh-h%C3%A3ng-i.808014822.21064345958",
+        "https://device.report/manuals/guangzhou-havit-tw947-bluetooth-earbuds-user-manual"
+      ],
+      "priceResearch": {
+        "strategy": "Gi? b?n ?? xu?t kho?ng 1/3 gi? m?i Shopee/current listing th?p h?p l?; kh?ng d?ng gi? h?ng c?.",
+        "shopeePrices": [
+          319199,
+          401800,
+          579040,
+          580000,
+          587000,
+          589000
+        ],
+        "minShopeePrice": 319199,
+        "maxShopeePrice": 589000,
+        "warning": "Gi? ngu?n ch?nh t? 200k tr? l?n, c?n note khi t? v?n.",
+        "sourceQuality": "?? 5 m?c gi? Shopee/index."
+      }
+    },
+    {
+      "id": 1780000000006,
+      "name": "HAVIT TWS947 Tr?ng",
+      "segment": "music",
+      "brand": "HAVIT",
+      "condition": "M?i",
+      "price": 150000,
+      "originalPrice": 402000,
+      "stock": 3,
+      "soundTag": "Bass-Heavy",
+      "latency": "wireless-slow",
+      "isWireless": true,
+      "batteryHealth": 100,
+      "images": [
+        "/assets/havit-tws-generic.svg"
+      ],
+      "video": "",
+      "youtubePlaylist": "",
+      "shopeeLink": "https://shopee.vn/Tai-nghe-kh%C3%B4ng-d%C3%A2y-Havit-TW947-Bluetooth-5.3-H%C3%A0ng-ch%C3%ADnh-h%C3%A3ng-i.808014822.21064345958",
+      "messengerLink": "",
+      "description": "HAVIT TWS947 Tr?ng - Bluetooth 5.3 ENC Driver 13mm.\n\nTh?ng s? n?i b?t:\n- Bluetooth 5.3\n- ENC/noise cancelling\n- Driver 13mm\n- Pin tai 40mAh m?i b?n\n- Case 400mAh\n- Nghe kho?ng 6 gi?, t?ng kho?ng 32 gi? theo listing\n\nG?i ? d?ng: nghe nh?c, h?c/call, xem video h?ng ng?y. Shop s? test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.\n\n??nh gi?: tham kh?o gi? m?i Shopee/index 319.199?, 401.800?, 579.040?, 580.000?, 587.000?, 589.000?. Gi? b?n Ch? L? ?ang ?? kho?ng 1/3 gi? m?i/gi? giao d?ch th?p nh?t h?p l?.\n\nNote research: ?? h?n 5 m?c Shopee/index; gi? ch?nh 319k-589k (>200k), n?n ?? note khi t? v?n kh?ch.",
+      "bestFor": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "hoc-online",
+        "call-zoom"
+      ],
+      "topHighlights": [
+        "mic-clear",
+        "easy-listen"
+      ],
+      "serviceDone": [],
+      "smartTags": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "bt-52",
+        "enc",
+        "mic-clear"
+      ],
+      "inspection": "M?u: Tr?ng. T?n kho: 3. Test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.",
+      "inspectionDetails": {
+        "shell": "M?u Tr?ng, ngo?i h?nh ki?m l?i khi ??ng ??n",
+        "pads": "N?t tai/fit ki?m l?i theo h?p",
+        "driver": "Test ?m 2 b?n tr??c khi giao",
+        "mic": "Test ??m tho?i tr??c khi giao",
+        "connect": "Bluetooth 5.3",
+        "battery": "Pin tai 40mAh m?i b?n",
+        "clean": "V? sinh tr??c khi tr? v?"
+      },
+      "reviews": [],
+      "views": 0,
+      "createdAt": 1781595012358,
+      "isSold": false,
+      "color": "Tr?ng",
+      "compatibility": [
+        "Bluetooth",
+        "?i?n tho?i",
+        "Laptop",
+        "Tablet"
+      ],
+      "micStatus": "C? mic, shop test call tr??c khi giao.",
+      "comfortNote": "Tai TWS nh? g?n, h?p d?ng h?ng ng?y; kh?ch nh?y tai n?n th? fit/n?t tai tr??c.",
+      "caveat": "?? h?n 5 m?c Shopee/index; gi? ch?nh 319k-589k (>200k), n?n ?? note khi t? v?n kh?ch.",
+      "researchNotes": "?? h?n 5 m?c Shopee/index; gi? ch?nh 319k-589k (>200k), n?n ?? note khi t? v?n kh?ch.",
+      "sourceLinks": [
+        "https://shopee.vn/Tai-nghe-kh%C3%B4ng-d%C3%A2y-Havit-TW947-Bluetooth-5.3-H%C3%A0ng-ch%C3%ADnh-h%C3%A3ng-i.808014822.21064345958",
+        "https://device.report/manuals/guangzhou-havit-tw947-bluetooth-earbuds-user-manual"
+      ],
+      "priceResearch": {
+        "strategy": "Gi? b?n ?? xu?t kho?ng 1/3 gi? m?i Shopee/current listing th?p h?p l?; kh?ng d?ng gi? h?ng c?.",
+        "shopeePrices": [
+          319199,
+          401800,
+          579040,
+          580000,
+          587000,
+          589000
+        ],
+        "minShopeePrice": 319199,
+        "maxShopeePrice": 589000,
+        "warning": "Gi? ngu?n ch?nh t? 200k tr? l?n, c?n note khi t? v?n.",
+        "sourceQuality": "?? 5 m?c gi? Shopee/index."
+      }
+    },
+    {
+      "id": 1780000000007,
+      "name": "HAVIT TWS948 ?en",
+      "segment": "music",
+      "brand": "HAVIT",
+      "condition": "M?i",
+      "price": 160000,
+      "originalPrice": 490000,
+      "stock": 1,
+      "soundTag": "Neutral",
+      "latency": "wireless-slow",
+      "isWireless": true,
+      "batteryHealth": 100,
+      "images": [
+        "/assets/havit-tws-generic.svg"
+      ],
+      "video": "",
+      "youtubePlaylist": "",
+      "shopeeLink": "https://shopee.vn/Tai-nghe-kh%C3%B4ng-d%C3%A2y-Havit-TW948-Bluetooth-5.0-H%C3%A0ng-ch%C3%ADnh-h%C3%A3ng-i.808014822.20019165194",
+      "messengerLink": "",
+      "description": "HAVIT TWS948 ?en - Bluetooth 5.0 IPX4 Driver 12mm.\n\nTh?ng s? n?i b?t:\n- Bluetooth 5.0\n- Codec AAC/SBC\n- IPX4\n- Driver 12mm\n- Pin tai 40mAh m?i b?n\n- Case 420mAh\n- Nghe kho?ng 5 gi?\n- S?c Type-C\n\nG?i ? d?ng: nghe nh?c, h?c/call, xem video h?ng ng?y. Shop s? test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.\n\n??nh gi?: tham kh?o gi? m?i Shopee/index 490.000?. Gi? b?n Ch? L? ?ang ?? kho?ng 1/3 gi? m?i/gi? giao d?ch th?p nh?t h?p l?.\n\nNote research: Shopee index ch?a ?? 5 gi?; th?ng s? k? thu?t l?y t? HKTDC/Havit supplier.",
+      "bestFor": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "hoc-online",
+        "call-zoom"
+      ],
+      "topHighlights": [
+        "mic-clear",
+        "easy-listen"
+      ],
+      "serviceDone": [],
+      "smartTags": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "water-resistant",
+        "codec-aac"
+      ],
+      "inspection": "M?u: ?en. T?n kho: 1. Test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.",
+      "inspectionDetails": {
+        "shell": "M?u ?en, ngo?i h?nh ki?m l?i khi ??ng ??n",
+        "pads": "N?t tai/fit ki?m l?i theo h?p",
+        "driver": "Test ?m 2 b?n tr??c khi giao",
+        "mic": "Test ??m tho?i tr??c khi giao",
+        "connect": "Bluetooth 5.0",
+        "battery": "Pin tai 40mAh m?i b?n",
+        "clean": "V? sinh tr??c khi tr? v?"
+      },
+      "reviews": [],
+      "views": 0,
+      "createdAt": 1781595012359,
+      "isSold": false,
+      "color": "?en",
+      "compatibility": [
+        "Bluetooth",
+        "?i?n tho?i",
+        "Laptop",
+        "Tablet"
+      ],
+      "micStatus": "C? mic, shop test call tr??c khi giao.",
+      "comfortNote": "Tai TWS nh? g?n, h?p d?ng h?ng ng?y; kh?ch nh?y tai n?n th? fit/n?t tai tr??c.",
+      "caveat": "Shopee index ch?a ?? 5 gi?; th?ng s? k? thu?t l?y t? HKTDC/Havit supplier.",
+      "researchNotes": "Shopee index ch?a ?? 5 gi?; th?ng s? k? thu?t l?y t? HKTDC/Havit supplier.",
+      "sourceLinks": [
+        "https://shopee.vn/Tai-nghe-kh%C3%B4ng-d%C3%A2y-Havit-TW948-Bluetooth-5.0-H%C3%A0ng-ch%C3%ADnh-h%C3%A3ng-i.808014822.20019165194",
+        "https://sourcing.hktdc.com/en/Product-Detail/TWS-earbuds-Havit-TW948-1Z03H9KUY"
+      ],
+      "priceResearch": {
+        "strategy": "Gi? b?n ?? xu?t kho?ng 1/3 gi? m?i Shopee/current listing th?p h?p l?; kh?ng d?ng gi? h?ng c?.",
+        "shopeePrices": [
+          490000
+        ],
+        "minShopeePrice": 490000,
+        "maxShopeePrice": 490000,
+        "warning": "",
+        "sourceQuality": "Ch?a ?? 5 m?c gi? Shopee s?ch do Shopee ch?n API tr?c ti?p."
+      }
+    },
+    {
+      "id": 1780000000008,
+      "name": "HAVIT TWS948 Tr?ng",
+      "segment": "music",
+      "brand": "HAVIT",
+      "condition": "M?i",
+      "price": 160000,
+      "originalPrice": 490000,
+      "stock": 1,
+      "soundTag": "Neutral",
+      "latency": "wireless-slow",
+      "isWireless": true,
+      "batteryHealth": 100,
+      "images": [
+        "/assets/havit-tws-generic.svg"
+      ],
+      "video": "",
+      "youtubePlaylist": "",
+      "shopeeLink": "https://shopee.vn/Tai-nghe-kh%C3%B4ng-d%C3%A2y-Havit-TW948-Bluetooth-5.0-H%C3%A0ng-ch%C3%ADnh-h%C3%A3ng-i.808014822.20019165194",
+      "messengerLink": "",
+      "description": "HAVIT TWS948 Tr?ng - Bluetooth 5.0 IPX4 Driver 12mm.\n\nTh?ng s? n?i b?t:\n- Bluetooth 5.0\n- Codec AAC/SBC\n- IPX4\n- Driver 12mm\n- Pin tai 40mAh m?i b?n\n- Case 420mAh\n- Nghe kho?ng 5 gi?\n- S?c Type-C\n\nG?i ? d?ng: nghe nh?c, h?c/call, xem video h?ng ng?y. Shop s? test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.\n\n??nh gi?: tham kh?o gi? m?i Shopee/index 490.000?. Gi? b?n Ch? L? ?ang ?? kho?ng 1/3 gi? m?i/gi? giao d?ch th?p nh?t h?p l?.\n\nNote research: Shopee index ch?a ?? 5 gi?; th?ng s? k? thu?t l?y t? HKTDC/Havit supplier.",
+      "bestFor": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "hoc-online",
+        "call-zoom"
+      ],
+      "topHighlights": [
+        "mic-clear",
+        "easy-listen"
+      ],
+      "serviceDone": [],
+      "smartTags": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "water-resistant",
+        "codec-aac"
+      ],
+      "inspection": "M?u: Tr?ng. T?n kho: 1. Test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.",
+      "inspectionDetails": {
+        "shell": "M?u Tr?ng, ngo?i h?nh ki?m l?i khi ??ng ??n",
+        "pads": "N?t tai/fit ki?m l?i theo h?p",
+        "driver": "Test ?m 2 b?n tr??c khi giao",
+        "mic": "Test ??m tho?i tr??c khi giao",
+        "connect": "Bluetooth 5.0",
+        "battery": "Pin tai 40mAh m?i b?n",
+        "clean": "V? sinh tr??c khi tr? v?"
+      },
+      "reviews": [],
+      "views": 0,
+      "createdAt": 1781595012360,
+      "isSold": false,
+      "color": "Tr?ng",
+      "compatibility": [
+        "Bluetooth",
+        "?i?n tho?i",
+        "Laptop",
+        "Tablet"
+      ],
+      "micStatus": "C? mic, shop test call tr??c khi giao.",
+      "comfortNote": "Tai TWS nh? g?n, h?p d?ng h?ng ng?y; kh?ch nh?y tai n?n th? fit/n?t tai tr??c.",
+      "caveat": "Shopee index ch?a ?? 5 gi?; th?ng s? k? thu?t l?y t? HKTDC/Havit supplier.",
+      "researchNotes": "Shopee index ch?a ?? 5 gi?; th?ng s? k? thu?t l?y t? HKTDC/Havit supplier.",
+      "sourceLinks": [
+        "https://shopee.vn/Tai-nghe-kh%C3%B4ng-d%C3%A2y-Havit-TW948-Bluetooth-5.0-H%C3%A0ng-ch%C3%ADnh-h%C3%A3ng-i.808014822.20019165194",
+        "https://sourcing.hktdc.com/en/Product-Detail/TWS-earbuds-Havit-TW948-1Z03H9KUY"
+      ],
+      "priceResearch": {
+        "strategy": "Gi? b?n ?? xu?t kho?ng 1/3 gi? m?i Shopee/current listing th?p h?p l?; kh?ng d?ng gi? h?ng c?.",
+        "shopeePrices": [
+          490000
+        ],
+        "minShopeePrice": 490000,
+        "maxShopeePrice": 490000,
+        "warning": "",
+        "sourceQuality": "Ch?a ?? 5 m?c gi? Shopee s?ch do Shopee ch?n API tr?c ti?p."
+      }
+    },
+    {
+      "id": 1780000000009,
+      "name": "HAVIT TWS960 ?en",
+      "segment": "music",
+      "brand": "HAVIT",
+      "condition": "M?i",
+      "price": 120000,
+      "originalPrice": 349000,
+      "stock": 1,
+      "soundTag": "Neutral",
+      "latency": "wireless-slow",
+      "isWireless": true,
+      "batteryHealth": 100,
+      "images": [
+        "/assets/havit-tws-generic.svg"
+      ],
+      "video": "",
+      "youtubePlaylist": "",
+      "shopeeLink": "https://shopee.vn/Tai-nghe-Bluetooth-True-Wireless-Havit-TW960-H%C3%A0ng-ch%C3%ADnh-h%C3%A3ng-Kh%E1%BA%A3-n%C4%83ng-kh%C3%A1ng-n%C6%B0%E1%BB%9Bc-m%E1%BB%93-h%C3%B4i-IPX4-Bluetooth-v5.1-USB-C-i.40757878.12194754390",
+      "messengerLink": "",
+      "description": "HAVIT TWS960 ?en - Bluetooth 5.1 IPX4 USB-C.\n\nTh?ng s? n?i b?t:\n- Bluetooth 5.1\n- IPX4 kh?ng m? h?i/n??c nh?\n- T?ng pin kho?ng 16-20 gi? t?y ngu?n\n- Driver 10mm theo ngu?n b?n l?\n- S?c USB-C\n\nG?i ? d?ng: nghe nh?c, h?c/call, xem video h?ng ng?y. Shop s? test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.\n\n??nh gi?: tham kh?o gi? m?i Shopee/index 349.000?, 379.000?, 448.500?, 450.000?, 490.000?. Gi? b?n Ch? L? ?ang ?? kho?ng 1/3 gi? m?i/gi? giao d?ch th?p nh?t h?p l?.\n\nNote research: C? 5 m?c gi? Shopee/index, ch?nh 141k n?n ch?a c?n c?nh b?o 200k.",
+      "bestFor": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "hoc-online",
+        "call-zoom"
+      ],
+      "topHighlights": [
+        "mic-clear",
+        "easy-listen"
+      ],
+      "serviceDone": [],
+      "smartTags": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "water-resistant"
+      ],
+      "inspection": "M?u: ?en. T?n kho: 1. Test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.",
+      "inspectionDetails": {
+        "shell": "M?u ?en, ngo?i h?nh ki?m l?i khi ??ng ??n",
+        "pads": "N?t tai/fit ki?m l?i theo h?p",
+        "driver": "Test ?m 2 b?n tr??c khi giao",
+        "mic": "Test ??m tho?i tr??c khi giao",
+        "connect": "Bluetooth 5.1",
+        "battery": "T?ng pin kho?ng 16-20 gi? t?y ngu?n",
+        "clean": "V? sinh tr??c khi tr? v?"
+      },
+      "reviews": [],
+      "views": 0,
+      "createdAt": 1781595012361,
+      "isSold": false,
+      "color": "?en",
+      "compatibility": [
+        "Bluetooth",
+        "?i?n tho?i",
+        "Laptop",
+        "Tablet"
+      ],
+      "micStatus": "C? mic, shop test call tr??c khi giao.",
+      "comfortNote": "Tai TWS nh? g?n, h?p d?ng h?ng ng?y; kh?ch nh?y tai n?n th? fit/n?t tai tr??c.",
+      "caveat": "C? 5 m?c gi? Shopee/index, ch?nh 141k n?n ch?a c?n c?nh b?o 200k.",
+      "researchNotes": "C? 5 m?c gi? Shopee/index, ch?nh 141k n?n ch?a c?n c?nh b?o 200k.",
+      "sourceLinks": [
+        "https://shopee.vn/Tai-nghe-Bluetooth-True-Wireless-Havit-TW960-H%C3%A0ng-ch%C3%ADnh-h%C3%A3ng-Kh%E1%BA%A3-n%C4%83ng-kh%C3%A1ng-n%C6%B0%E1%BB%9Bc-m%E1%BB%93-h%C3%B4i-IPX4-Bluetooth-v5.1-USB-C-i.40757878.12194754390",
+        "https://www.rinors.com/products/havit-tw960-true-wireless-stereo-earbuds"
+      ],
+      "priceResearch": {
+        "strategy": "Gi? b?n ?? xu?t kho?ng 1/3 gi? m?i Shopee/current listing th?p h?p l?; kh?ng d?ng gi? h?ng c?.",
+        "shopeePrices": [
+          349000,
+          379000,
+          448500,
+          450000,
+          490000
+        ],
+        "minShopeePrice": 349000,
+        "maxShopeePrice": 490000,
+        "warning": "",
+        "sourceQuality": "?? 5 m?c gi? Shopee/index."
+      }
+    },
+    {
+      "id": 1780000000010,
+      "name": "HAVIT TWS960 Tr?ng",
+      "segment": "music",
+      "brand": "HAVIT",
+      "condition": "M?i",
+      "price": 120000,
+      "originalPrice": 349000,
+      "stock": 1,
+      "soundTag": "Neutral",
+      "latency": "wireless-slow",
+      "isWireless": true,
+      "batteryHealth": 100,
+      "images": [
+        "/assets/havit-tws-generic.svg"
+      ],
+      "video": "",
+      "youtubePlaylist": "",
+      "shopeeLink": "https://shopee.vn/Tai-nghe-Bluetooth-True-Wireless-Havit-TW960-H%C3%A0ng-ch%C3%ADnh-h%C3%A3ng-Kh%E1%BA%A3-n%C4%83ng-kh%C3%A1ng-n%C6%B0%E1%BB%9Bc-m%E1%BB%93-h%C3%B4i-IPX4-Bluetooth-v5.1-USB-C-i.40757878.12194754390",
+      "messengerLink": "",
+      "description": "HAVIT TWS960 Tr?ng - Bluetooth 5.1 IPX4 USB-C.\n\nTh?ng s? n?i b?t:\n- Bluetooth 5.1\n- IPX4 kh?ng m? h?i/n??c nh?\n- T?ng pin kho?ng 16-20 gi? t?y ngu?n\n- Driver 10mm theo ngu?n b?n l?\n- S?c USB-C\n\nG?i ? d?ng: nghe nh?c, h?c/call, xem video h?ng ng?y. Shop s? test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.\n\n??nh gi?: tham kh?o gi? m?i Shopee/index 349.000?, 379.000?, 448.500?, 450.000?, 490.000?. Gi? b?n Ch? L? ?ang ?? kho?ng 1/3 gi? m?i/gi? giao d?ch th?p nh?t h?p l?.\n\nNote research: C? 5 m?c gi? Shopee/index, ch?nh 141k n?n ch?a c?n c?nh b?o 200k.",
+      "bestFor": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "hoc-online",
+        "call-zoom"
+      ],
+      "topHighlights": [
+        "mic-clear",
+        "easy-listen"
+      ],
+      "serviceDone": [],
+      "smartTags": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "water-resistant"
+      ],
+      "inspection": "M?u: Tr?ng. T?n kho: 1. Test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.",
+      "inspectionDetails": {
+        "shell": "M?u Tr?ng, ngo?i h?nh ki?m l?i khi ??ng ??n",
+        "pads": "N?t tai/fit ki?m l?i theo h?p",
+        "driver": "Test ?m 2 b?n tr??c khi giao",
+        "mic": "Test ??m tho?i tr??c khi giao",
+        "connect": "Bluetooth 5.1",
+        "battery": "T?ng pin kho?ng 16-20 gi? t?y ngu?n",
+        "clean": "V? sinh tr??c khi tr? v?"
+      },
+      "reviews": [],
+      "views": 0,
+      "createdAt": 1781595012362,
+      "isSold": false,
+      "color": "Tr?ng",
+      "compatibility": [
+        "Bluetooth",
+        "?i?n tho?i",
+        "Laptop",
+        "Tablet"
+      ],
+      "micStatus": "C? mic, shop test call tr??c khi giao.",
+      "comfortNote": "Tai TWS nh? g?n, h?p d?ng h?ng ng?y; kh?ch nh?y tai n?n th? fit/n?t tai tr??c.",
+      "caveat": "C? 5 m?c gi? Shopee/index, ch?nh 141k n?n ch?a c?n c?nh b?o 200k.",
+      "researchNotes": "C? 5 m?c gi? Shopee/index, ch?nh 141k n?n ch?a c?n c?nh b?o 200k.",
+      "sourceLinks": [
+        "https://shopee.vn/Tai-nghe-Bluetooth-True-Wireless-Havit-TW960-H%C3%A0ng-ch%C3%ADnh-h%C3%A3ng-Kh%E1%BA%A3-n%C4%83ng-kh%C3%A1ng-n%C6%B0%E1%BB%9Bc-m%E1%BB%93-h%C3%B4i-IPX4-Bluetooth-v5.1-USB-C-i.40757878.12194754390",
+        "https://www.rinors.com/products/havit-tw960-true-wireless-stereo-earbuds"
+      ],
+      "priceResearch": {
+        "strategy": "Gi? b?n ?? xu?t kho?ng 1/3 gi? m?i Shopee/current listing th?p h?p l?; kh?ng d?ng gi? h?ng c?.",
+        "shopeePrices": [
+          349000,
+          379000,
+          448500,
+          450000,
+          490000
+        ],
+        "minShopeePrice": 349000,
+        "maxShopeePrice": 490000,
+        "warning": "",
+        "sourceQuality": "?? 5 m?c gi? Shopee/index."
+      }
+    },
+    {
+      "id": 1780000000011,
+      "name": "HAVIT TW976 ?en",
+      "segment": "music",
+      "brand": "HAVIT",
+      "condition": "M?i",
+      "price": 120000,
+      "originalPrice": 299000,
+      "stock": 1,
+      "soundTag": "Neutral",
+      "latency": "wireless-slow",
+      "isWireless": true,
+      "batteryHealth": 100,
+      "images": [
+        "/assets/havit-tws-generic.svg"
+      ],
+      "video": "",
+      "youtubePlaylist": "",
+      "shopeeLink": "https://shopee.vn/Tai-nghe-Bluetooth-True-Wireless-Havit-TW976-H%C3%A0ng-ch%C3%ADnh-h%C3%A3ng-i.40757878.55007254156",
+      "messengerLink": "",
+      "description": "HAVIT TW976 ?en - Bluetooth 5.3 Driver 13mm ENC.\n\nTh?ng s? n?i b?t:\n- Bluetooth 5.3\n- Driver 13mm\n- ENC/AI ENC theo listing\n- Nghe kho?ng 5 gi?\n- Case kho?ng 300mAh\n- S?c Type-C\n\nG?i ? d?ng: nghe nh?c, h?c/call, xem video h?ng ng?y. Shop s? test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.\n\n??nh gi?: tham kh?o gi? m?i Shopee/index 299.000?, 587.000?. Gi? b?n Ch? L? ?ang ?? kho?ng 1/3 gi? m?i/gi? giao d?ch th?p nh?t h?p l?.\n\nNote research: Gi? Shopee/index th?y 299k v? kho?ng 587k, ch?nh tr?n 200k; ch?a ?? 5 gi? s?ch.",
+      "bestFor": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "hoc-online",
+        "call-zoom"
+      ],
+      "topHighlights": [
+        "mic-clear",
+        "easy-listen"
+      ],
+      "serviceDone": [],
+      "smartTags": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "bt-52",
+        "enc",
+        "mic-clear"
+      ],
+      "inspection": "M?u: ?en. T?n kho: 1. Test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.",
+      "inspectionDetails": {
+        "shell": "M?u ?en, ngo?i h?nh ki?m l?i khi ??ng ??n",
+        "pads": "N?t tai/fit ki?m l?i theo h?p",
+        "driver": "Test ?m 2 b?n tr??c khi giao",
+        "mic": "Test ??m tho?i tr??c khi giao",
+        "connect": "Bluetooth 5.3",
+        "battery": "Nghe kho?ng 5 gi?",
+        "clean": "V? sinh tr??c khi tr? v?"
+      },
+      "reviews": [],
+      "views": 0,
+      "createdAt": 1781595012363,
+      "isSold": false,
+      "color": "?en",
+      "compatibility": [
+        "Bluetooth",
+        "?i?n tho?i",
+        "Laptop",
+        "Tablet"
+      ],
+      "micStatus": "C? mic, shop test call tr??c khi giao.",
+      "comfortNote": "Tai TWS nh? g?n, h?p d?ng h?ng ng?y; kh?ch nh?y tai n?n th? fit/n?t tai tr??c.",
+      "caveat": "Gi? Shopee/index th?y 299k v? kho?ng 587k, ch?nh tr?n 200k; ch?a ?? 5 gi? s?ch.",
+      "researchNotes": "Gi? Shopee/index th?y 299k v? kho?ng 587k, ch?nh tr?n 200k; ch?a ?? 5 gi? s?ch.",
+      "sourceLinks": [
+        "https://shopee.vn/Tai-nghe-Bluetooth-True-Wireless-Havit-TW976-H%C3%A0ng-ch%C3%ADnh-h%C3%A3ng-i.40757878.55007254156",
+        "https://havitsmart.com/pages/tw976-manual"
+      ],
+      "priceResearch": {
+        "strategy": "Gi? b?n ?? xu?t kho?ng 1/3 gi? m?i Shopee/current listing th?p h?p l?; kh?ng d?ng gi? h?ng c?.",
+        "shopeePrices": [
+          299000,
+          587000
+        ],
+        "minShopeePrice": 299000,
+        "maxShopeePrice": 587000,
+        "warning": "Gi? ngu?n ch?nh t? 200k tr? l?n, c?n note khi t? v?n.",
+        "sourceQuality": "Ch?a ?? 5 m?c gi? Shopee s?ch do Shopee ch?n API tr?c ti?p."
+      }
+    },
+    {
+      "id": 1780000000012,
+      "name": "HAVIT TW925 ?en",
+      "segment": "music",
+      "brand": "HAVIT",
+      "condition": "M?i",
+      "price": 110000,
+      "originalPrice": 312000,
+      "stock": 1,
+      "soundTag": "Neutral",
+      "latency": "wireless-fast",
+      "isWireless": true,
+      "batteryHealth": 100,
+      "images": [
+        "/assets/havit-tws-generic.svg"
+      ],
+      "video": "",
+      "youtubePlaylist": "",
+      "shopeeLink": "https://shopee.vn/Tai-nghe-kh%C3%B4ng-d%C3%A2y-Havit-TW925-%C3%82m-Thanh-%E1%BA%A4n-T%C6%B0%E1%BB%A3ng-%C4%90%E1%BB%99-Tr%E1%BB%85-Th%E1%BA%A5p-K%E1%BA%BFt-N%E1%BB%91i-Nhanh-i.808014822.21919161760",
+      "messengerLink": "",
+      "description": "HAVIT TW925 ?en - Bluetooth 5.0 ?? tr? th?p.\n\nTh?ng s? n?i b?t:\n- Bluetooth 5.0\n- ?? tr? th?p theo listing\n- ?i?u khi?n c?m ?ng\n- Micro k?p theo listing\n- S?c kho?ng 1.5 gi?\n- Driver kho?ng 6.1mm theo ngu?n c?\n\nG?i ? d?ng: nghe nh?c, h?c/call, xem video h?ng ng?y. Shop s? test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.\n\n??nh gi?: tham kh?o gi? m?i Shopee/index 312.000?, 379.040?, 388.500?, 390.000?, 590.000?. Gi? b?n Ch? L? ?ang ?? kho?ng 1/3 gi? m?i/gi? giao d?ch th?p nh?t h?p l?.\n\nNote research: C? 5 m?c Shopee/index; ch?nh 312k-590k (>200k), n?n note khi ch?t gi?.",
+      "bestFor": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "hoc-online",
+        "call-zoom"
+      ],
+      "topHighlights": [
+        "mic-clear",
+        "easy-listen"
+      ],
+      "serviceDone": [],
+      "smartTags": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "mic-clear"
+      ],
+      "inspection": "M?u: ?en. T?n kho: 1. Test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.",
+      "inspectionDetails": {
+        "shell": "M?u ?en, ngo?i h?nh ki?m l?i khi ??ng ??n",
+        "pads": "N?t tai/fit ki?m l?i theo h?p",
+        "driver": "Test ?m 2 b?n tr??c khi giao",
+        "mic": "Test ??m tho?i tr??c khi giao",
+        "connect": "Bluetooth 5.0",
+        "battery": "Test pin tr??c khi giao",
+        "clean": "V? sinh tr??c khi tr? v?"
+      },
+      "reviews": [],
+      "views": 0,
+      "createdAt": 1781595012364,
+      "isSold": false,
+      "color": "?en",
+      "compatibility": [
+        "Bluetooth",
+        "?i?n tho?i",
+        "Laptop",
+        "Tablet"
+      ],
+      "micStatus": "C? mic, shop test call tr??c khi giao.",
+      "comfortNote": "Tai TWS nh? g?n, h?p d?ng h?ng ng?y; kh?ch nh?y tai n?n th? fit/n?t tai tr??c.",
+      "caveat": "C? 5 m?c Shopee/index; ch?nh 312k-590k (>200k), n?n note khi ch?t gi?.",
+      "researchNotes": "C? 5 m?c Shopee/index; ch?nh 312k-590k (>200k), n?n note khi ch?t gi?.",
+      "sourceLinks": [
+        "https://shopee.vn/Tai-nghe-kh%C3%B4ng-d%C3%A2y-Havit-TW925-%C3%82m-Thanh-%E1%BA%A4n-T%C6%B0%E1%BB%A3ng-%C4%90%E1%BB%99-Tr%E1%BB%85-Th%E1%BA%A5p-K%E1%BA%BFt-N%E1%BB%91i-Nhanh-i.808014822.21919161760",
+        "https://device.report/manual/842411"
+      ],
+      "priceResearch": {
+        "strategy": "Gi? b?n ?? xu?t kho?ng 1/3 gi? m?i Shopee/current listing th?p h?p l?; kh?ng d?ng gi? h?ng c?.",
+        "shopeePrices": [
+          312000,
+          379040,
+          388500,
+          390000,
+          590000
+        ],
+        "minShopeePrice": 312000,
+        "maxShopeePrice": 590000,
+        "warning": "Gi? ngu?n ch?nh t? 200k tr? l?n, c?n note khi t? v?n.",
+        "sourceQuality": "?? 5 m?c gi? Shopee/index."
+      }
+    },
+    {
+      "id": 1780000000013,
+      "name": "HAVIT TW981 Cam",
+      "segment": "music",
+      "brand": "HAVIT",
+      "condition": "M?i",
+      "price": 150000,
+      "originalPrice": 450000,
+      "stock": 1,
+      "soundTag": "Bass-Heavy",
+      "latency": "wireless-slow",
+      "isWireless": true,
+      "batteryHealth": 100,
+      "images": [
+        "/assets/havit-tws-generic.svg"
+      ],
+      "video": "",
+      "youtubePlaylist": "",
+      "shopeeLink": "https://shopee.vn/Tai-Nghe-Kh%C3%B4ng-D%C3%A2y-Havit-TW981-Trong-Su%E1%BB%91t-Trendy-%C3%82m-thanh-t%C3%A1i-t%E1%BA%A1o-Bluetooth-5.3-i.808014822.25807605903",
+      "messengerLink": "",
+      "description": "HAVIT TW981 Cam - Bluetooth 5.3 Driver 13mm v? trong.\n\nTh?ng s? n?i b?t:\n- Bluetooth 5.3\n- Driver 13mm\n- Pin tai 30mAh m?i b?n\n- Case 300mAh\n- Nghe kho?ng 4 gi?\n- Talk kho?ng 3.5 gi?\n- V? trong/trendy\n\nG?i ? d?ng: nghe nh?c, h?c/call, xem video h?ng ng?y. Shop s? test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.\n\n??nh gi?: tham kh?o gi? m?i Shopee/index 450.000?, 587.000?, 588.500?. Gi? b?n Ch? L? ?ang ?? kho?ng 1/3 gi? m?i/gi? giao d?ch th?p nh?t h?p l?.\n\nNote research: Shopee/index m?i c? 3 m?c, ch?a ?? 5 gi? s?ch; ch?nh d??i 200k.",
+      "bestFor": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "hoc-online",
+        "call-zoom"
+      ],
+      "topHighlights": [
+        "mic-clear",
+        "easy-listen"
+      ],
+      "serviceDone": [],
+      "smartTags": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "bt-52"
+      ],
+      "inspection": "M?u: Cam. T?n kho: 1. Test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.",
+      "inspectionDetails": {
+        "shell": "M?u Cam, ngo?i h?nh ki?m l?i khi ??ng ??n",
+        "pads": "N?t tai/fit ki?m l?i theo h?p",
+        "driver": "Test ?m 2 b?n tr??c khi giao",
+        "mic": "Test ??m tho?i tr??c khi giao",
+        "connect": "Bluetooth 5.3",
+        "battery": "Pin tai 30mAh m?i b?n",
+        "clean": "V? sinh tr??c khi tr? v?"
+      },
+      "reviews": [],
+      "views": 0,
+      "createdAt": 1781595012365,
+      "isSold": false,
+      "color": "Cam",
+      "compatibility": [
+        "Bluetooth",
+        "?i?n tho?i",
+        "Laptop",
+        "Tablet"
+      ],
+      "micStatus": "C? mic, shop test call tr??c khi giao.",
+      "comfortNote": "Tai TWS nh? g?n, h?p d?ng h?ng ng?y; kh?ch nh?y tai n?n th? fit/n?t tai tr??c.",
+      "caveat": "Shopee/index m?i c? 3 m?c, ch?a ?? 5 gi? s?ch; ch?nh d??i 200k.",
+      "researchNotes": "Shopee/index m?i c? 3 m?c, ch?a ?? 5 gi? s?ch; ch?nh d??i 200k.",
+      "sourceLinks": [
+        "https://shopee.vn/Tai-Nghe-Kh%C3%B4ng-D%C3%A2y-Havit-TW981-Trong-Su%E1%BB%91t-Trendy-%C3%82m-thanh-t%C3%A1i-t%E1%BA%A1o-Bluetooth-5.3-i.808014822.25807605903",
+        "https://havitsmart.com/products/tw981-true-wireless-stereo-earbuds"
+      ],
+      "priceResearch": {
+        "strategy": "Gi? b?n ?? xu?t kho?ng 1/3 gi? m?i Shopee/current listing th?p h?p l?; kh?ng d?ng gi? h?ng c?.",
+        "shopeePrices": [
+          450000,
+          587000,
+          588500
+        ],
+        "minShopeePrice": 450000,
+        "maxShopeePrice": 588500,
+        "warning": "",
+        "sourceQuality": "Ch?a ?? 5 m?c gi? Shopee s?ch do Shopee ch?n API tr?c ti?p."
+      }
+    },
+    {
+      "id": 1780000000014,
+      "name": "HAVIT TW932 Xanh d??ng",
+      "segment": "music",
+      "brand": "HAVIT",
+      "condition": "M?i",
+      "price": 100000,
+      "originalPrice": 290000,
+      "stock": 1,
+      "soundTag": "Bass-Heavy",
+      "latency": "wireless-slow",
+      "isWireless": true,
+      "batteryHealth": 100,
+      "images": [
+        "/assets/havit-tws-generic.svg"
+      ],
+      "video": "",
+      "youtubePlaylist": "",
+      "shopeeLink": "https://shopee.vn/Tai-nghe-Havit-TW932-B%E1%BA%A3o-h%C3%A0nh-12-th%C3%A1ng-i.646318024.25609181882",
+      "messengerLink": "",
+      "description": "HAVIT TW932 Xanh d??ng - Bluetooth 5.2 Driver 13mm IPX4.\n\nTh?ng s? n?i b?t:\n- Bluetooth 5.2\n- Driver 13mm\n- IPX4\n- ?i?u khi?n c?m ?ng\n- Form nh? g?n nhi?u m?u\n\nG?i ? d?ng: nghe nh?c, h?c/call, xem video h?ng ng?y. Shop s? test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.\n\n??nh gi?: tham kh?o gi? m?i Shopee/index 290.000?, 550.000?. Gi? b?n Ch? L? ?ang ?? kho?ng 1/3 gi? m?i/gi? giao d?ch th?p nh?t h?p l?.\n\nNote research: Shopee/index th?y 290k; ngu?n b?n l? kh?c 550k, ch?nh tr?n 200k nh?ng ch?a ?? 5 gi? Shopee.",
+      "bestFor": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "hoc-online",
+        "call-zoom"
+      ],
+      "topHighlights": [
+        "mic-clear",
+        "easy-listen"
+      ],
+      "serviceDone": [],
+      "smartTags": [
+        "tai-nghe-nhac",
+        "bluetooth",
+        "bt-52",
+        "water-resistant"
+      ],
+      "inspection": "M?u: Xanh d??ng. T?n kho: 1. Test k?t n?i, ?m thanh, mic v? pin tr??c khi giao.",
+      "inspectionDetails": {
+        "shell": "M?u Xanh d??ng, ngo?i h?nh ki?m l?i khi ??ng ??n",
+        "pads": "N?t tai/fit ki?m l?i theo h?p",
+        "driver": "Test ?m 2 b?n tr??c khi giao",
+        "mic": "Test ??m tho?i tr??c khi giao",
+        "connect": "Bluetooth 5.2",
+        "battery": "Test pin tr??c khi giao",
+        "clean": "V? sinh tr??c khi tr? v?"
+      },
+      "reviews": [],
+      "views": 0,
+      "createdAt": 1781595012366,
+      "isSold": false,
+      "color": "Xanh d??ng",
+      "compatibility": [
+        "Bluetooth",
+        "?i?n tho?i",
+        "Laptop",
+        "Tablet"
+      ],
+      "micStatus": "C? mic, shop test call tr??c khi giao.",
+      "comfortNote": "Tai TWS nh? g?n, h?p d?ng h?ng ng?y; kh?ch nh?y tai n?n th? fit/n?t tai tr??c.",
+      "caveat": "Shopee/index th?y 290k; ngu?n b?n l? kh?c 550k, ch?nh tr?n 200k nh?ng ch?a ?? 5 gi? Shopee.",
+      "researchNotes": "Shopee/index th?y 290k; ngu?n b?n l? kh?c 550k, ch?nh tr?n 200k nh?ng ch?a ?? 5 gi? Shopee.",
+      "sourceLinks": [
+        "https://shopee.vn/Tai-nghe-Havit-TW932-B%E1%BA%A3o-h%C3%A0nh-12-th%C3%A1ng-i.646318024.25609181882",
+        "https://cellphones.com.vn/tai-nghe-khong-day-havit-tw932.html"
+      ],
+      "priceResearch": {
+        "strategy": "Gi? b?n ?? xu?t kho?ng 1/3 gi? m?i Shopee/current listing th?p h?p l?; kh?ng d?ng gi? h?ng c?.",
+        "shopeePrices": [
+          290000,
+          550000
+        ],
+        "minShopeePrice": 290000,
+        "maxShopeePrice": 550000,
+        "warning": "Gi? ngu?n ch?nh t? 200k tr? l?n, c?n note khi t? v?n.",
+        "sourceQuality": "Ch?a ?? 5 m?c gi? Shopee s?ch do Shopee ch?n API tr?c ti?p."
+      }
     }
   ],
   "faqs": [
