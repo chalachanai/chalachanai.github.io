@@ -9,6 +9,8 @@ output/
 tools/
 admin.html
 admin.js
+sua-chua.html
+sua-chua.js
 server.js
 dev-server.js
 run-server.cmd
