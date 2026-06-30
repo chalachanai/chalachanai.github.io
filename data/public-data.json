@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "exportedAt": "2026-06-16T10:44:28.716Z",
+  "exportedAt": "2026-06-29T13:34:09.230Z",
   "products": [
     {
       "id": 1778917012983,
@@ -2815,8 +2815,8 @@
       "name": "HAVIT TWS948 Trắng",
       "segment": "music",
       "brand": "HAVIT",
-      "condition": "M?i",
-      "price": 160000,
+      "condition": "Trầy nhẹ",
+      "price": 120000,
       "originalPrice": 490000,
       "stock": 1,
       "soundTag": "Neutral",
@@ -2824,7 +2824,10 @@
       "isWireless": true,
       "batteryHealth": 100,
       "images": [
-        "/assets/havit-tws-generic.svg"
+        "/uploads/1782739431363-23e382e2-product-1782738416704.jpg",
+        "/uploads/1782739444071-3b307ae8-product-1782738430335.jpg",
+        "/uploads/1782739465636-3ad17c55-product-1782738451446.jpg",
+        "/uploads/1782739482096-3871f068-product-1782738468329.jpg"
       ],
       "video": "",
       "youtubePlaylist": "",
@@ -2832,14 +2835,12 @@
       "messengerLink": "",
       "description": "HAVIT TWS948 Trắng - Bluetooth 5.0 IPX4 Driver 12mm.\n\nThông số nổi bật:\n- Bluetooth 5.0\n- Codec AAC/SBC\n- IPX4\n- Driver 12mm\n- Pin tai 40mAh mỗi bên\n- Case 420mAh\n- Nghe khoảng 5 giờ\n- Sạc Type-C\n\nGợi ý dùng: nghe nhạc, học/call, xem video hằng ngày. Shop sẽ test kết nối, âm thanh, mic và pin trước khi giao.\n\nĐịnh giá: tham khảo giá mới Shopee/index. Giá bán Chà Là đang để khoảng 1/3 giá mới hoặc giá thấp hợp lý.\n\nNote research: Shopee index chưa đủ 5 giá; thông số kỹ thuật lấy từ HKTDC/Havit supplier.",
       "bestFor": [
-        "tai-nghe-nhac",
-        "bluetooth",
-        "hoc-online",
-        "call-zoom"
+        "call-zoom",
+        "bluetooth"
       ],
       "topHighlights": [
-        "mic-clear",
-        "easy-listen"
+        "easy-listen",
+        "mic-clear"
       ],
       "serviceDone": [],
       "smartTags": [
@@ -2974,7 +2975,7 @@
       "name": "HAVIT TWS960 Trắng",
       "segment": "music",
       "brand": "HAVIT",
-      "condition": "M?i",
+      "condition": "Like New",
       "price": 120000,
       "originalPrice": 349000,
       "stock": 1,
@@ -2983,7 +2984,8 @@
       "isWireless": true,
       "batteryHealth": 100,
       "images": [
-        "/assets/havit-tws-generic.svg"
+        "/uploads/1782739993107-f3a35e8f-product-1782738978570.jpg",
+        "/uploads/1782740013730-cf0879ed-product-1782738999850.jpg"
       ],
       "video": "",
       "youtubePlaylist": "",
@@ -2991,14 +2993,12 @@
       "messengerLink": "",
       "description": "HAVIT TWS960 Trắng - Bluetooth 5.1 IPX4 USB-C.\n\nThông số nổi bật:\n- Bluetooth 5.1\n- IPX4 kháng mồ hôi/nước nhẹ\n- Tổng pin khoảng 16-20 giờ tùy nguồn\n- Driver 10mm theo nguồn bán lẻ\n- Sạc USB-C\n\nGợi ý dùng: nghe nhạc, học/call, xem video hằng ngày. Shop sẽ test kết nối, âm thanh, mic và pin trước khi giao.\n\nĐịnh giá: tham khảo giá mới Shopee/index. Giá bán Chà Là đang để khoảng 1/3 giá mới hoặc giá thấp hợp lý.\n\nNote research: Có 5 mốc giá Shopee/index, chênh 141k nên chưa cần cảnh báo 200k.",
       "bestFor": [
-        "tai-nghe-nhac",
-        "bluetooth",
-        "hoc-online",
-        "call-zoom"
+        "call-zoom",
+        "bluetooth"
       ],
       "topHighlights": [
-        "mic-clear",
-        "easy-listen"
+        "easy-listen",
+        "mic-clear"
       ],
       "serviceDone": [],
       "smartTags": [
@@ -3216,7 +3216,7 @@
       "name": "HAVIT TW981 Cam",
       "segment": "music",
       "brand": "HAVIT",
-      "condition": "M?i",
+      "condition": "Like New",
       "price": 150000,
       "originalPrice": 450000,
       "stock": 1,
@@ -3225,22 +3225,22 @@
       "isWireless": true,
       "batteryHealth": 100,
       "images": [
-        "/assets/havit-tws-generic.svg"
+        "/uploads/1782737937849-cac9a9e8-product-1782736923963.jpg",
+        "/uploads/1782737956620-ccdc2c27-product-1782736942839.jpg"
       ],
-      "video": "",
+      "video": "/uploads/1782738108582-51cdc446-img_4827.mov",
       "youtubePlaylist": "",
       "shopeeLink": "https://shopee.vn/Tai-Nghe-Kh%C3%B4ng-D%C3%A2y-Havit-TW981-Trong-Su%E1%BB%91t-Trendy-%C3%82m-thanh-t%C3%A1i-t%E1%BA%A1o-Bluetooth-5.3-i.808014822.25807605903",
       "messengerLink": "",
       "description": "HAVIT TW981 Cam - Bluetooth 5.3 Driver 13mm vỏ trong.\n\nThông số nổi bật:\n- Bluetooth 5.3\n- Driver 13mm\n- Pin tai 30mAh mỗi bên\n- Case 300mAh\n- Nghe khoảng 4 giờ\n- Talk khoảng 3.5 giờ\n- Vỏ trong/trendy\n\nGợi ý dùng: nghe nhạc, học/call, xem video hằng ngày. Shop sẽ test kết nối, âm thanh, mic và pin trước khi giao.\n\nĐịnh giá: tham khảo giá mới Shopee/index. Giá bán Chà Là đang để khoảng 1/3 giá mới hoặc giá thấp hợp lý.\n\nNote research: Shopee/index mới có 3 mốc, chưa đủ 5 giá sạch; chênh dưới 200k.",
       "bestFor": [
-        "tai-nghe-nhac",
-        "bluetooth",
-        "hoc-online",
-        "call-zoom"
+        "study-online",
+        "call-zoom",
+        "bluetooth"
       ],
       "topHighlights": [
-        "mic-clear",
-        "easy-listen"
+        "easy-listen",
+        "mic-clear"
       ],
       "serviceDone": [],
       "smartTags": [
@@ -3416,5 +3416,6 @@
       "Mid-Forward": "https://www.youtube.com/embed/Dx5qFachd3A"
     },
     "facebook": "https://www.facebook.com/chalachanai/"
-  }
+  },
+  "repairItems": []
 }
