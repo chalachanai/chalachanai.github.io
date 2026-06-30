@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "exportedAt": "2026-06-30T07:14:57.394Z",
+  "exportedAt": "2026-06-30T15:07:58.181Z",
   "products": [
     {
       "id": 1778917012983,
@@ -315,7 +315,7 @@
       "reviews": [],
       "views": 0,
       "createdAt": 1777805032922,
-      "isSold": false,
+      "isSold": true,
       "bestFor": [
         "casual-gaming",
         "diy"
@@ -529,7 +529,7 @@
       "reviews": [],
       "views": 0,
       "createdAt": 1777457046429,
-      "isSold": false,
+      "isSold": true,
       "inspection": "",
       "inspectionDetails": {
         "shell": "like new",
@@ -1132,7 +1132,7 @@
       "reviews": [],
       "views": 0,
       "createdAt": 1777460661861,
-      "isSold": false,
+      "isSold": true,
       "bestFor": [
         "fps",
         "casual-gaming"
@@ -1416,7 +1416,7 @@
       "reviews": [],
       "views": 0,
       "createdAt": 1777804484256,
-      "isSold": false,
+      "isSold": true,
       "bestFor": [
         "fps",
         "casual-gaming",
@@ -1761,7 +1761,7 @@
       "reviews": [],
       "views": 0,
       "createdAt": 1778079864020,
-      "isSold": false,
+      "isSold": true,
       "compatibility": [
         "Bluetooth",
         "Điện thoại",
@@ -2023,7 +2023,7 @@
       "reviews": [],
       "views": 0,
       "createdAt": 1778081004249,
-      "isSold": false,
+      "isSold": true,
       "compatibility": [
         "Bluetooth",
         "Điện thoại",
@@ -2329,7 +2329,7 @@
       "name": "HAVIT TWS941 Trắng",
       "segment": "music",
       "brand": "HAVIT",
-      "condition": "M?i",
+      "condition": "Mới",
       "price": 99000,
       "originalPrice": 280000,
       "stock": 3,
@@ -2338,22 +2338,21 @@
       "isWireless": true,
       "batteryHealth": 100,
       "images": [
-        "/assets/havit-tws-generic.svg"
+        "/uploads/1782807730575-55c26447-product-1782806715070.jpg",
+        "/uploads/1782807739224-64d161ce-product-1782806724283.jpg"
       ],
-      "video": "",
+      "video": "/uploads/1782807659870-1125219c-7991970000312.mp4",
       "youtubePlaylist": "",
       "shopeeLink": "https://shopee.vn/Tai-Nghe-Kh%C3%B4ng-D%C3%A2y-Havit-TW941-Call-HD-Semi-inear-Bluetooth-5.3-i.808014822.29463846541",
       "messengerLink": "",
       "description": "HAVIT TWS941 Trắng - Call HD Semi-in-ear Bluetooth 5.3.\n\nThông số nổi bật:\n- Bluetooth 5.3\n- Call HD\n- Semi-in-ear dễ đeo\n- Bản nhiều màu\n- TWS dùng hằng ngày\n\nGợi ý dùng: nghe nhạc, học/call, xem video hằng ngày. Shop sẽ test kết nối, âm thanh, mic và pin trước khi giao.\n\nĐịnh giá: tham khảo giá mới Shopee/index. Giá bán Chà Là đang để khoảng 1/3 giá mới hoặc giá thấp hợp lý.\n\nNote research: Giá Shopee thấy từ 160k đến 429k, chênh hơn 200k nên cần coi 280k là mốc chính hãng hợp lý hơn.",
       "bestFor": [
-        "tai-nghe-nhac",
-        "bluetooth",
-        "hoc-online",
-        "call-zoom"
+        "call-zoom",
+        "bluetooth"
       ],
       "topHighlights": [
-        "mic-clear",
-        "easy-listen"
+        "easy-listen",
+        "mic-clear"
       ],
       "serviceDone": [],
       "smartTags": [
@@ -2409,7 +2408,7 @@
       "name": "HAVIT TWS941 Nude",
       "segment": "music",
       "brand": "HAVIT",
-      "condition": "M?i",
+      "condition": "Mới",
       "price": 99000,
       "originalPrice": 280000,
       "stock": 5,
@@ -2418,7 +2417,8 @@
       "isWireless": true,
       "batteryHealth": 100,
       "images": [
-        "/assets/havit-tws-generic.svg"
+        "/uploads/1782808095985-87c99736-product-1782807080574.jpg",
+        "/uploads/1782808104447-4fdc83d2-product-1782807089630.jpg"
       ],
       "video": "",
       "youtubePlaylist": "",
@@ -2426,14 +2426,12 @@
       "messengerLink": "",
       "description": "HAVIT TWS941 Nude - Call HD Semi-in-ear Bluetooth 5.3.\n\nThông số nổi bật:\n- Bluetooth 5.3\n- Call HD\n- Semi-in-ear dễ đeo\n- Bản nhiều màu\n- TWS dùng hằng ngày\n\nGợi ý dùng: nghe nhạc, học/call, xem video hằng ngày. Shop sẽ test kết nối, âm thanh, mic và pin trước khi giao.\n\nĐịnh giá: tham khảo giá mới Shopee/index. Giá bán Chà Là đang để khoảng 1/3 giá mới hoặc giá thấp hợp lý.\n\nNote research: Giá Shopee thấy từ 160k đến 429k, chênh hơn 200k nên cần coi 280k là mốc chính hãng hợp lý hơn.",
       "bestFor": [
-        "tai-nghe-nhac",
-        "bluetooth",
-        "hoc-online",
-        "call-zoom"
+        "call-zoom",
+        "bluetooth"
       ],
       "topHighlights": [
-        "mic-clear",
-        "easy-listen"
+        "easy-listen",
+        "mic-clear"
       ],
       "serviceDone": [],
       "smartTags": [
@@ -2653,8 +2651,8 @@
       "name": "HAVIT TWS947 Trắng",
       "segment": "music",
       "brand": "HAVIT",
-      "condition": "M?i",
-      "price": 150000,
+      "condition": "Mới",
+      "price": 130000,
       "originalPrice": 402000,
       "stock": 3,
       "soundTag": "Bass-Heavy",
@@ -2662,7 +2660,8 @@
       "isWireless": true,
       "batteryHealth": 100,
       "images": [
-        "/assets/havit-tws-generic.svg"
+        "/uploads/1782804983581-93191e2b-product-1782803968787.jpg",
+        "/uploads/1782805005953-e262cde2-product-1782803991128.jpg"
       ],
       "video": "",
       "youtubePlaylist": "",
@@ -2670,14 +2669,12 @@
       "messengerLink": "",
       "description": "HAVIT TWS947 Trắng - Bluetooth 5.3 ENC Driver 13mm.\n\nThông số nổi bật:\n- Bluetooth 5.3\n- ENC/noise cancelling\n- Driver 13mm\n- Pin tai 40mAh mỗi bên\n- Case 400mAh\n- Nghe khoảng 6 giờ, tổng khoảng 32 giờ theo listing\n\nGợi ý dùng: nghe nhạc, học/call, xem video hằng ngày. Shop sẽ test kết nối, âm thanh, mic và pin trước khi giao.\n\nĐịnh giá: tham khảo giá mới Shopee/index. Giá bán Chà Là đang để khoảng 1/3 giá mới hoặc giá thấp hợp lý.\n\nNote research: Đủ hơn 5 mốc Shopee/index; giá chênh 319k-589k (>200k), nên để note khi tư vấn khách.",
       "bestFor": [
-        "tai-nghe-nhac",
-        "bluetooth",
-        "hoc-online",
-        "call-zoom"
+        "call-zoom",
+        "bluetooth"
       ],
       "topHighlights": [
-        "mic-clear",
-        "easy-listen"
+        "easy-listen",
+        "mic-clear"
       ],
       "serviceDone": [],
       "smartTags": [
@@ -2737,8 +2734,8 @@
       "name": "HAVIT TWS948 Đen",
       "segment": "music",
       "brand": "HAVIT",
-      "condition": "M?i",
-      "price": 160000,
+      "condition": "Like New",
+      "price": 140000,
       "originalPrice": 490000,
       "stock": 1,
       "soundTag": "Neutral",
@@ -2746,7 +2743,9 @@
       "isWireless": true,
       "batteryHealth": 100,
       "images": [
-        "/assets/havit-tws-generic.svg"
+        "/uploads/1782804746716-002911fc-product-1782803731123.jpg",
+        "/uploads/1782804755641-51c3b4a6-product-1782803740841.jpg",
+        "/uploads/1782804766514-2bdc235f-product-1782803751668.jpg"
       ],
       "video": "",
       "youtubePlaylist": "",
@@ -2754,14 +2753,12 @@
       "messengerLink": "",
       "description": "HAVIT TWS948 Đen - Bluetooth 5.0 IPX4 Driver 12mm.\n\nThông số nổi bật:\n- Bluetooth 5.0\n- Codec AAC/SBC\n- IPX4\n- Driver 12mm\n- Pin tai 40mAh mỗi bên\n- Case 420mAh\n- Nghe khoảng 5 giờ\n- Sạc Type-C\n\nGợi ý dùng: nghe nhạc, học/call, xem video hằng ngày. Shop sẽ test kết nối, âm thanh, mic và pin trước khi giao.\n\nĐịnh giá: tham khảo giá mới Shopee/index. Giá bán Chà Là đang để khoảng 1/3 giá mới hoặc giá thấp hợp lý.\n\nNote research: Shopee index chưa đủ 5 giá; thông số kỹ thuật lấy từ HKTDC/Havit supplier.",
       "bestFor": [
-        "tai-nghe-nhac",
-        "bluetooth",
-        "hoc-online",
-        "call-zoom"
+        "call-zoom",
+        "bluetooth"
       ],
       "topHighlights": [
-        "mic-clear",
-        "easy-listen"
+        "easy-listen",
+        "mic-clear"
       ],
       "serviceDone": [],
       "smartTags": [
@@ -2894,7 +2891,7 @@
       "name": "HAVIT TWS960 Đen",
       "segment": "music",
       "brand": "HAVIT",
-      "condition": "M?i",
+      "condition": "Mới",
       "price": 120000,
       "originalPrice": 349000,
       "stock": 1,
@@ -2903,22 +2900,22 @@
       "isWireless": true,
       "batteryHealth": 100,
       "images": [
-        "/assets/havit-tws-generic.svg"
+        "/uploads/1782806168346-f86d6651-product-1782805152774.jpg",
+        "/uploads/1782806182357-a83891da-product-1782805167657.jpg",
+        "/uploads/1782806194215-8e4982f7-product-1782805179449.jpg"
       ],
-      "video": "",
+      "video": "/uploads/1782805607989-2f260678-7991831561603.mp4",
       "youtubePlaylist": "",
       "shopeeLink": "https://shopee.vn/Tai-nghe-Bluetooth-True-Wireless-Havit-TW960-H%C3%A0ng-ch%C3%ADnh-h%C3%A3ng-Kh%E1%BA%A3-n%C4%83ng-kh%C3%A1ng-n%C6%B0%E1%BB%9Bc-m%E1%BB%93-h%C3%B4i-IPX4-Bluetooth-v5.1-USB-C-i.40757878.12194754390",
       "messengerLink": "",
       "description": "HAVIT TWS960 Đen - Bluetooth 5.1 IPX4 USB-C.\n\nThông số nổi bật:\n- Bluetooth 5.1\n- IPX4 kháng mồ hôi/nước nhẹ\n- Tổng pin khoảng 16-20 giờ tùy nguồn\n- Driver 10mm theo nguồn bán lẻ\n- Sạc USB-C\n\nGợi ý dùng: nghe nhạc, học/call, xem video hằng ngày. Shop sẽ test kết nối, âm thanh, mic và pin trước khi giao.\n\nĐịnh giá: tham khảo giá mới Shopee/index. Giá bán Chà Là đang để khoảng 1/3 giá mới hoặc giá thấp hợp lý.\n\nNote research: Có 5 mốc giá Shopee/index, chênh 141k nên chưa cần cảnh báo 200k.",
       "bestFor": [
-        "tai-nghe-nhac",
-        "bluetooth",
-        "hoc-online",
-        "call-zoom"
+        "call-zoom",
+        "bluetooth"
       ],
       "topHighlights": [
-        "mic-clear",
-        "easy-listen"
+        "easy-listen",
+        "mic-clear"
       ],
       "serviceDone": [],
       "smartTags": [
@@ -3055,8 +3052,8 @@
       "name": "HAVIT TW976 Đen",
       "segment": "music",
       "brand": "HAVIT",
-      "condition": "M?i",
-      "price": 120000,
+      "condition": "Mới",
+      "price": 110000,
       "originalPrice": 299000,
       "stock": 1,
       "soundTag": "Neutral",
@@ -3064,7 +3061,8 @@
       "isWireless": true,
       "batteryHealth": 100,
       "images": [
-        "/assets/havit-tws-generic.svg"
+        "/uploads/1782809146051-87472903-product-1782808130496.jpg",
+        "/uploads/1782809154526-a160cf9e-product-1782808139681.jpg"
       ],
       "video": "",
       "youtubePlaylist": "",
@@ -3072,14 +3070,12 @@
       "messengerLink": "",
       "description": "HAVIT TW976 Đen - Bluetooth 5.3 Driver 13mm ENC.\n\nThông số nổi bật:\n- Bluetooth 5.3\n- Driver 13mm\n- ENC/AI ENC theo listing\n- Nghe khoảng 5 giờ\n- Case khoảng 300mAh\n- Sạc Type-C\n\nGợi ý dùng: nghe nhạc, học/call, xem video hằng ngày. Shop sẽ test kết nối, âm thanh, mic và pin trước khi giao.\n\nĐịnh giá: tham khảo giá mới Shopee/index. Giá bán Chà Là đang để khoảng 1/3 giá mới hoặc giá thấp hợp lý.\n\nNote research: Giá Shopee/index thấy 299k và khoảng 587k, chênh trên 200k; chưa đủ 5 giá sạch.",
       "bestFor": [
-        "tai-nghe-nhac",
-        "bluetooth",
-        "hoc-online",
-        "call-zoom"
+        "call-zoom",
+        "bluetooth"
       ],
       "topHighlights": [
-        "mic-clear",
-        "easy-listen"
+        "easy-listen",
+        "mic-clear"
       ],
       "serviceDone": [],
       "smartTags": [
@@ -3135,7 +3131,7 @@
       "name": "HAVIT TW925 Đen",
       "segment": "music",
       "brand": "HAVIT",
-      "condition": "M?i",
+      "condition": "Like New",
       "price": 110000,
       "originalPrice": 312000,
       "stock": 1,
@@ -3144,22 +3140,21 @@
       "isWireless": true,
       "batteryHealth": 100,
       "images": [
-        "/assets/havit-tws-generic.svg"
+        "/uploads/1782803969535-48815af3-product-1782802954808.jpg",
+        "/uploads/1782803978750-e64f59b7-product-1782802963870.jpg"
       ],
-      "video": "",
+      "video": "/uploads/1782803913293-86571974-7991725088628.mp4",
       "youtubePlaylist": "",
       "shopeeLink": "https://shopee.vn/Tai-nghe-kh%C3%B4ng-d%C3%A2y-Havit-TW925-%C3%82m-Thanh-%E1%BA%A4n-T%C6%B0%E1%BB%A3ng-%C4%90%E1%BB%99-Tr%E1%BB%85-Th%E1%BA%A5p-K%E1%BA%BFt-N%E1%BB%91i-Nhanh-i.808014822.21919161760",
       "messengerLink": "",
       "description": "HAVIT TW925 Đen - Bluetooth 5.0 độ trễ thấp.\n\nThông số nổi bật:\n- Bluetooth 5.0\n- Độ trễ thấp theo listing\n- Điều khiển cảm ứng\n- Micro kép theo listing\n- Sạc khoảng 1.5 giờ\n- Driver khoảng 6.1mm theo nguồn cũ\n\nGợi ý dùng: nghe nhạc, học/call, xem video hằng ngày. Shop sẽ test kết nối, âm thanh, mic và pin trước khi giao.\n\nĐịnh giá: tham khảo giá mới Shopee/index. Giá bán Chà Là đang để khoảng 1/3 giá mới hoặc giá thấp hợp lý.\n\nNote research: Có 5 mốc Shopee/index; chênh 312k-590k (>200k), nên note khi chốt giá.",
       "bestFor": [
-        "tai-nghe-nhac",
-        "bluetooth",
-        "hoc-online",
-        "call-zoom"
+        "call-zoom",
+        "bluetooth"
       ],
       "topHighlights": [
-        "mic-clear",
-        "easy-listen"
+        "easy-listen",
+        "mic-clear"
       ],
       "serviceDone": [],
       "smartTags": [
@@ -3292,10 +3287,10 @@
     },
     {
       "id": 1780000000014,
-      "name": "HAVIT TW932 Xanh dương",
+      "name": "HAVIT TW932 Xanh Biển",
       "segment": "music",
       "brand": "HAVIT",
-      "condition": "M?i",
+      "condition": "Trầy nhẹ",
       "price": 100000,
       "originalPrice": 290000,
       "stock": 1,
@@ -3304,7 +3299,8 @@
       "isWireless": true,
       "batteryHealth": 100,
       "images": [
-        "/assets/havit-tws-generic.svg"
+        "/uploads/1782807150280-0f1cb57f-product-1782806134665.jpg",
+        "/uploads/1782807159278-69a34de1-product-1782806144499.jpg"
       ],
       "video": "",
       "youtubePlaylist": "",
@@ -3312,14 +3308,12 @@
       "messengerLink": "",
       "description": "HAVIT TW932 Xanh dương - Bluetooth 5.2 Driver 13mm IPX4.\n\nThông số nổi bật:\n- Bluetooth 5.2\n- Driver 13mm\n- IPX4\n- Điều khiển cảm ứng\n- Form nhỏ gọn nhiều màu\n\nGợi ý dùng: nghe nhạc, học/call, xem video hằng ngày. Shop sẽ test kết nối, âm thanh, mic và pin trước khi giao.\n\nĐịnh giá: tham khảo giá mới Shopee/index. Giá bán Chà Là đang để khoảng 1/3 giá mới hoặc giá thấp hợp lý.\n\nNote research: Shopee/index thấy 290k; nguồn bán lẻ khác 550k, chênh trên 200k nhưng chưa đủ 5 giá Shopee.",
       "bestFor": [
-        "tai-nghe-nhac",
-        "bluetooth",
-        "hoc-online",
-        "call-zoom"
+        "call-zoom",
+        "bluetooth"
       ],
       "topHighlights": [
-        "mic-clear",
-        "easy-listen"
+        "easy-listen",
+        "mic-clear"
       ],
       "serviceDone": [],
       "smartTags": [
@@ -3368,6 +3362,47 @@
         "warning": "Giá nguồn chênh từ 200k trở lên, cần note khi tư vấn.",
         "sourceQuality": "Chưa đủ 5 mốc giá Shopee sạch do Shopee chặn API trực tiếp."
       }
+    },
+    {
+      "id": 1782827750247,
+      "name": "Tai nghe SkullCandy Indy Evo True Wireless",
+      "segment": "music",
+      "brand": "Skull Candy",
+      "condition": "Trầy nhẹ",
+      "price": 260000,
+      "originalPrice": 1600000,
+      "stock": 1,
+      "soundTag": "",
+      "latency": "wireless-slow",
+      "isWireless": true,
+      "batteryHealth": 90,
+      "images": [
+        "/uploads/1782828716650-62f2dc66-product-1782827699719.jpg",
+        "/uploads/1782828728729-6fd71a22-product-1782827712653.jpg",
+        "/uploads/1782828748670-c3b92fa2-product-1782827732661.jpg"
+      ],
+      "video": "",
+      "youtubePlaylist": "",
+      "shopeeLink": "",
+      "messengerLink": "",
+      "description": "",
+      "bestFor": [],
+      "topHighlights": [],
+      "serviceDone": [],
+      "inspection": "",
+      "inspectionDetails": {
+        "shell": "",
+        "pads": "",
+        "driver": "",
+        "mic": "",
+        "connect": "",
+        "battery": "",
+        "clean": ""
+      },
+      "reviews": [],
+      "views": 0,
+      "createdAt": 1782827750247,
+      "isSold": false
     }
   ],
   "faqs": [
